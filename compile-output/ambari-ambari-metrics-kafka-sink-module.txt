@@ -1,0 +1,344 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Kafka Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.077 s
+[INFO] Finished at: 2018-03-26T14:11:22-05:00
+[INFO] Final Memory: 25M/300M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Kafka Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ ambari-metrics-kafka-sink ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-metrics-kafka-sink ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: pass.txt
+[INFO] Exclude: derby.log
+[INFO] Exclude: **/*.nuspec
+[INFO] Exclude: **/*.json
+[INFO] 8 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 8 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-metrics-kafka-sink ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.9:copy-dependencies (copy-dependencies) @ ambari-metrics-kafka-sink ---
+[INFO] Copying commons-lang-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-lang-2.6.jar
+[INFO] Copying jackson-core-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/jackson-core-asl-1.9.13.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-logging-1.1.1.jar
+[INFO] Copying jackson-mapper-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/jackson-mapper-asl-1.9.13.jar
+[INFO] Copying commons-codec-1.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-codec-1.6.jar
+[INFO] Copying commons-collections-3.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-collections-3.2.2.jar
+[INFO] Copying jackson-xc-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/lib/jackson-xc-1.9.13.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4.1:single (build-jar) @ ambari-metrics-kafka-sink ---
+[INFO] Reading assembly descriptor: src/main/assemblies/jar-with-common.xml
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/ambari-metrics-kafka-sink-with-common-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-metrics-kafka-sink ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-kafka-sink/2.0.0.0-SNAPSHOT/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-kafka-sink/2.0.0.0-SNAPSHOT/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.9:copy-dependencies (default-cli) @ ambari-metrics-kafka-sink ---
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying javassist-3.19.0-GA.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/javassist-3.19.0-GA.jar
+[INFO] Copying netty-3.7.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/netty-3.7.0.Final.jar
+[INFO] Copying httpcore-4.2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/httpcore-4.2.4.jar
+[INFO] Copying log4j-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/log4j-1.2.17.jar
+[INFO] Copying curator-framework-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/curator-framework-2.7.1.jar
+[INFO] Copying zkclient-0.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/zkclient-0.9.jar
+[INFO] Copying easymock-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/easymock-3.2.jar
+[INFO] Copying antlr-2.7.7.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/antlr-2.7.7.jar
+[INFO] Copying commons-math3-3.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-math3-3.1.1.jar
+[INFO] Copying zookeeper-3.4.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/zookeeper-3.4.8.jar
+[INFO] Copying powermock-module-junit4-common-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-module-junit4-common-1.6.2.jar
+[INFO] Copying slf4j-log4j12-1.7.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/slf4j-log4j12-1.7.21.jar
+[INFO] Copying antlr4-runtime-4.5.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/antlr4-runtime-4.5.3.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying commons-io-2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-io-2.4.jar
+[INFO] Copying checkstyle-6.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/checkstyle-6.19.jar
+[INFO] Copying powermock-api-easymock-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-api-easymock-1.6.2.jar
+[INFO] Copying commons-beanutils-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-beanutils-1.9.2.jar
+[INFO] Copying jackson-mapper-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jackson-mapper-asl-1.9.13.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying powermock-reflect-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-reflect-1.6.2.jar
+[INFO] Copying hadoop-annotations-2.6.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/hadoop-annotations-2.6.0.jar
+[INFO] Copying kafka-clients-0.10.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/kafka-clients-0.10.1.0.jar
+[INFO] Copying objenesis-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/objenesis-1.3.jar
+[INFO] Copying commons-cli-1.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-cli-1.3.1.jar
+[INFO] Copying jackson-core-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jackson-core-asl-1.9.13.jar
+[INFO] Copying junit-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/junit-4.10.jar
+[INFO] Copying lz4-1.3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/lz4-1.3.0.jar
+[INFO] Copying commons-codec-1.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-codec-1.6.jar
+[INFO] Copying jline-0.9.94.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jline-0.9.94.jar
+[INFO] Copying powermock-core-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-core-1.6.2.jar
+[INFO] Copying commons-lang-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-lang-2.6.jar
+[INFO] Copying metrics-core-2.2.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/metrics-core-2.2.0.jar
+[INFO] Copying curator-client-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/curator-client-2.7.1.jar
+[INFO] Copying ambari-utility-1.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/ambari-utility-1.0.0.0-SNAPSHOT.jar
+[INFO] Copying guava-14.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/guava-14.0.1.jar
+[INFO] Copying gson-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/gson-2.2.2.jar
+[INFO] Copying httpclient-4.2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/httpclient-4.2.5.jar
+[INFO] Copying snappy-java-1.1.2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/snappy-java-1.1.2.6.jar
+[INFO] Copying slf4j-api-1.7.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/slf4j-api-1.7.21.jar
+[INFO] Copying powermock-module-junit4-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-module-junit4-1.6.2.jar
+[INFO] Copying commons-collections-3.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-collections-3.2.2.jar
+[INFO] Copying jopt-simple-4.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jopt-simple-4.9.jar
+[INFO] Copying jackson-xc-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jackson-xc-1.9.13.jar
+[INFO] Copying kafka_2.10-0.10.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/kafka_2.10-0.10.1.0.jar
+[INFO] Copying scala-library-2.10.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/scala-library-2.10.6.jar
+[INFO] Copying mockito-all-1.10.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/mockito-all-1.10.19.jar
+[INFO] Copying hamcrest-core-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/hamcrest-core-1.1.jar
+[INFO] Copying powermock-api-support-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-api-support-1.6.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.590 s
+[INFO] Finished at: 2018-03-26T14:11:28-05:00
+[INFO] Final Memory: 43M/579M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Kafka Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.983 s
+[INFO] Finished at: 2018-03-26T14:11:31-05:00
+[INFO] Final Memory: 23M/238M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Kafka Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-kafka-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-kafka-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-kafka-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ ambari-metrics-kafka-sink ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-metrics-kafka-sink ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: pass.txt
+[INFO] Exclude: derby.log
+[INFO] Exclude: **/*.nuspec
+[INFO] Exclude: **/*.json
+[INFO] 8 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 8 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-metrics-kafka-sink ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.9:copy-dependencies (copy-dependencies) @ ambari-metrics-kafka-sink ---
+[INFO] Copying commons-lang-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-lang-2.6.jar
+[INFO] Copying jackson-core-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/jackson-core-asl-1.9.13.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-logging-1.1.1.jar
+[INFO] Copying jackson-mapper-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/jackson-mapper-asl-1.9.13.jar
+[INFO] Copying commons-codec-1.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-codec-1.6.jar
+[INFO] Copying commons-collections-3.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/commons-collections-3.2.2.jar
+[INFO] Copying jackson-xc-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/lib/jackson-xc-1.9.13.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.4.1:single (build-jar) @ ambari-metrics-kafka-sink ---
+[INFO] Reading assembly descriptor: src/main/assemblies/jar-with-common.xml
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/ambari-metrics-kafka-sink-with-common-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-metrics-kafka-sink ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-kafka-sink/2.0.0.0-SNAPSHOT/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-kafka-sink/2.0.0.0-SNAPSHOT/ambari-metrics-kafka-sink-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.9:copy-dependencies (default-cli) @ ambari-metrics-kafka-sink ---
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying javassist-3.19.0-GA.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/javassist-3.19.0-GA.jar
+[INFO] Copying netty-3.7.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/netty-3.7.0.Final.jar
+[INFO] Copying httpcore-4.2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/httpcore-4.2.4.jar
+[INFO] Copying log4j-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/log4j-1.2.17.jar
+[INFO] Copying curator-framework-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/curator-framework-2.7.1.jar
+[INFO] Copying zkclient-0.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/zkclient-0.9.jar
+[INFO] Copying easymock-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/easymock-3.2.jar
+[INFO] Copying antlr-2.7.7.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/antlr-2.7.7.jar
+[INFO] Copying commons-math3-3.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-math3-3.1.1.jar
+[INFO] Copying zookeeper-3.4.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/zookeeper-3.4.8.jar
+[INFO] Copying powermock-module-junit4-common-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-module-junit4-common-1.6.2.jar
+[INFO] Copying slf4j-log4j12-1.7.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/slf4j-log4j12-1.7.21.jar
+[INFO] Copying antlr4-runtime-4.5.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/antlr4-runtime-4.5.3.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying commons-io-2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-io-2.4.jar
+[INFO] Copying checkstyle-6.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/checkstyle-6.19.jar
+[INFO] Copying powermock-api-easymock-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-api-easymock-1.6.2.jar
+[INFO] Copying commons-beanutils-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-beanutils-1.9.2.jar
+[INFO] Copying jackson-mapper-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jackson-mapper-asl-1.9.13.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying powermock-reflect-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-reflect-1.6.2.jar
+[INFO] Copying hadoop-annotations-2.6.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/hadoop-annotations-2.6.0.jar
+[INFO] Copying kafka-clients-0.10.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/kafka-clients-0.10.1.0.jar
+[INFO] Copying objenesis-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/objenesis-1.3.jar
+[INFO] Copying commons-cli-1.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-cli-1.3.1.jar
+[INFO] Copying jackson-core-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jackson-core-asl-1.9.13.jar
+[INFO] Copying junit-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/junit-4.10.jar
+[INFO] Copying lz4-1.3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/lz4-1.3.0.jar
+[INFO] Copying commons-codec-1.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-codec-1.6.jar
+[INFO] Copying jline-0.9.94.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jline-0.9.94.jar
+[INFO] Copying powermock-core-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-core-1.6.2.jar
+[INFO] Copying commons-lang-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-lang-2.6.jar
+[INFO] Copying metrics-core-2.2.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/metrics-core-2.2.0.jar
+[INFO] Copying curator-client-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/curator-client-2.7.1.jar
+[INFO] Copying ambari-utility-1.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/ambari-utility-1.0.0.0-SNAPSHOT.jar
+[INFO] Copying guava-14.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/guava-14.0.1.jar
+[INFO] Copying gson-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/gson-2.2.2.jar
+[INFO] Copying httpclient-4.2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/httpclient-4.2.5.jar
+[INFO] Copying snappy-java-1.1.2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/snappy-java-1.1.2.6.jar
+[INFO] Copying slf4j-api-1.7.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/slf4j-api-1.7.21.jar
+[INFO] Copying powermock-module-junit4-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-module-junit4-1.6.2.jar
+[INFO] Copying commons-collections-3.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/commons-collections-3.2.2.jar
+[INFO] Copying jopt-simple-4.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jopt-simple-4.9.jar
+[INFO] Copying jackson-xc-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/jackson-xc-1.9.13.jar
+[INFO] Copying kafka_2.10-0.10.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/kafka_2.10-0.10.1.0.jar
+[INFO] Copying scala-library-2.10.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/scala-library-2.10.6.jar
+[INFO] Copying mockito-all-1.10.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/mockito-all-1.10.19.jar
+[INFO] Copying hamcrest-core-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/hamcrest-core-1.1.jar
+[INFO] Copying powermock-api-support-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-kafka-sink/target/dependency/powermock-api-support-1.6.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.658 s
+[INFO] Finished at: 2018-03-26T14:11:37-05:00
+[INFO] Final Memory: 44M/564M
+[INFO] ------------------------------------------------------------------------

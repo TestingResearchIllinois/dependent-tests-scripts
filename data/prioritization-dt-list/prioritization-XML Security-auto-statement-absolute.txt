@@ -1,0 +1,390 @@
+Test: randoop.xmlsecurity.RandoopTest1.test124
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest1.test81]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test213
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test211]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest1.test81
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest1.test80]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test495
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test463]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest1.test80
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test495]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test193
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test181]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test139
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test123]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test382
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test331]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test61
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test26]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test104
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test61]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test247
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test104]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test211
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test208]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test107
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test105]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test105
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test96]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test331
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test318]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test318
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test263]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test263
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test255]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test169
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test168]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test150
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test143]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test44
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test43]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test23
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test15]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test66
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test51]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test29
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test28]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test28
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test23]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test40
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test37]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test151
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test150]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test155
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test151]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest1.test145
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test183]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test51
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test45]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test255
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test230]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test181
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test175]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test96
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test92]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test6
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test4]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test92
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test89]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test15
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test14]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test4
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test3]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test13
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test11]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test14
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test13]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test11
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test6]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test143
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test139]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test168
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test165]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test458
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test382]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test89
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test84]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test43
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test40]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test81
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test79]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test45
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test44]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test175
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test172]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test460
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test344]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test463
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test458]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test171
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test169]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test172
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test171]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test77
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test66]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test117
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test107]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test230
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test213]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test79
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test77]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test123
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test117]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test208
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test205]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test35
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test29]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test37
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test35]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test205
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test193]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test165
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test163]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test163
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test161]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test161
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test155]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test84
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test81]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.xmlsecurity.RandoopTest0.test3
+Intended behavior: FAILURE
+when executed after: [randoop.xmlsecurity.RandoopTest0.test1]
+The revealed different behavior: PASS
+when executed after: []
+

@@ -1,0 +1,7 @@
+The contents of this directory is created from prioritization-dt-lists/ and parallelization-dt-lists/.
+For algorithms that are absolute or relative order, the list is copied from prioritiztion-dt-lists/
+specific to that subject program, its test suite and its coverage.
+For the original algorithm, the list is copied from parallelization-dt-lists/ specific to that
+subject program and its test suite. More specifically, the k=16, original order file is copied
+for each subject program and test suite. The same file is used for both statement and function
+coverage.

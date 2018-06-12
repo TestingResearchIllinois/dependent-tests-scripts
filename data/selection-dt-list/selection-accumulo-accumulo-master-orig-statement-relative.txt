@@ -1,0 +1,12 @@
+Test: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Intended behavior: FAILURE
+when executed after: [org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Intended behavior: FAILURE
+when executed after: [org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer]
+The revealed different behavior: PASS
+when executed after: []
+

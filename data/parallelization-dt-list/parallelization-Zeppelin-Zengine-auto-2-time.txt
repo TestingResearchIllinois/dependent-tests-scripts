@@ -1,0 +1,72 @@
+Test: RegressionTest1.test081
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test071]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test469
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test208]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test326
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test322]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test152
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test117]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test163
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test077]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test281
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test150]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test136
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test064]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test251
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test081]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test377
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test326]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test150
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test125]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test345
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test152]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test106
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test089]
+The revealed different behavior: PASS
+when executed after: []
+

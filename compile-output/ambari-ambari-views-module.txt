@@ -1,0 +1,242 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Views 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-views ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-views ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.561 s
+[INFO] Finished at: 2018-03-26T12:47:16-05:00
+[INFO] Final Memory: 17M/299M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Views 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-views ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ ambari-views ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-views ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*.json
+[INFO] Exclude: **/*.iml
+[INFO] Exclude: **/*.lst
+[INFO] Exclude: **/rat.txt
+[INFO] 137 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 123 licence.
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (build-tarball) @ ambari-views ---
+[INFO] Reading assembly descriptor: src/main/assemblies/views.xml
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-views ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/ambari-views-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ ambari-views ---
+[INFO] Reading assembly descriptor: src/main/assemblies/views.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-views ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/ambari-views-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-views/2.0.0.0-SNAPSHOT/ambari-views-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-views/2.0.0.0-SNAPSHOT/ambari-views-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-views ---
+[INFO] Copying easymock-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/dependency/easymock-3.1.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/dependency/commons-codec-1.8.jar
+[INFO] Copying junit-4.8.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/dependency/junit-4.8.1.jar
+[INFO] Copying jersey-core-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/dependency/jersey-core-1.8.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying objenesis-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-views/target/dependency/objenesis-1.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.549 s
+[INFO] Finished at: 2018-03-26T12:47:23-05:00
+[INFO] Final Memory: 27M/453M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Views 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-views ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/classes
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-views ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.535 s
+[INFO] Finished at: 2018-03-26T12:47:28-05:00
+[INFO] Final Memory: 18M/301M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Views 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-views ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-views ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-views ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-views ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ ambari-views ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-views ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*.json
+[INFO] Exclude: **/*.iml
+[INFO] Exclude: **/*.lst
+[INFO] Exclude: **/rat.txt
+[INFO] 137 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 123 licence.
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (build-tarball) @ ambari-views ---
+[INFO] Reading assembly descriptor: src/main/assemblies/views.xml
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-views ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/ambari-views-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ ambari-views ---
+[INFO] Reading assembly descriptor: src/main/assemblies/views.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-views ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/ambari-views-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-views/2.0.0.0-SNAPSHOT/ambari-views-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-views/2.0.0.0-SNAPSHOT/ambari-views-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-views ---
+[INFO] Copying easymock-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/dependency/easymock-3.1.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/dependency/commons-codec-1.8.jar
+[INFO] Copying junit-4.8.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/dependency/junit-4.8.1.jar
+[INFO] Copying jersey-core-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/dependency/jersey-core-1.8.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying objenesis-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-views/target/dependency/objenesis-1.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.922 s
+[INFO] Finished at: 2018-03-26T12:47:35-05:00
+[INFO] Final Memory: 27M/453M
+[INFO] ------------------------------------------------------------------------

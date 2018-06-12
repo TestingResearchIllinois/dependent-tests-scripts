@@ -1,0 +1,12 @@
+Test: org.jfree.data.time.junit.DayTests.testParseDay
+Intended behavior: FAILURE
+when executed after: [org.jfree.data.time.junit.TimeSeriesCollectionTests.testFindDomainBounds]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.jfree.data.time.junit.TimeSeriesCollectionTests.testFindDomainBounds
+Intended behavior: FAILURE
+when executed after: [org.jfree.chart.axis.junit.PeriodAxisTests.test2490803]
+The revealed different behavior: PASS
+when executed after: []
+

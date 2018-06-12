@@ -1,0 +1,6 @@
+Test: randoop.synoptic.RandoopTest2.test107
+Intended behavior: FAILURE
+when executed after: [randoop.synoptic.RandoopTest1.test423]
+The revealed different behavior: PASS
+when executed after: []
+

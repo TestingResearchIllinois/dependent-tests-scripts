@@ -1,0 +1,30 @@
+Test: randoop.crystal.RandoopTest0.test285
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test116]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test437
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test285]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test121
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test13]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test135
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test228]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test228
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test227]
+The revealed different behavior: PASS
+when executed after: []
+

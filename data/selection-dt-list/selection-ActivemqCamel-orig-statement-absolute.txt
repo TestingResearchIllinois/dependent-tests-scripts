@@ -1,0 +1,6 @@
+Test: org.apache.activemq.camel.component.ComplexRequestReplyTest.testSendThenFailoverThenSend
+Intended behavior: FAILURE
+when executed after: [org.apache.activemq.camel.AMQ2240Test.testBadVMTransportOptionsBrokerPrefix]
+The revealed different behavior: PASS
+when executed after: []
+

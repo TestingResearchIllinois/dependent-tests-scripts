@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="Subject">
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+
+    <property name="src.dir" location="./src/main"/>
+    <property name="tests.dir" location="./src/test"/>
+    <property name="result.dir" location="./target"/>
+    <property name="result.classes.dir" location="${result.dir}/classes"/>
+    <property name="result.tests.dir" location="${result.dir}/test-classes"/>
+
+    <path id="class.path">
+        <fileset dir="${result.dir}/dependency">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${result.tests.dir}"/>
+        <delete dir="${result.classes.dir}"/>
+    </target>
+
+    <target depends="clean,compile,compile-test" name="build"/>
+
+    <target name="compile">
+        <mkdir dir="${result.classes.dir}"/>
+        <javac debug="true" debuglevel="${debuglevel}" includeantruntime="false" source="${source}" target="${target}" destdir="${result.classes.dir}">
+            <src path="${src.dir}"/>
+            <classpath refid="class.path"/>
+        </javac>
+    </target>
+
+    <target name="compile-test">
+        <mkdir dir="${result.tests.dir}"/>
+        <javac debug="true" debuglevel="${debuglevel}" includeantruntime="false" source="${source}" target="${target}" destdir="${result.tests.dir}">
+            <src path="${tests.dir}"/>
+            <classpath>
+                <path refid="class.path" />
+                <pathelement location="${result.classes.dir}"/>
+            </classpath>
+        </javac>
+    </target>
+</project>

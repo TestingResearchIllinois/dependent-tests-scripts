@@ -1,0 +1,144 @@
+Test: RegressionTest1.test136
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test106]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test419
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test281]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test106
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test096]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test395
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test314]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test094
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test395]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test273
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test154]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test152
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test117]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test163
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test077]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: ErrorTest0.test17
+Intended behavior: FAILURE
+when executed after: [ErrorTest0.test08]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: ErrorTest0.test08
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test498]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test281
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test150]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test081
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test071]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test495
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test469]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test096
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test089]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test089
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test081]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test264
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test171]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test344
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test273]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test071
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test064]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test150
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test125]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test154
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test136]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test064
+Intended behavior: FAILURE
+when executed after: [ErrorTest0.test17]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test469
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test458]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test458
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test208]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test345
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test152]
+The revealed different behavior: PASS
+when executed after: []
+

@@ -1,0 +1,712 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Functional Tests 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-funtest ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-funtest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/src/main/resources
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-funtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-funtest ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-funtest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/src/main/resources
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-funtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 353 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-funtest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.995 s
+[INFO] Finished at: 2018-03-26T17:35:36-05:00
+[INFO] Final Memory: 46M/527M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Functional Tests 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-funtest ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-funtest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/src/main/resources
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-funtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 353 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-funtest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ ambari-funtest ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-funtest ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources/version
+[INFO] Exclude: src/test/resources/os_family.json
+[INFO] Exclude: src/test/resources/stacks/**
+[INFO] Exclude: derby.log
+[INFO] 47 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 47 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-funtest ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/ambari-funtest-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ ambari-funtest ---
+[INFO] Reading assembly descriptor: src/main/assemblies/empty.xml
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (build-tarball) @ ambari-funtest ---
+[INFO] Reading assembly descriptor: src/main/assemblies/empty.xml
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.20:verify (run-verify) @ ambari-funtest ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-funtest ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/ambari-funtest-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-funtest/2.0.0.0-SNAPSHOT/ambari-funtest-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-funtest/2.0.0.0-SNAPSHOT/ambari-funtest-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-funtest ---
+[INFO] Copying jcip-annotations-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jcip-annotations-1.0.jar
+[INFO] Copying htrace-core-3.1.0-incubating.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/htrace-core-3.1.0-incubating.jar
+[INFO] Copying protobuf-java-2.5.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/protobuf-java-2.5.0.jar
+[INFO] Copying quartz-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/quartz-2.2.1.jar
+[INFO] Copying cglib-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/cglib-2.2.2.jar
+[INFO] Copying powermock-api-support-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-api-support-1.6.3.jar
+[INFO] Copying javax.json-1.0.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/javax.json-1.0.4.jar
+[INFO] Copying spring-expression-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-expression-3.0.7.RELEASE.jar
+[INFO] Copying maven-filtering-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-filtering-1.3.jar
+[INFO] Copying wagon-http-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-http-1.0-beta-6.jar
+[INFO] Copying asm-3.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/asm-3.3.1.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying javax.servlet-3.0.0.v201112011016.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/javax.servlet-3.0.0.v201112011016.jar
+[INFO] Copying maven-shared-utils-0.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-shared-utils-0.6.jar
+[INFO] Copying spring-security-core-3.1.2.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-security-core-3.1.2.RELEASE.jar
+[INFO] Copying api-i18n-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/api-i18n-1.0.0.jar
+[INFO] Copying commons-cli-1.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-cli-1.3.1.jar
+[INFO] Copying jackson-annotations-2.1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-annotations-2.1.4.jar
+[INFO] Copying spring-aop-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-aop-3.0.7.RELEASE.jar
+[INFO] Copying plexus-container-default-1.0-alpha-9-stable-1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-container-default-1.0-alpha-9-stable-1.jar
+[INFO] Copying swagger-jaxrs-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/swagger-jaxrs-1.5.10.jar
+[INFO] Copying slf4j-api-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/slf4j-api-1.7.20.jar
+[INFO] Copying swagger-models-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/swagger-models-1.5.10.jar
+[INFO] Copying guice-assistedinject-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/guice-assistedinject-3.0.jar
+[INFO] Copying postgresql-9.3-1101-jdbc4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/postgresql-9.3-1101-jdbc4.jar
+[INFO] Copying c3p0-0.9.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/c3p0-0.9.1.1.jar
+[INFO] Copying ant-1.6.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ant-1.6.5.jar
+[INFO] Copying file-management-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/file-management-1.1.jar
+[INFO] Copying maven-core-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-core-2.2.1.jar
+[INFO] Copying plexus-build-api-0.0.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-build-api-0.0.4.jar
+[INFO] Copying spring-context-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-context-3.0.7.RELEASE.jar
+[INFO] Copying snakeyaml-1.12.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/snakeyaml-1.12.jar
+[INFO] Copying maven-repository-metadata-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-repository-metadata-2.2.1.jar
+[INFO] Copying wagon-webdav-jackrabbit-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-webdav-jackrabbit-1.0-beta-6.jar
+[INFO] Copying commonj.sdo-2.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commonj.sdo-2.1.1.jar
+[INFO] Copying jsr311-api-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jsr311-api-1.1.1.jar
+[INFO] Copying jetty-server-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-server-8.1.19.v20160209.jar
+[INFO] Copying jersey-grizzly2-servlet-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-grizzly2-servlet-1.19.jar
+[INFO] Copying guice-multibindings-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/guice-multibindings-3.0.jar
+[INFO] Copying joda-time-2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/joda-time-2.2.jar
+[INFO] Copying equalsverifier-1.7.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/equalsverifier-1.7.4.jar
+[INFO] Copying spring-beans-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-beans-3.0.7.RELEASE.jar
+[INFO] Copying jline-2.11.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jline-2.11.jar
+[INFO] Copying commons-lang-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-lang-2.5.jar
+[INFO] Copying api-ldap-model-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/api-ldap-model-1.0.0.jar
+[INFO] Copying jetty-6.1.26.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-6.1.26.jar
+[INFO] Copying jetty-continuation-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-continuation-8.1.19.v20160209.jar
+[INFO] Copying jersey-multipart-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-multipart-1.19.jar
+[INFO] Copying jackson-core-asl-1.9.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-core-asl-1.9.9.jar
+[INFO] Copying jersey-test-framework-grizzly2-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-test-framework-grizzly2-1.19.jar
+[INFO] Copying spring-security-web-3.1.2.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-security-web-3.1.2.RELEASE.jar
+[INFO] Copying eclipselink-2.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/eclipselink-2.6.2.jar
+[INFO] Copying jetty-util-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-util-8.1.19.v20160209.jar
+[INFO] Copying jets3t-0.9.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jets3t-0.9.0.jar
+[INFO] Copying snappy-java-1.0.4.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/snappy-java-1.0.4.1.jar
+[INFO] Copying maven-plugin-registry-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-plugin-registry-2.2.1.jar
+[INFO] Copying jersey-test-framework-core-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-test-framework-core-1.19.jar
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying slf4j-log4j12-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/slf4j-log4j12-1.7.20.jar
+[INFO] Copying maven-error-diagnostics-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-error-diagnostics-2.2.1.jar
+[INFO] Copying log4j-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/log4j-1.2.17.jar
+[INFO] Copying ehcache-2.10.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ehcache-2.10.0.jar
+[INFO] Copying curator-framework-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/curator-framework-2.7.1.jar
+[INFO] Copying curator-recipes-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/curator-recipes-2.7.1.jar
+[INFO] Copying jna-4.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jna-4.2.2.jar
+[INFO] Copying xz-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/xz-1.2.jar
+[INFO] Copying guice-persist-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/guice-persist-3.0.jar
+[INFO] Copying jackson-jaxrs-1.9.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-jaxrs-1.9.9.jar
+[INFO] Copying jaxb-impl-2.2.3-1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jaxb-impl-2.2.3-1.jar
+[INFO] Copying maven-plugin-api-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-plugin-api-2.2.1.jar
+[INFO] Copying wagon-ssh-external-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-ssh-external-1.0-beta-6.jar
+[INFO] Copying maven-project-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-project-2.2.1.jar
+[INFO] Copying commons-math3-3.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-math3-3.1.1.jar
+[INFO] Copying jul-to-slf4j-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jul-to-slf4j-1.7.20.jar
+[INFO] Copying spring-security-kerberos-core-1.0.1.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-security-kerberos-core-1.0.1.RELEASE.jar
+[INFO] Copying wagon-file-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-file-1.0-beta-6.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying jsp-api-2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jsp-api-2.1.jar
+[INFO] Copying ambari-views-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ambari-views-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying paranamer-2.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/paranamer-2.3.jar
+[INFO] Copying maven-repository-builder-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-repository-builder-1.0.jar
+[INFO] Copying grizzly-http-servlet-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/grizzly-http-servlet-2.2.16.jar
+[INFO] Copying wagon-http-lightweight-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-http-lightweight-1.0-beta-6.jar
+[INFO] Copying jersey-grizzly2-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-grizzly2-1.19.jar
+[INFO] Copying grizzly-framework-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/grizzly-framework-2.2.16.jar
+[INFO] Copying commons-configuration-1.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-configuration-1.6.jar
+[INFO] Copying powermock-module-junit4-common-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-module-junit4-common-1.6.3.jar
+[INFO] Copying commons-digester-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-digester-1.8.jar
+[INFO] Copying commons-io-1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-io-1.4.jar
+[INFO] Copying grizzly-http-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/grizzly-http-2.2.16.jar
+[INFO] Copying swagger-annotations-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/swagger-annotations-1.5.10.jar
+[INFO] Copying easymock-3.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/easymock-3.4.jar
+[INFO] Copying commons-collections-3.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-collections-3.2.1.jar
+[INFO] Copying powermock-module-junit4-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-module-junit4-1.6.3.jar
+[INFO] Copying nekohtml-1.9.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/nekohtml-1.9.6.2.jar
+[INFO] Copying ecj-3.5.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ecj-3.5.1.jar
+[INFO] Copying curator-client-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/curator-client-2.7.1.jar
+[INFO] Copying plexus-interactivity-api-1.0-alpha-4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-interactivity-api-1.0-alpha-4.jar
+[INFO] Copying spring-web-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-web-3.0.7.RELEASE.jar
+[INFO] Copying metrics-core-3.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/metrics-core-3.1.0.jar
+[INFO] Copying objenesis-2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/objenesis-2.1.jar
+[INFO] Copying powermock-core-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-core-1.6.3.jar
+[INFO] Copying ambari-serviceadvisor-1.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ambari-serviceadvisor-1.0.0.0-SNAPSHOT.jar
+[INFO] Copying slf4j-nop-1.5.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/slf4j-nop-1.5.3.jar
+[INFO] Copying hadoop-auth-2.7.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/hadoop-auth-2.7.2.jar
+[INFO] Copying spring-tx-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-tx-3.0.7.RELEASE.jar
+[INFO] Copying jersey-servlet-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-servlet-1.19.jar
+[INFO] Copying jetty-http-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-http-8.1.19.v20160209.jar
+[INFO] Copying maven-assembly-plugin-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-assembly-plugin-2.6.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-codec-1.8.jar
+[INFO] Copying cloning-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/cloning-1.9.2.jar
+[INFO] Copying jersey-guice-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-guice-1.19.jar
+[INFO] Copying mockito-all-1.10.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/mockito-all-1.10.19.jar
+[INFO] Copying velocity-1.7.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/velocity-1.7.jar
+[INFO] Copying commons-httpclient-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-httpclient-3.1.jar
+[INFO] Copying wagon-http-shared-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-http-shared-1.0-beta-6.jar
+[INFO] Copying httpcore-4.4.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/httpcore-4.4.4.jar
+[INFO] Copying wagon-provider-api-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-provider-api-1.0-beta-6.jar
+[INFO] Copying netty-3.7.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/netty-3.7.0.Final.jar
+[INFO] Copying maven-settings-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-settings-2.2.1.jar
+[INFO] Copying javassist-3.20.0-GA.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/javassist-3.20.0-GA.jar
+[INFO] Copying aopalliance-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/aopalliance-1.0.jar
+[INFO] Copying jackson-datatype-joda-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-datatype-joda-2.4.5.jar
+[INFO] Copying jackrabbit-webdav-1.5.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackrabbit-webdav-1.5.0.jar
+[INFO] Copying maven-artifact-manager-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-artifact-manager-2.2.1.jar
+[INFO] Copying plexus-io-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-io-2.6.jar
+[INFO] Copying mockito-core-1.10.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/mockito-core-1.10.19.jar
+[INFO] Copying spring-asm-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-asm-3.0.7.RELEASE.jar
+[INFO] Copying spring-jdbc-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-jdbc-3.0.7.RELEASE.jar
+[INFO] Copying objenesis-tck-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/objenesis-tck-1.2.jar
+[INFO] Copying jackson-mapper-asl-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-mapper-asl-1.9.2.jar
+[INFO] Copying mina-core-2.0.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/mina-core-2.0.16.jar
+[INFO] Copying spring-security-kerberos-web-1.0.1.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-security-kerberos-web-1.0.1.RELEASE.jar
+[INFO] Copying swagger-core-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/swagger-core-1.5.10.jar
+[INFO] Copying jackson-jaxrs-json-provider-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-jaxrs-json-provider-2.4.5.jar
+[INFO] Copying snmp4j-1.10.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/snmp4j-1.10.1.jar
+[INFO] Copying guice-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/guice-3.0.jar
+[INFO] Copying kerberos-client-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/kerberos-client-2.0.0-M24.jar
+[INFO] Copying jetty-io-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-io-8.1.19.v20160209.jar
+[INFO] Copying xercesMinimal-1.9.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/xercesMinimal-1.9.6.2.jar
+[INFO] Copying ant-launcher-1.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ant-launcher-1.7.1.jar
+[INFO] Copying jackson-dataformat-yaml-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-dataformat-yaml-2.4.5.jar
+[INFO] Copying hadoop-annotations-2.6.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/hadoop-annotations-2.6.0.jar
+[INFO] Copying validation-api-1.1.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/validation-api-1.1.0.Final.jar
+[INFO] Copying plexus-cipher-1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-cipher-1.4.jar
+[INFO] Copying nimbus-jose-jwt-3.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/nimbus-jose-jwt-3.9.jar
+[INFO] Copying apacheds-kerberos-codec-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/apacheds-kerberos-codec-2.0.0-M24.jar
+[INFO] Copying jsr305-1.3.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jsr305-1.3.9.jar
+[INFO] Copying powermock-reflect-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-reflect-1.6.3.jar
+[INFO] Copying jaxb-api-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jaxb-api-2.2.2.jar
+[INFO] Copying jackrabbit-jcr-commons-1.5.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackrabbit-jcr-commons-1.5.0.jar
+[INFO] Copying classworlds-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/classworlds-1.1.jar
+[INFO] Copying activation-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/activation-1.1.jar
+[INFO] Copying reflections-0.9.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/reflections-0.9.10.jar
+[INFO] Copying spring-security-config-3.1.2.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-security-config-3.1.2.RELEASE.jar
+[INFO] Copying zookeeper-3.4.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/zookeeper-3.4.6.jar
+[INFO] Copying json-smart-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/json-smart-1.1.1.jar
+[INFO] Copying metrics-jvm-3.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/metrics-jvm-3.1.0.jar
+[INFO] Copying maven-artifact-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-artifact-2.2.1.jar
+[INFO] Copying spring-ldap-core-2.0.4.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-ldap-core-2.0.4.RELEASE.jar
+[INFO] Copying jetty-xml-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-xml-8.1.19.v20160209.jar
+[INFO] Copying gson-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/gson-2.2.2.jar
+[INFO] Copying maven-plugin-descriptor-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-plugin-descriptor-2.2.1.jar
+[INFO] Copying apacheds-i18n-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/apacheds-i18n-2.0.0-M24.jar
+[INFO] Copying javax.inject-1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/javax.inject-1.jar
+[INFO] Copying java-xmlbuilder-0.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/java-xmlbuilder-0.4.jar
+[INFO] Copying snappy-0.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/snappy-0.3.jar
+[INFO] Copying jcl-over-slf4j-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jcl-over-slf4j-1.7.20.jar
+[INFO] Copying javax.servlet-api-3.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/javax.servlet-api-3.1.0.jar
+[INFO] Copying commons-beanutils-core-1.8.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-beanutils-core-1.8.0.jar
+[INFO] Copying maven-reporting-api-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-reporting-api-2.2.1.jar
+[INFO] Copying maven-shared-io-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-shared-io-1.1.jar
+[INFO] Copying stax-api-1.0-2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/stax-api-1.0-2.jar
+[INFO] Copying org.apache.servicemix.bundles.antlr-2.7.7_5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/org.apache.servicemix.bundles.antlr-2.7.7_5.jar
+[INFO] Copying commons-csv-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-csv-1.1.jar
+[INFO] Copying spring-mock-2.0.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-mock-2.0.8.jar
+[INFO] Copying apache-log4j-extras-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/apache-log4j-extras-1.2.17.jar
+[INFO] Copying jsch-0.1.42.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jsch-0.1.42.jar
+[INFO] Copying mailapi-1.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/mailapi-1.5.2.jar
+[INFO] Copying spring-core-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-core-3.0.7.RELEASE.jar
+[INFO] Copying jsp-2.1-glassfish-2.1.v20100127.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jsp-2.1-glassfish-2.1.v20100127.jar
+[INFO] Copying jetty-client-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-client-8.1.19.v20160209.jar
+[INFO] Copying oro-2.0.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/oro-2.0.8.jar
+[INFO] Copying commons-compress-1.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-compress-1.5.jar
+[INFO] Copying quartz-jobs-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/quartz-jobs-2.2.1.jar
+[INFO] Copying hamcrest-core-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/hamcrest-core-1.1.jar
+[INFO] Copying stax-api-1.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/stax-api-1.0.1.jar
+[INFO] Copying annotations-2.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/annotations-2.0.1.jar
+[INFO] Copying api-asn1-api-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/api-asn1-api-1.0.0.jar
+[INFO] Copying powermock-api-easymock-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-api-easymock-1.6.3.jar
+[INFO] Copying jackson-core-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-core-2.4.5.jar
+[INFO] Copying commons-net-1.4.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-net-1.4.1.jar
+[INFO] Copying apacheds-all-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/apacheds-all-2.0.0-M24.jar
+[INFO] Copying libpam4j-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/libpam4j-1.8.jar
+[INFO] Copying api-util-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/api-util-1.0.0.jar
+[INFO] Copying c3p0-0.9.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/c3p0-0.9.5.2.jar
+[INFO] Copying jetty-webapp-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-webapp-8.1.19.v20160209.jar
+[INFO] Copying jsp-api-2.1-glassfish-2.1.v20100127.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jsp-api-2.1-glassfish-2.1.v20100127.jar
+[INFO] Copying jersey-client-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-client-1.19.jar
+[INFO] Copying plexus-interpolation-1.22.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-interpolation-1.22.jar
+[INFO] Copying plexus-utils-3.0.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-utils-3.0.21.jar
+[INFO] Copying httpclient-4.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/httpclient-4.5.2.jar
+[INFO] Copying doxia-sink-api-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/doxia-sink-api-1.1.jar
+[INFO] Copying maven-monitor-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-monitor-2.2.1.jar
+[INFO] Copying javax.persistence-2.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/javax.persistence-2.1.1.jar
+[INFO] Copying mimepull-1.9.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/mimepull-1.9.3.jar
+[INFO] Copying api-asn1-ber-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/api-asn1-ber-1.0.0.jar
+[INFO] Copying ant-1.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ant-1.7.1.jar
+[INFO] Copying xmlenc-0.52.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/xmlenc-0.52.jar
+[INFO] Copying maven-archiver-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-archiver-2.5.jar
+[INFO] Copying junit-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/junit-4.10.jar
+[INFO] Copying smtp-1.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/smtp-1.5.2.jar
+[INFO] Copying guava-16.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/guava-16.0.jar
+[INFO] Copying commons-lang3-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-lang3-3.1.jar
+[INFO] Copying h2-1.4.193.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/h2-1.4.193.jar
+[INFO] Copying jersey-core-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-core-1.19.jar
+[INFO] Copying jackson-xc-1.9.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-xc-1.9.9.jar
+[INFO] Copying commons-beanutils-1.7.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/commons-beanutils-1.7.0.jar
+[INFO] Copying jackson-dataformat-xml-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-dataformat-xml-2.4.5.jar
+[INFO] Copying plexus-archiver-3.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-archiver-3.0.1.jar
+[INFO] Copying wagon-ssh-common-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-ssh-common-1.0-beta-6.jar
+[INFO] Copying powermock-api-mockito-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/powermock-api-mockito-1.6.3.jar
+[INFO] Copying jetty-security-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-security-8.1.19.v20160209.jar
+[INFO] Copying grizzly-rcm-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/grizzly-rcm-2.2.16.jar
+[INFO] Copying jetty-servlet-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-servlet-8.1.19.v20160209.jar
+[INFO] Copying mchange-commons-java-0.2.11.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/mchange-commons-java-0.2.11.jar
+[INFO] Copying maven-profile-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-profile-2.2.1.jar
+[INFO] Copying plexus-sec-dispatcher-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/plexus-sec-dispatcher-1.3.jar
+[INFO] Copying ambari-server-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/ambari-server-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying maven-plugin-parameter-documenter-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Copying spring-security-ldap-4.0.4.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/spring-security-ldap-4.0.4.RELEASE.jar
+[INFO] Copying stax2-api-3.1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/stax2-api-3.1.4.jar
+[INFO] Copying jettison-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jettison-1.1.jar
+[INFO] Copying hadoop-common-2.7.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/hadoop-common-2.7.2.jar
+[INFO] Copying jersey-json-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-json-1.19.jar
+[INFO] Copying guice-servlet-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/guice-servlet-3.0.jar
+[INFO] Copying jackson-module-jaxb-annotations-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-module-jaxb-annotations-2.4.5.jar
+[INFO] Copying maven-model-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-model-2.2.1.jar
+[INFO] Copying maven-common-artifact-filters-1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/maven-common-artifact-filters-1.4.jar
+[INFO] Copying wagon-ssh-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/wagon-ssh-1.0-beta-6.jar
+[INFO] Copying jackson-jaxrs-base-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-jaxrs-base-2.4.5.jar
+[INFO] Copying jetty-servlets-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jetty-servlets-8.1.19.v20160209.jar
+[INFO] Copying doxia-logging-api-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/doxia-logging-api-1.1.jar
+[INFO] Copying jersey-server-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jersey-server-1.19.jar
+[INFO] Copying grizzly-http-server-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/grizzly-http-server-2.2.16.jar
+[INFO] Copying backport-util-concurrent-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/backport-util-concurrent-3.1.jar
+[INFO] Copying jackson-databind-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/jackson-databind-2.4.5.jar
+[INFO] Copying avro-1.7.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/avro-1.7.4.jar
+[INFO] Copying slf4j-jdk14-1.5.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-funtest/target/dependency/slf4j-jdk14-1.5.6.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.689 s
+[INFO] Finished at: 2018-03-26T17:35:46-05:00
+[INFO] Final Memory: 55M/802M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Functional Tests 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-funtest ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-funtest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/src/main/resources
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-funtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-funtest ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-funtest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/src/main/resources
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-funtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 353 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-funtest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.991 s
+[INFO] Finished at: 2018-03-26T17:35:54-05:00
+[INFO] Final Memory: 46M/532M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Functional Tests 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-funtest ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-funtest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/src/main/resources
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-funtest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-funtest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 353 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-funtest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ ambari-funtest ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-funtest ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: src/test/resources/version
+[INFO] Exclude: src/test/resources/os_family.json
+[INFO] Exclude: src/test/resources/stacks/**
+[INFO] Exclude: derby.log
+[INFO] 47 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 47 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-funtest ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/ambari-funtest-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ ambari-funtest ---
+[INFO] Reading assembly descriptor: src/main/assemblies/empty.xml
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (build-tarball) @ ambari-funtest ---
+[INFO] Reading assembly descriptor: src/main/assemblies/empty.xml
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.20:verify (run-verify) @ ambari-funtest ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-funtest ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/ambari-funtest-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-funtest/2.0.0.0-SNAPSHOT/ambari-funtest-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-funtest/2.0.0.0-SNAPSHOT/ambari-funtest-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-funtest ---
+[INFO] Copying jcip-annotations-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jcip-annotations-1.0.jar
+[INFO] Copying htrace-core-3.1.0-incubating.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/htrace-core-3.1.0-incubating.jar
+[INFO] Copying protobuf-java-2.5.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/protobuf-java-2.5.0.jar
+[INFO] Copying quartz-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/quartz-2.2.1.jar
+[INFO] Copying cglib-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/cglib-2.2.2.jar
+[INFO] Copying powermock-api-support-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-api-support-1.6.3.jar
+[INFO] Copying javax.json-1.0.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/javax.json-1.0.4.jar
+[INFO] Copying spring-expression-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-expression-3.0.7.RELEASE.jar
+[INFO] Copying maven-filtering-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-filtering-1.3.jar
+[INFO] Copying wagon-http-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-http-1.0-beta-6.jar
+[INFO] Copying asm-3.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/asm-3.3.1.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying javax.servlet-3.0.0.v201112011016.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/javax.servlet-3.0.0.v201112011016.jar
+[INFO] Copying maven-shared-utils-0.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-shared-utils-0.6.jar
+[INFO] Copying spring-security-core-3.1.2.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-security-core-3.1.2.RELEASE.jar
+[INFO] Copying api-i18n-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/api-i18n-1.0.0.jar
+[INFO] Copying commons-cli-1.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-cli-1.3.1.jar
+[INFO] Copying jackson-annotations-2.1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-annotations-2.1.4.jar
+[INFO] Copying spring-aop-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-aop-3.0.7.RELEASE.jar
+[INFO] Copying plexus-container-default-1.0-alpha-9-stable-1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-container-default-1.0-alpha-9-stable-1.jar
+[INFO] Copying swagger-jaxrs-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/swagger-jaxrs-1.5.10.jar
+[INFO] Copying slf4j-api-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/slf4j-api-1.7.20.jar
+[INFO] Copying swagger-models-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/swagger-models-1.5.10.jar
+[INFO] Copying guice-assistedinject-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/guice-assistedinject-3.0.jar
+[INFO] Copying postgresql-9.3-1101-jdbc4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/postgresql-9.3-1101-jdbc4.jar
+[INFO] Copying c3p0-0.9.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/c3p0-0.9.1.1.jar
+[INFO] Copying ant-1.6.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ant-1.6.5.jar
+[INFO] Copying file-management-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/file-management-1.1.jar
+[INFO] Copying maven-core-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-core-2.2.1.jar
+[INFO] Copying plexus-build-api-0.0.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-build-api-0.0.4.jar
+[INFO] Copying spring-context-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-context-3.0.7.RELEASE.jar
+[INFO] Copying snakeyaml-1.12.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/snakeyaml-1.12.jar
+[INFO] Copying maven-repository-metadata-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-repository-metadata-2.2.1.jar
+[INFO] Copying wagon-webdav-jackrabbit-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-webdav-jackrabbit-1.0-beta-6.jar
+[INFO] Copying commonj.sdo-2.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commonj.sdo-2.1.1.jar
+[INFO] Copying jsr311-api-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jsr311-api-1.1.1.jar
+[INFO] Copying jetty-server-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-server-8.1.19.v20160209.jar
+[INFO] Copying jersey-grizzly2-servlet-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-grizzly2-servlet-1.19.jar
+[INFO] Copying guice-multibindings-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/guice-multibindings-3.0.jar
+[INFO] Copying joda-time-2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/joda-time-2.2.jar
+[INFO] Copying equalsverifier-1.7.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/equalsverifier-1.7.4.jar
+[INFO] Copying spring-beans-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-beans-3.0.7.RELEASE.jar
+[INFO] Copying jline-2.11.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jline-2.11.jar
+[INFO] Copying commons-lang-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-lang-2.5.jar
+[INFO] Copying api-ldap-model-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/api-ldap-model-1.0.0.jar
+[INFO] Copying jetty-6.1.26.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-6.1.26.jar
+[INFO] Copying jetty-continuation-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-continuation-8.1.19.v20160209.jar
+[INFO] Copying jersey-multipart-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-multipart-1.19.jar
+[INFO] Copying jackson-core-asl-1.9.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-core-asl-1.9.9.jar
+[INFO] Copying jersey-test-framework-grizzly2-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-test-framework-grizzly2-1.19.jar
+[INFO] Copying spring-security-web-3.1.2.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-security-web-3.1.2.RELEASE.jar
+[INFO] Copying eclipselink-2.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/eclipselink-2.6.2.jar
+[INFO] Copying jetty-util-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-util-8.1.19.v20160209.jar
+[INFO] Copying jets3t-0.9.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jets3t-0.9.0.jar
+[INFO] Copying snappy-java-1.0.4.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/snappy-java-1.0.4.1.jar
+[INFO] Copying maven-plugin-registry-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-plugin-registry-2.2.1.jar
+[INFO] Copying jersey-test-framework-core-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-test-framework-core-1.19.jar
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying slf4j-log4j12-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/slf4j-log4j12-1.7.20.jar
+[INFO] Copying maven-error-diagnostics-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-error-diagnostics-2.2.1.jar
+[INFO] Copying log4j-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/log4j-1.2.17.jar
+[INFO] Copying ehcache-2.10.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ehcache-2.10.0.jar
+[INFO] Copying curator-framework-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/curator-framework-2.7.1.jar
+[INFO] Copying curator-recipes-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/curator-recipes-2.7.1.jar
+[INFO] Copying jna-4.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jna-4.2.2.jar
+[INFO] Copying xz-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/xz-1.2.jar
+[INFO] Copying guice-persist-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/guice-persist-3.0.jar
+[INFO] Copying jackson-jaxrs-1.9.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-jaxrs-1.9.9.jar
+[INFO] Copying jaxb-impl-2.2.3-1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jaxb-impl-2.2.3-1.jar
+[INFO] Copying maven-plugin-api-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-plugin-api-2.2.1.jar
+[INFO] Copying wagon-ssh-external-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-ssh-external-1.0-beta-6.jar
+[INFO] Copying maven-project-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-project-2.2.1.jar
+[INFO] Copying commons-math3-3.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-math3-3.1.1.jar
+[INFO] Copying jul-to-slf4j-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jul-to-slf4j-1.7.20.jar
+[INFO] Copying spring-security-kerberos-core-1.0.1.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-security-kerberos-core-1.0.1.RELEASE.jar
+[INFO] Copying wagon-file-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-file-1.0-beta-6.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying jsp-api-2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jsp-api-2.1.jar
+[INFO] Copying ambari-views-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ambari-views-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying paranamer-2.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/paranamer-2.3.jar
+[INFO] Copying maven-repository-builder-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-repository-builder-1.0.jar
+[INFO] Copying grizzly-http-servlet-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/grizzly-http-servlet-2.2.16.jar
+[INFO] Copying wagon-http-lightweight-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-http-lightweight-1.0-beta-6.jar
+[INFO] Copying jersey-grizzly2-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-grizzly2-1.19.jar
+[INFO] Copying grizzly-framework-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/grizzly-framework-2.2.16.jar
+[INFO] Copying commons-configuration-1.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-configuration-1.6.jar
+[INFO] Copying powermock-module-junit4-common-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-module-junit4-common-1.6.3.jar
+[INFO] Copying commons-digester-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-digester-1.8.jar
+[INFO] Copying commons-io-1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-io-1.4.jar
+[INFO] Copying grizzly-http-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/grizzly-http-2.2.16.jar
+[INFO] Copying swagger-annotations-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/swagger-annotations-1.5.10.jar
+[INFO] Copying easymock-3.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/easymock-3.4.jar
+[INFO] Copying commons-collections-3.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-collections-3.2.1.jar
+[INFO] Copying powermock-module-junit4-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-module-junit4-1.6.3.jar
+[INFO] Copying nekohtml-1.9.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/nekohtml-1.9.6.2.jar
+[INFO] Copying ecj-3.5.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ecj-3.5.1.jar
+[INFO] Copying curator-client-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/curator-client-2.7.1.jar
+[INFO] Copying plexus-interactivity-api-1.0-alpha-4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-interactivity-api-1.0-alpha-4.jar
+[INFO] Copying spring-web-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-web-3.0.7.RELEASE.jar
+[INFO] Copying metrics-core-3.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/metrics-core-3.1.0.jar
+[INFO] Copying objenesis-2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/objenesis-2.1.jar
+[INFO] Copying powermock-core-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-core-1.6.3.jar
+[INFO] Copying ambari-serviceadvisor-1.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ambari-serviceadvisor-1.0.0.0-SNAPSHOT.jar
+[INFO] Copying slf4j-nop-1.5.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/slf4j-nop-1.5.3.jar
+[INFO] Copying hadoop-auth-2.7.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/hadoop-auth-2.7.2.jar
+[INFO] Copying spring-tx-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-tx-3.0.7.RELEASE.jar
+[INFO] Copying jersey-servlet-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-servlet-1.19.jar
+[INFO] Copying jetty-http-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-http-8.1.19.v20160209.jar
+[INFO] Copying maven-assembly-plugin-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-assembly-plugin-2.6.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-codec-1.8.jar
+[INFO] Copying cloning-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/cloning-1.9.2.jar
+[INFO] Copying jersey-guice-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-guice-1.19.jar
+[INFO] Copying mockito-all-1.10.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/mockito-all-1.10.19.jar
+[INFO] Copying velocity-1.7.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/velocity-1.7.jar
+[INFO] Copying commons-httpclient-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-httpclient-3.1.jar
+[INFO] Copying wagon-http-shared-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-http-shared-1.0-beta-6.jar
+[INFO] Copying httpcore-4.4.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/httpcore-4.4.4.jar
+[INFO] Copying wagon-provider-api-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-provider-api-1.0-beta-6.jar
+[INFO] Copying netty-3.7.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/netty-3.7.0.Final.jar
+[INFO] Copying maven-settings-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-settings-2.2.1.jar
+[INFO] Copying javassist-3.20.0-GA.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/javassist-3.20.0-GA.jar
+[INFO] Copying aopalliance-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/aopalliance-1.0.jar
+[INFO] Copying jackson-datatype-joda-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-datatype-joda-2.4.5.jar
+[INFO] Copying jackrabbit-webdav-1.5.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackrabbit-webdav-1.5.0.jar
+[INFO] Copying maven-artifact-manager-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-artifact-manager-2.2.1.jar
+[INFO] Copying plexus-io-2.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-io-2.6.jar
+[INFO] Copying mockito-core-1.10.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/mockito-core-1.10.19.jar
+[INFO] Copying spring-asm-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-asm-3.0.7.RELEASE.jar
+[INFO] Copying spring-jdbc-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-jdbc-3.0.7.RELEASE.jar
+[INFO] Copying objenesis-tck-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/objenesis-tck-1.2.jar
+[INFO] Copying jackson-mapper-asl-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-mapper-asl-1.9.2.jar
+[INFO] Copying mina-core-2.0.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/mina-core-2.0.16.jar
+[INFO] Copying spring-security-kerberos-web-1.0.1.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-security-kerberos-web-1.0.1.RELEASE.jar
+[INFO] Copying swagger-core-1.5.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/swagger-core-1.5.10.jar
+[INFO] Copying jackson-jaxrs-json-provider-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-jaxrs-json-provider-2.4.5.jar
+[INFO] Copying snmp4j-1.10.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/snmp4j-1.10.1.jar
+[INFO] Copying guice-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/guice-3.0.jar
+[INFO] Copying kerberos-client-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/kerberos-client-2.0.0-M24.jar
+[INFO] Copying jetty-io-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-io-8.1.19.v20160209.jar
+[INFO] Copying xercesMinimal-1.9.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/xercesMinimal-1.9.6.2.jar
+[INFO] Copying ant-launcher-1.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ant-launcher-1.7.1.jar
+[INFO] Copying jackson-dataformat-yaml-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-dataformat-yaml-2.4.5.jar
+[INFO] Copying hadoop-annotations-2.6.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/hadoop-annotations-2.6.0.jar
+[INFO] Copying validation-api-1.1.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/validation-api-1.1.0.Final.jar
+[INFO] Copying plexus-cipher-1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-cipher-1.4.jar
+[INFO] Copying nimbus-jose-jwt-3.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/nimbus-jose-jwt-3.9.jar
+[INFO] Copying apacheds-kerberos-codec-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/apacheds-kerberos-codec-2.0.0-M24.jar
+[INFO] Copying jsr305-1.3.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jsr305-1.3.9.jar
+[INFO] Copying powermock-reflect-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-reflect-1.6.3.jar
+[INFO] Copying jaxb-api-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jaxb-api-2.2.2.jar
+[INFO] Copying jackrabbit-jcr-commons-1.5.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackrabbit-jcr-commons-1.5.0.jar
+[INFO] Copying classworlds-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/classworlds-1.1.jar
+[INFO] Copying activation-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/activation-1.1.jar
+[INFO] Copying reflections-0.9.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/reflections-0.9.10.jar
+[INFO] Copying spring-security-config-3.1.2.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-security-config-3.1.2.RELEASE.jar
+[INFO] Copying zookeeper-3.4.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/zookeeper-3.4.6.jar
+[INFO] Copying json-smart-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/json-smart-1.1.1.jar
+[INFO] Copying metrics-jvm-3.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/metrics-jvm-3.1.0.jar
+[INFO] Copying maven-artifact-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-artifact-2.2.1.jar
+[INFO] Copying spring-ldap-core-2.0.4.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-ldap-core-2.0.4.RELEASE.jar
+[INFO] Copying jetty-xml-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-xml-8.1.19.v20160209.jar
+[INFO] Copying gson-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/gson-2.2.2.jar
+[INFO] Copying maven-plugin-descriptor-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-plugin-descriptor-2.2.1.jar
+[INFO] Copying apacheds-i18n-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/apacheds-i18n-2.0.0-M24.jar
+[INFO] Copying javax.inject-1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/javax.inject-1.jar
+[INFO] Copying java-xmlbuilder-0.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/java-xmlbuilder-0.4.jar
+[INFO] Copying snappy-0.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/snappy-0.3.jar
+[INFO] Copying jcl-over-slf4j-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jcl-over-slf4j-1.7.20.jar
+[INFO] Copying javax.servlet-api-3.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/javax.servlet-api-3.1.0.jar
+[INFO] Copying commons-beanutils-core-1.8.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-beanutils-core-1.8.0.jar
+[INFO] Copying maven-reporting-api-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-reporting-api-2.2.1.jar
+[INFO] Copying maven-shared-io-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-shared-io-1.1.jar
+[INFO] Copying stax-api-1.0-2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/stax-api-1.0-2.jar
+[INFO] Copying org.apache.servicemix.bundles.antlr-2.7.7_5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/org.apache.servicemix.bundles.antlr-2.7.7_5.jar
+[INFO] Copying commons-csv-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-csv-1.1.jar
+[INFO] Copying spring-mock-2.0.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-mock-2.0.8.jar
+[INFO] Copying apache-log4j-extras-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/apache-log4j-extras-1.2.17.jar
+[INFO] Copying jsch-0.1.42.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jsch-0.1.42.jar
+[INFO] Copying mailapi-1.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/mailapi-1.5.2.jar
+[INFO] Copying spring-core-3.0.7.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-core-3.0.7.RELEASE.jar
+[INFO] Copying jsp-2.1-glassfish-2.1.v20100127.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jsp-2.1-glassfish-2.1.v20100127.jar
+[INFO] Copying jetty-client-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-client-8.1.19.v20160209.jar
+[INFO] Copying oro-2.0.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/oro-2.0.8.jar
+[INFO] Copying commons-compress-1.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-compress-1.5.jar
+[INFO] Copying quartz-jobs-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/quartz-jobs-2.2.1.jar
+[INFO] Copying hamcrest-core-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/hamcrest-core-1.1.jar
+[INFO] Copying stax-api-1.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/stax-api-1.0.1.jar
+[INFO] Copying annotations-2.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/annotations-2.0.1.jar
+[INFO] Copying api-asn1-api-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/api-asn1-api-1.0.0.jar
+[INFO] Copying powermock-api-easymock-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-api-easymock-1.6.3.jar
+[INFO] Copying jackson-core-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-core-2.4.5.jar
+[INFO] Copying commons-net-1.4.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-net-1.4.1.jar
+[INFO] Copying apacheds-all-2.0.0-M24.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/apacheds-all-2.0.0-M24.jar
+[INFO] Copying libpam4j-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/libpam4j-1.8.jar
+[INFO] Copying api-util-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/api-util-1.0.0.jar
+[INFO] Copying c3p0-0.9.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/c3p0-0.9.5.2.jar
+[INFO] Copying jetty-webapp-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-webapp-8.1.19.v20160209.jar
+[INFO] Copying jsp-api-2.1-glassfish-2.1.v20100127.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jsp-api-2.1-glassfish-2.1.v20100127.jar
+[INFO] Copying jersey-client-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-client-1.19.jar
+[INFO] Copying plexus-interpolation-1.22.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-interpolation-1.22.jar
+[INFO] Copying plexus-utils-3.0.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-utils-3.0.21.jar
+[INFO] Copying httpclient-4.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/httpclient-4.5.2.jar
+[INFO] Copying doxia-sink-api-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/doxia-sink-api-1.1.jar
+[INFO] Copying maven-monitor-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-monitor-2.2.1.jar
+[INFO] Copying javax.persistence-2.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/javax.persistence-2.1.1.jar
+[INFO] Copying mimepull-1.9.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/mimepull-1.9.3.jar
+[INFO] Copying api-asn1-ber-1.0.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/api-asn1-ber-1.0.0.jar
+[INFO] Copying ant-1.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ant-1.7.1.jar
+[INFO] Copying xmlenc-0.52.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/xmlenc-0.52.jar
+[INFO] Copying maven-archiver-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-archiver-2.5.jar
+[INFO] Copying junit-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/junit-4.10.jar
+[INFO] Copying smtp-1.5.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/smtp-1.5.2.jar
+[INFO] Copying guava-16.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/guava-16.0.jar
+[INFO] Copying commons-lang3-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-lang3-3.1.jar
+[INFO] Copying h2-1.4.193.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/h2-1.4.193.jar
+[INFO] Copying jersey-core-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-core-1.19.jar
+[INFO] Copying jackson-xc-1.9.9.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-xc-1.9.9.jar
+[INFO] Copying commons-beanutils-1.7.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/commons-beanutils-1.7.0.jar
+[INFO] Copying jackson-dataformat-xml-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-dataformat-xml-2.4.5.jar
+[INFO] Copying plexus-archiver-3.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-archiver-3.0.1.jar
+[INFO] Copying wagon-ssh-common-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-ssh-common-1.0-beta-6.jar
+[INFO] Copying powermock-api-mockito-1.6.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/powermock-api-mockito-1.6.3.jar
+[INFO] Copying jetty-security-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-security-8.1.19.v20160209.jar
+[INFO] Copying grizzly-rcm-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/grizzly-rcm-2.2.16.jar
+[INFO] Copying jetty-servlet-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-servlet-8.1.19.v20160209.jar
+[INFO] Copying mchange-commons-java-0.2.11.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/mchange-commons-java-0.2.11.jar
+[INFO] Copying maven-profile-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-profile-2.2.1.jar
+[INFO] Copying plexus-sec-dispatcher-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/plexus-sec-dispatcher-1.3.jar
+[INFO] Copying ambari-server-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/ambari-server-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying maven-plugin-parameter-documenter-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Copying spring-security-ldap-4.0.4.RELEASE.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/spring-security-ldap-4.0.4.RELEASE.jar
+[INFO] Copying stax2-api-3.1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/stax2-api-3.1.4.jar
+[INFO] Copying jettison-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jettison-1.1.jar
+[INFO] Copying hadoop-common-2.7.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/hadoop-common-2.7.2.jar
+[INFO] Copying jersey-json-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-json-1.19.jar
+[INFO] Copying guice-servlet-3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/guice-servlet-3.0.jar
+[INFO] Copying jackson-module-jaxb-annotations-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-module-jaxb-annotations-2.4.5.jar
+[INFO] Copying maven-model-2.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-model-2.2.1.jar
+[INFO] Copying maven-common-artifact-filters-1.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/maven-common-artifact-filters-1.4.jar
+[INFO] Copying wagon-ssh-1.0-beta-6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/wagon-ssh-1.0-beta-6.jar
+[INFO] Copying jackson-jaxrs-base-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-jaxrs-base-2.4.5.jar
+[INFO] Copying jetty-servlets-8.1.19.v20160209.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jetty-servlets-8.1.19.v20160209.jar
+[INFO] Copying doxia-logging-api-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/doxia-logging-api-1.1.jar
+[INFO] Copying jersey-server-1.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jersey-server-1.19.jar
+[INFO] Copying grizzly-http-server-2.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/grizzly-http-server-2.2.16.jar
+[INFO] Copying backport-util-concurrent-3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/backport-util-concurrent-3.1.jar
+[INFO] Copying jackson-databind-2.4.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/jackson-databind-2.4.5.jar
+[INFO] Copying avro-1.7.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/avro-1.7.4.jar
+[INFO] Copying slf4j-jdk14-1.5.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-funtest/target/dependency/slf4j-jdk14-1.5.6.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.091 s
+[INFO] Finished at: 2018-03-26T17:36:06-05:00
+[INFO] Final Memory: 57M/881M
+[INFO] ------------------------------------------------------------------------

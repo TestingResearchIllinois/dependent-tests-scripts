@@ -1,0 +1,24 @@
+Test: org.jfree.data.time.junit.TimeSeriesCollectionTests.testFindDomainBounds
+Intended behavior: FAILURE
+when executed after: [org.jfree.chart.axis.junit.SegmentedTimelineTests.testBasicSegmentedTimeline]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.jfree.chart.axis.junit.SegmentedTimelineTests.testBasicSegmentedTimeline
+Intended behavior: FAILURE
+when executed after: [org.jfree.chart.axis.junit.SegmentedTimelineTests.testFifteenMinIncludedAndExcludedSegments]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.jfree.chart.axis.junit.SegmentedTimelineTests.testFifteenMinSegmentedTimeline
+Intended behavior: FAILURE
+when executed after: [org.jfree.chart.axis.junit.SegmentedTimelineTests.testMondayThroughFridaySegmentedTimeline]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.jfree.chart.axis.junit.SegmentedTimelineTests.testFifteenMinIncludedAndExcludedSegments
+Intended behavior: FAILURE
+when executed after: [org.jfree.chart.axis.junit.SegmentedTimelineTests.testFifteenMinSegmentedTimeline]
+The revealed different behavior: PASS
+when executed after: []
+

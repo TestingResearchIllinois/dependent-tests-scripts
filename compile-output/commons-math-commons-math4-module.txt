@@ -1,0 +1,348 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Math 4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-math4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ commons-math4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-math4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-math4 ---
+[INFO] Executing: /bin/sh -c cd '/home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700
+[INFO] Storing buildNumber: 612a04d6b0ff8fa3060d5e943f4f72968ea71700 at timestamp: 2018-04-19 16:17:01-0500
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-jgit-buildnumber-plugin:1.2.10:extract-buildnumber (default) @ commons-math4 ---
+[INFO] Git info extracted, revision: '612a04d', branch: 'master', tag: '', commitsCount: '6286', commitDate: '2017-06-21', buildnumber: 'master.6286.612a04d'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 847 source files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/target/classes
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/analysis/solvers/BaseAbstractUnivariateSolver.java: Some input files use or override a deprecated API.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/analysis/solvers/BaseAbstractUnivariateSolver.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/geometry/partitioning/AbstractRegion.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/geometry/partitioning/AbstractRegion.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[28,52] cannot find symbol
+  symbol:   class MarsagliaLogNormalSampler
+  location: package org.apache.commons.rng.sampling.distribution
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[302,21] cannot find symbol
+  symbol: class MarsagliaLogNormalSampler
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.969 s
+[INFO] Finished at: 2018-04-19T16:17:05-05:00
+[INFO] Final Memory: 26M/413M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project commons-math4: Compilation failure: Compilation failure:
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[28,52] cannot find symbol
+[ERROR] symbol:   class MarsagliaLogNormalSampler
+[ERROR] location: package org.apache.commons.rng.sampling.distribution
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[302,21] cannot find symbol
+[ERROR] symbol: class MarsagliaLogNormalSampler
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Math 4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-math4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ commons-math4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-math4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-math4 ---
+[INFO] Executing: /bin/sh -c cd '/home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700
+[INFO] Storing buildNumber: 612a04d6b0ff8fa3060d5e943f4f72968ea71700 at timestamp: 2018-04-19 16:17:08-0500
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-jgit-buildnumber-plugin:1.2.10:extract-buildnumber (default) @ commons-math4 ---
+[INFO] Git info extracted, revision: '612a04d', branch: 'master', tag: '', commitsCount: '6286', commitDate: '2017-06-21', buildnumber: 'master.6286.612a04d'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 847 source files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/target/classes
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/analysis/solvers/BaseAbstractUnivariateSolver.java: Some input files use or override a deprecated API.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/analysis/solvers/BaseAbstractUnivariateSolver.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/geometry/partitioning/AbstractRegion.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/geometry/partitioning/AbstractRegion.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[28,52] cannot find symbol
+  symbol:   class MarsagliaLogNormalSampler
+  location: package org.apache.commons.rng.sampling.distribution
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[302,21] cannot find symbol
+  symbol: class MarsagliaLogNormalSampler
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.109 s
+[INFO] Finished at: 2018-04-19T16:17:12-05:00
+[INFO] Final Memory: 35M/671M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project commons-math4: Compilation failure: Compilation failure:
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[28,52] cannot find symbol
+[ERROR] symbol:   class MarsagliaLogNormalSampler
+[ERROR] location: package org.apache.commons.rng.sampling.distribution
+[ERROR] /home/roei/Java/dt-impact-winglam/experiments/commons-math-old-612a04d6b0ff8fa3060d5e943f4f72968ea71700/src/main/java/org/apache/commons/math4/distribution/LogNormalDistribution.java:[302,21] cannot find symbol
+[ERROR] symbol: class MarsagliaLogNormalSampler
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Build failures were ignored.
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Math 4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-math4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ commons-math4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+     [copy] Copying 2 files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/apidocs/META-INF
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-math4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-math4 ---
+[INFO] Executing: /bin/sh -c cd '/home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54
+[INFO] Storing buildNumber: d9b0be1c9a8e9c0e34220d38276c5b449a06be54 at timestamp: 2018-04-19 16:17:16-0500
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-jgit-buildnumber-plugin:1.2.11:extract-buildnumber (default) @ commons-math4 ---
+[INFO] Git info extracted in 190ms, revision: 'd9b0be1', branch: 'master', tag: '', commitsCount: '6366', commitDate: '2018-03-30', buildDate: '2018-04-19', buildnumber: 'master.6366.d9b0be1'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 807 source files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/classes
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/optim/OptimizationProblem.java: Some input files use or override a deprecated API.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/optim/OptimizationProblem.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/geometry/euclidean/threed/Line.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/geometry/euclidean/threed/Line.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-math4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ commons-math4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-math4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-math4 ---
+[INFO] Executing: /bin/sh -c cd '/home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54
+[INFO] Storing buildNumber: d9b0be1c9a8e9c0e34220d38276c5b449a06be54 at timestamp: 2018-04-19 16:17:22-0500
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-jgit-buildnumber-plugin:1.2.11:extract-buildnumber (default) @ commons-math4 ---
+[INFO] Git info extracted in 92ms, revision: 'd9b0be1', branch: 'master', tag: '', commitsCount: '6366', commitDate: '2018-03-30', buildDate: '2018-04-19', buildnumber: 'master.6366.d9b0be1'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 807 source files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/classes
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/optim/OptimizationProblem.java: Some input files use or override a deprecated API.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/optim/OptimizationProblem.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/geometry/euclidean/threed/Line.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/geometry/euclidean/threed/Line.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-math4 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-math4 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/mojo/signature/java18/1.0/java18-1.0.signature
+3/1956 KB   5/1956 KB   8/1956 KB   11/1956 KB   13/1956 KB   16/1956 KB   19/1956 KB   21/1956 KB   24/1956 KB   27/1956 KB   29/1956 KB   32/1956 KB   36/1956 KB   40/1956 KB   44/1956 KB   48/1956 KB   52/1956 KB   56/1956 KB   60/1956 KB   64/1956 KB   68/1956 KB   72/1956 KB   76/1956 KB   80/1956 KB   84/1956 KB   88/1956 KB   92/1956 KB   96/1956 KB   100/1956 KB   104/1956 KB   108/1956 KB   112/1956 KB   116/1956 KB   120/1956 KB   124/1956 KB   128/1956 KB   132/1956 KB   136/1956 KB   140/1956 KB   144/1956 KB   148/1956 KB   152/1956 KB   156/1956 KB   160/1956 KB   164/1956 KB   168/1956 KB   172/1956 KB   176/1956 KB   180/1956 KB   184/1956 KB   188/1956 KB   192/1956 KB   196/1956 KB   200/1956 KB   204/1956 KB   208/1956 KB   212/1956 KB   216/1956 KB   220/1956 KB   224/1956 KB   228/1956 KB   232/1956 KB   236/1956 KB   240/1956 KB   244/1956 KB   248/1956 KB   252/1956 KB   256/1956 KB   260/1956 KB   264/1956 KB   268/1956 KB   272/1956 KB   276/1956 KB   280/1956 KB   284/1956 KB   288/1956 KB   292/1956 KB   296/1956 KB   300/1956 KB   304/1956 KB   308/1956 KB   312/1956 KB   316/1956 KB   320/1956 KB   324/1956 KB   328/1956 KB   332/1956 KB   336/1956 KB   340/1956 KB   344/1956 KB   348/1956 KB   352/1956 KB   356/1956 KB   360/1956 KB   364/1956 KB   368/1956 KB   372/1956 KB   376/1956 KB   380/1956 KB   384/1956 KB   388/1956 KB   392/1956 KB   396/1956 KB   400/1956 KB   404/1956 KB   408/1956 KB   412/1956 KB   416/1956 KB   420/1956 KB   424/1956 KB   428/1956 KB   432/1956 KB   436/1956 KB   440/1956 KB   444/1956 KB   448/1956 KB   452/1956 KB   456/1956 KB   460/1956 KB   464/1956 KB   468/1956 KB   472/1956 KB   476/1956 KB   480/1956 KB   484/1956 KB   488/1956 KB   492/1956 KB   496/1956 KB   500/1956 KB   504/1956 KB   508/1956 KB   512/1956 KB   516/1956 KB   520/1956 KB   524/1956 KB   528/1956 KB   532/1956 KB   536/1956 KB   540/1956 KB   544/1956 KB   548/1956 KB   552/1956 KB   556/1956 KB   560/1956 KB   564/1956 KB   568/1956 KB   572/1956 KB   576/1956 KB   580/1956 KB   584/1956 KB   588/1956 KB   592/1956 KB   596/1956 KB   600/1956 KB   604/1956 KB   608/1956 KB   612/1956 KB   616/1956 KB   620/1956 KB   624/1956 KB   628/1956 KB   632/1956 KB   636/1956 KB   640/1956 KB   644/1956 KB   648/1956 KB   652/1956 KB   656/1956 KB   660/1956 KB   664/1956 KB   668/1956 KB   672/1956 KB   676/1956 KB   680/1956 KB   684/1956 KB   688/1956 KB   692/1956 KB   696/1956 KB   700/1956 KB   704/1956 KB   708/1956 KB   712/1956 KB   716/1956 KB   720/1956 KB   724/1956 KB   728/1956 KB   732/1956 KB   736/1956 KB   740/1956 KB   744/1956 KB   748/1956 KB   752/1956 KB   756/1956 KB   760/1956 KB   764/1956 KB   768/1956 KB   772/1956 KB   776/1956 KB   780/1956 KB   784/1956 KB   788/1956 KB   792/1956 KB   796/1956 KB   800/1956 KB   804/1956 KB   808/1956 KB   812/1956 KB   816/1956 KB   820/1956 KB   824/1956 KB   828/1956 KB   832/1956 KB   836/1956 KB   840/1956 KB   844/1956 KB   848/1956 KB   852/1956 KB   856/1956 KB   860/1956 KB   864/1956 KB   868/1956 KB   872/1956 KB   876/1956 KB   880/1956 KB   884/1956 KB   888/1956 KB   892/1956 KB   896/1956 KB   900/1956 KB   904/1956 KB   908/1956 KB   912/1956 KB   916/1956 KB   920/1956 KB   924/1956 KB   928/1956 KB   932/1956 KB   936/1956 KB   940/1956 KB   944/1956 KB   948/1956 KB   952/1956 KB   956/1956 KB   960/1956 KB   964/1956 KB   968/1956 KB   972/1956 KB   976/1956 KB   980/1956 KB   984/1956 KB   988/1956 KB   992/1956 KB   996/1956 KB   1000/1956 KB   1004/1956 KB   1008/1956 KB   1012/1956 KB   1016/1956 KB   1020/1956 KB   1024/1956 KB   1028/1956 KB   1032/1956 KB   1036/1956 KB   1040/1956 KB   1044/1956 KB   1048/1956 KB   1052/1956 KB   1056/1956 KB   1060/1956 KB   1064/1956 KB   1068/1956 KB   1072/1956 KB   1076/1956 KB   1080/1956 KB   1084/1956 KB   1088/1956 KB   1092/1956 KB   1096/1956 KB   1100/1956 KB   1104/1956 KB   1108/1956 KB   1112/1956 KB   1116/1956 KB   1120/1956 KB   1124/1956 KB   1128/1956 KB   1132/1956 KB   1136/1956 KB   1140/1956 KB   1144/1956 KB   1148/1956 KB   1152/1956 KB   1156/1956 KB   1160/1956 KB   1164/1956 KB   1168/1956 KB   1172/1956 KB   1176/1956 KB   1180/1956 KB   1184/1956 KB   1188/1956 KB   1192/1956 KB   1196/1956 KB   1200/1956 KB   1204/1956 KB   1208/1956 KB   1212/1956 KB   1216/1956 KB   1220/1956 KB   1224/1956 KB   1228/1956 KB   1232/1956 KB   1236/1956 KB   1240/1956 KB   1244/1956 KB   1248/1956 KB   1252/1956 KB   1256/1956 KB   1260/1956 KB   1264/1956 KB   1268/1956 KB   1272/1956 KB   1276/1956 KB   1280/1956 KB   1284/1956 KB   1288/1956 KB   1292/1956 KB   1296/1956 KB   1300/1956 KB   1304/1956 KB   1308/1956 KB   1312/1956 KB   1316/1956 KB   1320/1956 KB   1324/1956 KB   1328/1956 KB   1332/1956 KB   1336/1956 KB   1340/1956 KB   1344/1956 KB   1348/1956 KB   1352/1956 KB   1356/1956 KB   1360/1956 KB   1364/1956 KB   1368/1956 KB   1372/1956 KB   1376/1956 KB   1380/1956 KB   1384/1956 KB   1388/1956 KB   1392/1956 KB   1396/1956 KB   1400/1956 KB   1404/1956 KB   1408/1956 KB   1412/1956 KB   1416/1956 KB   1420/1956 KB   1424/1956 KB   1428/1956 KB   1432/1956 KB   1436/1956 KB   1440/1956 KB   1444/1956 KB   1448/1956 KB   1452/1956 KB   1456/1956 KB   1460/1956 KB   1464/1956 KB   1468/1956 KB   1472/1956 KB   1476/1956 KB   1480/1956 KB   1484/1956 KB   1488/1956 KB   1492/1956 KB   1496/1956 KB   1500/1956 KB   1504/1956 KB   1508/1956 KB   1512/1956 KB   1516/1956 KB   1520/1956 KB   1524/1956 KB   1528/1956 KB   1532/1956 KB   1536/1956 KB   1540/1956 KB   1544/1956 KB   1548/1956 KB   1552/1956 KB   1556/1956 KB   1560/1956 KB   1564/1956 KB   1568/1956 KB   1572/1956 KB   1576/1956 KB   1580/1956 KB   1584/1956 KB   1588/1956 KB   1592/1956 KB   1596/1956 KB   1600/1956 KB   1604/1956 KB   1608/1956 KB   1612/1956 KB   1616/1956 KB   1620/1956 KB   1624/1956 KB   1628/1956 KB   1632/1956 KB   1636/1956 KB   1640/1956 KB   1644/1956 KB   1648/1956 KB   1652/1956 KB   1656/1956 KB   1660/1956 KB   1664/1956 KB   1668/1956 KB   1672/1956 KB   1676/1956 KB   1680/1956 KB   1684/1956 KB   1688/1956 KB   1692/1956 KB   1696/1956 KB   1700/1956 KB   1704/1956 KB   1708/1956 KB   1712/1956 KB   1716/1956 KB   1720/1956 KB   1724/1956 KB   1728/1956 KB   1732/1956 KB   1736/1956 KB   1740/1956 KB   1744/1956 KB   1748/1956 KB   1752/1956 KB   1756/1956 KB   1760/1956 KB   1764/1956 KB   1768/1956 KB   1772/1956 KB   1776/1956 KB   1780/1956 KB   1784/1956 KB   1784/1956 KB   1788/1956 KB   1792/1956 KB   1796/1956 KB   1800/1956 KB   1804/1956 KB   1808/1956 KB   1812/1956 KB   1816/1956 KB   1820/1956 KB   1824/1956 KB   1828/1956 KB   1832/1956 KB   1836/1956 KB   1840/1956 KB   1844/1956 KB   1848/1956 KB   1852/1956 KB   1856/1956 KB   1860/1956 KB   1864/1956 KB   1868/1956 KB   1872/1956 KB   1876/1956 KB   1880/1956 KB   1884/1956 KB   1888/1956 KB   1892/1956 KB   1896/1956 KB   1900/1956 KB   1904/1956 KB   1908/1956 KB   1912/1956 KB   1916/1956 KB   1920/1956 KB   1924/1956 KB   1928/1956 KB   1932/1956 KB   1936/1956 KB   1940/1956 KB   1944/1956 KB   1948/1956 KB   1952/1956 KB   1956/1956 KB                  Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/mojo/signature/java18/1.0/java18-1.0.signature (1956 KB at 3669.4 KB/sec)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 38 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 495 source files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/test-classes
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/test/java/org/apache/commons/math4/util/IncrementorTest.java: Some input files use or override a deprecated API.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/test/java/org/apache/commons/math4/util/IncrementorTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/test/java/org/apache/commons/math4/geometry/euclidean/twod/NestedLoopsTest.java: /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/test/java/org/apache/commons/math4/geometry/euclidean/twod/NestedLoopsTest.java uses unchecked or unsafe operations.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/test/java/org/apache/commons/math4/geometry/euclidean/twod/NestedLoopsTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.806 s
+[INFO] Finished at: 2018-04-19T16:17:37-05:00
+[INFO] Final Memory: 48M/1074M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Commons Math 4.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven-3) @ commons-math4 ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:parse-version (parse-version) @ commons-math4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (javadoc.resources) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ commons-math4 ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-math4 ---
+[INFO] Executing: /bin/sh -c cd '/home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54
+[INFO] Storing buildNumber: d9b0be1c9a8e9c0e34220d38276c5b449a06be54 at timestamp: 2018-04-19 16:17:40-0500
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-jgit-buildnumber-plugin:1.2.11:extract-buildnumber (default) @ commons-math4 ---
+[INFO] Git info extracted in 210ms, revision: 'd9b0be1', branch: 'master', tag: '', commitsCount: '6366', commitDate: '2018-03-30', buildDate: '2018-04-19', buildnumber: 'master.6366.d9b0be1'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ commons-math4 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 807 source files to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/classes
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/optim/OptimizationProblem.java: Some input files use or override a deprecated API.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/optim/OptimizationProblem.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/geometry/euclidean/threed/Line.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/src/main/java/org/apache/commons/math4/geometry/euclidean/threed/Line.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:3.0.1:manifest (bundle-manifest) @ commons-math4 ---
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.15:check (checkAPIcompatibility) @ commons-math4 ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ commons-math4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 38 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ commons-math4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:prepare-agent (prepare-agent) @ commons-math4 ---
+[INFO] argLine set to -javaagent:/home/roei/.m2/repository/org/jacoco/org.jacoco.agent/0.7.9/org.jacoco.agent-0.7.9-runtime.jar=destfile=/home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ commons-math4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:jar (default-jar) @ commons-math4 ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/commons-math4-4.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ commons-math4 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ commons-math4 ---
+[INFO] Executing tasks
+
+main:
+      [jar] Building jar: /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/commons-math4-4.0-SNAPSHOT-tools.jar
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:attach-artifact (attach-artifacts) @ commons-math4 ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.9:check (check) @ commons-math4 ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ commons-math4 ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/commons-math4-4.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/commons/commons-math4/4.0-SNAPSHOT/commons-math4-4.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/pom.xml to /home/roei/.m2/repository/org/apache/commons/commons-math4/4.0-SNAPSHOT/commons-math4-4.0-SNAPSHOT.pom
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/commons-math4-4.0-SNAPSHOT-tools.jar to /home/roei/.m2/repository/org/apache/commons/commons-math4/4.0-SNAPSHOT/commons-math4-4.0-SNAPSHOT-tools.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (default-cli) @ commons-math4 ---
+[INFO] Copying commons-numbers-angle-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-angle-1.0-SNAPSHOT.jar
+[INFO] Copying commons-numbers-arrays-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-arrays-1.0-SNAPSHOT.jar
+[INFO] Copying commons-rng-sampling-1.1-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-rng-sampling-1.1-SNAPSHOT.jar
+[INFO] Copying commons-math3-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-math3-3.2.jar
+[INFO] Copying jmh-core-1.13.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/jmh-core-1.13.jar
+[INFO] Copying commons-numbers-combinatorics-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-combinatorics-1.0-SNAPSHOT.jar
+[INFO] Copying hamcrest-core-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/hamcrest-core-1.3.jar
+[INFO] Copying commons-numbers-fraction-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-fraction-1.0-SNAPSHOT.jar
+[INFO] Copying commons-rng-simple-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-rng-simple-1.0.jar
+[INFO] Copying junit-4.11.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/junit-4.11.jar
+[INFO] Copying commons-statistics-distribution-0.1-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-statistics-distribution-0.1-SNAPSHOT.jar
+[INFO] Copying commons-rng-client-api-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-rng-client-api-1.0.jar
+[INFO] Copying commons-numbers-core-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-core-1.0-SNAPSHOT.jar
+[INFO] Copying commons-numbers-gamma-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-gamma-1.0-SNAPSHOT.jar
+[INFO] Copying commons-numbers-complex-1.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-numbers-complex-1.0-SNAPSHOT.jar
+[INFO] Copying commons-rng-core-1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/commons-rng-core-1.0.jar
+[INFO] Copying jopt-simple-4.6.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/jopt-simple-4.6.jar
+[INFO] Copying jmh-generator-annprocess-1.13.jar to /home/roei/Java/dt-impact-winglam/experiments/commons-math-new-d9b0be1c9a8e9c0e34220d38276c5b449a06be54/target/dependency/jmh-generator-annprocess-1.13.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.869 s
+[INFO] Finished at: 2018-04-19T16:17:53-05:00
+[INFO] Final Memory: 53M/915M
+[INFO] ------------------------------------------------------------------------

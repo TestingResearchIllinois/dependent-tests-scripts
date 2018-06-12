@@ -1,0 +1,6 @@
+Test: RegressionTest1.test202
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test002]
+The revealed different behavior: PASS
+when executed after: []
+

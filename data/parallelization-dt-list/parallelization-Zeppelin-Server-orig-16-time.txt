@@ -1,0 +1,6 @@
+Test: org.apache.zeppelin.server.CorsFilterTest.InvalidCorsFilterTest
+Intended behavior: FAILURE
+when executed after: [org.apache.zeppelin.server.CorsFilterTest.ValidCorsFilterTest]
+The revealed different behavior: PASS
+when executed after: []
+

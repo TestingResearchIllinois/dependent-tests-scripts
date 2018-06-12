@@ -1,0 +1,6 @@
+Test: org.apache.xml.security.test.c14n.implementations.ExclusiveC14NInterop.test_Y1
+Intended behavior: FAILURE
+when executed after: [org.apache.xml.security.test.algorithms.implementations.BlockEncryptionTest.test_AES128]
+The revealed different behavior: PASS
+when executed after: []
+

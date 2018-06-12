@@ -1,0 +1,60 @@
+Test: RegressionTest1.test407
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test291]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest2.test032
+Intended behavior: FAILURE
+when executed after: [RegressionTest2.test030]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test291
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test267]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test435
+Intended behavior: FAILURE
+when executed after: [ErrorTest0.test8]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: ErrorTest0.test8
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test364]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test034
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test092]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test364
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test306]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test306
+Intended behavior: FAILURE
+when executed after: [RegressionTest0.test022]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest1.test267
+Intended behavior: FAILURE
+when executed after: [RegressionTest1.test435]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: RegressionTest0.test022
+Intended behavior: FAILURE
+when executed after: [RegressionTest2.test032]
+The revealed different behavior: PASS
+when executed after: []
+

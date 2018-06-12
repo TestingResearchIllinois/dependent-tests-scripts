@@ -1,0 +1,1326 @@
+Test: org.apache.ambari.server.view.ViewDirectoryWatcherTest.testDirectoryExtractionOnFileAdd
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewAmbariStreamProviderTest.testReadFrom]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testOnAmbariEventServiceCreation_mismatchStackVersion
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.AbstractSecurityHeaderFilterTest.testDoFilter_DefaultValuesSSL]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetPrincipalPasswordMapStatic
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testSetPrincipalPasswordMapStatic]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.bootstrap.BootStrapResourceTest.bootStrapGet
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.bootstrap.BootStrapTest.testPolling]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.bootstrap.BootStrapTest.testHostFailure
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.bootstrap.BootStrapTest.testRun]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.bootstrap.BootStrapTest.testRun
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.annotations.TransactionalLockTest.testLockAreaEnabledDisabled]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.annotations.TransactionalLockTest.testLockAreaEnabledDisabled
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.annotations.TransactionalLockTest.testLockAreaEnabled]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.bootstrap.BootStrapTest.testPolling
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.bootstrap.BootStrapTest.testHostFailure]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDirectoryWatcherTest.testDirectoryWatcherStart
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_unknownView]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_unknownView
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_validatorFail]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_validatorFail
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_validatorPass]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_validatorPass
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_invalid]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testInstallViewInstance_invalid
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testAddInstanceDefinition]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testAddInstanceDefinition
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testAddGetInstanceDefinitions]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testAddGetInstanceDefinitions
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testGetDefinition]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testGetDefinition
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testAddGetDefinitions]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testAddGetDefinitions
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testGetResourceProviders]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testGetResourceProviders
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testListener_allVersions]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testListener_allVersions
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_exception]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_exception
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testListener]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testListener
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_badArchive]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_badArchive
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_removeUndeployed]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives_removeUndeployed
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testReadViewArchives
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testGetSubResourceDefinitions]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testGetSubResourceDefinitions
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getInstanceDataByUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getInstanceDataByUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getEntityClasses]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getEntityClasses
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.copyAllObjectsWithCustomConverter]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationContextImplTest.copyAllObjectsWithCustomConverter
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getDataStore]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationContextImplTest.getDataStore
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.copyAllInstanceData]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationContextImplTest.copyAllInstanceData
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.copyAllObjects]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationContextImplTest.copyAllObjects
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationContextImplTest.putCurrentInstanceData]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testOnAmbariEventServiceCreation_missingClusterService
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testOnAmbariEventServiceCreation_mismatchStackVersion]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testSetPrincipalPasswordMapStatic
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetDataDirectoryPathStatic]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetDataDirectoryPathStatic
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetKDCTypeStatic]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetKDCTypeStatic
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetDefaultRealmStatic]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetDefaultRealmStatic
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateEmptyString]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateEmptyString
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateNull]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateNull
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateHyphen]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateCaseInsensitive
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateExact]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateExact
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerFactoryTest.testForNone]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerFactoryTest.testForNone
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerFactoryTest.testForMIT]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KerberosOperationHandlerFactoryTest.testForMIT
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.bootstrap.BootStrapResourceTest.bootStrapGet]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateHyphen
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KDCTypeTest.testTranslateCaseInsensitive]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.ConfigureClusterTaskTest.testsShouldConfigureClusterTaskExecuteWhenCalledFromAsyncCallableService
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.ConfigureClusterTaskTest.taskShouldBeExecutedIfRequiredHostgroupsAreResolved]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.ConfigureClusterTaskTest.taskShouldBeExecutedIfRequiredHostgroupsAreResolved
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.ConfigurationFactoryTest.testNewSyntax]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.ConfigurationFactoryTest.testNewSyntax
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.ConfigurationFactoryTest.testOldSyntax]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.ConfigurationFactoryTest.testOldSyntax
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.HostGroupInfoTest.testGetHostGroupName]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.HostGroupInfoTest.testGetHostGroupName
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.HostGroupInfoTest.testSetPredicate_invalid]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.HostGroupInfoTest.testSetPredicate_invalid
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.HostGroupInfoTest.testSetGetRequestedHostCount_explicit]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.HostGroupInfoTest.testSetGetRequestedHostCount_explicit
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.HostGroupInfoTest.testSetGetHostNames]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.topology.HostGroupInfoTest.testSetGetHostNames
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.MemberResourceProviderTest.testGetResources_ClusterAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.MemberResourceProviderTest.testGetResources_ClusterAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.PreUpgradeCheckResourceProviderTest.testGetResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.PreUpgradeCheckResourceProviderTest.testGetResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testDeleteResources_NonAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testDeleteResources_NonAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testUpdateResources_Administrator_Other]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testUpdateResources_Administrator_Other
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testUpdateResources_Administrator_Self]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testUpdateResources_Administrator_Self
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testGetResource_NonAdministrator_Other]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testGetResource_NonAdministrator_Other
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testGetResource_NonAdministrator_Self]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testGetResource_NonAdministrator_Self
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testGetResources_NonAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testGetResources_NonAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testUpdateResources_NonAdministrator_Self]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testUpdateResources_NonAdministrator_Self
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testCreateResources_Administrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterPrivilegeResourceProviderTest.testCreateResources_Administrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.HostKerberosIdentityResourceProviderTest.testGetResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.HostKerberosIdentityResourceProviderTest.testGetResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.HostKerberosIdentityResourceProviderTest.testDeleteResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.HostKerberosIdentityResourceProviderTest.testDeleteResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testParseStructuredOutputForHostCheck]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testParseStructuredOutputForHostCheck
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testInvalidStructuredOutput]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testInvalidStructuredOutput
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testParseStructuredOutput]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testParseStructuredOutput
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testGetResourcesForTopology]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testGetResourcesForTopology
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testCreateResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.TaskResourceProviderTest.testCreateResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.AmbariPrivilegeResourceProviderTest.testGetResource_Administrator_Other]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.AmbariPrivilegeResourceProviderTest.testGetResource_Administrator_Other
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.AmbariPrivilegeResourceProviderTest.testCreateResources_NonAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.AmbariPrivilegeResourceProviderTest.testCreateResources_NonAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.AmbariPrivilegeResourceProviderTest.testToResource_SpecificVIEW]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.AmbariPrivilegeResourceProviderTest.testToResource_SpecificVIEW
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testDeleteResourcesAsAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testDeleteResourcesAsAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testUpdateResourcesAsServiceAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testUpdateResourcesAsServiceAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testCreateResourcesAsServiceAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testCreateResourcesAsServiceAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testCreateResourcesAsAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.CredentialResourceProviderTest.testCreateResourcesAsAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.RequestStageContainerTest.testPersist_noStages]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.RequestStageContainerTest.testPersist_noStages
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.RequestStageContainerTest.testGetAddStages]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.RequestStageContainerTest.testGetAddStages
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.RequestStageContainerTest.testGetId]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.RequestStageContainerTest.testGetId
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.UserResourceProviderTest.testCreateResources_NonAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.UserResourceProviderTest.testCreateResources_NonAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.UserResourceProviderTest.testGetResources_Administrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.UserResourceProviderTest.testGetResources_Administrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.PermissionResourceProviderTest.testCreateResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.PermissionResourceProviderTest.testCreateResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ExtensionResourceProviderTest.testGetResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ExtensionResourceProviderTest.testGetResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.QueryResponseImplTest.testGetTotalResourceCount]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.QueryResponseImplTest.testGetTotalResourceCount
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.QueryResponseImplTest.testIsPagedResponse]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.QueryResponseImplTest.testIsPagedResponse
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.QueryResponseImplTest.testIsSortedResponse]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.QueryResponseImplTest.testIsSortedResponse
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.RepositoryResourceProviderTest.testUpdateResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.RepositoryResourceProviderTest.testUpdateResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.RepositoryResourceProviderTest.testGetResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.RepositoryResourceProviderTest.testGetResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsClusterOperator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsClusterOperator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsServiceAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsServiceAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsClusterAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ClusterKerberosDescriptorResourceProviderTest.testGetResourcesAsClusterAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testDeleteResources_NonAdministrator_Self]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testDeleteResources_NonAdministrator_Self
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testUpdateResources_NonAdministrator_Other]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testUpdateResources_NonAdministrator_Other
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testUpdateResources_NonAdministrator_Self]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testUpdateResources_NonAdministrator_Self
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testCreateResources_NonAdministrator_Other]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testCreateResources_NonAdministrator_Other
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testGetResources_NonAdministrator_Other]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testGetResources_NonAdministrator_Other
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testCreateResources_Administrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testCreateResources_Administrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testUpdateResources_Administrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testUpdateResources_Administrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testGetResources_Administrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testGetResources_Administrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testDeleteResources_Administrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ActiveWidgetLayoutResourceProviderTest.testDeleteResources_Administrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.TargetClusterResourceProviderTest.testDeleteResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.TargetClusterResourceProviderTest.testDeleteResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testDeleteResourcesStoppedHostComponentState]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testDeleteResourcesStoppedHostComponentState
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testCreateWithNoRepositoryIdAndMultiBase]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testCreateWithNoRepositoryIdAndMultiBase
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testCreateWithNoRepositoryIdAndPatch]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testCreateWithNoRepositoryIdAndPatch
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testCreateWithNoRepositoryId]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testCreateWithNoRepositoryId
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testDeleteResourcesBadComponentState]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.internal.ServiceResourceProviderTest.testDeleteResourcesBadComponentState
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgAndThrowableWaitDefaultExceedsMaxCount]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgAndThrowableWaitDefaultExceedsMaxCount
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgAndThrowableWaitDefault]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgAndThrowableWaitDefault
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgWaitExceedsCustomMaxCount]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgWaitExceedsCustomMaxCount
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgWaitDefaultExceedsMaxCount]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.UtilsTest.testLogErrorMsgWaitDefaultExceedsMaxCount
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallWithNullTailLogURIReturnedAsClusterOperator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallWithNullTailLogURIReturnedAsClusterOperator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallWithNullTailLogURIReturnedAsAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallWithNullTailLogURIReturnedAsAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsClusterUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsClusterUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsServiceOperator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsServiceOperator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsClusterAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testBasicCallAsClusterAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testCheckWhenLogSearchNotAvailableAsClusterUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testCheckWhenLogSearchNotAvailableAsClusterUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testCheckWhenLogSearchNotAvailableAsServiceAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testCheckWhenLogSearchNotAvailableAsServiceAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testCheckWhenLogSearchNotAvailableAsAdministrator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingSearchPropertyProviderTest.testCheckWhenLogSearchNotAvailableAsAdministrator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LogQueryResponseTest.testBasicParsing]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LogQueryResponseTest.testBasicParsing
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImplTest.testHelperCreationWithNoLogSearchServersAvailable]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImplTest.testHelperCreationWithNoLogSearchServersAvailable
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImplTest.testHelperCreationLogSearchServerNotStarted]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImplTest.testHelperCreationLogSearchServerNotStarted
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImplTest.testHelperCreation]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LoggingRequestHelperFactoryImplTest.testHelperCreation
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LogLineResultTest.testBasicParsing]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LogLineResultTest.testBasicParsing
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LogLevelQueryResponseTest.testBasicParsing]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LogLevelQueryResponseTest.testBasicParsing
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.controller.logging.LogSearchDataRetrievalServiceTest.testGetTailFileWhenHelperIsAvailable]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.controller.logging.LogSearchDataRetrievalServiceTest.testGetTailFileWhenHelperIsAvailable
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_QueryInBody]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_QueryInBody
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse___Array_NoArrayBrackets]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse___Array_NoArrayBrackets
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_Array]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_Array
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_MultiBody]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_MultiBody
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_EmptyBody]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse_EmptyBody
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.parsers.JsonRequestBodyParserTest.testParse
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.serializers.CsvSerializerTest.testSerializeResources_HeaderInfo]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.serializers.CsvSerializerTest.testSerializeResources_HeaderInfo
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.serializers.JsonSerializerTest.testSerializeResources]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.serializers.JsonSerializerTest.testSerializeResources
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.serializers.JsonSerializerTest.testDeleteResultMetadata]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.serializers.JsonSerializerTest.testDeleteResultMetadata
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.serializers.JsonSerializerTest.testSerializeResourcesAsArray]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.serializers.JsonSerializerTest.testSerializeResourcesAsArray
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.DeleteResultMetaDataTest.testDeletedKeys]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.DeleteResultMetaDataTest.testDeletedKeys
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.PersistenceManagerImplTest.testPersistenceManagerImplAsServiceOperator]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.PersistenceManagerImplTest.testPersistenceManagerImplAsServiceOperator
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.PersistenceManagerImplTest.testPersistenceManagerImplAsClusterUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.PersistenceManagerImplTest.testPersistenceManagerImplAsClusterUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.LoggingServiceTest.testGetSearchEngineWhenLogSearchNotRunningAsClusterUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.LoggingServiceTest.testGetSearchEngineWhenLogSearchNotRunningAsClusterUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.BaseRequestTest.testParseRenderer_formatSpecified]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.BaseRequestTest.testParseRenderer_formatSpecified
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.BaseRequestTest.testParseRenderer_minimalResponse]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.BaseRequestTest.testParseRenderer_minimalResponse
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.BaseRequestTest.testGetFields]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.BaseRequestTest.testGetFields
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.api.services.BaseRequestTest.testProcess_QueryInBodyAndURI]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.api.services.BaseRequestTest.testProcess_QueryInBodyAndURI
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.serveraction.kerberos.KerberosServerActionTest.testGetPrincipalPasswordMapStatic]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.AbstractSecurityHeaderFilterTest.testDoFilter_DefaultValuesSSL
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.AESEncryptorTest.testEncryptionDecryption]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.AESEncryptorTest.testEncryptionDecryption
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testIsCredentialPersisted]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testIsCredentialPersisted
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testContainsCredential]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testContainsCredential
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testUpdateCredential]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testUpdateCredential
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testRemoveCredential_Either]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testRemoveCredential_Either
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testRemoveCredential_Persisted]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testRemoveCredential_Persisted
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testRemoveCredential_Temporary]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testRemoveCredential_Temporary
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testFailNotInitialized]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreServiceImplTest.testFailNotInitialized
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialProviderTest.testIsAliasString]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialProviderTest.testIsAliasString
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreTest.testInMemoryCredentialStoreService_CredentialExpired]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreTest.testInMemoryCredentialStoreService_CredentialExpired
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreTest.testInMemoryCredentialStoreService_RemoveCredential]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreTest.testInMemoryCredentialStoreService_RemoveCredential
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.encryption.CredentialStoreTest.testFileBasedCredentialStoreService_AddCredentialToStoreWithPersistMaster]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.encryption.CredentialStoreTest.testFileBasedCredentialStoreService_AddCredentialToStoreWithPersistMaster
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.SslExecutionTest.testSslLogging]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.SslExecutionTest.testSslLogging
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.SecurityHelperImplTest.testSecurityHelperWithUserDetails]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.SecurityHelperImplTest.testSecurityHelperWithUserDetails
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.SecurityHelperImplTest.testSecurityHelperWithUnknownPrincipal]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.SecurityHelperImplTest.testSecurityHelperWithUnknownPrincipal
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.SecurityHelperImplTest.testSecurityHelperWithUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.SecurityHelperImplTest.testSecurityHelperWithUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.jwt.JwtAuthenticationFilterTest.testShouldApplyFalseNotEnabled]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.jwt.JwtAuthenticationFilterTest.testShouldApplyFalseNotEnabled
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.jwt.JwtAuthenticationFilterTest.testShouldApplyFalseMissingCookie]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.jwt.JwtAuthenticationFilterTest.testShouldApplyFalseMissingCookie
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.jwt.JwtAuthenticationFilterTest.testShouldApplyTrue]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.jwt.JwtAuthenticationFilterTest.testShouldApplyTrue
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterWithIncorrectUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterWithIncorrectUser
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterWithoutUserToken]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterWithoutUserToken
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterWithoutInternalToken]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterWithoutInternalToken
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterValid]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariUserAuthenticationFilterTest.testDoFilterValid
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_stackAdvisorCalls]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_stackAdvisorCalls
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_viewNotLoggedIn]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_viewNotLoggedIn
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_userNoPermissionsAccess]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_userNoPermissionsAccess
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_viewUserAccess]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_viewUserAccess
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_adminAccess]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthorizationFilterTest.testDoFilter_adminAccess
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testIsAuthenticated]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testIsAuthenticated
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetCredentials]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetCredentials
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetAuthorities]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetAuthorities
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetUserDetailPrincipal]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetUserDetailPrincipal
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetPrincipalWithLoginAlias]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetPrincipalWithLoginAlias
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetDetails]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.security.authorization.AmbariAuthenticationTest.testGetDetails
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactoryTest.invalidProfilePassed]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactoryTest.invalidProfilePassed
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactoryTest.invalidJsonPassed]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactoryTest.invalidJsonPassed
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactoryTest.nullStringPassed]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.quicklinksprofile.QuickLinkVisibilityControllerFactoryTest.nullStringPassed
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParserTest.testParseInconsistentProfile_misspelledFilerDefinition]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParserTest.testParseInconsistentProfile_misspelledFilerDefinition
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParserTest.testParseInconsistentProfile_ambigousFilterDefinition]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileParserTest.testParseInconsistentProfile_ambigousFilterDefinition
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilderTest.testBuildProfileInvalidProfileDefiniton_invalidAttribute]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.quicklinksprofile.QuickLinksProfileBuilderTest.testBuildProfileInvalidProfileDefiniton_invalidAttribute
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckClusterMissing]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckClusterMissing
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckBypassesFailure]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckBypassesFailure
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckThrowsException]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckThrowsException
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckNotApplicable]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.state.CheckHelperTest.testPreUpgradeCheckNotApplicable
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.topology.ConfigureClusterTaskTest.testsShouldConfigureClusterTaskExecuteWhenCalledFromAsyncCallableService]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.validation.InstanceValidationResultImplTest.testGetPropertyResults
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testCheckViewVersions]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewRegistryTest.testCheckViewVersions
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewRegistryTest.testOnAmbariEventServiceCreation_missingClusterService]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewContextImplTest.testGetURLStreamProvider
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewContextImplTest.testGetInstanceName]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewContextImplTest.testGetInstanceName
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewContextImplTest.testGetViewName]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewContextImplTest.testGetViewName
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewContextImplTest.testGetResourceProvider]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewContextImplTest.testGetResourceProvider
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewContextImplTest.testGetCluster]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewContextImplTest.testGetCluster
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ClusterImplTest.testGetHostsForServiceComponent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ClusterImplTest.testGetHostsForServiceComponent
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ClusterImplTest.testGetConfigurationValue]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ClusterImplTest.testGetConfigurationValue
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ClusterImplTest.testGetName]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ClusterImplTest.testGetName
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.events.EventImplTest.testGetViewInstanceSubject]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.events.EventImplTest.testGetViewInstanceSubject
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.events.EventImplTest.testGetId]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.events.EventImplTest.testGetId
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.events.EventImplTest.testGetProperties]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.events.EventImplTest.testGetProperties
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testGetConnectionCurrent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testGetConnectionCurrent
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testGetConnectionAs]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testGetConnectionAs
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testGetConnection]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testGetConnection
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadAsCurrentInputStream]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadAsCurrentInputStream
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadAs]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadAs
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadFromNullBody]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadFromNullBody
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadFrom]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadFrom
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadAsInputStream]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewURLStreamProviderTest.testReadAsInputStream
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewArchiveUtilityTest.testValidateConfig]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewArchiveUtilityTest.testValidateConfig
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationUtilityTest.testMigrateDataDifferentVersionsCancel]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationUtilityTest.testMigrateDataDifferentVersionsCancel
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewDataMigrationUtilityTest.testMigrateDataSameVersions]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewDataMigrationUtilityTest.testMigrateDataSameVersions
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewClassLoaderTest.testLoadClass]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewClassLoaderTest.testLoadClass
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewClassLoaderTest.testGetResource]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewClassLoaderTest.testGetResource
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.uninstallViewInstance]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewInstanceOperationHandlerTest.uninstallViewInstance
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.validation.ValidationResultImplTest.testGetDetail]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.validation.ValidationResultImplTest.testGetDetail
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.validation.ValidationResultImplTest.testIsValid]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.validation.ValidationResultImplTest.testIsValid
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.validation.InstanceValidationResultImplTest.testToJson]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.validation.InstanceValidationResultImplTest.testToJson
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.validation.InstanceValidationResultImplTest.testGetPropertyResults]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewAmbariStreamProviderTest.testReadFrom
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewContextImplTest.testGetURLConnectionProvider]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.ambari.server.view.ViewContextImplTest.testGetURLConnectionProvider
+Intended behavior: FAILURE
+when executed after: [org.apache.ambari.server.view.ViewContextImplTest.testGetURLStreamProvider]
+The revealed different behavior: PASS
+when executed after: []
+

@@ -1,0 +1,740 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Logsearch Integration Test 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ambari-logsearch-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ambari-logsearch-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ ambari-logsearch-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.622 s
+[INFO] Finished at: 2018-03-26T20:14:12-05:00
+[INFO] Final Memory: 31M/432M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Logsearch Integration Test 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ambari-logsearch-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ ambari-logsearch-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ ambari-logsearch-it ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-logsearch-it ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/README.md
+[INFO] Exclude: **/*.json
+[INFO] Exclude: **/*.log
+[INFO] Exclude: **/*.txt
+[INFO] Exclude: **/*.story
+[INFO] Exclude: **/*.editorconfig
+[INFO] Exclude: **/src/vendor/**
+[INFO] Exclude: **/yarn.lock
+[INFO] Exclude: **/docker/Profile
+[INFO] Exclude: **/docker/.env
+[INFO] Exclude: **/node_modules/**
+[INFO] Exclude: **/dist/**
+[INFO] 13 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 13 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-logsearch-it ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/target/ambari-logsearch-it-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-logsearch-it/2.0.0.0-SNAPSHOT/ambari-logsearch-it-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-logsearch-it/2.0.0.0-SNAPSHOT/ambari-logsearch-it-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-logsearch-it ---
+[INFO] Copying ambari-logsearch-config-zookeeper-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/target/dependency/ambari-logsearch-config-zookeeper-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying ambari-logsearch-logfeeder-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/target/dependency/ambari-logsearch-logfeeder-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying ambari-logsearch-web-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/target/dependency/ambari-logsearch-web-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying ambari-logsearch-server-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-logsearch/ambari-logsearch-it/target/dependency/ambari-logsearch-server-2.0.0.0-SNAPSHOT.jar
+[INFO] htrace-core-3.1.0-incubating.jar already exists in destination.
+[INFO] websocket-client-9.4.6.v20170531.jar already exists in destination.
+[INFO] protobuf-java-2.5.0.jar already exists in destination.
+[INFO] jjwt-0.6.0.jar already exists in destination.
+[INFO] cglib-3.2.4.jar already exists in destination.
+[INFO] mimepull-1.9.6.jar already exists in destination.
+[INFO] selenium-iphone-driver-2.26.0.jar already exists in destination.
+[INFO] config-types-2.5.0-b32.jar already exists in destination.
+[INFO] jbehave-web-selenium-3.5.5.jar already exists in destination.
+[INFO] spring-boot-starter-tomcat-1.5.6.RELEASE.jar already exists in destination.
+[INFO] spring-expression-4.3.10.RELEASE.jar already exists in destination.
+[INFO] ambari-logsearch-appender-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] commons-logging-1.1.1.jar already exists in destination.
+[INFO] commons-beanutils-1.9.2.jar already exists in destination.
+[INFO] javax.servlet-3.0.0.v201112011016.jar already exists in destination.
+[INFO] kafka-clients-0.9.0.0.jar already exists in destination.
+[INFO] spring-security-core-3.1.2.RELEASE.jar already exists in destination.
+[INFO] spring-context-support-4.3.10.RELEASE.jar already exists in destination.
+[INFO] jackson-jaxrs-base-2.6.4.jar already exists in destination.
+[INFO] spring-context-4.3.10.RELEASE.jar already exists in destination.
+[INFO] xml-apis-1.3.04.jar already exists in destination.
+[INFO] commons-cli-1.3.1.jar already exists in destination.
+[INFO] hibernate-validator-5.3.5.Final.jar already exists in destination.
+[INFO] spring-data-solr-2.0.2.RELEASE.jar already exists in destination.
+[INFO] plexus-utils-3.0.10.jar already exists in destination.
+[INFO] swagger-jaxrs-1.5.10.jar already exists in destination.
+[INFO] slf4j-api-1.7.20.jar already exists in destination.
+[INFO] jersey-container-servlet-2.25.1.jar already exists in destination.
+[INFO] commons-net-3.1.jar already exists in destination.
+[INFO] swagger-models-1.5.10.jar already exists in destination.
+[INFO] hadoop-annotations-2.7.0.jar already exists in destination.
+[INFO] spring-boot-starter-jetty-1.5.6.RELEASE.jar already exists in destination.
+[INFO] swagger-ui-2.1.0.jar already exists in destination.
+[INFO] jersey-media-jaxb-2.25.1.jar already exists in destination.
+[INFO] htmlunit-2.10.jar already exists in destination.
+[INFO] javassist-3.18.1-GA.jar already exists in destination.
+[INFO] jersey-spring3-2.25.1.jar already exists in destination.
+[INFO] spring-aop-4.3.10.RELEASE.jar already exists in destination.
+[INFO] jsr311-api-1.1.1.jar already exists in destination.
+[INFO] httpcore-4.4.1.jar already exists in destination.
+[INFO] jetty-server-8.1.19.v20160209.jar already exists in destination.
+[INFO] spring-beans-4.3.10.RELEASE.jar already exists in destination.
+[INFO] joda-time-2.2.jar already exists in destination.
+[INFO] osgi-resource-locator-1.0.1.jar already exists in destination.
+[INFO] jersey-entity-filtering-2.25.1.jar already exists in destination.
+[INFO] commons-lang-2.5.jar already exists in destination.
+[INFO] jetty-6.1.26.jar already exists in destination.
+[INFO] jetty-continuation-8.1.19.v20160209.jar already exists in destination.
+[INFO] snakeyaml-1.13.jar already exists in destination.
+[INFO] jersey-bean-validation-2.25.jar already exists in destination.
+[INFO] jackson-core-asl-1.9.9.jar already exists in destination.
+[INFO] servlet-api-2.5.jar already exists in destination.
+[INFO] spring-security-web-3.1.2.RELEASE.jar already exists in destination.
+[INFO] spring-boot-starter-1.0.2.RELEASE.jar already exists in destination.
+[INFO] spring-boot-starter-web-1.5.6.RELEASE.jar already exists in destination.
+[INFO] javax.inject-2.4.0-b34.jar already exists in destination.
+[INFO] jetty-util-8.1.19.v20160209.jar already exists in destination.
+[INFO] jets3t-0.9.0.jar already exists in destination.
+[INFO] javax-websocket-server-impl-9.4.6.v20170531.jar already exists in destination.
+[INFO] websocket-common-9.4.6.v20170531.jar already exists in destination.
+[INFO] hk2-config-2.5.0-b32.jar already exists in destination.
+[INFO] slf4j-log4j12-1.7.20.jar already exists in destination.
+[INFO] commons-collections4-4.0.jar already exists in destination.
+[INFO] log4j-1.2.17.jar already exists in destination.
+[INFO] javax.el-2.2.4.jar already exists in destination.
+[INFO] apacheds-kerberos-codec-2.0.0-M15.jar already exists in destination.
+[INFO] curator-recipes-2.12.0.jar already exists in destination.
+[INFO] antlr-2.7.7.jar already exists in destination.
+[INFO] paranamer-2.4.jar already exists in destination.
+[INFO] jersey-media-json-jackson-2.25.1.jar already exists in destination.
+[INFO] curator-client-2.12.0.jar already exists in destination.
+[INFO] jul-to-slf4j-1.7.20.jar already exists in destination.
+[INFO] spring-security-kerberos-core-1.0.1.RELEASE.jar already exists in destination.
+[INFO] hadoop-auth-2.7.0.jar already exists in destination.
+[INFO] snappy-java-1.1.1.7.jar already exists in destination.
+[INFO] xstream-1.4.7.jar already exists in destination.
+[INFO] jackson-mapper-asl-1.9.13.jar already exists in destination.
+[INFO] httpclient-4.4.1.jar already exists in destination.
+[INFO] javax.ws.rs-api-2.0.1.jar already exists in destination.
+[INFO] guava-11.0.1.jar already exists in destination.
+[INFO] jsp-api-2.1.jar already exists in destination.
+[INFO] spring-data-commons-1.12.2.RELEASE.jar already exists in destination.
+[INFO] tomcat-embed-core-8.5.16.jar already exists in destination.
+[INFO] grok-0.1.4.jar already exists in destination.
+[INFO] tomcat-embed-el-8.5.16.jar already exists in destination.
+[INFO] websocket-servlet-9.4.6.v20170531.jar already exists in destination.
+[INFO] lucene-core-6.6.2.jar already exists in destination.
+[INFO] jersey-server-2.25.1.jar already exists in destination.
+[INFO] commons-configuration-1.6.jar already exists in destination.
+[INFO] commons-digester-1.8.jar already exists in destination.
+[INFO] apacheds-i18n-2.0.0-M15.jar already exists in destination.
+[INFO] swagger-annotations-1.5.10.jar already exists in destination.
+[INFO] aws-java-sdk-core-1.11.5.jar already exists in destination.
+[INFO] spring-boot-starter-security-1.5.6.RELEASE.jar already exists in destination.
+[INFO] commons-collections-3.2.1.jar already exists in destination.
+[INFO] selenium-support-2.26.0.jar already exists in destination.
+[INFO] xpp3_min-1.1.4c.jar already exists in destination.
+[INFO] nekohtml-1.9.16.jar already exists in destination.
+[INFO] selenium-android-driver-2.26.0.jar already exists in destination.
+[INFO] jersey-guava-2.23.1.jar already exists in destination.
+[INFO] spring-web-3.0.7.RELEASE.jar already exists in destination.
+[INFO] lz4-1.2.0.jar already exists in destination.
+[INFO] xercesImpl-2.9.1.jar already exists in destination.
+[INFO] selenium-java-2.26.0.jar already exists in destination.
+[INFO] spring-security-kerberos-client-1.0.1.RELEASE.jar already exists in destination.
+[INFO] commons-exec-1.1.jar already exists in destination.
+[INFO] jna-3.4.0.jar already exists in destination.
+[INFO] websocket-server-9.4.6.v20170531.jar already exists in destination.
+[INFO] spring-boot-autoconfigure-1.5.6.RELEASE.jar already exists in destination.
+[INFO] spring-webmvc-4.3.10.RELEASE.jar already exists in destination.
+[INFO] spring-tx-3.0.7.RELEASE.jar already exists in destination.
+[INFO] webbit-0.4.14.jar already exists in destination.
+[INFO] hk2-runlevel-2.5.0-b32.jar already exists in destination.
+[INFO] jackson-dataformat-cbor-2.6.6.jar already exists in destination.
+[INFO] netty-all-4.0.23.Final.jar already exists in destination.
+[INFO] noggit-0.6.jar already exists in destination.
+[INFO] aws-java-sdk-s3-1.11.5.jar already exists in destination.
+[INFO] commons-codec-1.8.jar already exists in destination.
+[INFO] javax.el-api-2.2.4.jar already exists in destination.
+[INFO] selenium-firefox-driver-2.26.0.jar already exists in destination.
+[INFO] selenium-safari-driver-2.26.0.jar already exists in destination.
+[INFO] zookeeper-3.4.10.jar already exists in destination.
+[INFO] asm-5.1.jar already exists in destination.
+[INFO] netty-3.6.2.Final.jar already exists in destination.
+[INFO] commons-httpclient-3.1.jar already exists in destination.
+[INFO] jersey-common-2.23.1.jar already exists in destination.
+[INFO] commons-lang3-3.4.jar already exists in destination.
+[INFO] solr-core-6.6.2.jar already exists in destination.
+[INFO] sac-1.3.jar already exists in destination.
+[INFO] aws-java-sdk-kms-1.11.5.jar already exists in destination.
+[INFO] serializer-2.7.1.jar already exists in destination.
+[INFO] aopalliance-1.0.jar already exists in destination.
+[INFO] jackson-datatype-joda-2.4.5.jar already exists in destination.
+[INFO] spring-jdbc-3.0.7.RELEASE.jar already exists in destination.
+[INFO] jackson-module-jaxb-annotations-2.6.4.jar already exists in destination.
+[INFO] javax-websocket-client-impl-9.4.6.v20170531.jar already exists in destination.
+[INFO] spring-security-kerberos-web-1.0.1.RELEASE.jar already exists in destination.
+[INFO] spring-boot-starter-jersey-1.5.6.RELEASE.jar already exists in destination.
+[INFO] leveldbjni-all-1.8.jar already exists in destination.
+[INFO] selenium-api-2.26.0.jar already exists in destination.
+[INFO] selenium-ie-driver-2.26.0.jar already exists in destination.
+[INFO] swagger-core-1.5.10.jar already exists in destination.
+[INFO] tomcat-embed-websocket-8.5.16.jar already exists in destination.
+[INFO] spring-boot-starter-log4j-1.3.8.RELEASE.jar already exists in destination.
+[INFO] htmlunit-core-js-2.10.jar already exists in destination.
+[INFO] javax.websocket-api-1.0.jar already exists in destination.
+[INFO] ant-launcher-1.7.1.jar already exists in destination.
+[INFO] spring-boot-starter-freemarker-1.5.6.RELEASE.jar already exists in destination.
+[INFO] jackson-dataformat-yaml-2.4.5.jar already exists in destination.
+[INFO] validation-api-1.1.0.Final.jar already exists in destination.
+[INFO] class-model-2.5.0-b32.jar already exists in destination.
+[INFO] jetty-http-9.4.6.v20170531.jar already exists in destination.
+[INFO] commons-compress-1.11.jar already exists in destination.
+[INFO] jbehave-core-4.0.5.jar already exists in destination.
+[INFO] asm-tree-5.1.jar already exists in destination.
+[INFO] asm-all-repackaged-2.5.0-b32.jar already exists in destination.
+[INFO] jsr305-1.3.9.jar already exists in destination.
+[INFO] bcpkix-jdk15on-1.55.jar already exists in destination.
+[INFO] hk2-api-2.4.0-b34.jar already exists in destination.
+[INFO] bcprov-jdk15on-1.55.jar already exists in destination.
+[INFO] spring-boot-configuration-processor-1.5.6.RELEASE.jar already exists in destination.
+[INFO] jackson-databind-2.6.4.jar already exists in destination.
+[INFO] spring-core-4.3.10.RELEASE.jar already exists in destination.
+[INFO] reflections-0.9.10.jar already exists in destination.
+[INFO] spring-security-config-3.1.2.RELEASE.jar already exists in destination.
+[INFO] ambari-logsearch-config-api-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] hamcrest-integration-1.3.jar already exists in destination.
+[INFO] jetty-annotations-9.4.6.v20170531.jar already exists in destination.
+[INFO] ambari-utility-1.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] jetty-plus-9.4.6.v20170531.jar already exists in destination.
+[INFO] jersey-media-multipart-2.25.1.jar already exists in destination.
+[INFO] spring-bridge-2.5.0-b32.jar already exists in destination.
+[INFO] selenium-chrome-driver-2.26.0.jar already exists in destination.
+[INFO] jetty-xml-8.1.19.v20160209.jar already exists in destination.
+[INFO] gson-2.2.2.jar already exists in destination.
+[INFO] javax.inject-1.jar already exists in destination.
+[INFO] spring-boot-starter-validation-1.5.6.RELEASE.jar already exists in destination.
+[INFO] java-xmlbuilder-0.4.jar already exists in destination.
+[INFO] jcl-over-slf4j-1.7.20.jar already exists in destination.
+[INFO] javax.servlet-api-3.1.0.jar already exists in destination.
+[INFO] commons-beanutils-core-1.8.0.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.2.jar already exists in destination.
+[INFO] commons-math3-3.4.1.jar already exists in destination.
+[INFO] jersey-client-2.23.1.jar already exists in destination.
+[INFO] xalan-2.7.1.jar already exists in destination.
+[INFO] commons-csv-1.1.jar already exists in destination.
+[INFO] apache-el-8.0.33.jar already exists in destination.
+[INFO] jsch-0.1.42.jar already exists in destination.
+[INFO] hk2-utils-2.4.0-b34.jar already exists in destination.
+[INFO] aopalliance-repackaged-2.4.0-b34.jar already exists in destination.
+[INFO] hk2-core-2.5.0-b32.jar already exists in destination.
+[INFO] spring-test-4.3.10.RELEASE.jar already exists in destination.
+[INFO] jetty-client-8.1.19.v20160209.jar already exists in destination.
+[INFO] selenium-htmlunit-driver-2.26.0.jar already exists in destination.
+[INFO] platform-3.4.0.jar already exists in destination.
+[INFO] curator-framework-2.12.0.jar already exists in destination.
+[INFO] jboss-logging-3.3.0.Final.jar already exists in destination.
+[INFO] annotations-2.0.1.jar already exists in destination.
+[INFO] json-20080701.jar already exists in destination.
+[INFO] commons-daemon-1.0.13.jar already exists in destination.
+[INFO] hamcrest-library-1.3.jar already exists in destination.
+[INFO] classmate-1.3.1.jar already exists in destination.
+[INFO] jetty-webapp-8.1.19.v20160209.jar already exists in destination.
+[INFO] jersey-media-json-jettison-2.25.1.jar already exists in destination.
+[INFO] cglib-nodep-2.1_3.jar already exists in destination.
+[INFO] jetty-util-6.1.26.jar already exists in destination.
+[INFO] spring-boot-starter-actuator-1.5.6.RELEASE.jar already exists in destination.
+[INFO] xmlpull-1.1.3.1.jar already exists in destination.
+[INFO] asm-commons-5.1.jar already exists in destination.
+[INFO] antlr4-runtime-4.5.3.jar already exists in destination.
+[INFO] checkstyle-6.19.jar already exists in destination.
+[INFO] hamcrest-core-1.3.jar already exists in destination.
+[INFO] cssparser-0.9.7.jar already exists in destination.
+[INFO] woodstox-core-asl-4.4.1.jar already exists in destination.
+[INFO] ant-1.7.1.jar already exists in destination.
+[INFO] spring-boot-actuator-1.5.6.RELEASE.jar already exists in destination.
+[INFO] httpmime-4.4.1.jar already exists in destination.
+[INFO] hadoop-common-2.7.0.jar already exists in destination.
+[INFO] xmlenc-0.52.jar already exists in destination.
+[INFO] zjsonpatch-0.2.4.jar already exists in destination.
+[INFO] api-util-1.0.0-M20.jar already exists in destination.
+[INFO] junit-4.10.jar already exists in destination.
+[INFO] jackson-jaxrs-json-provider-2.6.4.jar already exists in destination.
+[INFO] spring-boot-1.0.2.RELEASE.jar already exists in destination.
+[INFO] aws-java-sdk-iam-1.11.5.jar already exists in destination.
+[INFO] api-asn1-api-1.0.0-M20.jar already exists in destination.
+[INFO] named-regexp-0.2.3.jar already exists in destination.
+[INFO] commons-io-2.5.jar already exists in destination.
+[INFO] lucene-analyzers-common-6.6.2.jar already exists in destination.
+[INFO] selenium-remote-driver-2.26.0.jar already exists in destination.
+[INFO] jersey-core-1.19.jar already exists in destination.
+[INFO] jetty-io-9.4.6.v20170531.jar already exists in destination.
+[INFO] jackson-xc-1.9.9.jar already exists in destination.
+[INFO] jackson-dataformat-xml-2.4.5.jar already exists in destination.
+[INFO] hk2-2.5.0-b32.jar already exists in destination.
+[INFO] jetty-security-8.1.19.v20160209.jar already exists in destination.
+[INFO] freemarker-2.3.20.jar already exists in destination.
+[INFO] jetty-servlet-8.1.19.v20160209.jar already exists in destination.
+[INFO] jackson-annotations-2.6.0.jar already exists in destination.
+[INFO] javax.annotation-api-1.2.jar already exists in destination.
+[INFO] websocket-api-9.4.6.v20170531.jar already exists in destination.
+[INFO] stax2-api-3.1.4.jar already exists in destination.
+[INFO] jettison-1.1.jar already exists in destination.
+[INFO] hk2-locator-2.4.0-b34.jar already exists in destination.
+[INFO] jersey-container-servlet-core-2.25.1.jar already exists in destination.
+[INFO] swagger-jersey2-jaxrs-1.5.16.jar already exists in destination.
+[INFO] solr-solrj-6.6.2.jar already exists in destination.
+[INFO] android-json-0.0.20131108.vaadin1.jar already exists in destination.
+[INFO] jetty-servlets-8.1.19.v20160209.jar already exists in destination.
+[INFO] jersey-server-1.19.jar already exists in destination.
+[INFO] avro-1.7.4.jar already exists in destination.
+[INFO] jackson-core-2.6.4.jar already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.263 s
+[INFO] Finished at: 2018-03-26T20:14:20-05:00
+[INFO] Final Memory: 42M/499M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Logsearch Integration Test 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-logsearch/ambari-logsearch-it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ambari-logsearch-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-logsearch/ambari-logsearch-it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ambari-logsearch-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ ambari-logsearch-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.997 s
+[INFO] Finished at: 2018-03-26T20:14:26-05:00
+[INFO] Final Memory: 31M/425M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Logsearch Integration Test 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-logsearch/ambari-logsearch-it/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ ambari-logsearch-it ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-logsearch-it ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ ambari-logsearch-it ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ ambari-logsearch-it ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-logsearch-it ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/README.md
+[INFO] Exclude: **/*.json
+[INFO] Exclude: **/*.log
+[INFO] Exclude: **/*.txt
+[INFO] Exclude: **/*.story
+[INFO] Exclude: **/*.editorconfig
+[INFO] Exclude: **/src/vendor/**
+[INFO] Exclude: **/yarn.lock
+[INFO] Exclude: **/docker/Profile
+[INFO] Exclude: **/docker/.env
+[INFO] Exclude: **/node_modules/**
+[INFO] Exclude: **/dist/**
+[INFO] 13 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 13 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-logsearch-it ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-logsearch-it ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-logsearch/ambari-logsearch-it/target/ambari-logsearch-it-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-logsearch-it/2.0.0.0-SNAPSHOT/ambari-logsearch-it-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-logsearch/ambari-logsearch-it/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-logsearch-it/2.0.0.0-SNAPSHOT/ambari-logsearch-it-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-logsearch-it ---
+[INFO] Copying ambari-logsearch-server-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-logsearch/ambari-logsearch-it/target/dependency/ambari-logsearch-server-2.0.0.0-SNAPSHOT.jar
+[INFO] htrace-core-3.1.0-incubating.jar already exists in destination.
+[INFO] websocket-client-9.4.6.v20170531.jar already exists in destination.
+[INFO] protobuf-java-2.5.0.jar already exists in destination.
+[INFO] jjwt-0.6.0.jar already exists in destination.
+[INFO] cglib-3.2.4.jar already exists in destination.
+[INFO] mimepull-1.9.6.jar already exists in destination.
+[INFO] selenium-iphone-driver-2.26.0.jar already exists in destination.
+[INFO] config-types-2.5.0-b32.jar already exists in destination.
+[INFO] jbehave-web-selenium-3.5.5.jar already exists in destination.
+[INFO] spring-boot-starter-tomcat-1.5.6.RELEASE.jar already exists in destination.
+[INFO] spring-expression-4.3.10.RELEASE.jar already exists in destination.
+[INFO] ambari-logsearch-appender-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] commons-logging-1.1.1.jar already exists in destination.
+[INFO] commons-beanutils-1.9.2.jar already exists in destination.
+[INFO] javax.servlet-3.0.0.v201112011016.jar already exists in destination.
+[INFO] kafka-clients-0.9.0.0.jar already exists in destination.
+[INFO] spring-security-core-3.1.2.RELEASE.jar already exists in destination.
+[INFO] spring-context-support-4.3.10.RELEASE.jar already exists in destination.
+[INFO] jackson-jaxrs-base-2.6.4.jar already exists in destination.
+[INFO] spring-context-4.3.10.RELEASE.jar already exists in destination.
+[INFO] xml-apis-1.3.04.jar already exists in destination.
+[INFO] commons-cli-1.3.1.jar already exists in destination.
+[INFO] hibernate-validator-5.3.5.Final.jar already exists in destination.
+[INFO] spring-data-solr-2.0.2.RELEASE.jar already exists in destination.
+[INFO] plexus-utils-3.0.10.jar already exists in destination.
+[INFO] swagger-jaxrs-1.5.10.jar already exists in destination.
+[INFO] slf4j-api-1.7.20.jar already exists in destination.
+[INFO] jersey-container-servlet-2.25.1.jar already exists in destination.
+[INFO] commons-net-3.1.jar already exists in destination.
+[INFO] swagger-models-1.5.10.jar already exists in destination.
+[INFO] hadoop-annotations-2.7.0.jar already exists in destination.
+[INFO] spring-boot-starter-jetty-1.5.6.RELEASE.jar already exists in destination.
+[INFO] swagger-ui-2.1.0.jar already exists in destination.
+[INFO] jersey-media-jaxb-2.25.1.jar already exists in destination.
+[INFO] htmlunit-2.10.jar already exists in destination.
+[INFO] javassist-3.18.1-GA.jar already exists in destination.
+[INFO] jersey-spring3-2.25.1.jar already exists in destination.
+[INFO] spring-aop-4.3.10.RELEASE.jar already exists in destination.
+[INFO] jsr311-api-1.1.1.jar already exists in destination.
+[INFO] httpcore-4.4.1.jar already exists in destination.
+[INFO] jetty-server-8.1.19.v20160209.jar already exists in destination.
+[INFO] spring-beans-4.3.10.RELEASE.jar already exists in destination.
+[INFO] joda-time-2.2.jar already exists in destination.
+[INFO] osgi-resource-locator-1.0.1.jar already exists in destination.
+[INFO] jersey-entity-filtering-2.25.1.jar already exists in destination.
+[INFO] commons-lang-2.5.jar already exists in destination.
+[INFO] jetty-6.1.26.jar already exists in destination.
+[INFO] jetty-continuation-8.1.19.v20160209.jar already exists in destination.
+[INFO] snakeyaml-1.13.jar already exists in destination.
+[INFO] jersey-bean-validation-2.25.jar already exists in destination.
+[INFO] jackson-core-asl-1.9.9.jar already exists in destination.
+[INFO] servlet-api-2.5.jar already exists in destination.
+[INFO] spring-security-web-3.1.2.RELEASE.jar already exists in destination.
+[INFO] spring-boot-starter-1.0.2.RELEASE.jar already exists in destination.
+[INFO] spring-boot-starter-web-1.5.6.RELEASE.jar already exists in destination.
+[INFO] javax.inject-2.4.0-b34.jar already exists in destination.
+[INFO] jetty-util-8.1.19.v20160209.jar already exists in destination.
+[INFO] jets3t-0.9.0.jar already exists in destination.
+[INFO] javax-websocket-server-impl-9.4.6.v20170531.jar already exists in destination.
+[INFO] websocket-common-9.4.6.v20170531.jar already exists in destination.
+[INFO] hk2-config-2.5.0-b32.jar already exists in destination.
+[INFO] ambari-metrics-common-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] slf4j-log4j12-1.7.20.jar already exists in destination.
+[INFO] commons-collections4-4.0.jar already exists in destination.
+[INFO] log4j-1.2.17.jar already exists in destination.
+[INFO] javax.el-2.2.4.jar already exists in destination.
+[INFO] apacheds-kerberos-codec-2.0.0-M15.jar already exists in destination.
+[INFO] curator-recipes-2.12.0.jar already exists in destination.
+[INFO] antlr-2.7.7.jar already exists in destination.
+[INFO] paranamer-2.4.jar already exists in destination.
+[INFO] jersey-media-json-jackson-2.25.1.jar already exists in destination.
+[INFO] curator-client-2.12.0.jar already exists in destination.
+[INFO] jul-to-slf4j-1.7.20.jar already exists in destination.
+[INFO] spring-security-kerberos-core-1.0.1.RELEASE.jar already exists in destination.
+[INFO] hadoop-auth-2.7.0.jar already exists in destination.
+[INFO] snappy-java-1.1.1.7.jar already exists in destination.
+[INFO] xstream-1.4.7.jar already exists in destination.
+[INFO] jackson-mapper-asl-1.9.13.jar already exists in destination.
+[INFO] httpclient-4.4.1.jar already exists in destination.
+[INFO] javax.ws.rs-api-2.0.1.jar already exists in destination.
+[INFO] guava-11.0.1.jar already exists in destination.
+[INFO] jsp-api-2.1.jar already exists in destination.
+[INFO] spring-data-commons-1.12.2.RELEASE.jar already exists in destination.
+[INFO] tomcat-embed-core-8.5.16.jar already exists in destination.
+[INFO] grok-0.1.4.jar already exists in destination.
+[INFO] tomcat-embed-el-8.5.16.jar already exists in destination.
+[INFO] ambari-logsearch-logfeeder-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] websocket-servlet-9.4.6.v20170531.jar already exists in destination.
+[INFO] lucene-core-6.6.2.jar already exists in destination.
+[INFO] jersey-server-2.25.1.jar already exists in destination.
+[INFO] commons-configuration-1.6.jar already exists in destination.
+[INFO] commons-digester-1.8.jar already exists in destination.
+[INFO] apacheds-i18n-2.0.0-M15.jar already exists in destination.
+[INFO] swagger-annotations-1.5.10.jar already exists in destination.
+[INFO] aws-java-sdk-core-1.11.5.jar already exists in destination.
+[INFO] spring-boot-starter-security-1.5.6.RELEASE.jar already exists in destination.
+[INFO] commons-collections-3.2.1.jar already exists in destination.
+[INFO] selenium-support-2.26.0.jar already exists in destination.
+[INFO] xpp3_min-1.1.4c.jar already exists in destination.
+[INFO] nekohtml-1.9.16.jar already exists in destination.
+[INFO] selenium-android-driver-2.26.0.jar already exists in destination.
+[INFO] jersey-guava-2.23.1.jar already exists in destination.
+[INFO] spring-web-3.0.7.RELEASE.jar already exists in destination.
+[INFO] lz4-1.2.0.jar already exists in destination.
+[INFO] xercesImpl-2.9.1.jar already exists in destination.
+[INFO] selenium-java-2.26.0.jar already exists in destination.
+[INFO] spring-security-kerberos-client-1.0.1.RELEASE.jar already exists in destination.
+[INFO] commons-exec-1.1.jar already exists in destination.
+[INFO] jna-3.4.0.jar already exists in destination.
+[INFO] websocket-server-9.4.6.v20170531.jar already exists in destination.
+[INFO] spring-boot-autoconfigure-1.5.6.RELEASE.jar already exists in destination.
+[INFO] spring-webmvc-4.3.10.RELEASE.jar already exists in destination.
+[INFO] spring-tx-3.0.7.RELEASE.jar already exists in destination.
+[INFO] webbit-0.4.14.jar already exists in destination.
+[INFO] hk2-runlevel-2.5.0-b32.jar already exists in destination.
+[INFO] jackson-dataformat-cbor-2.6.6.jar already exists in destination.
+[INFO] netty-all-4.0.23.Final.jar already exists in destination.
+[INFO] noggit-0.6.jar already exists in destination.
+[INFO] aws-java-sdk-s3-1.11.5.jar already exists in destination.
+[INFO] commons-codec-1.8.jar already exists in destination.
+[INFO] javax.el-api-2.2.4.jar already exists in destination.
+[INFO] selenium-firefox-driver-2.26.0.jar already exists in destination.
+[INFO] selenium-safari-driver-2.26.0.jar already exists in destination.
+[INFO] zookeeper-3.4.10.jar already exists in destination.
+[INFO] asm-5.1.jar already exists in destination.
+[INFO] netty-3.6.2.Final.jar already exists in destination.
+[INFO] commons-httpclient-3.1.jar already exists in destination.
+[INFO] jersey-common-2.23.1.jar already exists in destination.
+[INFO] commons-lang3-3.4.jar already exists in destination.
+[INFO] solr-core-6.6.2.jar already exists in destination.
+[INFO] sac-1.3.jar already exists in destination.
+[INFO] aws-java-sdk-kms-1.11.5.jar already exists in destination.
+[INFO] serializer-2.7.1.jar already exists in destination.
+[INFO] aopalliance-1.0.jar already exists in destination.
+[INFO] jackson-datatype-joda-2.4.5.jar already exists in destination.
+[INFO] spring-jdbc-3.0.7.RELEASE.jar already exists in destination.
+[INFO] jackson-module-jaxb-annotations-2.6.4.jar already exists in destination.
+[INFO] javax-websocket-client-impl-9.4.6.v20170531.jar already exists in destination.
+[INFO] spring-security-kerberos-web-1.0.1.RELEASE.jar already exists in destination.
+[INFO] spring-boot-starter-jersey-1.5.6.RELEASE.jar already exists in destination.
+[INFO] leveldbjni-all-1.8.jar already exists in destination.
+[INFO] selenium-api-2.26.0.jar already exists in destination.
+[INFO] selenium-ie-driver-2.26.0.jar already exists in destination.
+[INFO] swagger-core-1.5.10.jar already exists in destination.
+[INFO] tomcat-embed-websocket-8.5.16.jar already exists in destination.
+[INFO] spring-boot-starter-log4j-1.3.8.RELEASE.jar already exists in destination.
+[INFO] htmlunit-core-js-2.10.jar already exists in destination.
+[INFO] javax.websocket-api-1.0.jar already exists in destination.
+[INFO] ant-launcher-1.7.1.jar already exists in destination.
+[INFO] spring-boot-starter-freemarker-1.5.6.RELEASE.jar already exists in destination.
+[INFO] jackson-dataformat-yaml-2.4.5.jar already exists in destination.
+[INFO] validation-api-1.1.0.Final.jar already exists in destination.
+[INFO] class-model-2.5.0-b32.jar already exists in destination.
+[INFO] jetty-http-9.4.6.v20170531.jar already exists in destination.
+[INFO] commons-compress-1.11.jar already exists in destination.
+[INFO] jbehave-core-4.0.5.jar already exists in destination.
+[INFO] asm-tree-5.1.jar already exists in destination.
+[INFO] asm-all-repackaged-2.5.0-b32.jar already exists in destination.
+[INFO] jsr305-1.3.9.jar already exists in destination.
+[INFO] bcpkix-jdk15on-1.55.jar already exists in destination.
+[INFO] hk2-api-2.4.0-b34.jar already exists in destination.
+[INFO] bcprov-jdk15on-1.55.jar already exists in destination.
+[INFO] spring-boot-configuration-processor-1.5.6.RELEASE.jar already exists in destination.
+[INFO] jackson-databind-2.6.4.jar already exists in destination.
+[INFO] spring-core-4.3.10.RELEASE.jar already exists in destination.
+[INFO] reflections-0.9.10.jar already exists in destination.
+[INFO] spring-security-config-3.1.2.RELEASE.jar already exists in destination.
+[INFO] ambari-logsearch-config-api-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] hamcrest-integration-1.3.jar already exists in destination.
+[INFO] jetty-annotations-9.4.6.v20170531.jar already exists in destination.
+[INFO] ambari-utility-1.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] jetty-plus-9.4.6.v20170531.jar already exists in destination.
+[INFO] jersey-media-multipart-2.25.1.jar already exists in destination.
+[INFO] spring-bridge-2.5.0-b32.jar already exists in destination.
+[INFO] selenium-chrome-driver-2.26.0.jar already exists in destination.
+[INFO] jetty-xml-8.1.19.v20160209.jar already exists in destination.
+[INFO] gson-2.2.2.jar already exists in destination.
+[INFO] javax.inject-1.jar already exists in destination.
+[INFO] spring-boot-starter-validation-1.5.6.RELEASE.jar already exists in destination.
+[INFO] java-xmlbuilder-0.4.jar already exists in destination.
+[INFO] jcl-over-slf4j-1.7.20.jar already exists in destination.
+[INFO] javax.servlet-api-3.1.0.jar already exists in destination.
+[INFO] commons-beanutils-core-1.8.0.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.2.jar already exists in destination.
+[INFO] commons-math3-3.4.1.jar already exists in destination.
+[INFO] jersey-client-2.23.1.jar already exists in destination.
+[INFO] xalan-2.7.1.jar already exists in destination.
+[INFO] commons-csv-1.1.jar already exists in destination.
+[INFO] apache-el-8.0.33.jar already exists in destination.
+[INFO] jsch-0.1.42.jar already exists in destination.
+[INFO] hk2-utils-2.4.0-b34.jar already exists in destination.
+[INFO] aopalliance-repackaged-2.4.0-b34.jar already exists in destination.
+[INFO] hk2-core-2.5.0-b32.jar already exists in destination.
+[INFO] ambari-logsearch-web-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] spring-test-4.3.10.RELEASE.jar already exists in destination.
+[INFO] jetty-client-8.1.19.v20160209.jar already exists in destination.
+[INFO] selenium-htmlunit-driver-2.26.0.jar already exists in destination.
+[INFO] platform-3.4.0.jar already exists in destination.
+[INFO] curator-framework-2.12.0.jar already exists in destination.
+[INFO] jboss-logging-3.3.0.Final.jar already exists in destination.
+[INFO] annotations-2.0.1.jar already exists in destination.
+[INFO] json-20080701.jar already exists in destination.
+[INFO] commons-daemon-1.0.13.jar already exists in destination.
+[INFO] hamcrest-library-1.3.jar already exists in destination.
+[INFO] classmate-1.3.1.jar already exists in destination.
+[INFO] jetty-webapp-8.1.19.v20160209.jar already exists in destination.
+[INFO] jersey-media-json-jettison-2.25.1.jar already exists in destination.
+[INFO] cglib-nodep-2.1_3.jar already exists in destination.
+[INFO] jetty-util-6.1.26.jar already exists in destination.
+[INFO] spring-boot-starter-actuator-1.5.6.RELEASE.jar already exists in destination.
+[INFO] xmlpull-1.1.3.1.jar already exists in destination.
+[INFO] asm-commons-5.1.jar already exists in destination.
+[INFO] antlr4-runtime-4.5.3.jar already exists in destination.
+[INFO] checkstyle-6.19.jar already exists in destination.
+[INFO] hamcrest-core-1.3.jar already exists in destination.
+[INFO] cssparser-0.9.7.jar already exists in destination.
+[INFO] woodstox-core-asl-4.4.1.jar already exists in destination.
+[INFO] ant-1.7.1.jar already exists in destination.
+[INFO] spring-boot-actuator-1.5.6.RELEASE.jar already exists in destination.
+[INFO] httpmime-4.4.1.jar already exists in destination.
+[INFO] hadoop-common-2.7.0.jar already exists in destination.
+[INFO] xmlenc-0.52.jar already exists in destination.
+[INFO] zjsonpatch-0.2.4.jar already exists in destination.
+[INFO] api-util-1.0.0-M20.jar already exists in destination.
+[INFO] junit-4.10.jar already exists in destination.
+[INFO] jackson-jaxrs-json-provider-2.6.4.jar already exists in destination.
+[INFO] spring-boot-1.0.2.RELEASE.jar already exists in destination.
+[INFO] aws-java-sdk-iam-1.11.5.jar already exists in destination.
+[INFO] api-asn1-api-1.0.0-M20.jar already exists in destination.
+[INFO] named-regexp-0.2.3.jar already exists in destination.
+[INFO] commons-io-2.5.jar already exists in destination.
+[INFO] lucene-analyzers-common-6.6.2.jar already exists in destination.
+[INFO] selenium-remote-driver-2.26.0.jar already exists in destination.
+[INFO] jersey-core-1.19.jar already exists in destination.
+[INFO] jetty-io-9.4.6.v20170531.jar already exists in destination.
+[INFO] jackson-xc-1.9.9.jar already exists in destination.
+[INFO] jackson-dataformat-xml-2.4.5.jar already exists in destination.
+[INFO] hk2-2.5.0-b32.jar already exists in destination.
+[INFO] jetty-security-8.1.19.v20160209.jar already exists in destination.
+[INFO] freemarker-2.3.20.jar already exists in destination.
+[INFO] jetty-servlet-8.1.19.v20160209.jar already exists in destination.
+[INFO] jackson-annotations-2.6.0.jar already exists in destination.
+[INFO] javax.annotation-api-1.2.jar already exists in destination.
+[INFO] websocket-api-9.4.6.v20170531.jar already exists in destination.
+[INFO] ambari-logsearch-config-zookeeper-2.0.0.0-SNAPSHOT.jar already exists in destination.
+[INFO] stax2-api-3.1.4.jar already exists in destination.
+[INFO] jettison-1.1.jar already exists in destination.
+[INFO] hk2-locator-2.4.0-b34.jar already exists in destination.
+[INFO] jersey-container-servlet-core-2.25.1.jar already exists in destination.
+[INFO] swagger-jersey2-jaxrs-1.5.16.jar already exists in destination.
+[INFO] solr-solrj-6.6.2.jar already exists in destination.
+[INFO] android-json-0.0.20131108.vaadin1.jar already exists in destination.
+[INFO] jetty-servlets-8.1.19.v20160209.jar already exists in destination.
+[INFO] jersey-server-1.19.jar already exists in destination.
+[INFO] avro-1.7.4.jar already exists in destination.
+[INFO] jackson-core-2.6.4.jar already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.298 s
+[INFO] Finished at: 2018-03-26T20:14:34-05:00
+[INFO] Final Memory: 43M/507M
+[INFO] ------------------------------------------------------------------------

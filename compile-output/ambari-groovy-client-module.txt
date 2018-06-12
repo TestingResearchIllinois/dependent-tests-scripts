@@ -1,0 +1,254 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Groovy Client 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ groovy-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ groovy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ groovy-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ groovy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 29 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.250 s
+[INFO] Finished at: 2018-03-26T18:40:28-05:00
+[INFO] Final Memory: 16M/301M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Groovy Client 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ groovy-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ groovy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 29 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ groovy-client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ groovy-client ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*.iml
+[INFO] Exclude: src/main/resources/blueprints/**
+[INFO] Exclude: src/test/resources/**
+[INFO] 16 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 16 licence.
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (build-tarball) @ groovy-client ---
+[INFO] Assemblies have been skipped per configuration of the skipAssembly parameter.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ groovy-client ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/groovy-client-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ groovy-client ---
+[INFO] Assemblies have been skipped per configuration of the skipAssembly parameter.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ groovy-client ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/groovy-client-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/groovy-client/2.0.0.0-SNAPSHOT/groovy-client-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/pom.xml to /home/roei/.m2/repository/org/apache/ambari/groovy-client/2.0.0.0-SNAPSHOT/groovy-client-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ groovy-client ---
+[INFO] Copying slf4j-log4j12-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/slf4j-log4j12-1.7.20.jar
+[INFO] Copying log4j-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/log4j-1.2.17.jar
+[INFO] Copying json-lib-2.3-jdk15.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/json-lib-2.3-jdk15.jar
+[INFO] Copying commons-collections-3.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/commons-collections-3.2.1.jar
+[INFO] Copying nekohtml-1.9.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/nekohtml-1.9.16.jar
+[INFO] Copying commons-beanutils-1.8.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/commons-beanutils-1.8.0.jar
+[INFO] Copying easymock-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/easymock-3.2.jar
+[INFO] Copying commons-io-2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/commons-io-2.1.jar
+[INFO] Copying xercesImpl-2.9.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/xercesImpl-2.9.1.jar
+[INFO] Copying spock-core-0.7-groovy-2.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/spock-core-0.7-groovy-2.0.jar
+[INFO] Copying groovy-all-2.1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/groovy-all-2.1.8.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying hamcrest-core-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/hamcrest-core-1.3.jar
+[INFO] Copying commons-lang-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/commons-lang-2.5.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying junit-dep-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/junit-dep-4.10.jar
+[INFO] Copying xml-apis-1.3.04.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/xml-apis-1.3.04.jar
+[INFO] Copying ezmorph-1.0.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/ezmorph-1.0.6.jar
+[INFO] Copying httpclient-4.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/httpclient-4.2.1.jar
+[INFO] Copying objenesis-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/objenesis-1.3.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/commons-codec-1.8.jar
+[INFO] Copying httpcore-4.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/httpcore-4.2.1.jar
+[INFO] Copying http-builder-0.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/http-builder-0.7.1.jar
+[INFO] Copying xml-resolver-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/xml-resolver-1.2.jar
+[INFO] Copying slf4j-api-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-client/groovy-client/target/dependency/slf4j-api-1.7.20.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.964 s
+[INFO] Finished at: 2018-03-26T18:40:37-05:00
+[INFO] Final Memory: 28M/376M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Groovy Client 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ groovy-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ groovy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ groovy-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ groovy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 29 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.786 s
+[INFO] Finished at: 2018-03-26T18:40:45-05:00
+[INFO] Final Memory: 16M/304M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Groovy Client 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ groovy-client ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ groovy-client ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ groovy-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 29 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ groovy-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Using Groovy-Eclipse compiler to compile both Java and Groovy files
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ groovy-client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ groovy-client ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*.iml
+[INFO] Exclude: src/main/resources/blueprints/**
+[INFO] Exclude: src/test/resources/**
+[INFO] 16 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 16 licence.
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (build-tarball) @ groovy-client ---
+[INFO] Assemblies have been skipped per configuration of the skipAssembly parameter.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ groovy-client ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/groovy-client-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.2-beta-5:single (make-assembly) @ groovy-client ---
+[INFO] Assemblies have been skipped per configuration of the skipAssembly parameter.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ groovy-client ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/groovy-client-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/groovy-client/2.0.0.0-SNAPSHOT/groovy-client-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/pom.xml to /home/roei/.m2/repository/org/apache/ambari/groovy-client/2.0.0.0-SNAPSHOT/groovy-client-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ groovy-client ---
+[INFO] Copying commons-io-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/commons-io-2.5.jar
+[INFO] Copying slf4j-log4j12-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/slf4j-log4j12-1.7.20.jar
+[INFO] Copying log4j-1.2.17.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/log4j-1.2.17.jar
+[INFO] Copying json-lib-2.3-jdk15.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/json-lib-2.3-jdk15.jar
+[INFO] Copying commons-collections-3.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/commons-collections-3.2.1.jar
+[INFO] Copying nekohtml-1.9.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/nekohtml-1.9.16.jar
+[INFO] Copying commons-beanutils-1.8.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/commons-beanutils-1.8.0.jar
+[INFO] Copying easymock-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/easymock-3.2.jar
+[INFO] Copying xercesImpl-2.9.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/xercesImpl-2.9.1.jar
+[INFO] Copying spock-core-0.7-groovy-2.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/spock-core-0.7-groovy-2.0.jar
+[INFO] Copying groovy-all-2.1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/groovy-all-2.1.8.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying hamcrest-core-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/hamcrest-core-1.3.jar
+[INFO] Copying commons-lang-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/commons-lang-2.5.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying junit-dep-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/junit-dep-4.10.jar
+[INFO] Copying xml-apis-1.3.04.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/xml-apis-1.3.04.jar
+[INFO] Copying ezmorph-1.0.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/ezmorph-1.0.6.jar
+[INFO] Copying httpclient-4.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/httpclient-4.2.1.jar
+[INFO] Copying objenesis-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/objenesis-1.3.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/commons-codec-1.8.jar
+[INFO] Copying httpcore-4.2.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/httpcore-4.2.1.jar
+[INFO] Copying http-builder-0.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/http-builder-0.7.1.jar
+[INFO] Copying xml-resolver-1.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/xml-resolver-1.2.jar
+[INFO] Copying slf4j-api-1.7.20.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-client/groovy-client/target/dependency/slf4j-api-1.7.20.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.326 s
+[INFO] Finished at: 2018-03-26T18:40:56-05:00
+[INFO] Final Memory: 29M/435M
+[INFO] ------------------------------------------------------------------------

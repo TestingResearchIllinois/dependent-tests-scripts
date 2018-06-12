@@ -1,0 +1,18 @@
+Test: crystal.model.DataSourceTest.testIsHidden
+Intended behavior: FAILURE
+when executed after: [crystal.model.DataSourceTest.testSetField]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: crystal.model.DataSourceTest.testSetHistory
+Intended behavior: FAILURE
+when executed after: [crystal.model.DataSourceTest.testSetCloneString]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: crystal.model.DataSourceTest.testSetCloneString
+Intended behavior: FAILURE
+when executed after: [crystal.model.DataSourceTest.testIsHidden]
+The revealed different behavior: PASS
+when executed after: []
+

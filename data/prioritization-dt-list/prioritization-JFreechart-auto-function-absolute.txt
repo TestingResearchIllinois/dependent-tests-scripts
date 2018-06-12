@@ -1,0 +1,30 @@
+Test: randoop.jfreechart.RandoopTest0.test30
+Intended behavior: FAILURE
+when executed after: [randoop.jfreechart.RandoopTest0.test22]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jfreechart.RandoopTest1.test300
+Intended behavior: FAILURE
+when executed after: [randoop.jfreechart.RandoopTest1.test228]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jfreechart.RandoopTest1.test228
+Intended behavior: FAILURE
+when executed after: [randoop.jfreechart.RandoopTest1.test65]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jfreechart.RandoopTest1.test65
+Intended behavior: FAILURE
+when executed after: [randoop.jfreechart.RandoopTest0.test79]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jfreechart.RandoopTest3.test499
+Intended behavior: FAILURE
+when executed after: [randoop.jfreechart.RandoopTest0.test69]
+The revealed different behavior: PASS
+when executed after: []
+

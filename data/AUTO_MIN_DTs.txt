@@ -1,0 +1,14 @@
+ActivemqCamel|3
+Ambari-Server|1
+Crystal|164
+JFreechart|6
+Joda-Time|610
+Photoplatform_Angular_Spring|0
+Synoptic|5
+XML Security|113
+Zeppelin-Server|14
+Zeppelin-Zengine|117
+dubbo-dubbo-config-spring|3
+accumulo-accumulo-master|1
+jackrabbit-oak-oak-solr-core|0
+elastic-job-lite-elastic-job-common-core|0

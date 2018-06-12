@@ -1,0 +1,546 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Storm Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/classes
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/classes
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.161 s
+[INFO] Finished at: 2018-03-26T15:06:28-05:00
+[INFO] Final Memory: 26M/302M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Storm Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/classes
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ ambari-metrics-storm-sink ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-metrics-storm-sink ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: pass.txt
+[INFO] Exclude: derby.log
+[INFO] Exclude: **/*.nuspec
+[INFO] Exclude: **/*.json
+[INFO] 6 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 6 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-metrics-storm-sink ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.2:shade (default) @ ambari-metrics-storm-sink ---
+[INFO] Including org.apache.commons:commons-lang3:jar:3.3.2 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.8 in the shaded jar.
+[INFO] Excluding org.apache.storm:storm-core:jar:1.1.0 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:kryo:jar:3.0.3 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:reflectasm:jar:1.10.1 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm:jar:5.0.3 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:minlog:jar:1.3.0 from the shaded jar.
+[INFO] Excluding org.clojure:clojure:jar:1.7.0 from the shaded jar.
+[INFO] Excluding ring-cors:ring-cors:jar:0.1.5 from the shaded jar.
+[INFO] Excluding com.lmax:disruptor:jar:3.3.2 from the shaded jar.
+[INFO] Excluding org.apache.logging.log4j:log4j-api:jar:2.8 from the shaded jar.
+[INFO] Excluding org.apache.logging.log4j:log4j-core:jar:2.8 from the shaded jar.
+[INFO] Excluding org.apache.logging.log4j:log4j-slf4j-impl:jar:2.8 from the shaded jar.
+[INFO] Excluding org.slf4j:log4j-over-slf4j:jar:1.6.6 from the shaded jar.
+[INFO] Excluding javax.servlet:servlet-api:jar:2.5 from the shaded jar.
+[INFO] Excluding org.slf4j:slf4j-api:jar:1.7.21 from the shaded jar.
+[INFO] Including org.apache.ambari:ambari-metrics-common:jar:2.0.0.0-SNAPSHOT in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.1.1 in the shaded jar.
+[INFO] Excluding commons-io:commons-io:jar:2.4 from the shaded jar.
+[INFO] Excluding com.google.code.gson:gson:jar:2.2.2 from the shaded jar.
+[INFO] Excluding com.google.guava:guava:jar:14.0.1 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-framework:jar:2.7.1 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-client:jar:2.7.1 from the shaded jar.
+[INFO] Excluding org.apache.zookeeper:zookeeper:jar:3.4.6 from the shaded jar.
+[INFO] Excluding log4j:log4j:jar:1.2.16 from the shaded jar.
+[INFO] Excluding jline:jline:jar:0.9.94 from the shaded jar.
+[INFO] Excluding io.netty:netty:jar:3.7.0.Final from the shaded jar.
+[INFO] Including org.codehaus.jackson:jackson-xc:jar:1.9.13 in the shaded jar.
+[INFO] Including org.apache.hadoop:hadoop-annotations:jar:2.6.0 in the shaded jar.
+[INFO] Excluding commons-lang:commons-lang:jar:2.5 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-math3:jar:3.1.1 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpclient:jar:4.2.5 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpcore:jar:4.2.4 from the shaded jar.
+[INFO] Including org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13 in the shaded jar.
+[INFO] Including org.codehaus.jackson:jackson-core-asl:jar:1.9.13 in the shaded jar.
+[INFO] Excluding org.objenesis:objenesis:jar:1.3 from the shaded jar.
+[WARNING] ambari-metrics-common-2.0.0.0-SNAPSHOT.jar, commons-logging-1.1.1.jar define 9 overlappping classes: 
+[WARNING]   - org.apache.commons.logging.LogFactory$4
+[WARNING]   - org.apache.commons.logging.Log
+[WARNING]   - org.apache.commons.logging.LogFactory$3
+[WARNING]   - org.apache.commons.logging.LogFactory$2
+[WARNING]   - org.apache.commons.logging.LogConfigurationException
+[WARNING]   - org.apache.commons.logging.LogFactory$6
+[WARNING]   - org.apache.commons.logging.LogFactory$1
+[WARNING]   - org.apache.commons.logging.LogFactory$5
+[WARNING]   - org.apache.commons.logging.LogFactory
+[WARNING] jackson-core-asl-1.9.13.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 115 overlappping classes: 
+[WARNING]   - org.codehaus.jackson.annotate.JsonManagedReference
+[WARNING]   - org.codehaus.jackson.util.DefaultPrettyPrinter$FixedSpaceIndenter
+[WARNING]   - org.codehaus.jackson.JsonGenerationException
+[WARNING]   - org.codehaus.jackson.util.BufferRecycler$CharBufferType
+[WARNING]   - org.codehaus.jackson.io.UTF32Reader
+[WARNING]   - org.codehaus.jackson.sym.Name1
+[WARNING]   - org.codehaus.jackson.util.MinimalPrettyPrinter
+[WARNING]   - org.codehaus.jackson.impl.JsonParserBase
+[WARNING]   - org.codehaus.jackson.annotate.JsonValue
+[WARNING]   - org.codehaus.jackson.sym.CharsToNameCanonicalizer$Bucket
+[WARNING]   - 105 more...
+[WARNING] jackson-mapper-asl-1.9.13.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 435 overlappping classes: 
+[WARNING]   - org.codehaus.jackson.node.POJONode
+[WARNING]   - org.codehaus.jackson.map.deser.std.JsonNodeDeserializer$ArrayDeserializer
+[WARNING]   - org.codehaus.jackson.map.ser.StdSerializers$UtilDateSerializer
+[WARNING]   - org.codehaus.jackson.map.deser.std.PrimitiveArrayDeserializers$StringDeser
+[WARNING]   - org.codehaus.jackson.map.util.Comparators$1
+[WARNING]   - org.codehaus.jackson.map.util.StdDateFormat
+[WARNING]   - org.codehaus.jackson.map.KeyDeserializer
+[WARNING]   - org.codehaus.jackson.map.introspect.POJOPropertyBuilder
+[WARNING]   - org.codehaus.jackson.map.MapperConfig$Impl
+[WARNING]   - org.codehaus.jackson.map.ser.AnyGetterWriter
+[WARNING]   - 425 more...
+[WARNING] jackson-xc-1.9.13.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 4 overlappping classes: 
+[WARNING]   - org.codehaus.jackson.xc.XmlAdapterJsonSerializer
+[WARNING]   - org.codehaus.jackson.xc.JaxbAnnotationIntrospector
+[WARNING]   - org.codehaus.jackson.xc.XmlAdapterJsonDeserializer
+[WARNING]   - org.codehaus.jackson.xc.JaxbAnnotationIntrospector$1
+[WARNING] hadoop-annotations-2.6.0.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 8 overlappping classes: 
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience$Private
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience$LimitedPrivate
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability$Evolving
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability$Stable
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience$Public
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability$Unstable
+[WARNING] commons-codec-1.8.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 9 overlappping classes: 
+[WARNING]   - org.apache.commons.codec.DecoderException
+[WARNING]   - org.apache.commons.codec.EncoderException
+[WARNING]   - org.apache.commons.codec.BinaryDecoder
+[WARNING]   - org.apache.commons.codec.Decoder
+[WARNING]   - org.apache.commons.codec.BinaryEncoder
+[WARNING]   - org.apache.commons.codec.binary.Base64
+[WARNING]   - org.apache.commons.codec.binary.BaseNCodec
+[WARNING]   - org.apache.commons.codec.Encoder
+[WARNING]   - org.apache.commons.codec.binary.StringUtils
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-metrics-storm-sink ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-storm-sink/2.0.0.0-SNAPSHOT/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-storm-sink/2.0.0.0-SNAPSHOT/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-metrics-storm-sink ---
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying javassist-3.19.0-GA.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/javassist-3.19.0-GA.jar
+[INFO] Copying netty-3.7.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/netty-3.7.0.Final.jar
+[INFO] Copying httpcore-4.2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/httpcore-4.2.4.jar
+[INFO] Copying curator-framework-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/curator-framework-2.7.1.jar
+[INFO] Copying log4j-core-2.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-core-2.8.jar
+[INFO] Copying disruptor-3.3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/disruptor-3.3.2.jar
+[INFO] Copying easymock-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/easymock-3.2.jar
+[INFO] Copying antlr-2.7.7.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/antlr-2.7.7.jar
+[INFO] Copying commons-math3-3.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-math3-3.1.1.jar
+[INFO] Copying clojure-1.7.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/clojure-1.7.0.jar
+[INFO] Copying log4j-slf4j-impl-2.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-slf4j-impl-2.8.jar
+[INFO] Copying powermock-module-junit4-common-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-module-junit4-common-1.6.2.jar
+[INFO] Copying antlr4-runtime-4.5.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/antlr4-runtime-4.5.3.jar
+[INFO] Copying storm-core-1.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/storm-core-1.1.0.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying commons-io-2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-io-2.4.jar
+[INFO] Copying checkstyle-6.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/checkstyle-6.19.jar
+[INFO] Copying powermock-api-easymock-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-api-easymock-1.6.2.jar
+[INFO] Copying commons-beanutils-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-beanutils-1.9.2.jar
+[INFO] Copying jackson-mapper-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jackson-mapper-asl-1.9.13.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying powermock-reflect-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-reflect-1.6.2.jar
+[INFO] Copying minlog-1.3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/minlog-1.3.0.jar
+[INFO] Copying hadoop-annotations-2.6.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/hadoop-annotations-2.6.0.jar
+[INFO] Copying log4j-over-slf4j-1.6.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-over-slf4j-1.6.6.jar
+[INFO] Copying objenesis-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/objenesis-1.3.jar
+[INFO] Copying commons-cli-1.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-cli-1.3.1.jar
+[INFO] Copying jackson-core-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jackson-core-asl-1.9.13.jar
+[INFO] Copying junit-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/junit-4.10.jar
+[INFO] Copying commons-lang3-3.3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-lang3-3.3.2.jar
+[INFO] Copying reflectasm-1.10.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/reflectasm-1.10.1.jar
+[INFO] Copying asm-5.0.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/asm-5.0.3.jar
+[INFO] Copying kryo-3.0.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/kryo-3.0.3.jar
+[INFO] Copying jline-0.9.94.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jline-0.9.94.jar
+[INFO] Copying powermock-core-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-core-1.6.2.jar
+[INFO] Copying curator-client-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/curator-client-2.7.1.jar
+[INFO] Copying zookeeper-3.4.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/zookeeper-3.4.6.jar
+[INFO] Copying ambari-utility-1.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/ambari-utility-1.0.0.0-SNAPSHOT.jar
+[INFO] Copying log4j-api-2.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-api-2.8.jar
+[INFO] Copying guava-14.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/guava-14.0.1.jar
+[INFO] Copying gson-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/gson-2.2.2.jar
+[INFO] Copying httpclient-4.2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/httpclient-4.2.5.jar
+[INFO] Copying log4j-1.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-1.2.16.jar
+[INFO] Copying slf4j-api-1.7.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/slf4j-api-1.7.21.jar
+[INFO] Copying powermock-module-junit4-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-module-junit4-1.6.2.jar
+[INFO] Copying ring-cors-0.1.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/ring-cors-0.1.5.jar
+[INFO] Copying commons-lang-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-lang-2.5.jar
+[INFO] Copying commons-collections-3.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-collections-3.2.2.jar
+[INFO] Copying jackson-xc-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jackson-xc-1.9.13.jar
+[INFO] Copying servlet-api-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/servlet-api-2.5.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-codec-1.8.jar
+[INFO] Copying hamcrest-core-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/hamcrest-core-1.1.jar
+[INFO] Copying powermock-api-support-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-old-c088e59ebcf099b01603d883dce7700d44cabc68/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-api-support-1.6.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.994 s
+[INFO] Finished at: 2018-03-26T15:06:37-05:00
+[INFO] Final Memory: 46M/764M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Storm Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/classes
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/classes
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/test-classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.786 s
+[INFO] Finished at: 2018-03-26T15:06:42-05:00
+[INFO] Final Memory: 28M/315M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Ambari Metrics Storm Sink 2.0.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:parse-version (parse-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (regex-property) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-version) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.8:regex-property (parse-package-release) @ ambari-metrics-storm-sink ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/classes
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Some input files use unchecked or unsafe operations.
+[WARNING] /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/main/java/org/apache/hadoop/metrics2/sink/storm/StormTimelineMetricsSink.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ambari-metrics-storm-sink ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ ambari-metrics-storm-sink ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ ambari-metrics-storm-sink ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (default) @ ambari-metrics-storm-sink ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: pass.txt
+[INFO] Exclude: derby.log
+[INFO] Exclude: **/*.nuspec
+[INFO] Exclude: **/*.json
+[INFO] 6 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 6 licence.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ ambari-metrics-storm-sink ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.2:shade (default) @ ambari-metrics-storm-sink ---
+[INFO] Including org.apache.commons:commons-lang3:jar:3.3.2 in the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.8 in the shaded jar.
+[INFO] Excluding org.apache.storm:storm-core:jar:1.1.0 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:kryo:jar:3.0.3 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:reflectasm:jar:1.10.1 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm:jar:5.0.3 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:minlog:jar:1.3.0 from the shaded jar.
+[INFO] Excluding org.clojure:clojure:jar:1.7.0 from the shaded jar.
+[INFO] Excluding ring-cors:ring-cors:jar:0.1.5 from the shaded jar.
+[INFO] Excluding com.lmax:disruptor:jar:3.3.2 from the shaded jar.
+[INFO] Excluding org.apache.logging.log4j:log4j-api:jar:2.8 from the shaded jar.
+[INFO] Excluding org.apache.logging.log4j:log4j-core:jar:2.8 from the shaded jar.
+[INFO] Excluding org.apache.logging.log4j:log4j-slf4j-impl:jar:2.8 from the shaded jar.
+[INFO] Excluding org.slf4j:log4j-over-slf4j:jar:1.6.6 from the shaded jar.
+[INFO] Excluding javax.servlet:servlet-api:jar:2.5 from the shaded jar.
+[INFO] Excluding org.slf4j:slf4j-api:jar:1.7.21 from the shaded jar.
+[INFO] Including org.apache.ambari:ambari-metrics-common:jar:2.0.0.0-SNAPSHOT in the shaded jar.
+[INFO] Including commons-logging:commons-logging:jar:1.1.1 in the shaded jar.
+[INFO] Excluding commons-io:commons-io:jar:2.4 from the shaded jar.
+[INFO] Excluding com.google.code.gson:gson:jar:2.2.2 from the shaded jar.
+[INFO] Excluding com.google.guava:guava:jar:14.0.1 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-framework:jar:2.7.1 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-client:jar:2.7.1 from the shaded jar.
+[INFO] Excluding org.apache.zookeeper:zookeeper:jar:3.4.6 from the shaded jar.
+[INFO] Excluding log4j:log4j:jar:1.2.16 from the shaded jar.
+[INFO] Excluding jline:jline:jar:0.9.94 from the shaded jar.
+[INFO] Excluding io.netty:netty:jar:3.7.0.Final from the shaded jar.
+[INFO] Including org.codehaus.jackson:jackson-xc:jar:1.9.13 in the shaded jar.
+[INFO] Including org.apache.hadoop:hadoop-annotations:jar:2.6.0 in the shaded jar.
+[INFO] Excluding commons-lang:commons-lang:jar:2.5 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-math3:jar:3.1.1 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpclient:jar:4.2.5 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpcore:jar:4.2.4 from the shaded jar.
+[INFO] Including org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13 in the shaded jar.
+[INFO] Including org.codehaus.jackson:jackson-core-asl:jar:1.9.13 in the shaded jar.
+[INFO] Excluding org.objenesis:objenesis:jar:1.3 from the shaded jar.
+[WARNING] ambari-metrics-common-2.0.0.0-SNAPSHOT.jar, commons-logging-1.1.1.jar define 9 overlappping classes: 
+[WARNING]   - org.apache.commons.logging.LogFactory$4
+[WARNING]   - org.apache.commons.logging.Log
+[WARNING]   - org.apache.commons.logging.LogFactory$3
+[WARNING]   - org.apache.commons.logging.LogFactory$2
+[WARNING]   - org.apache.commons.logging.LogConfigurationException
+[WARNING]   - org.apache.commons.logging.LogFactory$6
+[WARNING]   - org.apache.commons.logging.LogFactory$1
+[WARNING]   - org.apache.commons.logging.LogFactory$5
+[WARNING]   - org.apache.commons.logging.LogFactory
+[WARNING] jackson-core-asl-1.9.13.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 115 overlappping classes: 
+[WARNING]   - org.codehaus.jackson.annotate.JsonManagedReference
+[WARNING]   - org.codehaus.jackson.util.DefaultPrettyPrinter$FixedSpaceIndenter
+[WARNING]   - org.codehaus.jackson.JsonGenerationException
+[WARNING]   - org.codehaus.jackson.util.BufferRecycler$CharBufferType
+[WARNING]   - org.codehaus.jackson.io.UTF32Reader
+[WARNING]   - org.codehaus.jackson.sym.Name1
+[WARNING]   - org.codehaus.jackson.util.MinimalPrettyPrinter
+[WARNING]   - org.codehaus.jackson.impl.JsonParserBase
+[WARNING]   - org.codehaus.jackson.annotate.JsonValue
+[WARNING]   - org.codehaus.jackson.sym.CharsToNameCanonicalizer$Bucket
+[WARNING]   - 105 more...
+[WARNING] jackson-mapper-asl-1.9.13.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 435 overlappping classes: 
+[WARNING]   - org.codehaus.jackson.node.POJONode
+[WARNING]   - org.codehaus.jackson.map.deser.std.JsonNodeDeserializer$ArrayDeserializer
+[WARNING]   - org.codehaus.jackson.map.ser.StdSerializers$UtilDateSerializer
+[WARNING]   - org.codehaus.jackson.map.deser.std.PrimitiveArrayDeserializers$StringDeser
+[WARNING]   - org.codehaus.jackson.map.util.Comparators$1
+[WARNING]   - org.codehaus.jackson.map.util.StdDateFormat
+[WARNING]   - org.codehaus.jackson.map.KeyDeserializer
+[WARNING]   - org.codehaus.jackson.map.introspect.POJOPropertyBuilder
+[WARNING]   - org.codehaus.jackson.map.MapperConfig$Impl
+[WARNING]   - org.codehaus.jackson.map.ser.AnyGetterWriter
+[WARNING]   - 425 more...
+[WARNING] jackson-xc-1.9.13.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 4 overlappping classes: 
+[WARNING]   - org.codehaus.jackson.xc.XmlAdapterJsonSerializer
+[WARNING]   - org.codehaus.jackson.xc.JaxbAnnotationIntrospector
+[WARNING]   - org.codehaus.jackson.xc.XmlAdapterJsonDeserializer
+[WARNING]   - org.codehaus.jackson.xc.JaxbAnnotationIntrospector$1
+[WARNING] hadoop-annotations-2.6.0.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 8 overlappping classes: 
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience$Private
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience$LimitedPrivate
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability$Evolving
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability$Stable
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience
+[WARNING]   - org.apache.hadoop.classification.InterfaceAudience$Public
+[WARNING]   - org.apache.hadoop.classification.InterfaceStability$Unstable
+[WARNING] commons-codec-1.8.jar, ambari-metrics-common-2.0.0.0-SNAPSHOT.jar define 9 overlappping classes: 
+[WARNING]   - org.apache.commons.codec.DecoderException
+[WARNING]   - org.apache.commons.codec.EncoderException
+[WARNING]   - org.apache.commons.codec.BinaryDecoder
+[WARNING]   - org.apache.commons.codec.Decoder
+[WARNING]   - org.apache.commons.codec.BinaryEncoder
+[WARNING]   - org.apache.commons.codec.binary.Base64
+[WARNING]   - org.apache.commons.codec.binary.BaseNCodec
+[WARNING]   - org.apache.commons.codec.Encoder
+[WARNING]   - org.apache.commons.codec.binary.StringUtils
+[WARNING] maven-shade-plugin has detected that some .class files
+[WARNING] are present in two or more JARs. When this happens, only
+[WARNING] one single version of the class is copied in the uberjar.
+[WARNING] Usually this is not harmful and you can skeep these
+[WARNING] warnings, otherwise try to manually exclude artifacts
+[WARNING] based on mvn dependency:tree -Ddetail=true and the above
+[WARNING] output
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ ambari-metrics-storm-sink ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-storm-sink/2.0.0.0-SNAPSHOT/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/pom.xml to /home/roei/.m2/repository/org/apache/ambari/ambari-metrics-storm-sink/2.0.0.0-SNAPSHOT/ambari-metrics-storm-sink-2.0.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ ambari-metrics-storm-sink ---
+[INFO] Copying ambari-metrics-common-2.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/ambari-metrics-common-2.0.0.0-SNAPSHOT.jar
+[INFO] Copying javassist-3.19.0-GA.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/javassist-3.19.0-GA.jar
+[INFO] Copying netty-3.7.0.Final.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/netty-3.7.0.Final.jar
+[INFO] Copying httpcore-4.2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/httpcore-4.2.4.jar
+[INFO] Copying curator-framework-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/curator-framework-2.7.1.jar
+[INFO] Copying log4j-core-2.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-core-2.8.jar
+[INFO] Copying disruptor-3.3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/disruptor-3.3.2.jar
+[INFO] Copying easymock-3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/easymock-3.2.jar
+[INFO] Copying antlr-2.7.7.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/antlr-2.7.7.jar
+[INFO] Copying commons-math3-3.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-math3-3.1.1.jar
+[INFO] Copying clojure-1.7.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/clojure-1.7.0.jar
+[INFO] Copying log4j-slf4j-impl-2.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-slf4j-impl-2.8.jar
+[INFO] Copying powermock-module-junit4-common-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-module-junit4-common-1.6.2.jar
+[INFO] Copying antlr4-runtime-4.5.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/antlr4-runtime-4.5.3.jar
+[INFO] Copying storm-core-1.1.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/storm-core-1.1.0.jar
+[INFO] Copying commons-logging-1.1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-logging-1.1.1.jar
+[INFO] Copying commons-io-2.4.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-io-2.4.jar
+[INFO] Copying checkstyle-6.19.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/checkstyle-6.19.jar
+[INFO] Copying powermock-api-easymock-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-api-easymock-1.6.2.jar
+[INFO] Copying commons-beanutils-1.9.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-beanutils-1.9.2.jar
+[INFO] Copying jackson-mapper-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jackson-mapper-asl-1.9.13.jar
+[INFO] Copying cglib-nodep-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/cglib-nodep-2.2.2.jar
+[INFO] Copying powermock-reflect-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-reflect-1.6.2.jar
+[INFO] Copying minlog-1.3.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/minlog-1.3.0.jar
+[INFO] Copying hadoop-annotations-2.6.0.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/hadoop-annotations-2.6.0.jar
+[INFO] Copying log4j-over-slf4j-1.6.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-over-slf4j-1.6.6.jar
+[INFO] Copying objenesis-1.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/objenesis-1.3.jar
+[INFO] Copying commons-cli-1.3.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-cli-1.3.1.jar
+[INFO] Copying jackson-core-asl-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jackson-core-asl-1.9.13.jar
+[INFO] Copying junit-4.10.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/junit-4.10.jar
+[INFO] Copying commons-lang3-3.3.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-lang3-3.3.2.jar
+[INFO] Copying reflectasm-1.10.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/reflectasm-1.10.1.jar
+[INFO] Copying asm-5.0.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/asm-5.0.3.jar
+[INFO] Copying kryo-3.0.3.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/kryo-3.0.3.jar
+[INFO] Copying jline-0.9.94.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jline-0.9.94.jar
+[INFO] Copying powermock-core-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-core-1.6.2.jar
+[INFO] Copying curator-client-2.7.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/curator-client-2.7.1.jar
+[INFO] Copying zookeeper-3.4.6.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/zookeeper-3.4.6.jar
+[INFO] Copying ambari-utility-1.0.0.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/ambari-utility-1.0.0.0-SNAPSHOT.jar
+[INFO] Copying log4j-api-2.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-api-2.8.jar
+[INFO] Copying guava-14.0.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/guava-14.0.1.jar
+[INFO] Copying gson-2.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/gson-2.2.2.jar
+[INFO] Copying httpclient-4.2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/httpclient-4.2.5.jar
+[INFO] Copying log4j-1.2.16.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/log4j-1.2.16.jar
+[INFO] Copying slf4j-api-1.7.21.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/slf4j-api-1.7.21.jar
+[INFO] Copying powermock-module-junit4-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-module-junit4-1.6.2.jar
+[INFO] Copying ring-cors-0.1.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/ring-cors-0.1.5.jar
+[INFO] Copying commons-lang-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-lang-2.5.jar
+[INFO] Copying commons-collections-3.2.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-collections-3.2.2.jar
+[INFO] Copying jackson-xc-1.9.13.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/jackson-xc-1.9.13.jar
+[INFO] Copying servlet-api-2.5.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/servlet-api-2.5.jar
+[INFO] Copying commons-codec-1.8.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/commons-codec-1.8.jar
+[INFO] Copying hamcrest-core-1.1.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/hamcrest-core-1.1.jar
+[INFO] Copying powermock-api-support-1.6.2.jar to /home/roei/Java/dt-impact-winglam/experiments/ambari-new-ad9bcb645dd5c743924d548b889e12185345b523/ambari-metrics/ambari-metrics-storm-sink/target/dependency/powermock-api-support-1.6.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.973 s
+[INFO] Finished at: 2018-03-26T15:06:50-05:00
+[INFO] Final Memory: 53M/861M
+[INFO] ------------------------------------------------------------------------

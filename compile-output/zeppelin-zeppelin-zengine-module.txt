@@ -1,0 +1,950 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Zeppelin: Zengine 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-fail-build) @ zeppelin-zengine ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.2:revision (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-remote-resources) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.0:flatten (flatten) @ zeppelin-zengine ---
+[INFO] Generating flattened POM of project org.apache.zeppelin:zeppelin-zengine:jar:0.8.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-fail-build) @ zeppelin-zengine ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.2:revision (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-remote-resources) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.0:flatten (flatten) @ zeppelin-zengine ---
+[INFO] Generating flattened POM of project org.apache.zeppelin:zeppelin-zengine:jar:0.8.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ zeppelin-zengine ---
+[INFO] Copying zeppelin-interpreter-0.8.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/lib/zeppelin-interpreter-0.8.0-SNAPSHOT.jar
+[INFO] commons-lang3-3.4.jar already exists in destination.
+[INFO] aether-impl-1.12.jar already exists in destination.
+[INFO] slf4j-log4j12-1.7.10.jar already exists in destination.
+[INFO] htrace-core-3.1.0-incubating.jar already exists in destination.
+[INFO] protobuf-java-2.5.0.jar already exists in destination.
+[INFO] aopalliance-1.0.jar already exists in destination.
+[INFO] quartz-2.2.1.jar already exists in destination.
+[INFO] jersey-json-1.9.jar already exists in destination.
+[INFO] maven-scm-provider-svnexe-1.4.jar already exists in destination.
+[INFO] joda-time-2.8.1.jar already exists in destination.
+[INFO] sisu-inject-plexus-2.2.2.jar already exists in destination.
+[INFO] jsr305-3.0.0.jar already exists in destination.
+[INFO] aether-connector-wagon-1.12.jar already exists in destination.
+[INFO] leveldbjni-all-1.8.jar already exists in destination.
+[INFO] jline-2.12.1.jar already exists in destination.
+[INFO] org.eclipse.jgit-4.1.1.201511131810-r.jar already exists in destination.
+[INFO] httpasyncclient-4.0.2.jar already exists in destination.
+[INFO] guice-3.0.jar already exists in destination.
+[INFO] commons-io-2.4.jar already exists in destination.
+[INFO] commons-logging-1.1.1.jar already exists in destination.
+[INFO] hadoop-auth-2.7.3.jar already exists in destination.
+[INFO] hadoop-client-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-shuffle-2.7.3.jar already exists in destination.
+[INFO] commons-cli-1.3.1.jar already exists in destination.
+[INFO] jetty-http-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackson-core-asl-1.9.13.jar already exists in destination.
+[INFO] lucene-core-5.3.1.jar already exists in destination.
+[INFO] jackson-annotations-2.5.0.jar already exists in destination.
+[INFO] dom4j-1.6.1.jar already exists in destination.
+[INFO] jersey-guice-1.9.jar already exists in destination.
+[INFO] org.eclipse.jdt.annotation-1.1.0.jar already exists in destination.
+[INFO] azure-storage-4.0.0.jar already exists in destination.
+[INFO] jetty-util-9.2.15.v20160210.jar already exists in destination.
+[INFO] regexp-1.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-core-2.7.3.jar already exists in destination.
+[INFO] commons-net-3.1.jar already exists in destination.
+[INFO] maven-plugin-api-3.0.jar already exists in destination.
+[INFO] c3p0-0.9.1.1.jar already exists in destination.
+[INFO] aws-java-sdk-kms-1.10.62.jar already exists in destination.
+[INFO] plexus-interpolation-1.14.jar already exists in destination.
+[INFO] maven-scm-api-1.4.jar already exists in destination.
+[INFO] jaxb-api-2.2.2.jar already exists in destination.
+[INFO] wagon-http-lightweight-1.0.jar already exists in destination.
+[INFO] activation-1.1.jar already exists in destination.
+[INFO] websocket-common-9.2.15.v20160210.jar already exists in destination.
+[INFO] hadoop-yarn-client-2.7.3.jar already exists in destination.
+[INFO] zookeeper-3.4.6.jar already exists in destination.
+[INFO] commons-configuration-1.9.jar already exists in destination.
+[INFO] commons-vfs2-2.0.jar already exists in destination.
+[INFO] commons-exec-1.3.jar already exists in destination.
+[INFO] jackson-databind-2.5.3.jar already exists in destination.
+[INFO] aether-util-1.12.jar already exists in destination.
+[INFO] httpcore-4.4.1.jar already exists in destination.
+[INFO] javax.inject-1.jar already exists in destination.
+[INFO] sisu-inject-bean-2.2.2.jar already exists in destination.
+[INFO] lucene-highlighter-5.3.1.jar already exists in destination.
+[INFO] jsoup-1.6.1.jar already exists in destination.
+[INFO] lucene-join-5.3.1.jar already exists in destination.
+[INFO] commons-lang-2.5.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-jobclient-2.7.3.jar already exists in destination.
+[INFO] stax-api-1.0-2.jar already exists in destination.
+[INFO] libthrift-0.9.2.jar already exists in destination.
+[INFO] lucene-analyzers-common-5.3.1.jar already exists in destination.
+[INFO] maven-aether-provider-3.0.3.jar already exists in destination.
+[INFO] sisu-guice-3.0.2-no_aop.jar already exists in destination.
+[INFO] maven-plugin-annotations-3.2.jar already exists in destination.
+[INFO] aws-java-sdk-s3-1.10.62.jar already exists in destination.
+[INFO] lucene-queries-5.3.1.jar already exists in destination.
+[INFO] commons-compress-1.5.jar already exists in destination.
+[INFO] frontend-plugin-core-1.3.jar already exists in destination.
+[INFO] aws-java-sdk-core-1.10.62.jar already exists in destination.
+[INFO] hadoop-yarn-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-yarn-api-2.7.3.jar already exists in destination.
+[INFO] httpcore-nio-4.3.2.jar already exists in destination.
+[INFO] log4j-1.2.17.jar already exists in destination.
+[INFO] commons-codec-1.5.jar already exists in destination.
+[INFO] hadoop-yarn-server-common-2.7.3.jar already exists in destination.
+[INFO] curator-framework-2.7.1.jar already exists in destination.
+[INFO] curator-recipes-2.7.1.jar already exists in destination.
+[INFO] maven-artifact-3.0.jar already exists in destination.
+[INFO] maven-scm-provider-svn-commons-1.4.jar already exists in destination.
+[INFO] xz-1.2.jar already exists in destination.
+[INFO] jsch-0.1.53.jar already exists in destination.
+[INFO] jackrabbit-jcr-commons-1.5.2.jar already exists in destination.
+[INFO] javassist-3.12.1.GA.jar already exists in destination.
+[INFO] apacheds-kerberos-codec-2.0.0-M15.jar already exists in destination.
+[INFO] jaxb-impl-2.2.3-1.jar already exists in destination.
+[INFO] commons-pool2-2.3.jar already exists in destination.
+[INFO] commons-math3-3.1.1.jar already exists in destination.
+[INFO] aether-spi-1.12.jar already exists in destination.
+[INFO] plexus-component-annotations-1.5.5.jar already exists in destination.
+[INFO] wagon-http-1.0.jar already exists in destination.
+[INFO] maven-model-builder-3.0.3.jar already exists in destination.
+[INFO] jetty-util-6.1.26.jar already exists in destination.
+[INFO] websocket-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] gson-2.2.jar already exists in destination.
+[INFO] jackson-mapper-asl-1.9.13.jar already exists in destination.
+[INFO] jsp-api-2.1.jar already exists in destination.
+[INFO] plexus-utils-2.0.7.jar already exists in destination.
+[INFO] xmlenc-0.52.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.3.jar already exists in destination.
+[INFO] maven-repository-metadata-3.0.3.jar already exists in destination.
+[INFO] lucene-sandbox-5.3.1.jar already exists in destination.
+[INFO] api-util-1.0.0-M20.jar already exists in destination.
+[INFO] websocket-api-9.2.15.v20160210.jar already exists in destination.
+[INFO] JavaEWAH-0.7.9.jar already exists in destination.
+[INFO] httpclient-4.5.1.jar already exists in destination.
+[INFO] aether-connector-file-1.12.jar already exists in destination.
+[INFO] jetty-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] api-asn1-api-1.0.0-M20.jar already exists in destination.
+[INFO] wagon-provider-api-1.0.jar already exists in destination.
+[INFO] lucene-queryparser-5.3.1.jar already exists in destination.
+[INFO] hadoop-common-2.7.3.jar already exists in destination.
+[INFO] slf4j-api-1.7.10.jar already exists in destination.
+[INFO] plexus-build-api-0.0.7.jar already exists in destination.
+[INFO] apacheds-i18n-2.0.0-M15.jar already exists in destination.
+[INFO] commons-collections-3.2.1.jar already exists in destination.
+[INFO] plexus-classworlds-2.4.jar already exists in destination.
+[INFO] maven-model-3.0.3.jar already exists in destination.
+[INFO] mongo-java-driver-3.4.1.jar already exists in destination.
+[INFO] curator-client-2.7.1.jar already exists in destination.
+[INFO] wagon-http-shared-1.0.jar already exists in destination.
+[INFO] bcpkix-jdk15on-1.52.jar already exists in destination.
+[INFO] reflections-0.9.8.jar already exists in destination.
+[INFO] aether-api-1.12.jar already exists in destination.
+[INFO] bcprov-jdk15on-1.52.jar already exists in destination.
+[INFO] guava-15.0.jar already exists in destination.
+[INFO] frontend-maven-plugin-1.3.jar already exists in destination.
+[INFO] jackson-core-2.5.3.jar already exists in destination.
+[INFO] hadoop-annotations-2.7.3.jar already exists in destination.
+[INFO] gson-extras-0.2.1.jar already exists in destination.
+[INFO] jettison-1.1.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-app-2.7.3.jar already exists in destination.
+[INFO] guice-servlet-3.0.jar already exists in destination.
+[INFO] netty-all-4.0.23.Final.jar already exists in destination.
+[INFO] jetty-io-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackrabbit-webdav-1.5.2.jar already exists in destination.
+[INFO] lucene-memory-5.3.1.jar already exists in destination.
+[INFO] commons-httpclient-3.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20.415 s
+[INFO] Finished at: 2018-04-02T22:29:35-05:00
+[INFO] Final Memory: 69M/1156M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Zeppelin: Zengine 0.8.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-fail-build) @ zeppelin-zengine ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.2:revision (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-remote-resources) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.0:flatten (flatten) @ zeppelin-zengine ---
+[INFO] Generating flattened POM of project org.apache.zeppelin:zeppelin-zengine:jar:0.8.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ zeppelin-zengine ---
+[INFO] commons-lang3-3.4.jar already exists in destination.
+[INFO] aether-impl-1.12.jar already exists in destination.
+[INFO] slf4j-log4j12-1.7.10.jar already exists in destination.
+[INFO] htrace-core-3.1.0-incubating.jar already exists in destination.
+[INFO] protobuf-java-2.5.0.jar already exists in destination.
+[INFO] aopalliance-1.0.jar already exists in destination.
+[INFO] quartz-2.2.1.jar already exists in destination.
+[INFO] jersey-json-1.9.jar already exists in destination.
+[INFO] maven-scm-provider-svnexe-1.4.jar already exists in destination.
+[INFO] joda-time-2.8.1.jar already exists in destination.
+[INFO] sisu-inject-plexus-2.2.2.jar already exists in destination.
+[INFO] jsr305-3.0.0.jar already exists in destination.
+[INFO] aether-connector-wagon-1.12.jar already exists in destination.
+[INFO] leveldbjni-all-1.8.jar already exists in destination.
+[INFO] jline-2.12.1.jar already exists in destination.
+[INFO] org.eclipse.jgit-4.1.1.201511131810-r.jar already exists in destination.
+[INFO] httpasyncclient-4.0.2.jar already exists in destination.
+[INFO] guice-3.0.jar already exists in destination.
+[INFO] commons-io-2.4.jar already exists in destination.
+[INFO] commons-logging-1.1.1.jar already exists in destination.
+[INFO] hadoop-auth-2.7.3.jar already exists in destination.
+[INFO] hadoop-client-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-shuffle-2.7.3.jar already exists in destination.
+[INFO] commons-cli-1.3.1.jar already exists in destination.
+[INFO] jetty-http-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackson-core-asl-1.9.13.jar already exists in destination.
+[INFO] lucene-core-5.3.1.jar already exists in destination.
+[INFO] jackson-annotations-2.5.0.jar already exists in destination.
+[INFO] dom4j-1.6.1.jar already exists in destination.
+[INFO] jersey-guice-1.9.jar already exists in destination.
+[INFO] org.eclipse.jdt.annotation-1.1.0.jar already exists in destination.
+[INFO] azure-storage-4.0.0.jar already exists in destination.
+[INFO] jetty-util-9.2.15.v20160210.jar already exists in destination.
+[INFO] regexp-1.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-core-2.7.3.jar already exists in destination.
+[INFO] commons-net-3.1.jar already exists in destination.
+[INFO] maven-plugin-api-3.0.jar already exists in destination.
+[INFO] c3p0-0.9.1.1.jar already exists in destination.
+[INFO] aws-java-sdk-kms-1.10.62.jar already exists in destination.
+[INFO] plexus-interpolation-1.14.jar already exists in destination.
+[INFO] maven-scm-api-1.4.jar already exists in destination.
+[INFO] jaxb-api-2.2.2.jar already exists in destination.
+[INFO] zeppelin-interpreter-0.8.0-SNAPSHOT.jar already exists in destination.
+[INFO] wagon-http-lightweight-1.0.jar already exists in destination.
+[INFO] activation-1.1.jar already exists in destination.
+[INFO] websocket-common-9.2.15.v20160210.jar already exists in destination.
+[INFO] hadoop-yarn-client-2.7.3.jar already exists in destination.
+[INFO] zookeeper-3.4.6.jar already exists in destination.
+[INFO] commons-configuration-1.9.jar already exists in destination.
+[INFO] commons-vfs2-2.0.jar already exists in destination.
+[INFO] commons-exec-1.3.jar already exists in destination.
+[INFO] jackson-databind-2.5.3.jar already exists in destination.
+[INFO] aether-util-1.12.jar already exists in destination.
+[INFO] httpcore-4.4.1.jar already exists in destination.
+[INFO] javax.inject-1.jar already exists in destination.
+[INFO] sisu-inject-bean-2.2.2.jar already exists in destination.
+[INFO] lucene-highlighter-5.3.1.jar already exists in destination.
+[INFO] jsoup-1.6.1.jar already exists in destination.
+[INFO] lucene-join-5.3.1.jar already exists in destination.
+[INFO] commons-lang-2.5.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-jobclient-2.7.3.jar already exists in destination.
+[INFO] stax-api-1.0-2.jar already exists in destination.
+[INFO] libthrift-0.9.2.jar already exists in destination.
+[INFO] lucene-analyzers-common-5.3.1.jar already exists in destination.
+[INFO] maven-aether-provider-3.0.3.jar already exists in destination.
+[INFO] sisu-guice-3.0.2-no_aop.jar already exists in destination.
+[INFO] maven-plugin-annotations-3.2.jar already exists in destination.
+[INFO] aws-java-sdk-s3-1.10.62.jar already exists in destination.
+[INFO] lucene-queries-5.3.1.jar already exists in destination.
+[INFO] commons-compress-1.5.jar already exists in destination.
+[INFO] frontend-plugin-core-1.3.jar already exists in destination.
+[INFO] aws-java-sdk-core-1.10.62.jar already exists in destination.
+[INFO] hadoop-yarn-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-yarn-api-2.7.3.jar already exists in destination.
+[INFO] httpcore-nio-4.3.2.jar already exists in destination.
+[INFO] log4j-1.2.17.jar already exists in destination.
+[INFO] commons-codec-1.5.jar already exists in destination.
+[INFO] hadoop-yarn-server-common-2.7.3.jar already exists in destination.
+[INFO] curator-framework-2.7.1.jar already exists in destination.
+[INFO] curator-recipes-2.7.1.jar already exists in destination.
+[INFO] maven-artifact-3.0.jar already exists in destination.
+[INFO] maven-scm-provider-svn-commons-1.4.jar already exists in destination.
+[INFO] xz-1.2.jar already exists in destination.
+[INFO] jsch-0.1.53.jar already exists in destination.
+[INFO] jackrabbit-jcr-commons-1.5.2.jar already exists in destination.
+[INFO] javassist-3.12.1.GA.jar already exists in destination.
+[INFO] apacheds-kerberos-codec-2.0.0-M15.jar already exists in destination.
+[INFO] jaxb-impl-2.2.3-1.jar already exists in destination.
+[INFO] commons-pool2-2.3.jar already exists in destination.
+[INFO] commons-math3-3.1.1.jar already exists in destination.
+[INFO] aether-spi-1.12.jar already exists in destination.
+[INFO] plexus-component-annotations-1.5.5.jar already exists in destination.
+[INFO] wagon-http-1.0.jar already exists in destination.
+[INFO] maven-model-builder-3.0.3.jar already exists in destination.
+[INFO] jetty-util-6.1.26.jar already exists in destination.
+[INFO] websocket-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] gson-2.2.jar already exists in destination.
+[INFO] jackson-mapper-asl-1.9.13.jar already exists in destination.
+[INFO] jsp-api-2.1.jar already exists in destination.
+[INFO] plexus-utils-2.0.7.jar already exists in destination.
+[INFO] xmlenc-0.52.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.3.jar already exists in destination.
+[INFO] maven-repository-metadata-3.0.3.jar already exists in destination.
+[INFO] lucene-sandbox-5.3.1.jar already exists in destination.
+[INFO] api-util-1.0.0-M20.jar already exists in destination.
+[INFO] websocket-api-9.2.15.v20160210.jar already exists in destination.
+[INFO] JavaEWAH-0.7.9.jar already exists in destination.
+[INFO] httpclient-4.5.1.jar already exists in destination.
+[INFO] aether-connector-file-1.12.jar already exists in destination.
+[INFO] jetty-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] api-asn1-api-1.0.0-M20.jar already exists in destination.
+[INFO] wagon-provider-api-1.0.jar already exists in destination.
+[INFO] lucene-queryparser-5.3.1.jar already exists in destination.
+[INFO] hadoop-common-2.7.3.jar already exists in destination.
+[INFO] slf4j-api-1.7.10.jar already exists in destination.
+[INFO] plexus-build-api-0.0.7.jar already exists in destination.
+[INFO] apacheds-i18n-2.0.0-M15.jar already exists in destination.
+[INFO] commons-collections-3.2.1.jar already exists in destination.
+[INFO] plexus-classworlds-2.4.jar already exists in destination.
+[INFO] maven-model-3.0.3.jar already exists in destination.
+[INFO] mongo-java-driver-3.4.1.jar already exists in destination.
+[INFO] curator-client-2.7.1.jar already exists in destination.
+[INFO] wagon-http-shared-1.0.jar already exists in destination.
+[INFO] bcpkix-jdk15on-1.52.jar already exists in destination.
+[INFO] reflections-0.9.8.jar already exists in destination.
+[INFO] aether-api-1.12.jar already exists in destination.
+[INFO] bcprov-jdk15on-1.52.jar already exists in destination.
+[INFO] guava-15.0.jar already exists in destination.
+[INFO] frontend-maven-plugin-1.3.jar already exists in destination.
+[INFO] jackson-core-2.5.3.jar already exists in destination.
+[INFO] hadoop-annotations-2.7.3.jar already exists in destination.
+[INFO] gson-extras-0.2.1.jar already exists in destination.
+[INFO] jettison-1.1.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-app-2.7.3.jar already exists in destination.
+[INFO] guice-servlet-3.0.jar already exists in destination.
+[INFO] netty-all-4.0.23.Final.jar already exists in destination.
+[INFO] jetty-io-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackrabbit-webdav-1.5.2.jar already exists in destination.
+[INFO] lucene-memory-5.3.1.jar already exists in destination.
+[INFO] commons-httpclient-3.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ zeppelin-zengine ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ zeppelin-zengine ---
+[INFO] Building jar: /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/zeppelin-zengine-0.8.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.4:attach-descriptor (attach-descriptor) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (verify.rat) @ zeppelin-zengine ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*.keywords
+[INFO] Exclude: reports/**
+[INFO] Exclude: **/.idea/
+[INFO] Exclude: **/*.iml
+[INFO] Exclude: .git/
+[INFO] Exclude: .github/*
+[INFO] Exclude: .gitignore
+[INFO] Exclude: .repository/
+[INFO] Exclude: .rat-excludes/
+[INFO] Exclude: .Rhistory
+[INFO] Exclude: **/*.diff
+[INFO] Exclude: **/*.patch
+[INFO] Exclude: **/*.avsc
+[INFO] Exclude: **/*.avro
+[INFO] Exclude: **/*.log
+[INFO] Exclude: **/test/resources/**
+[INFO] Exclude: **/.settings/*
+[INFO] Exclude: **/.classpath
+[INFO] Exclude: **/.project
+[INFO] Exclude: **/target/**
+[INFO] Exclude: **/derby.log
+[INFO] Exclude: **/metastore_db/
+[INFO] Exclude: **/logs/**
+[INFO] Exclude: **/run/**
+[INFO] Exclude: **/interpreter/**
+[INFO] Exclude: **/local-repo/**
+[INFO] Exclude: **/null/**
+[INFO] Exclude: **/notebook/**
+[INFO] Exclude: _tools/site/css/*
+[INFO] Exclude: _tools/maven-4.0.0.xsd
+[INFO] Exclude: **/README.md
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: DEPLOY.md
+[INFO] Exclude: STYLE.md
+[INFO] Exclude: Roadmap.md
+[INFO] Exclude: **/licenses/**
+[INFO] Exclude: **/zeppelin-distribution/src/bin_license/**
+[INFO] Exclude: conf/interpreter.json
+[INFO] Exclude: conf/notebook-authorization.json
+[INFO] Exclude: conf/credentials.json
+[INFO] Exclude: conf/zeppelin-env.sh
+[INFO] Exclude: conf/helium.json
+[INFO] Exclude: spark-*-bin*/**
+[INFO] Exclude: .spark-dist/**
+[INFO] Exclude: **/interpreter-setting.json
+[INFO] Exclude: **/constants.json
+[INFO] Exclude: scripts/**
+[INFO] Exclude: **/**/*.log
+[INFO] Exclude: **/**/logs/**
+[INFO] Exclude: **/test/karma.conf.js
+[INFO] Exclude: **/test/spec/**
+[INFO] Exclude: **/.babelrc
+[INFO] Exclude: **/.bowerrc
+[INFO] Exclude: .editorconfig
+[INFO] Exclude: .eslintrc
+[INFO] Exclude: protractor.conf.js
+[INFO] Exclude: **/.tmp/**
+[INFO] Exclude: **/target/**
+[INFO] Exclude: **/node/**
+[INFO] Exclude: **/node_modules/**
+[INFO] Exclude: **/bower_components/**
+[INFO] Exclude: **/dist/**
+[INFO] Exclude: **/.buildignore
+[INFO] Exclude: **/.npmignore
+[INFO] Exclude: **/.jshintrc
+[INFO] Exclude: **/yarn.lock
+[INFO] Exclude: **/bower.json
+[INFO] Exclude: **/src/fonts/Patua-One*
+[INFO] Exclude: **/src/fonts/patua-one*
+[INFO] Exclude: **/src/fonts/Roboto*
+[INFO] Exclude: **/src/fonts/roboto*
+[INFO] Exclude: **/src/fonts/fontawesome*
+[INFO] Exclude: **/src/fonts/font-awesome*
+[INFO] Exclude: **/src/styles/font-awesome*
+[INFO] Exclude: **/src/fonts/Simple-Line*
+[INFO] Exclude: **/src/fonts/simple-line*
+[INFO] Exclude: **/src/fonts/Source-Code-Pro*
+[INFO] Exclude: **/src/fonts/source-code-pro*
+[INFO] Exclude: **/src/**/**.test.js
+[INFO] Exclude: **/e2e/**/**.spec.js
+[INFO] Exclude: **/src/main/java/org/apache/zeppelin/jdbc/SqlCompleter.java
+[INFO] Exclude: docs/assets/themes/zeppelin/bootstrap/**
+[INFO] Exclude: docs/assets/themes/zeppelin/css/style.css
+[INFO] Exclude: docs/assets/themes/zeppelin/js/docs.js
+[INFO] Exclude: docs/assets/themes/zeppelin/js/search.js
+[INFO] Exclude: docs/_includes/themes/zeppelin/_jumbotron.html
+[INFO] Exclude: docs/_includes/themes/zeppelin/_navigation.html
+[INFO] Exclude: docs/404.html
+[INFO] Exclude: docs/_config.yml
+[INFO] Exclude: docs/_includes/JB/**
+[INFO] Exclude: docs/_layouts/**
+[INFO] Exclude: docs/_plugins/**
+[INFO] Exclude: docs/atom.xml
+[INFO] Exclude: docs/_includes/themes/zeppelin/default.html
+[INFO] Exclude: docs/_includes/themes/zeppelin/page.html
+[INFO] Exclude: docs/_includes/themes/zeppelin/post.html
+[INFO] Exclude: docs/_includes/themes/zeppelin/settings.yml
+[INFO] Exclude: docs/Rakefile
+[INFO] Exclude: docs/rss.xml
+[INFO] Exclude: docs/sitemap.txt
+[INFO] Exclude: docs/search_data.json
+[INFO] Exclude: **/dependency-reduced-pom.xml
+[INFO] Exclude: docs/assets/themes/zeppelin/js/anchor.min.js
+[INFO] Exclude: docs/assets/themes/zeppelin/js/toc.js
+[INFO] Exclude: docs/assets/themes/zeppelin/js/lunr.min.js
+[INFO] Exclude: docs/assets/themes/zeppelin/css/syntax.css
+[INFO] Exclude: docs/_site/**
+[INFO] Exclude: docs/Gemfile.lock
+[INFO] Exclude: **/package.json
+[INFO] Exclude: **/R/lib/**
+[INFO] Exclude: **/r/lib/**
+[INFO] Exclude: **/R/rzeppelin/R/globals.R
+[INFO] Exclude: **/R/rzeppelin/R/common.R
+[INFO] Exclude: **/R/rzeppelin/R/protocol.R
+[INFO] Exclude: **/R/rzeppelin/R/rServer.R
+[INFO] Exclude: **/R/rzeppelin/R/scalaInterpreter.R
+[INFO] Exclude: **/R/rzeppelin/R/zzz.R
+[INFO] Exclude: **/src/main/scala/scala/Console.scala
+[INFO] Exclude: **/src/main/scala/org/apache/zeppelin/rinterpreter/rscala/Package.scala
+[INFO] Exclude: **/src/main/scala/org/apache/zeppelin/rinterpreter/rscala/RClient.scala
+[INFO] Exclude: **/R/rzeppelin/DESCRIPTION
+[INFO] Exclude: **/R/rzeppelin/NAMESPACE
+[INFO] Exclude: python/src/main/resources/grpc/**/*
+[INFO] 33 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 33 licence.
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ zeppelin-zengine ---
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/zeppelin-zengine-0.8.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/zeppelin/zeppelin-zengine/0.8.0-SNAPSHOT/zeppelin-zengine-0.8.0-SNAPSHOT.jar
+[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/.flattened-pom.xml to /home/roei/.m2/repository/org/apache/zeppelin/zeppelin-zengine/0.8.0-SNAPSHOT/zeppelin-zengine-0.8.0-SNAPSHOT.pom
+[INFO] 
+[INFO] >>> cobertura-maven-plugin:2.7:cobertura (cobertura) > [cobertura]test @ zeppelin-zengine >>>
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:check (checkstyle-fail-build) @ zeppelin-zengine ---
+[INFO] 
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:copy-resources (copy-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 17 resources
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- git-commit-id-plugin:2.2.2:revision (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-remote-resources) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten-maven-plugin:1.0.0:flatten (flatten) @ zeppelin-zengine ---
+[INFO] Generating flattened POM of project org.apache.zeppelin:zeppelin-zengine:jar:0.8.0-SNAPSHOT...
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- cobertura-maven-plugin:2.7:instrument (cobertura) @ zeppelin-zengine ---
+[INFO] Skipping cobertura execution
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ zeppelin-zengine ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 18 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (copy-dependencies) @ zeppelin-zengine ---
+[INFO] commons-lang3-3.4.jar already exists in destination.
+[INFO] aether-impl-1.12.jar already exists in destination.
+[INFO] slf4j-log4j12-1.7.10.jar already exists in destination.
+[INFO] htrace-core-3.1.0-incubating.jar already exists in destination.
+[INFO] protobuf-java-2.5.0.jar already exists in destination.
+[INFO] aopalliance-1.0.jar already exists in destination.
+[INFO] quartz-2.2.1.jar already exists in destination.
+[INFO] jersey-json-1.9.jar already exists in destination.
+[INFO] maven-scm-provider-svnexe-1.4.jar already exists in destination.
+[INFO] joda-time-2.8.1.jar already exists in destination.
+[INFO] sisu-inject-plexus-2.2.2.jar already exists in destination.
+[INFO] jsr305-3.0.0.jar already exists in destination.
+[INFO] aether-connector-wagon-1.12.jar already exists in destination.
+[INFO] leveldbjni-all-1.8.jar already exists in destination.
+[INFO] jline-2.12.1.jar already exists in destination.
+[INFO] org.eclipse.jgit-4.1.1.201511131810-r.jar already exists in destination.
+[INFO] httpasyncclient-4.0.2.jar already exists in destination.
+[INFO] guice-3.0.jar already exists in destination.
+[INFO] commons-io-2.4.jar already exists in destination.
+[INFO] commons-logging-1.1.1.jar already exists in destination.
+[INFO] hadoop-auth-2.7.3.jar already exists in destination.
+[INFO] hadoop-client-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-shuffle-2.7.3.jar already exists in destination.
+[INFO] commons-cli-1.3.1.jar already exists in destination.
+[INFO] jetty-http-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackson-core-asl-1.9.13.jar already exists in destination.
+[INFO] lucene-core-5.3.1.jar already exists in destination.
+[INFO] jackson-annotations-2.5.0.jar already exists in destination.
+[INFO] dom4j-1.6.1.jar already exists in destination.
+[INFO] jersey-guice-1.9.jar already exists in destination.
+[INFO] org.eclipse.jdt.annotation-1.1.0.jar already exists in destination.
+[INFO] azure-storage-4.0.0.jar already exists in destination.
+[INFO] jetty-util-9.2.15.v20160210.jar already exists in destination.
+[INFO] regexp-1.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-core-2.7.3.jar already exists in destination.
+[INFO] commons-net-3.1.jar already exists in destination.
+[INFO] maven-plugin-api-3.0.jar already exists in destination.
+[INFO] c3p0-0.9.1.1.jar already exists in destination.
+[INFO] aws-java-sdk-kms-1.10.62.jar already exists in destination.
+[INFO] plexus-interpolation-1.14.jar already exists in destination.
+[INFO] maven-scm-api-1.4.jar already exists in destination.
+[INFO] jaxb-api-2.2.2.jar already exists in destination.
+[INFO] zeppelin-interpreter-0.8.0-SNAPSHOT.jar already exists in destination.
+[INFO] wagon-http-lightweight-1.0.jar already exists in destination.
+[INFO] activation-1.1.jar already exists in destination.
+[INFO] websocket-common-9.2.15.v20160210.jar already exists in destination.
+[INFO] hadoop-yarn-client-2.7.3.jar already exists in destination.
+[INFO] zookeeper-3.4.6.jar already exists in destination.
+[INFO] commons-configuration-1.9.jar already exists in destination.
+[INFO] commons-vfs2-2.0.jar already exists in destination.
+[INFO] commons-exec-1.3.jar already exists in destination.
+[INFO] jackson-databind-2.5.3.jar already exists in destination.
+[INFO] aether-util-1.12.jar already exists in destination.
+[INFO] httpcore-4.4.1.jar already exists in destination.
+[INFO] javax.inject-1.jar already exists in destination.
+[INFO] sisu-inject-bean-2.2.2.jar already exists in destination.
+[INFO] lucene-highlighter-5.3.1.jar already exists in destination.
+[INFO] jsoup-1.6.1.jar already exists in destination.
+[INFO] lucene-join-5.3.1.jar already exists in destination.
+[INFO] commons-lang-2.5.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-jobclient-2.7.3.jar already exists in destination.
+[INFO] stax-api-1.0-2.jar already exists in destination.
+[INFO] libthrift-0.9.2.jar already exists in destination.
+[INFO] lucene-analyzers-common-5.3.1.jar already exists in destination.
+[INFO] maven-aether-provider-3.0.3.jar already exists in destination.
+[INFO] sisu-guice-3.0.2-no_aop.jar already exists in destination.
+[INFO] maven-plugin-annotations-3.2.jar already exists in destination.
+[INFO] aws-java-sdk-s3-1.10.62.jar already exists in destination.
+[INFO] lucene-queries-5.3.1.jar already exists in destination.
+[INFO] commons-compress-1.5.jar already exists in destination.
+[INFO] frontend-plugin-core-1.3.jar already exists in destination.
+[INFO] aws-java-sdk-core-1.10.62.jar already exists in destination.
+[INFO] hadoop-yarn-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-yarn-api-2.7.3.jar already exists in destination.
+[INFO] httpcore-nio-4.3.2.jar already exists in destination.
+[INFO] log4j-1.2.17.jar already exists in destination.
+[INFO] commons-codec-1.5.jar already exists in destination.
+[INFO] hadoop-yarn-server-common-2.7.3.jar already exists in destination.
+[INFO] curator-framework-2.7.1.jar already exists in destination.
+[INFO] curator-recipes-2.7.1.jar already exists in destination.
+[INFO] maven-artifact-3.0.jar already exists in destination.
+[INFO] maven-scm-provider-svn-commons-1.4.jar already exists in destination.
+[INFO] xz-1.2.jar already exists in destination.
+[INFO] jsch-0.1.53.jar already exists in destination.
+[INFO] jackrabbit-jcr-commons-1.5.2.jar already exists in destination.
+[INFO] javassist-3.12.1.GA.jar already exists in destination.
+[INFO] apacheds-kerberos-codec-2.0.0-M15.jar already exists in destination.
+[INFO] jaxb-impl-2.2.3-1.jar already exists in destination.
+[INFO] commons-pool2-2.3.jar already exists in destination.
+[INFO] commons-math3-3.1.1.jar already exists in destination.
+[INFO] aether-spi-1.12.jar already exists in destination.
+[INFO] plexus-component-annotations-1.5.5.jar already exists in destination.
+[INFO] wagon-http-1.0.jar already exists in destination.
+[INFO] maven-model-builder-3.0.3.jar already exists in destination.
+[INFO] jetty-util-6.1.26.jar already exists in destination.
+[INFO] websocket-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] gson-2.2.jar already exists in destination.
+[INFO] jackson-mapper-asl-1.9.13.jar already exists in destination.
+[INFO] jsp-api-2.1.jar already exists in destination.
+[INFO] plexus-utils-2.0.7.jar already exists in destination.
+[INFO] xmlenc-0.52.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.3.jar already exists in destination.
+[INFO] maven-repository-metadata-3.0.3.jar already exists in destination.
+[INFO] lucene-sandbox-5.3.1.jar already exists in destination.
+[INFO] api-util-1.0.0-M20.jar already exists in destination.
+[INFO] websocket-api-9.2.15.v20160210.jar already exists in destination.
+[INFO] JavaEWAH-0.7.9.jar already exists in destination.
+[INFO] httpclient-4.5.1.jar already exists in destination.
+[INFO] aether-connector-file-1.12.jar already exists in destination.
+[INFO] jetty-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] api-asn1-api-1.0.0-M20.jar already exists in destination.
+[INFO] wagon-provider-api-1.0.jar already exists in destination.
+[INFO] lucene-queryparser-5.3.1.jar already exists in destination.
+[INFO] hadoop-common-2.7.3.jar already exists in destination.
+[INFO] slf4j-api-1.7.10.jar already exists in destination.
+[INFO] plexus-build-api-0.0.7.jar already exists in destination.
+[INFO] apacheds-i18n-2.0.0-M15.jar already exists in destination.
+[INFO] commons-collections-3.2.1.jar already exists in destination.
+[INFO] plexus-classworlds-2.4.jar already exists in destination.
+[INFO] maven-model-3.0.3.jar already exists in destination.
+[INFO] mongo-java-driver-3.4.1.jar already exists in destination.
+[INFO] curator-client-2.7.1.jar already exists in destination.
+[INFO] wagon-http-shared-1.0.jar already exists in destination.
+[INFO] bcpkix-jdk15on-1.52.jar already exists in destination.
+[INFO] reflections-0.9.8.jar already exists in destination.
+[INFO] aether-api-1.12.jar already exists in destination.
+[INFO] bcprov-jdk15on-1.52.jar already exists in destination.
+[INFO] guava-15.0.jar already exists in destination.
+[INFO] frontend-maven-plugin-1.3.jar already exists in destination.
+[INFO] jackson-core-2.5.3.jar already exists in destination.
+[INFO] hadoop-annotations-2.7.3.jar already exists in destination.
+[INFO] gson-extras-0.2.1.jar already exists in destination.
+[INFO] jettison-1.1.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-app-2.7.3.jar already exists in destination.
+[INFO] guice-servlet-3.0.jar already exists in destination.
+[INFO] netty-all-4.0.23.Final.jar already exists in destination.
+[INFO] jetty-io-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackrabbit-webdav-1.5.2.jar already exists in destination.
+[INFO] lucene-memory-5.3.1.jar already exists in destination.
+[INFO] commons-httpclient-3.1.jar already exists in destination.
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ zeppelin-zengine ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ zeppelin-zengine ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] <<< cobertura-maven-plugin:2.7:cobertura (cobertura) < [cobertura]test @ zeppelin-zengine <<<
+[INFO] 
+[INFO] --- cobertura-maven-plugin:2.7:cobertura (cobertura) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.13:checkstyle-aggregate (checkstyle-gen-html-report) @ zeppelin-zengine ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default-cli) @ zeppelin-zengine ---
+[INFO] Copying zeppelin-spark_2.10-0.8.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/dependency/zeppelin-spark_2.10-0.8.0-SNAPSHOT.jar
+[INFO] Copying zeppelin-interpreter-0.8.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/zeppelin-old-0f81b6d6132471ddf0e91cc3738da1ff365604f8/zeppelin-zengine/target/dependency/zeppelin-interpreter-0.8.0-SNAPSHOT.jar
+[INFO] commons-lang3-3.4.jar already exists in destination.
+[INFO] jetty-server-9.2.15.v20160210.jar already exists in destination.
+[INFO] aether-impl-1.12.jar already exists in destination.
+[INFO] slf4j-log4j12-1.7.10.jar already exists in destination.
+[INFO] htrace-core-3.1.0-incubating.jar already exists in destination.
+[INFO] protobuf-java-2.5.0.jar already exists in destination.
+[INFO] aopalliance-1.0.jar already exists in destination.
+[INFO] quartz-2.2.1.jar already exists in destination.
+[INFO] jersey-json-1.9.jar already exists in destination.
+[INFO] maven-scm-provider-svnexe-1.4.jar already exists in destination.
+[INFO] joda-time-2.8.1.jar already exists in destination.
+[INFO] sisu-inject-plexus-2.2.2.jar already exists in destination.
+[INFO] jsr305-3.0.0.jar already exists in destination.
+[INFO] aether-connector-wagon-1.12.jar already exists in destination.
+[INFO] leveldbjni-all-1.8.jar already exists in destination.
+[INFO] jline-2.12.1.jar already exists in destination.
+[INFO] websocket-servlet-9.2.15.v20160210.jar already exists in destination.
+[INFO] org.eclipse.jgit-4.1.1.201511131810-r.jar already exists in destination.
+[INFO] httpasyncclient-4.0.2.jar already exists in destination.
+[INFO] guice-3.0.jar already exists in destination.
+[INFO] commons-io-2.4.jar already exists in destination.
+[INFO] commons-logging-1.1.1.jar already exists in destination.
+[INFO] jersey-core-1.9.jar already exists in destination.
+[INFO] hadoop-auth-2.7.3.jar already exists in destination.
+[INFO] hadoop-client-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-shuffle-2.7.3.jar already exists in destination.
+[INFO] commons-cli-1.3.1.jar already exists in destination.
+[INFO] jetty-http-9.2.15.v20160210.jar already exists in destination.
+[INFO] jackson-core-asl-1.9.13.jar already exists in destination.
+[INFO] hadoop-yarn-server-resourcemanager-2.7.3.jar already exists in destination.
+[INFO] lucene-core-5.3.1.jar already exists in destination.
+[INFO] jackson-annotations-2.5.0.jar already exists in destination.
+[INFO] dom4j-1.6.1.jar already exists in destination.
+[INFO] jersey-guice-1.9.jar already exists in destination.
+[INFO] org.eclipse.jdt.annotation-1.1.0.jar already exists in destination.
+[INFO] azure-storage-4.0.0.jar already exists in destination.
+[INFO] jetty-util-9.2.15.v20160210.jar already exists in destination.
+[INFO] regexp-1.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-core-2.7.3.jar already exists in destination.
+[INFO] commons-net-3.1.jar already exists in destination.
+[INFO] maven-plugin-api-3.0.jar already exists in destination.
+[INFO] c3p0-0.9.1.1.jar already exists in destination.
+[INFO] aws-java-sdk-kms-1.10.62.jar already exists in destination.
+[INFO] plexus-interpolation-1.14.jar already exists in destination.
+[INFO] maven-scm-api-1.4.jar already exists in destination.
+[INFO] jaxb-api-2.2.2.jar already exists in destination.
+[INFO] wagon-http-lightweight-1.0.jar already exists in destination.
+[INFO] activation-1.1.jar already exists in destination.
+[INFO] websocket-common-9.2.15.v20160210.jar already exists in destination.
+[INFO] hadoop-yarn-client-2.7.3.jar already exists in destination.
+[INFO] zookeeper-3.4.6.jar already exists in destination.
+[INFO] commons-configuration-1.9.jar already exists in destination.
+[INFO] commons-vfs2-2.0.jar already exists in destination.
+[INFO] commons-exec-1.3.jar already exists in destination.
+[INFO] jackson-databind-2.5.3.jar already exists in destination.
+[INFO] aether-util-1.12.jar already exists in destination.
+[INFO] asm-3.1.jar already exists in destination.
+[INFO] httpcore-4.4.1.jar already exists in destination.
+[INFO] truth-0.27.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.3-tests.jar already exists in destination.
+[INFO] javax.inject-1.jar already exists in destination.
+[INFO] sisu-inject-bean-2.2.2.jar already exists in destination.
+[INFO] lucene-highlighter-5.3.1.jar already exists in destination.
+[INFO] java-xmlbuilder-0.4.jar already exists in destination.
+[INFO] jsoup-1.6.1.jar already exists in destination.
+[INFO] lucene-join-5.3.1.jar already exists in destination.
+[INFO] javax.servlet-api-3.1.0.jar already exists in destination.
+[INFO] commons-lang-2.5.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-yarn-server-applicationhistoryservice-2.7.3.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-jobclient-2.7.3.jar already exists in destination.
+[INFO] stax-api-1.0-2.jar already exists in destination.
+[INFO] libthrift-0.9.2.jar already exists in destination.
+[INFO] jetty-6.1.26.jar already exists in destination.
+[INFO] lucene-analyzers-common-5.3.1.jar already exists in destination.
+[INFO] maven-aether-provider-3.0.3.jar already exists in destination.
+[INFO] sisu-guice-3.0.2-no_aop.jar already exists in destination.
+[INFO] maven-plugin-annotations-3.2.jar already exists in destination.
+[INFO] zookeeper-3.4.6-tests.jar already exists in destination.
+[INFO] jets3t-0.9.0.jar already exists in destination.
+[INFO] aws-java-sdk-s3-1.10.62.jar already exists in destination.
+[INFO] lucene-queries-5.3.1.jar already exists in destination.
+[INFO] commons-compress-1.5.jar already exists in destination.
+[INFO] frontend-plugin-core-1.3.jar already exists in destination.
+[INFO] aws-java-sdk-core-1.10.62.jar already exists in destination.
+[INFO] hadoop-yarn-common-2.7.3.jar already exists in destination.
+[INFO] hadoop-yarn-api-2.7.3.jar already exists in destination.
+[INFO] httpcore-nio-4.3.2.jar already exists in destination.
+[INFO] log4j-1.2.17.jar already exists in destination.
+[INFO] commons-codec-1.5.jar already exists in destination.
+[INFO] commons-daemon-1.0.13.jar already exists in destination.
+[INFO] hadoop-yarn-server-common-2.7.3.jar already exists in destination.
+[INFO] curator-framework-2.7.1.jar already exists in destination.
+[INFO] curator-recipes-2.7.1.jar already exists in destination.
+[INFO] maven-artifact-3.0.jar already exists in destination.
+[INFO] maven-scm-provider-svn-commons-1.4.jar already exists in destination.
+[INFO] xz-1.2.jar already exists in destination.
+[INFO] jsch-0.1.53.jar already exists in destination.
+[INFO] jackrabbit-jcr-commons-1.5.2.jar already exists in destination.
+[INFO] javassist-3.12.1.GA.jar already exists in destination.
+[INFO] apacheds-kerberos-codec-2.0.0-M15.jar already exists in destination.
+[INFO] jaxb-impl-2.2.3-1.jar already exists in destination.
+[INFO] commons-pool2-2.3.jar already exists in destination.
+[INFO] jetty-security-9.2.15.v20160210.jar already exists in destination.
+[INFO] commons-math3-3.1.1.jar already exists in destination.
+[INFO] aether-spi-1.12.jar already exists in destination.
+[INFO] plexus-component-annotations-1.5.5.jar already exists in destination.
+[INFO] wagon-http-1.0.jar already exists in destination.
+[INFO] maven-model-builder-3.0.3.jar already exists in destination.
+[INFO] jetty-util-6.1.26.jar already exists in destination.
+[INFO] hadoop-yarn-server-tests-2.7.3-tests.jar already exists in destination.
+[INFO] websocket-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] gson-2.2.jar already exists in destination.
+[INFO] hamcrest-core-1.3.jar already exists in destination.
+[INFO] jackson-mapper-asl-1.9.13.jar already exists in destination.
+[INFO] jsp-api-2.1.jar already exists in destination.
+[INFO] jersey-server-1.9.jar already exists in destination.
+[INFO] plexus-utils-2.0.7.jar already exists in destination.
+[INFO] xmlenc-0.52.jar already exists in destination.
+[INFO] hadoop-hdfs-2.7.3.jar already exists in destination.
+[INFO] maven-repository-metadata-3.0.3.jar already exists in destination.
+[INFO] lucene-sandbox-5.3.1.jar already exists in destination.
+[INFO] api-util-1.0.0-M20.jar already exists in destination.
+[INFO] websocket-api-9.2.15.v20160210.jar already exists in destination.
+[INFO] JavaEWAH-0.7.9.jar already exists in destination.
+[INFO] httpclient-4.5.1.jar already exists in destination.
+[INFO] aether-connector-file-1.12.jar already exists in destination.
+[INFO] jetty-client-9.2.15.v20160210.jar already exists in destination.
+[INFO] api-asn1-api-1.0.0-M20.jar already exists in destination.
+[INFO] wagon-provider-api-1.0.jar already exists in destination.
+[INFO] lucene-queryparser-5.3.1.jar already exists in destination.
+[INFO] hadoop-yarn-server-web-proxy-2.7.3.jar already exists in destination.
+[INFO] hadoop-common-2.7.3.jar already exists in destination.
+[INFO] slf4j-api-1.7.10.jar already exists in destination.
+[INFO] jetty-servlet-9.2.15.v20160210.jar already exists in destination.
+[INFO] plexus-build-api-0.0.7.jar already exists in destination.
+[INFO] apacheds-i18n-2.0.0-M15.jar already exists in destination.
+[INFO] commons-collections-3.2.1.jar already exists in destination.
+[INFO] hadoop-common-2.7.3-tests.jar already exists in destination.
+[INFO] plexus-classworlds-2.4.jar already exists in destination.
+[INFO] maven-model-3.0.3.jar already exists in destination.
+[INFO] mongo-java-driver-3.4.1.jar already exists in destination.
+[INFO] curator-client-2.7.1.jar already exists in destination.
+[INFO] wagon-http-shared-1.0.jar already exists in destination.
+[INFO] bcpkix-jdk15on-1.52.jar already exists in destination.
+[INFO] reflections-0.9.8.jar already exists in destination.
+[INFO] aether-api-1.12.jar already exists in destination.
+[INFO] bcprov-jdk15on-1.52.jar already exists in destination.
+[INFO] guava-15.0.jar already exists in destination.
+[INFO] frontend-maven-plugin-1.3.jar already exists in destination.
+[INFO] jackson-core-2.5.3.jar already exists in destination.
+[INFO] hadoop-annotations-2.7.3.jar already exists in destination.
+[INFO] hadoop-yarn-server-nodemanager-2.7.3.jar already exists in destination.
+[INFO] gson-extras-0.2.1.jar already exists in destination.
+[INFO] jettison-1.1.jar already exists in destination.
+[INFO] junit-4.12.jar already exists in destination.
+[INFO] hadoop-mapreduce-client-app-2.7.3.jar already exists in destination.
+[INFO] guice-servlet-3.0.jar already exists in destination.
+[INFO] netty-all-4.0.23.Final.jar already exists in destination.
+[INFO] websocket-server-9.2.15.v20160210.jar already exists in destination.
+[INFO] jetty-io-9.2.15.v20160210.jar already exists in destination.
+[INFO] mockito-all-1.10.19.jar already exists in destination.
+[INFO] jackrabbit-webdav-1.5.2.jar already exists in destination.
+[INFO] lucene-memory-5.3.1.jar already exists in destination.
+[INFO] commons-httpclient-3.1.jar already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.130 s
+[INFO] Finished at: 2018-04-02T22:29:56-05:00
+[INFO] Final Memory: 81M/1305M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.107 s
+[INFO] Finished at: 2018-04-02T22:29:58-05:00
+[INFO] Final Memory: 8M/300M
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/home/roei). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.117 s
+[INFO] Finished at: 2018-04-02T22:30:00-05:00
+[INFO] Final Memory: 7M/238M
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/home/roei). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[INFO] Build failures were ignored.

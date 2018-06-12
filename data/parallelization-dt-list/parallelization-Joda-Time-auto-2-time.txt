@@ -1,0 +1,126 @@
+Test: randoop.jodatime.RandoopTest3.test205
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest3.test193]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest2.test487
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest2.test254]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest3.test193
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest3.test105]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest3.test105
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest3.test34]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest3.test34
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest3.test32]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest3.test32
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest3.test1]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest4.test315
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest4.test138]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest4.test13
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest3.test205]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest2.test254
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest2.test216]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest1.test467
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest1.test181]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest3.test1
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest2.test487]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest4.test138
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest4.test13]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test196
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test192]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test192
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test152]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test467
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test400]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test395
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test196]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test152
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test146]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test146
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test135]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest0.test400
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test395]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest1.test181
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest0.test498]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.jodatime.RandoopTest2.test216
+Intended behavior: FAILURE
+when executed after: [randoop.jodatime.RandoopTest1.test467]
+The revealed different behavior: PASS
+when executed after: []
+
