@@ -24,9 +24,9 @@ git pull # In case we are out of date, make sure we update to have the latest fo
 
 # Need to check if it is a date or a commit.
 if date -d "$START" > /dev/null; then
-    commits=$(git log -s --format="%H" --reverse --since="$START" "$MODULE_PATH")
+    commits=$(git log -s --format="%H" --reverse --since="$START" -- "$MODULE_PATH")
 else
-    commits=$(git log -s --format="%H" --reverse ${START}..HEAD "$MODULE_PATH")
+    commits=$(git log -s --format="%H" --reverse ${START}..HEAD -- "$MODULE_PATH")
 fi
 
 cd ..
