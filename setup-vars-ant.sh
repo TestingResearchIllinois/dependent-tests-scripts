@@ -9,11 +9,12 @@ export NEW_DT_SUBJ=$NEW_DT_SUBJ_ROOT
 export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_ROOT
 
 # Calculate root directory using the location of this script.
+# We expect that it will be one directory up from this (i.e., this directory should be inside the root).
 export DT_ROOT=$(cd "$(dirname $BASH_SOURCE)/.."; pwd)
-export DT_TOOLS_DIR=$DT_ROOT/impact-tools/
+export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
 
 # Directory for all the jar files containing the DT-impact tools and its dependencies
-export DT_TOOLS=$DT_ROOT/impact-tools/*
+export DT_TOOLS=$DT_SCRIPTS/impact-tools/*
 
 # Directory for libraries of the old subject
 export DT_LIBS=$DT_SUBJ/lib/*

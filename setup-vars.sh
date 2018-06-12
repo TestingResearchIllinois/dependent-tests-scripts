@@ -3,11 +3,12 @@
 # Root directory for our tools and results
 
 # Calculate root directory using the location of this script.
+# We expect that it will be one directory up from this (i.e., this directory should be inside the root).
 export DT_ROOT=$(cd "$(dirname $BASH_SOURCE)/.."; pwd)
-export DT_TOOLS_DIR=$DT_ROOT/impact-tools/
+export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
 
 # Directory for all the jar files containing the DT-impact tools and its dependencies
-export DT_TOOLS=$DT_ROOT/impact-tools/*
+export DT_TOOLS=$DT_SCRIPTS/impact-tools/*
 
 # Directory for libraries of the old subject
 export DT_LIBS=$DT_SUBJ/dependency/*
@@ -45,3 +46,4 @@ export PARA_DT_LISTS=$DT_DATA/parallelization-dt-list
 # Files containing the minimum number of dependent tests a subject has
 export AUTO_MIN_DTS=$DT_DATA/AUTO_MIN_DTs.txt
 export ORIG_MIN_DTS=$DT_DATA/ORIG_MIN_DTs.txt
+
