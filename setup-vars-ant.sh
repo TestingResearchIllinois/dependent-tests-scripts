@@ -40,7 +40,7 @@ export SELE_RESULTS=$DT_ROOT/selection-results
 export PARA_RESULTS=$DT_ROOT/parallelization-results
 
 # Directory for all the scripts used to generate the figures in our paper
-export DT_SCRIPTS=$DT_ROOT/scripts
+export DT_SCRIPTS=$(cd "$(dirname $BASH_SOURCE)"; pwd)
 # Directory for all the hardcoded data related to our subjects
 export DT_DATA=$DT_SCRIPTS/data
 
