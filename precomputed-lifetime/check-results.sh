@@ -7,11 +7,12 @@
 
 . ./constants.sh
 
-for dir in $(find -type d -maxdepth 1)
+for dir in $(find -maxdepth 1 -type d)
 do
     if [[ -d "$dir/$prioDir" ]] && [[ -d "$dir/$seleDir" ]] && [[ -d "$dir/$paraDir" ]]; then
-        if grep -ERq "DTs not fixed: [1-9]" $dir; then
-            echo "Dependent tests were found in $dir"
+        matches=$(grep -lER "DTs not fixed: [1-9]" $dir)
+        if [[ ! -z "$matches" ]]; then
+            echo "Dependent tests found in $matches"
         else
             echo "No dependent tests found in $dir"
         fi
