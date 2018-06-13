@@ -21,7 +21,9 @@ if [[ "$testType" == "auto" ]]; then
         TESTS=$DT_RANDOOP
     fi
 else
-    TESTS=$NEW_DT_TESTS
+    if [[ "$version" == "new" ]]; then
+        TESTS=$NEW_DT_TESTS
+    fi
 fi
 
 if [[ "$version" == "new" ]]; then
