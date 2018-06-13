@@ -1,6 +1,0 @@
-Test: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential
-Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential]
-The revealed different behavior: PASS
-when executed after: []
-

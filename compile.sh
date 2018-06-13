@@ -53,7 +53,7 @@ while [ "$index" -lt "$count" ]; do
   ANT_BASE_DIR=${antMvnExp[$index]}
   EXP_DIR=${antMvnCP[$index]}
 
-  ant -Dbasedir=$ANT_BASE_DIR -f $DT_ROOT/scripts/data/build.xml
+  ant -Dbasedir=$ANT_BASE_DIR -f $DT_ROOT/scripts/build.xml
 
   compileRandoop $ANT_BASE_DIR $EXP_DIR
 
@@ -69,7 +69,7 @@ while [ "$index" -lt "$count" ]; do
   ANT_BASE_DIR=${antMvnNextExp[$index]}
   EXP_DIR=${antMvnCP[$index]}
 
-  ant -Dbasedir=$ANT_BASE_DIR -f $DT_ROOT/scripts/data/build.xml
+  ant -Dbasedir=$ANT_BASE_DIR -f $DT_ROOT/scripts/build.xml
 
   compileRandoop $ANT_BASE_DIR $EXP_DIR
 
