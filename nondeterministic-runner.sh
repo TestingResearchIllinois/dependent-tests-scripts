@@ -22,7 +22,7 @@ if [[ ! -z "$1" ]]; then
     cd $CURRENT
 fi
 
-source $DT_ROOT/config.sh
+source $DT_SCRIPTS/config.sh
 
 startTime=$(date +%s)
 
