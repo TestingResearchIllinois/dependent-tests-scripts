@@ -86,12 +86,7 @@ if [[ -d "$NONDETERMINISTIC_FOLDER/" ]]; then
     rm -rf $NONDETERMINISTIC_FOLDER
 fi
 mkdir $NONDETERMINISTIC_FOLDER/
-
-if [[ "$version" == "new" ]]; then
-    cp $DT_SUBJ/$SUBJ_NAME-$testType-order $NONDETERMINISTIC_FOLDER/deterministic-order
-else
-    cp $NEW_DT_SUBJ/$SUBJ_NAME-$testType-order $NONDETERMINISTIC_FOLDER/deterministic-order
-fi
+cp $testOrder $NONDETERMINISTIC_FOLDER/deterministic-order
 
 while [[ "$k" -le "$numTimesToRun" ]]
 do
