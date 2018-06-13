@@ -29,11 +29,6 @@ echo "[INFO] Starting $PROJ_NAME with commits $NEW_COMMIT and $OLD_COMMIT"
 git clone $GIT_URL $DT_SUBJ_ROOT
 git clone $GIT_URL $NEW_DT_SUBJ_ROOT
 
-cd $NEW_DT_SUBJ_ROOT
-new_date=$(git log -1 --format="%cd" --date=format"%Y-%m-%d-%H-%M-%S")
-
-echo "[INFO] Date of new commit is: $new_date"
-
 # Set project version.
 echo "[INFO] Setting project versions."
 
@@ -46,6 +41,10 @@ else
     echo "Directory not found: $NEW_DT_SUBJ_ROOT"
     exit 1
 fi
+
+cd $NEW_DT_SUBJ_ROOT
+new_date=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d-%H-%M-%S")
+echo "[INFO] Date of new commit is: $new_date"
 
 if [[ -d "$DT_SUBJ_ROOT" ]]; then
     cd $DT_SUBJ_ROOT
@@ -66,7 +65,7 @@ export NEW_DT_SUBJ=$NEW_DT_SUBJ_ROOT/$MODULE_PATH/target
 export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_ROOT/$MODULE_PATH
 
 cd $PRECOMPUTED_LIFETIME_ROOT
-.. ./setup-vars.sh
+. ../setup-vars.sh
 
 # Write a setup script.
 (
