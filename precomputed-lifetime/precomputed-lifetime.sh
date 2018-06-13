@@ -7,7 +7,7 @@
 # $6 - Subj name formal
 
 # Run to get things like DT_ROOT and DT_SCRIPTS
-. ./setup-vars.sh
+. ../setup-vars.sh
 
 GIT_URL=$1
 NEW_COMMIT=$2
@@ -61,7 +61,7 @@ export NEW_DT_SUBJ=$NEW_DT_SUBJ_ROOT/$MODULE_PATH/target
 export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_ROOT/$MODULE_PATH
 
 cd $PRECOMPUTED_LIFETIME_ROOT
-. ./setup-vars.sh
+.. ./setup-vars.sh
 
 # Write a setup script.
 (
@@ -76,7 +76,7 @@ cd $PRECOMPUTED_LIFETIME_ROOT
 
     echo "export SUBJ_NAME="$SUBJ_NAME""
     echo "export SUBJ_NAME_FORMAL="$SUBJ_NAME_FORMAL""
-    echo ". \"$PRECOMPUTED_LIFETIME_ROOT/setup-vars.sh\""
+    echo ". \"$DT_SCRIPTS/setup-vars.sh\""
 ) | tee "setup-${PROJ_NAME}-${NEW_COMMIT}-${OLD_COMMIT}.sh"
 
 # Modified version of run-subj.sh (but using the precomputed dependencies we already have).

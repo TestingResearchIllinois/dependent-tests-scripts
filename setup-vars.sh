@@ -5,10 +5,6 @@
 # Calculate root directory using the location of this script.
 # We expect that it will be one directory up from this (i.e., this directory should be inside the root).
 export DT_ROOT=$(cd "$(dirname $BASH_SOURCE)/.."; pwd)
-export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
-
-# Directory for all the jar files containing the DT-impact tools and its dependencies
-export DT_TOOLS=$DT_SCRIPTS/impact-tools/*
 
 # Directory for libraries of the old subject
 export DT_LIBS=$DT_SUBJ/dependency/*
@@ -37,6 +33,10 @@ export PARA_RESULTS=$DT_ROOT/parallelization-results
 export DT_SCRIPTS=$(cd "$(dirname $BASH_SOURCE)"; pwd)
 # Directory for all the hardcoded data related to our subjects
 export DT_DATA=$DT_SCRIPTS/data
+export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
+
+# Directory for all the jar files containing the DT-impact tools and its dependencies
+export DT_TOOLS=$DT_SCRIPTS/impact-tools/*
 
 # Directory for all the jar files containing the DT-impact tools and its dependencies
 export PRIO_DT_LISTS=$DT_DATA/prioritization-dt-list
