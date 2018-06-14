@@ -37,7 +37,7 @@ for j in "${testTypes[@]}"; do
 
   if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
     echo "[INFO] Running prioritization for $j test type"
-    java -cp $DT_TOOLS:: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
       -technique prioritization \
       -coverage statement \
       -order original \
