@@ -64,11 +64,11 @@ for j in "${testTypes[@]}"; do
                 -classpath "$CLASSPATH" \
                 $postProcessFlag
 
-            # Run it for para-time.
+            # Run with dependentTestFile
             echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                 -technique parallelization \
-                -order time \
-                -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
+                -order $order \
+                $timeFlag \
                 -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
                 -testInputDir $DT_SUBJ/sootTestOutput-$j \
                 -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
@@ -78,11 +78,12 @@ for j in "${testTypes[@]}"; do
                 -timesToRun $medianTimes \
                 -outputDir $DT_ROOT/$paraDir \
                 -classpath $CLASSPATH \
-                -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt\""
+                -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt\" \
+                $postProcessFlag"
             java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                 -technique parallelization \
-                -order time \
-                -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
+                -order $order \
+                $timeFlag \
                 -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
                 -testInputDir $DT_SUBJ/sootTestOutput-$j \
                 -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
@@ -92,7 +93,8 @@ for j in "${testTypes[@]}"; do
                 -timesToRun $medianTimes \
                 -outputDir $DT_ROOT/$paraDir \
                 -classpath "$CLASSPATH" \
-                -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt"
+                -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt" 
+                $postProcessFlag
         done
     done
 
