@@ -15,7 +15,9 @@ for dir in "$@"; do
         # Looks for negative values. If we find any, that means the enhanced technique is worse.
         # TODO: Maybe go on a per-technique basis.
         for fname in $(find "$dir" -name "enhanced-*-orig-results.tex"); do
-            if grep -q "-" "$fname"; then
+            data=$(cat "$fname" | head -1 | sed -E "s/&//g" | awk '{ $1=""; print $0; }') # Get the first line, and remove all the &
+            # echo $data
+            if echo $data | grep -q "\-"; then
                 echo "Found negative values for $fname"
             fi
         done
