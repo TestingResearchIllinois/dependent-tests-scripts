@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-# Usage: python check-enhanced-results.py PRIO_RESULTS SELE_RESULTS PARA_RESULTS
+# Usage: python check-enhanced-results.py START_DATE PRIO_RESULTS SELE_RESULTS PARA_RESULTS
+# START_DATE should be in the format yyyy-mm-dd-H-M-S
 
 from datetime import datetime
 import itertools
@@ -52,12 +53,11 @@ def gather_results(results):
 
     return columns
 
-def process_results(gathered_results):
+def process_results(start_date, gathered_results):
     result = []
 
     for i, col in enumerate(gathered_results):
         better = list(itertools.takewhile(lambda (date, v): not v.startswith('-'), col))
-        start_date = col[0][0]
 
         if better:
             end_date = better[-1][0]
@@ -71,27 +71,29 @@ def process_results(gathered_results):
 
     return result
 
-def results(fname):
-    return process_results(gather_results(read_results(fname)))
+def results(start_date, fname):
+    return process_results(start_date, gather_results(read_results(fname)))
 
 def mean(ns):
     return sum(ns) / float(len(ns))
 
 def run(argv):
+    start_date = datetime(*map(int, argv[1].split('-')))
+
     print('')
     print('-----------------------------------------------------------')
     print('Prioritization results:')
-    prio_results = results(argv[1])
+    prio_results = results(start_date, argv[2])
 
     print('')
     print('-----------------------------------------------------------')
     print('Selection results:')
-    sele_results = results(argv[2])
+    sele_results = results(start_date, argv[3])
 
     print('')
     print('-----------------------------------------------------------')
     print('Parallelization results:')
-    para_results = results(argv[3])
+    para_results = results(start_date, argv[4])
 
     all_results = prio_results + sele_results + para_results
 
