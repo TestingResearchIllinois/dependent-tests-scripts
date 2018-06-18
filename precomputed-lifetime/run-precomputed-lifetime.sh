@@ -48,7 +48,7 @@ if [[ -z "$NEW_COMMIT_FILE" ]]; then
 
     > old-commit-list.txt
     for commit in "${old_commits[@]}"; do
-        echo "$commit" >> new-commit-list.txt
+        echo "$commit" >> old-commit-list.txt
     done
 else
     echo "[INFO] Using commits from $NEW_COMMIT_FILE and $OLD_COMMIT_FILE."
