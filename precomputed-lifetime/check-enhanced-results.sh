@@ -4,6 +4,11 @@
 
 source ../setup-vars.sh
 
+# Create and clear the results files.
+> prio-results.txt
+> sele-results.txt
+> para-results.txt
+
 for dir in "$@"; do
     if [[ -d "$dir" ]]; then
         # Generate enhanced results
@@ -12,15 +17,20 @@ for dir in "$@"; do
         java -cp $DT_TOOLS: edu.washington.cs.dt.impact.figure.generator.EnhancedResultsFigureGenerator -directory "$dir/selection-results" -outputDirectory "$dir" -allowNegatives
         java -cp $DT_TOOLS: edu.washington.cs.dt.impact.figure.generator.EnhancedResultsFigureGenerator -directory "$dir/parallelization-results" -outputDirectory "$dir" -allowNegatives
 
-        # Looks for negative values. If we find any, that means the enhanced technique is worse.
         # TODO: Maybe go on a per-technique basis.
         for fname in $(find "$dir" -name "enhanced-*-orig-results.tex"); do
-            data=$(cat "$fname" | head -1 | sed -E "s/&//g" | awk '{ $1=""; print $0; }') # Get the first line, and remove all the &
-            # echo $data
-            if echo $data | grep -q "\-"; then
-                echo "Found negative values for $fname"
+            data=$(cat "$fname" | head -1 | awk '{ $1=""; $2=""; print $0; }') # Get the first line, remove the subject name and it's &
+            
+            if [[ "$fname" =~ "prio" ]]; then
+                echo "$dir & $data" >> prio-results.txt
+            elif [[ "$fname" =~ "sele" ]]; then
+                echo "$dir & $data" >> sele-results.txt
+            elif [[ "$fname" =~ "para" ]]; then
+                echo "$dir & $data" >> para-results.txt
             fi
         done
     fi
 done
+
+python check-enhanced-results.py prio-results.txt sele-results.txt para-results.txt
 
