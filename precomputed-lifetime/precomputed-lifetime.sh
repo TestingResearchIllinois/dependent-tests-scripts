@@ -42,6 +42,10 @@ else
     exit 1
 fi
 
+cd $NEW_DT_SUBJ_ROOT
+new_date=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d-%H-%M-%S")
+echo "[INFO] Date of new commit is: $new_date"
+
 if [[ -d "$DT_SUBJ_ROOT" ]]; then
     cd $DT_SUBJ_ROOT
     echo "[INFO] Resetting $DT_SUBJ_ROOT to $OLD_COMMIT"
@@ -61,7 +65,7 @@ export NEW_DT_SUBJ=$NEW_DT_SUBJ_ROOT/$MODULE_PATH/target
 export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_ROOT/$MODULE_PATH
 
 cd $PRECOMPUTED_LIFETIME_ROOT
-.. ./setup-vars.sh
+. ../setup-vars.sh
 
 # Write a setup script.
 (
@@ -77,7 +81,7 @@ cd $PRECOMPUTED_LIFETIME_ROOT
     echo "export SUBJ_NAME="$SUBJ_NAME""
     echo "export SUBJ_NAME_FORMAL="$SUBJ_NAME_FORMAL""
     echo ". \"$DT_SCRIPTS/setup-vars.sh\""
-) | tee "setup-${PROJ_NAME}-${NEW_COMMIT}-${OLD_COMMIT}.sh"
+) | tee "setup-${PROJ_NAME}-${new_date}-${NEW_COMMIT}.sh"
 
 # Modified version of run-subj.sh (but using the precomputed dependencies we already have).
 echo "[INFO] Compiling subject."
@@ -108,13 +112,11 @@ bash ./setup-para-orig.sh
 bash run-with-deps.sh
 
 # Save results for later
-cd $NEW_DT_SUBJ_ROOT
-new_date=$(git log -1 --format="%aI")
-result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-${NEW_COMMIT}-${OLD_COMMIT}"
+result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
 mkdir -p $result_dir
-cp -r $DT_ROOT/prioritization-results $result_dir
-cp -r $DT_ROOT/selection-results $result_dir
-cp -r $DT_ROOT/parallelization-results $result_dir
+mv $DT_ROOT/prioritization-results $result_dir
+mv $DT_ROOT/selection-results $result_dir
+mv $DT_ROOT/parallelization-results $result_dir
 
 cd $PRECOMPUTED_LIFETIME_ROOT
 

@@ -1,4 +1,5 @@
-export DT_ROOT=/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments
+export DT_ROOT=$(cd "$(dirname $BASH_SOURCE)/../.."; pwd)
+
 export DT_SUBJ_ROOT=$DT_ROOT/dubbo-old-0467e151b45588f907557f2656782898b7443544
 export DT_SUBJ=$DT_ROOT/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target
 export DT_SUBJ_SRC=$DT_ROOT/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring
