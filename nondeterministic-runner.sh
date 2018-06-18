@@ -116,7 +116,7 @@ do
     java -cp $experimentCP edu.washington.cs.dt.impact.tools.UndeterministicTestFinder -undeterministicTestFile $NONDETERMINISTIC_FOLDER/undeterminisitic-order -deterministicTestFile $NONDETERMINISTIC_FOLDER/deterministic-order -crossReferenceFile $NONDETERMINISTIC_FOLDER/cross-referencer-file.txt -randomizeDeterministicTests
 
     # Make sure we don't run any of the nondeterministic tests again (they could be long running tests and have timed out)
-    grep -hoFf $testOrder $NONDETERMINISTIC_FILE/debug.log* | sort | uniq > nondeterministic-list.txt
+    grep -hoFf $testOrder $NONDETERMINISTIC_FOLDER/debug.log* | sort | uniq > nondeterministic-list.txt
     tmpFile=$(mktemp)
     grep -Ffv nondeterministic-list.txt $NONDETERMINISTIC_FOLDER/deterministic-order > tmpFile
     mv tmpFile $NONDETERMINISTIC_FOLDER/deterministic-order
