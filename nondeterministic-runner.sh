@@ -22,7 +22,7 @@ if [[ ! -z "$1" ]]; then
     cd $CURRENT
 fi
 
-source $DT_ROOT/config.sh
+source $DT_SCRIPTS/config.sh
 
 startTime=$(date +%s)
 
@@ -99,11 +99,11 @@ do
 
     echo "[INFO] Running order for first time."
     clearProjectFiles
-    java -cp $experimentCP edu.washington.cs.dt.main.ImpactMain -inputTests $NONDETERMINISTIC_FOLDER/deterministic-order > $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-order-results.txt
+    java -cp $experimentCP edu.washington.cs.dt.main.ImpactMain -timeout 3600 -inputTests $NONDETERMINISTIC_FOLDER/deterministic-order > $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-order-results.txt
 
     echo "[INFO] Re-running order."
     clearProjectFiles
-    java -cp $experimentCP edu.washington.cs.dt.main.ImpactMain -inputTests $NONDETERMINISTIC_FOLDER/deterministic-order > $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-rerun-results.txt
+    java -cp $experimentCP edu.washington.cs.dt.main.ImpactMain -timeout 3600 -inputTests $NONDETERMINISTIC_FOLDER/deterministic-order > $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-rerun-results.txt
 
     echo "[INFO] Cross referencing."
     java -cp $experimentCP $crossReferenceClass -origOrder $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-order-results.txt -testOrder $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-rerun-results.txt > $NONDETERMINISTIC_FOLDER/cross-referencer-file.txt
@@ -119,6 +119,12 @@ do
 
     echo "[INFO] Finding non-deterministic tests"
     java -cp $experimentCP edu.washington.cs.dt.impact.tools.UndeterministicTestFinder -undeterministicTestFile $NONDETERMINISTIC_FOLDER/undeterminisitic-order -deterministicTestFile $NONDETERMINISTIC_FOLDER/deterministic-order -crossReferenceFile $NONDETERMINISTIC_FOLDER/cross-referencer-file.txt -randomizeDeterministicTests
+
+    # Make sure we don't run any of the nondeterministic tests again (they could be long running tests and have timed out)
+    grep -hoFf $testOrder $NONDETERMINISTIC_FILE/debug.log* | sort | uniq > nondeterministic-list.txt
+    tmpFile=$(mktemp)
+    grep -Ffv nondeterministic-list.txt $NONDETERMINISTIC_FOLDER/deterministic-order > tmpFile
+    mv tmpFile $NONDETERMINISTIC_FOLDER/deterministic-order
 
     k=$(($k+1))
 
