@@ -12,4 +12,9 @@ export NEW_DT_CLASS=$DT_ROOT/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7
 export NEW_DT_TESTS=$DT_ROOT/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/test-classes
 export SUBJ_NAME=elastic-job-lite-elastic-job-common-core
 export SUBJ_NAME_FORMAL=elastic-job-lite-elastic-job-common-core
+
+# The lowest level package that contains all of this subject's code. Used by PIT
+export SUBJ_PACKAGE="com.dangdang.ddframe.job.*"
+
 . ../setup-vars.sh
+

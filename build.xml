@@ -76,7 +76,7 @@
             pitClasspath="pit.path"
             classPath="${classPathStr}:${result.classes.dir}:${result.tests.dir}"
             targetClasses="${env.SUBJ_PACKAGE}"
-            targetTests="${env.SUBJ_PACKAGE}"
+            targetTests="*"
             reportDir="./target/pit/orig"
             outputFormats="XML"
             sourceDir="${src.dir}"/>

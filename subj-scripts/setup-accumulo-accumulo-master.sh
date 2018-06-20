@@ -11,4 +11,9 @@ export NEW_DT_CLASS=$ROOT/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/
 export NEW_DT_TESTS=$ROOT/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/test-classes
 export SUBJ_NAME=accumulo-accumulo-master
 export SUBJ_NAME_FORMAL=accumulo-accumulo-master
+
+# The lowest level package that contains all of this subject's code. Used by PIT
+export SUBJ_PACKAGE="org.apache.accumulo.master.*"
+
 . ../setup-vars.sh
+
