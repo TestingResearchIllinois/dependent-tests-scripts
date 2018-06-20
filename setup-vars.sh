@@ -38,6 +38,9 @@ export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
 # Directory for all the jar files containing the DT-impact tools and its dependencies
 export DT_TOOLS=$DT_SCRIPTS/impact-tools/*
 
+# Directory for all the jars necessary to run PIT
+export PIT_JARS=$DT_SCRIPTS/pit-jars
+
 # Directory for all the jar files containing the DT-impact tools and its dependencies
 export PRIO_DT_LISTS=$DT_DATA/prioritization-dt-list
 export SELE_DT_LISTS=$DT_DATA/selection-dt-list

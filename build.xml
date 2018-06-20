@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="Subject">
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.7"/>
-    <property name="source" value="1.7"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
 
-    <property name="src.dir" location="./src/main"/>
-    <property name="tests.dir" location="./src/test"/>
+    <property name="src.dir" location="./src/main/java"/>
+    <property name="tests.dir" location="./src/test/java"/>
     <property name="result.dir" location="./target"/>
     <property name="result.classes.dir" location="${result.dir}/classes"/>
     <property name="result.tests.dir" location="${result.dir}/test-classes"/>
+    <property name="result.autotests.dir" location="${result.dir}/randoop/bin"/>
+    <property environment="env"/>
 
     <path id="class.path">
         <fileset dir="${result.dir}/dependency">
@@ -41,4 +43,54 @@
             </classpath>
         </javac>
     </target>
+
+    <!-- Run JUnit -->
+    <target name="junit" depends="compile">
+        <mkdir dir="./results"/>
+
+        <junit printsummary="yes" haltonfailure="no">
+            <classpath refid="class.path" />
+            <classpath location="${result.classes.dir}" />
+            <classpath location="${result.tests.dir}" />
+            <formatter type="xml" />
+            <batchtest fork="yes" todir="./results">
+                <fileset dir="${tests.dir}">
+                    <include name="**/*Test*.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <path id="pit.path">
+        <fileset dir="${env.PIT_JARS}">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <taskdef name="pitest" classname="org.pitest.ant.PitestTask" classpathref="pit.path" />
+
+    <property name="classPathStr" refid="class.path"/>
+
+    <target depends="build" name="mutationCoverage">
+        <pitest
+            pitClasspath="pit.path"
+            classPath="${classPathStr}:${result.classes.dir}:${result.tests.dir}"
+            targetClasses="${env.SUBJ_PACKAGE}"
+            targetTests="${env.SUBJ_PACKAGE}"
+            reportDir="./target/pit/orig"
+            outputFormats="XML"
+            sourceDir="${src.dir}"/>
+    </target>
+
+    <target depends="build" name="mutationCoverageAuto">
+        <pitest
+            pitClasspath="pit.path"
+            classPath="${classPathStr}:${result.classes.dir}:${result.autotests.dir}"
+            targetClasses="${env.SUBJ_PACKAGE}"
+            targetTests="*"
+            reportDir="./target/pit/auto"
+            outputFormats="XML"
+            sourceDir="${src.dir}"/>
+    </target>
 </project>
+
