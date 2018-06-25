@@ -152,7 +152,7 @@ do
             if [[ "${new_module}" =~ $MODULE_FILTER ]]; then
                 echo
                 echo "[INFO] ${module} is in both the old and new versions, running tools."
-                
+
                 # Make sure we exit if any one of these steps fails.
                 (
                     set -e
@@ -191,7 +191,7 @@ do
                         echo "[INFO] $module in the new subject has no test files, skipping."
                         break
                     fi
-                    
+
                     cd $DT_SCRIPTS
 
                     # Keep track that we tried this one:
@@ -210,25 +210,8 @@ do
                     cd $DT_SCRIPTS
 
                     # Generate a setup script.
-                    SETUP_SCRIPT=$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh
-                    echo "export DT_ROOT=$DT_ROOT" | tee "$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
-                    (
-                        echo "export DT_SUBJ_ROOT=$DT_SUBJ_ROOT"
-                        echo "export DT_SUBJ=$DT_SUBJ"
-                        echo "export DT_SUBJ_SRC=$DT_SUBJ_SRC"
-                        echo "export DT_CLASS=$DT_CLASS"
-                        echo "export DT_TESTS=$DT_TESTS"
-                        echo "export DT_TEST_SRC=$DT_TEST_SRC"
-                        echo "export NEW_DT_SUBJ_ROOT=$NEW_DT_SUBJ_ROOT"
-                        echo "export NEW_DT_SUBJ=$NEW_DT_SUBJ"
-                        echo "export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_SRC"
-                        echo "export NEW_DT_CLASS=$NEW_DT_CLASS"
-                        echo "export NEW_DT_TESTS=$NEW_DT_TESTS"
-                        echo "export NEW_DT_TEST_SRC=$NEW_DT_TEST_SRC"
-                        echo "export SUBJ_NAME=$SUBJ_NAME"
-                        echo "export SUBJ_NAME_FORMAL=$SUBJ_NAME_FORMAL"
-                        echo ". $DT_ROOT/scripts/setup-vars.sh"
-                    ) | sed -E "s|$DT_ROOT|\$DT_ROOT|g" | tee -a "$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
+                    SETUP_SCRIPT="$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
+                    bash "$DT_SCRIPTS/write-setup-script.sh" "$SETUP_SCRIPT"
 
                     echo
                     echo "[INFO] Calling main script: $DT_SCRIPTS/run-module.sh"

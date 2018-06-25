@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Inputs:
 # $1 - Git repo url
 # $2 - commit to run (new)
@@ -5,6 +7,7 @@
 # $4 - path in repo (probably for module)
 # $5 - Subj name
 # $6 - Subj name formal
+# $7 - Original subject version's DT_SUBJ
 
 # Run to get things like DT_ROOT and DT_SCRIPTS
 . ../setup-vars.sh
@@ -15,6 +18,7 @@ OLD_COMMIT=$3
 MODULE_PATH=$4
 export SUBJ_NAME=$5
 export SUBJ_NAME_FORMAL=$6
+ORIGINAL_DT_SUBJ=$7
 
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
@@ -65,23 +69,9 @@ export NEW_DT_SUBJ=$NEW_DT_SUBJ_ROOT/$MODULE_PATH/target
 export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_ROOT/$MODULE_PATH
 
 cd $PRECOMPUTED_LIFETIME_ROOT
-. ../setup-vars.sh
+source "$DT_SCRIPTS/setup-vars.sh"
 
-# Write a setup script.
-(
-    echo "export DT_SUBJ_ROOT=\"$DT_SUBJ_ROOT\""
-    echo "export NEW_DT_SUBJ_ROOT=\"$NEW_DT_SUBJ_ROOT\""
-
-    echo "export DT_SUBJ=$DT_SUBJ"
-    echo "export DT_SUBJ_SRC=$DT_SUBJ_SRC"
-
-    echo "export NEW_DT_SUBJ=$NEW_DT_SUBJ"
-    echo "export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_SRC"
-
-    echo "export SUBJ_NAME="$SUBJ_NAME""
-    echo "export SUBJ_NAME_FORMAL="$SUBJ_NAME_FORMAL""
-    echo ". \"$DT_SCRIPTS/setup-vars.sh\""
-) | tee "setup-${PROJ_NAME}-${new_date}-${NEW_COMMIT}.sh"
+bash "$DT_SCRIPTS/write-setup-script.sh" "setup-${PROJ_NAME}-${new_date}-${NEW_COMMIT}.sh"
 
 # Modified version of run-subj.sh (but using the precomputed dependencies we already have).
 echo "[INFO] Compiling subject."
@@ -101,13 +91,16 @@ if [[ ! -e $NEW_DT_SUBJ/$SUBJ_NAME-env-files ]]; then
 fi
 
 # Runs commands for "Instructions to setup a subject for test prioritization" section.
-bash ./setup-prio-orig.sh
+bash $DT_SCRIPTS/setup-prio.sh
+
+# Copy the auto tests over from the old version.
+bash $PRECOMPUTED_LIFETIME_ROOT/copy-auto-tests.sh "$ORIGINAL_DT_SUBJ/randoop"
 
 # Runs commands for "Instructions to setup a subject for test selection" section.
-bash ./setup-sele-orig.sh
+bash $DT_SCRIPTS/setup-sele.sh
 
 # Runs commands for "Instructions to setup a subject for test parallelization" section.
-bash ./setup-para-orig.sh
+bash $DT_SCRIPTS/setup-para.sh
 
 bash run-with-deps.sh
 
