@@ -24,11 +24,7 @@ echo "[INFO] Downloading repository to select commits."
 git clone $GIT_URL temp-$PROJ_NAME
 
 if [[ -z "$NEW_COMMIT_FILE" ]]; then
-    echo "[INFO] Selecting $COMMIT_NUM commits."
-    cd temp-$PROJ_NAME
-    git pull # In case we are out of date, make sure we update to have the latest for the commit selection.
-
-    bash sample-commits.sh "$(pwd)" "$START" "$COMMIT_NUM" uniform
+    bash sample-commits.sh "$(pwd)" "$START" "$COMMIT_NUM" uniform 58
 fi
 
 echo "[INFO] Using commits from $NEW_COMMIT_FILE and $OLD_COMMIT_FILE."

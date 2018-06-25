@@ -15,7 +15,10 @@ CUTOFF_DAYS="$6"
 
 ORIGINAL_DIR="$(pwd)"
 
+echo "[INFO] Selecting $COMMIT_NUM commits using selection type $SELECT_TYPE"
+
 cd $GIT_REPO_PATH
+git pull # In case we are out of date, make sure we update to have the latest for the commit selection.
 
 startDate=$(git show -s --format="%ci" $START_COMMIT)
 cutoffDate=$(date -d "$startDate+$CUTOFF_DAYS days")
