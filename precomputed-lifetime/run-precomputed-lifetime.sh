@@ -13,7 +13,7 @@ START=$2
 MODULE_PATH=$3
 export SUBJ_NAME=$4
 export SUBJ_NAME_FORMAL=$5
-ORIGINAL_DT_SUBJ=$6
+ORIGINAL_DT_SUBJ=$(cd "$6"; pwd)
 
 NEW_COMMIT_FILE="new-commit-list.txt"
 OLD_COMMIT_FILE="old-commit-list.txt"
