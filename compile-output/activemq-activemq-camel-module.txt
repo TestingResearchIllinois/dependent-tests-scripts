@@ -1,464 +1,0 @@
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building ActiveMQ :: Camel 5.16.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-spring/5.16.0-SNAPSHOT/activemq-spring-5.16.0-20180330.104423-108.pom
-4/15 KB   8/15 KB   8/15 KB   12/15 KB   15/15 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-spring/5.16.0-SNAPSHOT/activemq-spring-5.16.0-20180330.104423-108.pom (15 KB at 21.3 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-parent/5.16.0-SNAPSHOT/maven-metadata.xml
-617/617 B               Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-parent/5.16.0-SNAPSHOT/maven-metadata.xml (617 B at 2.9 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-parent/5.16.0-SNAPSHOT/activemq-parent-5.16.0-20180330.103710-111.pom
-4/61 KB     8/61 KB   8/61 KB   12/61 KB   16/61 KB   16/61 KB   20/61 KB   24/61 KB   24/61 KB   28/61 KB   31/61 KB   32/61 KB   36/61 KB   39/61 KB   40/61 KB   44/61 KB   47/61 KB   48/61 KB   52/61 KB   55/61 KB   56/61 KB   60/61 KB   61/61 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-parent/5.16.0-SNAPSHOT/activemq-parent-5.16.0-20180330.103710-111.pom (61 KB at 214.6 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-broker/5.16.0-SNAPSHOT/activemq-broker-5.16.0-20180330.103935-110.pom
-4/10 KB    8/10 KB   8/10 KB   10/10 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-broker/5.16.0-SNAPSHOT/activemq-broker-5.16.0-20180330.103935-110.pom (10 KB at 48.1 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-client/5.16.0-SNAPSHOT/activemq-client-5.16.0-20180330.103811-110.pom
-4/14 KB    8/14 KB   8/14 KB   12/14 KB   14/14 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-client/5.16.0-SNAPSHOT/activemq-client-5.16.0-20180330.103811-110.pom (14 KB at 66.0 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-openwire-legacy/5.16.0-SNAPSHOT/activemq-openwire-legacy-5.16.0-20180330.103840-110.pom
-2/2 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-openwire-legacy/5.16.0-SNAPSHOT/activemq-openwire-legacy-5.16.0-20180330.103840-110.pom (2 KB at 7.9 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-pool/5.16.0-SNAPSHOT/activemq-pool-5.16.0-20180330.104328-109.pom
-4/5 KB   5/5 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-pool/5.16.0-SNAPSHOT/activemq-pool-5.16.0-20180330.104328-109.pom (5 KB at 20.9 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-jms-pool/5.16.0-SNAPSHOT/activemq-jms-pool-5.16.0-20180330.104309-109.pom
-4/6 KB   6/6 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-jms-pool/5.16.0-SNAPSHOT/activemq-jms-pool-5.16.0-20180330.104309-109.pom (6 KB at 26.1 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-unit-tests/5.16.0-SNAPSHOT/activemq-unit-tests-5.16.0-20180330.104650-108.pom
-4/73 KB   8/73 KB   8/73 KB   12/73 KB   16/73 KB   16/73 KB   20/73 KB   24/73 KB   24/73 KB   28/73 KB   31/73 KB   32/73 KB   36/73 KB   39/73 KB   40/73 KB   44/73 KB   47/73 KB   48/73 KB   52/73 KB   55/73 KB   56/73 KB   60/73 KB   63/73 KB   64/73 KB   68/73 KB   70/73 KB   72/73 KB   73/73 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-unit-tests/5.16.0-SNAPSHOT/activemq-unit-tests-5.16.0-20180330.104650-108.pom (73 KB at 250.1 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-jdbc-store/5.16.0-SNAPSHOT/activemq-jdbc-store-5.16.0-20180330.104106-110.pom
-4/5 KB     5/5 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-jdbc-store/5.16.0-SNAPSHOT/activemq-jdbc-store-5.16.0-20180330.104106-110.pom (5 KB at 21.1 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-kahadb-store/5.16.0-SNAPSHOT/activemq-kahadb-store-5.16.0-20180330.104004-110.pom
-4/11 KB   8/11 KB   8/11 KB   11/11 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-kahadb-store/5.16.0-SNAPSHOT/activemq-kahadb-store-5.16.0-20180330.104004-110.pom (11 KB at 52.8 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-leveldb-store/5.16.0-SNAPSHOT/activemq-leveldb-store-5.16.0-20180330.104247-110.pom
-4/21 KB    8/21 KB   8/21 KB   12/21 KB   16/21 KB   16/21 KB   20/21 KB   21/21 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-leveldb-store/5.16.0-SNAPSHOT/activemq-leveldb-store-5.16.0-20180330.104247-110.pom (21 KB at 82.6 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-console/5.16.0-SNAPSHOT/activemq-console-5.16.0-20180330.104448-108.pom
-4/9 KB     8/9 KB   8/9 KB   9/9 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-console/5.16.0-SNAPSHOT/activemq-console-5.16.0-20180330.104448-108.pom (9 KB at 41.1 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-mqtt/5.16.0-SNAPSHOT/activemq-mqtt-5.16.0-20180330.104046-110.pom
-4/11 KB   8/11 KB   8/11 KB   11/11 KB              Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-mqtt/5.16.0-SNAPSHOT/activemq-mqtt-5.16.0-20180330.104046-110.pom (11 KB at 49.5 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-stomp/5.16.0-SNAPSHOT/activemq-stomp-5.16.0-20180330.104024-110.pom
-4/9 KB     8/9 KB   8/9 KB   9/9 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-stomp/5.16.0-SNAPSHOT/activemq-stomp-5.16.0-20180330.104024-110.pom (9 KB at 39.5 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-partition/5.16.0-SNAPSHOT/activemq-partition-5.16.0-20180330.104507-108.pom
-4/5 KB   5/5 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-partition/5.16.0-SNAPSHOT/activemq-partition-5.16.0-20180330.104507-108.pom (5 KB at 22.7 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-runtime-config/5.16.0-SNAPSHOT/activemq-runtime-config-5.16.0-20180330.104554-108.pom
-4/8 KB   8/8 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-runtime-config/5.16.0-SNAPSHOT/activemq-runtime-config-5.16.0-20180330.104554-108.pom (8 KB at 33.6 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-jaas/5.16.0-SNAPSHOT/activemq-jaas-5.16.0-20180330.103903-111.pom
-4/6 KB   6/6 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-jaas/5.16.0-SNAPSHOT/activemq-jaas-5.16.0-20180330.103903-111.pom (6 KB at 25.6 KB/sec)
-Downloading: https://repository.apache.org/snapshots/org/apache/activemq/activemq-ra/5.16.0-SNAPSHOT/activemq-ra-5.16.0-20180330.104350-109.pom
-4/7 KB   7/7 KB            Downloaded: https://repository.apache.org/snapshots/org/apache/activemq/activemq-ra/5.16.0-SNAPSHOT/activemq-ra-5.16.0-20180330.104350-109.pom (7 KB at 27.8 KB/sec)
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (cleanVersions) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ activemq-camel ---
-Downloading: https://repo.eclipse.org/content/repositories/paho-releases/org/apache/activemq/activemq-parent/5.16.0-SNAPSHOT/maven-metadata.xml
-         [INFO] 
-[INFO] --- camel-package-maven-plugin:2.19.3:generate-components-list (default) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (cleanVersions) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ activemq-camel ---
-[INFO] 
-[INFO] --- camel-package-maven-plugin:2.19.3:generate-components-list (default) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 18 resources
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.767 s
-[INFO] Finished at: 2018-04-02T06:50:46-05:00
-[INFO] Final Memory: 31M/499M
-[INFO] ------------------------------------------------------------------------
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building ActiveMQ :: Camel 5.16.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (cleanVersions) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ activemq-camel ---
-[INFO] 
-[INFO] --- camel-package-maven-plugin:2.19.3:generate-components-list (default) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 18 resources
-[INFO] Copying 3 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ activemq-camel ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ activemq-camel ---
-[WARNING] Bundle org.apache.activemq:activemq-camel:bundle:5.16.0-SNAPSHOT : Unknown directive version: in Export-Package, allowed directives are uses:,mandatory:,include:,exclude:,-import:, and 'x-*'.
-[INFO] 
-[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ activemq-camel ---
-[INFO] 
-[INFO] --- ianal-maven-plugin:1.0-alpha-1:verify-legal-files (default) @ activemq-camel ---
-[INFO] Checking legal files in: activemq-camel-5.16.0-SNAPSHOT.jar
-[INFO] 
-[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ activemq-camel ---
-[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/activemq-camel-5.16.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/activemq/activemq-camel/5.16.0-SNAPSHOT/activemq-camel-5.16.0-SNAPSHOT.jar
-[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/pom.xml to /home/roei/.m2/repository/org/apache/activemq/activemq-camel/5.16.0-SNAPSHOT/activemq-camel-5.16.0-SNAPSHOT.pom
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ activemq-camel ---
-[INFO] Installing org/apache/activemq/activemq-camel/5.16.0-SNAPSHOT/activemq-camel-5.16.0-SNAPSHOT.jar
-[INFO] Writing OBR metadata
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (default-cli) @ activemq-camel ---
-[INFO] Copying activemq-openwire-legacy-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-openwire-legacy-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-pool-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-pool-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-jdbc-store-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-jdbc-store-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-partition-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-partition-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-runtime-config-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-runtime-config-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-jms-pool-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-jms-pool-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-kahadb-store-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-kahadb-store-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-stomp-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-stomp-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-ra-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-ra-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-jaas-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-jaas-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-unit-tests-5.16.0-SNAPSHOT-tests.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-unit-tests-5.16.0-SNAPSHOT-tests.jar
-[INFO] Copying activemq-leveldb-store-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-leveldb-store-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-mqtt-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-mqtt-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-client-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-client-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-spring-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-spring-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-console-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-console-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-broker-5.16.0-SNAPSHOT-tests.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-broker-5.16.0-SNAPSHOT-tests.jar
-[INFO] Copying activemq-broker-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-old-e793260573f30365572a1e7507cd98e9ed17b1b5/activemq-camel/target/dependency/activemq-broker-5.16.0-SNAPSHOT.jar
-[INFO] io.netty:netty:jar:3.7.0.Final already exists in destination.
-[INFO] com.sun.xml.bind:jaxb-core:jar:2.2.11 already exists in destination.
-[INFO] org.apache.camel:camel-jdbc:jar:2.19.3 already exists in destination.
-[INFO] org.apache.activemq:activeio-core:jar:3.1.4 already exists in destination.
-[INFO] org.apache.derby:derby:jar:10.11.1.1 already exists in destination.
-[INFO] org.fusesource.mqtt-client:mqtt-client:jar:1.14 already exists in destination.
-[INFO] commons-beanutils:commons-beanutils:jar:1.9.3 already exists in destination.
-[INFO] org.apache.servicemix.bundles:org.apache.servicemix.bundles.josql:jar:1.5_5 already exists in destination.
-[INFO] org.apache.xbean:xbean-spring:jar:4.2 already exists in destination.
-[INFO] org.springframework:spring-aop:jar:4.3.11.RELEASE already exists in destination.
-[INFO] org.springframework:spring-core:jar:4.3.11.RELEASE already exists in destination.
-[INFO] org.fusesource.hawtjni:hawtjni-runtime:jar:1.9 already exists in destination.
-[INFO] org.springframework:spring-expression:jar:4.3.10.RELEASE already exists in destination.
-[INFO] org.fusesource.hawtbuf:hawtbuf:jar:1.11 already exists in destination.
-[INFO] org.springframework:spring-messaging:jar:4.3.11.RELEASE already exists in destination.
-[INFO] commons-logging:commons-logging:jar:1.2 already exists in destination.
-[INFO] org.jencks:jencks:jar:2.2 already exists in destination.
-[INFO] org.apache.commons:commons-pool2:jar:2.4.2 already exists in destination.
-[INFO] commons-net:commons-net:jar:3.6 already exists in destination.
-[INFO] org.iq80.snappy:snappy:jar:0.2 already exists in destination.
-[INFO] org.hamcrest:hamcrest-all:jar:1.3 already exists in destination.
-[INFO] jline:jline:jar:0.9.94 already exists in destination.
-[INFO] org.iq80.leveldb:leveldb-api:jar:0.9 already exists in destination.
-[INFO] org.apache.hadoop:hadoop-core:jar:1.0.0 already exists in destination.
-[INFO] org.slf4j:slf4j-log4j12:jar:1.7.25 already exists in destination.
-[INFO] org.apache.camel:camel-spring:jar:2.19.3 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-annotation_1.0_spec:jar:1.1.1 already exists in destination.
-[INFO] commons-lang:commons-lang:jar:2.6 already exists in destination.
-[INFO] org.xerial.snappy:snappy-java:jar:1.1.2 already exists in destination.
-[INFO] org.apache.zookeeper:zookeeper:jar:3.4.6 already exists in destination.
-[INFO] org.apache.geronimo.components:geronimo-connector:jar:2.1.2 already exists in destination.
-[INFO] org.apache.camel:camel-core:jar:2.19.3 already exists in destination.
-[INFO] org.apache.camel:apt:jar:2.19.3 already exists in destination.
-[INFO] org.apache.camel:camel-jms:jar:2.19.3 already exists in destination.
-[INFO] org.fusesource.hawtdispatch:hawtdispatch:jar:1.22 already exists in destination.
-[INFO] com.sun.xml.bind:jaxb-impl:jar:2.2.11 already exists in destination.
-[INFO] commons-beanutils:commons-beanutils-core:jar:1.8.0 already exists in destination.
-[INFO] com.fasterxml.jackson.core:jackson-core:jar:2.6.7 already exists in destination.
-[INFO] org.springframework:spring-beans:jar:4.3.11.RELEASE already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1 already exists in destination.
-[INFO] com.google.guava:guava:jar:18.0 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:jar:1.0.1 already exists in destination.
-[INFO] org.apache.activemq.protobuf:activemq-protobuf:jar:1.1 already exists in destination.
-[INFO] org.linkedin:org.linkedin.util-groovy:jar:1.7.1 already exists in destination.
-[INFO] org.linkedin:org.linkedin.zookeeper-impl:jar:1.4.0 already exists in destination.
-[INFO] org.apache.ant:ant-launcher:jar:1.8.4 already exists in destination.
-[INFO] org.fusesource.hawtbuf:hawtbuf-proto:jar:1.11 already exists in destination.
-[INFO] org.fusesource.leveldbjni:leveldbjni:jar:1.8 already exists in destination.
-[INFO] org.apache.camel:camel-test-spring:jar:2.19.3 already exists in destination.
-[INFO] log4j:log4j:jar:1.2.17 already exists in destination.
-[INFO] org.fusesource.hawtdispatch:hawtdispatch-scala-2.11:jar:1.22 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-j2ee-connector_1.5_spec:jar:2.0.0 already exists in destination.
-[INFO] org.springframework:spring-test:jar:4.3.11.RELEASE already exists in destination.
-[INFO] org.slf4j:jul-to-slf4j:jar:1.5.8 already exists in destination.
-[INFO] org.jasypt:jasypt:jar:1.9.2 already exists in destination.
-[INFO] org.hamcrest:hamcrest-core:jar:1.3 already exists in destination.
-[INFO] org.apache.camel:camel-test:jar:2.19.3 already exists in destination.
-[INFO] org.objectweb.howl:howl:jar:1.0.1-1 already exists in destination.
-[INFO] org.springframework:spring-context:jar:4.3.11.RELEASE already exists in destination.
-[INFO] jencks:xapool-without-pool:jar:1.4 already exists in destination.
-[INFO] com.fasterxml.jackson.core:jackson-annotations:jar:2.6.7 already exists in destination.
-[INFO] org.linkedin:org.linkedin.util-core:jar:1.4.0 already exists in destination.
-[INFO] commons-configuration:commons-configuration:jar:1.6 already exists in destination.
-[INFO] commons-digester:commons-digester:jar:1.8 already exists in destination.
-[INFO] com.fasterxml.jackson.core:jackson-databind:jar:2.6.7 already exists in destination.
-[INFO] org.apache.commons:commons-dbcp2:jar:2.1.1 already exists in destination.
-[INFO] org.springframework:spring-jms:jar:4.3.11.RELEASE already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-j2ee-connector_1.6_spec:jar:1.0 already exists in destination.
-[INFO] commons-pool:commons-pool:jar:1.5.2 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:jar:1.0.1 already exists in destination.
-[INFO] org.apache.camel:spi-annotations:jar:2.19.3 already exists in destination.
-[INFO] org.iq80.leveldb:leveldb:jar:0.9 already exists in destination.
-[INFO] org.fusesource.hawtdispatch:hawtdispatch-transport:jar:1.22 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1 already exists in destination.
-[INFO] commons-dbcp:commons-dbcp:jar:1.2 already exists in destination.
-[INFO] org.springframework:spring-tx:jar:4.3.11.RELEASE already exists in destination.
-[INFO] commons-collections:commons-collections:jar:3.2.2 already exists in destination.
-[INFO] junit:junit:jar:4.12 already exists in destination.
-[INFO] org.scala-lang:scala-library:jar:2.11.0 already exists in destination.
-[INFO] org.slf4j:slf4j-api:jar:1.7.25 already exists in destination.
-[INFO] commons-daemon:commons-daemon:jar:1.0.15 already exists in destination.
-[INFO] org.apache.ant:ant:jar:1.8.4 already exists in destination.
-[INFO] org.apache.geronimo.components:geronimo-transaction:jar:3.1.3 already exists in destination.
-[INFO] org.jvnet.jaxb2_commons:jaxb2-basics-runtime:jar:0.6.4 already exists in destination.
-[INFO] org.apache.velocity:velocity:jar:1.7 already exists in destination.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.359 s
-[INFO] Finished at: 2018-04-02T06:50:55-05:00
-[INFO] Final Memory: 48M/933M
-[INFO] ------------------------------------------------------------------------
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building ActiveMQ :: Camel 5.16.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (cleanVersions) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ activemq-camel ---
-[INFO] 
-[INFO] --- camel-package-maven-plugin:2.20.1:generate-components-list (default) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (cleanVersions) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ activemq-camel ---
-[INFO] 
-[INFO] --- camel-package-maven-plugin:2.20.1:generate-components-list (default) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 18 resources
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.670 s
-[INFO] Finished at: 2018-04-02T06:51:02-05:00
-[INFO] Final Memory: 37M/929M
-[INFO] ------------------------------------------------------------------------
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building ActiveMQ :: Camel 5.16.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:cleanVersions (cleanVersions) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ activemq-camel ---
-[INFO] 
-[INFO] --- camel-package-maven-plugin:2.20.1:generate-components-list (default) @ activemq-camel ---
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 3 resources
-[INFO] Copying 3 resources
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ activemq-camel ---
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 18 resources
-[INFO] Copying 3 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ activemq-camel ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.16:test (default-test) @ activemq-camel ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ activemq-camel ---
-[WARNING] Bundle org.apache.activemq:activemq-camel:bundle:5.16.0-SNAPSHOT : Unknown directive version: in Export-Package, allowed directives are uses:,mandatory:,include:,exclude:,-import:, and 'x-*'.
-[INFO] 
-[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ activemq-camel ---
-[INFO] 
-[INFO] --- ianal-maven-plugin:1.0-alpha-1:verify-legal-files (default) @ activemq-camel ---
-[INFO] Checking legal files in: activemq-camel-5.16.0-SNAPSHOT.jar
-[INFO] 
-[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ activemq-camel ---
-[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/activemq-camel-5.16.0-SNAPSHOT.jar to /home/roei/.m2/repository/org/apache/activemq/activemq-camel/5.16.0-SNAPSHOT/activemq-camel-5.16.0-SNAPSHOT.jar
-[INFO] Installing /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/pom.xml to /home/roei/.m2/repository/org/apache/activemq/activemq-camel/5.16.0-SNAPSHOT/activemq-camel-5.16.0-SNAPSHOT.pom
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ activemq-camel ---
-[INFO] Installing org/apache/activemq/activemq-camel/5.16.0-SNAPSHOT/activemq-camel-5.16.0-SNAPSHOT.jar
-[INFO] Writing OBR metadata
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (default-cli) @ activemq-camel ---
-[INFO] Copying activemq-openwire-legacy-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-openwire-legacy-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-pool-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-pool-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-jdbc-store-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-jdbc-store-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-partition-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-partition-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-runtime-config-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-runtime-config-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-jms-pool-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-jms-pool-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-kahadb-store-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-kahadb-store-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-stomp-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-stomp-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-ra-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-ra-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-jaas-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-jaas-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-unit-tests-5.16.0-SNAPSHOT-tests.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-unit-tests-5.16.0-SNAPSHOT-tests.jar
-[INFO] Copying activemq-leveldb-store-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-leveldb-store-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-mqtt-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-mqtt-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-client-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-client-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-spring-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-spring-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-console-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-console-5.16.0-SNAPSHOT.jar
-[INFO] Copying activemq-broker-5.16.0-SNAPSHOT-tests.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-broker-5.16.0-SNAPSHOT-tests.jar
-[INFO] Copying activemq-broker-5.16.0-SNAPSHOT.jar to /home/roei/Java/dt-impact-winglam/experiments/activemq-new-ec6fa190999160676cab900038b268b2d40a4d5c/activemq-camel/target/dependency/activemq-broker-5.16.0-SNAPSHOT.jar
-[INFO] io.netty:netty:jar:3.7.0.Final already exists in destination.
-[INFO] com.sun.xml.bind:jaxb-core:jar:2.2.11 already exists in destination.
-[INFO] org.springframework:spring-jms:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.apache.activemq:activeio-core:jar:3.1.4 already exists in destination.
-[INFO] org.apache.derby:derby:jar:10.11.1.1 already exists in destination.
-[INFO] org.fusesource.mqtt-client:mqtt-client:jar:1.14 already exists in destination.
-[INFO] commons-beanutils:commons-beanutils:jar:1.9.3 already exists in destination.
-[INFO] org.apache.servicemix.bundles:org.apache.servicemix.bundles.josql:jar:1.5_5 already exists in destination.
-[INFO] org.apache.camel:spi-annotations:jar:2.20.1 already exists in destination.
-[INFO] org.apache.xbean:xbean-spring:jar:4.2 already exists in destination.
-[INFO] org.springframework:spring-tx:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.fusesource.hawtjni:hawtjni-runtime:jar:1.9 already exists in destination.
-[INFO] org.fusesource.hawtbuf:hawtbuf:jar:1.11 already exists in destination.
-[INFO] org.apache.camel:camel-core:jar:2.20.1 already exists in destination.
-[INFO] commons-logging:commons-logging:jar:1.2 already exists in destination.
-[INFO] org.jencks:jencks:jar:2.2 already exists in destination.
-[INFO] org.apache.commons:commons-pool2:jar:2.4.2 already exists in destination.
-[INFO] commons-net:commons-net:jar:3.6 already exists in destination.
-[INFO] org.iq80.snappy:snappy:jar:0.2 already exists in destination.
-[INFO] org.hamcrest:hamcrest-all:jar:1.3 already exists in destination.
-[INFO] jline:jline:jar:0.9.94 already exists in destination.
-[INFO] org.iq80.leveldb:leveldb-api:jar:0.9 already exists in destination.
-[INFO] org.apache.hadoop:hadoop-core:jar:1.0.0 already exists in destination.
-[INFO] org.slf4j:slf4j-log4j12:jar:1.7.25 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-annotation_1.0_spec:jar:1.1.1 already exists in destination.
-[INFO] commons-lang:commons-lang:jar:2.6 already exists in destination.
-[INFO] org.springframework:spring-test:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.xerial.snappy:snappy-java:jar:1.1.2 already exists in destination.
-[INFO] org.apache.zookeeper:zookeeper:jar:3.4.6 already exists in destination.
-[INFO] org.springframework:spring-core:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.apache.geronimo.components:geronimo-connector:jar:2.1.2 already exists in destination.
-[INFO] org.springframework:spring-expression:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.apache.camel:camel-jdbc:jar:2.20.1 already exists in destination.
-[INFO] org.fusesource.hawtdispatch:hawtdispatch:jar:1.22 already exists in destination.
-[INFO] com.sun.xml.bind:jaxb-impl:jar:2.2.11 already exists in destination.
-[INFO] commons-beanutils:commons-beanutils-core:jar:1.8.0 already exists in destination.
-[INFO] com.fasterxml.jackson.core:jackson-core:jar:2.6.7 already exists in destination.
-[INFO] org.springframework:spring-aop:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1 already exists in destination.
-[INFO] org.apache.camel:json-simple-ordered:jar:2.20.1 already exists in destination.
-[INFO] com.google.guava:guava:jar:18.0 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:jar:1.0.1 already exists in destination.
-[INFO] org.apache.activemq.protobuf:activemq-protobuf:jar:1.1 already exists in destination.
-[INFO] org.linkedin:org.linkedin.util-groovy:jar:1.7.1 already exists in destination.
-[INFO] org.linkedin:org.linkedin.zookeeper-impl:jar:1.4.0 already exists in destination.
-[INFO] org.apache.ant:ant-launcher:jar:1.8.4 already exists in destination.
-[INFO] org.fusesource.hawtbuf:hawtbuf-proto:jar:1.11 already exists in destination.
-[INFO] org.fusesource.leveldbjni:leveldbjni:jar:1.8 already exists in destination.
-[INFO] log4j:log4j:jar:1.2.17 already exists in destination.
-[INFO] org.fusesource.hawtdispatch:hawtdispatch-scala-2.11:jar:1.22 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-j2ee-connector_1.5_spec:jar:2.0.0 already exists in destination.
-[INFO] org.slf4j:jul-to-slf4j:jar:1.5.8 already exists in destination.
-[INFO] org.apache.camel:camel-jms:jar:2.20.1 already exists in destination.
-[INFO] org.springframework:spring-beans:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.apache.camel:apt:jar:2.20.1 already exists in destination.
-[INFO] org.apache.camel:camel-spring:jar:2.20.1 already exists in destination.
-[INFO] org.jasypt:jasypt:jar:1.9.2 already exists in destination.
-[INFO] org.springframework:spring-messaging:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.hamcrest:hamcrest-core:jar:1.3 already exists in destination.
-[INFO] org.objectweb.howl:howl:jar:1.0.1-1 already exists in destination.
-[INFO] org.springframework:spring-context:jar:4.3.12.RELEASE already exists in destination.
-[INFO] org.apache.camel:camel-test:jar:2.20.1 already exists in destination.
-[INFO] jencks:xapool-without-pool:jar:1.4 already exists in destination.
-[INFO] com.fasterxml.jackson.core:jackson-annotations:jar:2.6.7 already exists in destination.
-[INFO] org.linkedin:org.linkedin.util-core:jar:1.4.0 already exists in destination.
-[INFO] commons-configuration:commons-configuration:jar:1.6 already exists in destination.
-[INFO] commons-digester:commons-digester:jar:1.8 already exists in destination.
-[INFO] com.fasterxml.jackson.core:jackson-databind:jar:2.6.7 already exists in destination.
-[INFO] org.apache.commons:commons-dbcp2:jar:2.1.1 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-j2ee-connector_1.6_spec:jar:1.0 already exists in destination.
-[INFO] commons-pool:commons-pool:jar:1.5.2 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:jar:1.0.1 already exists in destination.
-[INFO] org.iq80.leveldb:leveldb:jar:0.9 already exists in destination.
-[INFO] org.fusesource.hawtdispatch:hawtdispatch-transport:jar:1.22 already exists in destination.
-[INFO] org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1 already exists in destination.
-[INFO] commons-dbcp:commons-dbcp:jar:1.2 already exists in destination.
-[INFO] commons-collections:commons-collections:jar:3.2.2 already exists in destination.
-[INFO] junit:junit:jar:4.12 already exists in destination.
-[INFO] org.scala-lang:scala-library:jar:2.11.0 already exists in destination.
-[INFO] org.slf4j:slf4j-api:jar:1.7.25 already exists in destination.
-[INFO] commons-daemon:commons-daemon:jar:1.0.15 already exists in destination.
-[INFO] org.apache.ant:ant:jar:1.8.4 already exists in destination.
-[INFO] org.apache.camel:camel-test-spring:jar:2.20.1 already exists in destination.
-[INFO] org.apache.geronimo.components:geronimo-transaction:jar:3.1.3 already exists in destination.
-[INFO] org.jvnet.jaxb2_commons:jaxb2-basics-runtime:jar:0.6.4 already exists in destination.
-[INFO] org.apache.velocity:velocity:jar:1.7 already exists in destination.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.602 s
-[INFO] Finished at: 2018-04-02T06:51:11-05:00
-[INFO] Final Memory: 48M/914M
-[INFO] ------------------------------------------------------------------------
