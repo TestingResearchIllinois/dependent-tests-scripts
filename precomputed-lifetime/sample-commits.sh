@@ -33,8 +33,8 @@ runWithCommits() {
 }
 
 # Clear files
-> "new-commit-list.txt"
-> "old-commit-list.txt"
+> "$ORIGINAL_DIR/new-commit-list.txt"
+> "$ORIGINAL_DIR/old-commit-list.txt"
 
 tmpFile="$(mktemp)"
 if [[ -z "$CUTOFF_DAYS" ]]; then

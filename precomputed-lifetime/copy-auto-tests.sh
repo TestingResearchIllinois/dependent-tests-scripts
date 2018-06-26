@@ -15,7 +15,10 @@ cp "$AUTO_TEST_LOCATION"/*.java "$DT_RANDOOP/.."
 
 cd "$DT_RANDOOP/.."
 echo "[DEBUG] Removing incompatible auto tests."
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $DT_LIBS:$DT_CLASS:$DT_TOOLS: "$DT_RANDOOP"/*.java
+mkdir -p out/
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $DT_LIBS:$DT_CLASS:$DT_TOOLS: $(ls -1 | grep -E "[0-9]+\.java$")
+cp out/*.java .
+rm -rf out/
 
 #execute the correct javac line depending on situation to compile auto tests
 tcount=`ls -1 ErrorTest*.java 2>/dev/null | wc -l`
@@ -52,9 +55,12 @@ fi
 mkdir -p "$NEW_DT_RANDOOP"
 cp "$AUTO_TEST_LOCATION"/*.java "$NEW_DT_RANDOOP/.."
 
-cd "$DT_RANDOOP/.."
+cd "$NEW_DT_RANDOOP/.."
 echo "[DEBUG] Removing incompatible auto tests."
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $NEW_DT_LIBS:$NEW_DT_CLASS:$DT_TOOLS: "$RANDOOP"/*.java
+mkdir -p out/
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $NEW_DT_LIBS:$NEW_DT_CLASS:$DT_TOOLS: $(ls -1 | grep -E "[0-9]+\.java$")
+cp out/*.java .
+rm -rf out/
 
 #execute the correct javac line depending on situation to compile auto tests
 tcount=`ls -1 ErrorTest*.java 2>/dev/null | wc -l`

@@ -15,7 +15,7 @@ if [[ ! -z "$1" ]]; then
     OUTPUT_FILENAME="$1"
 fi
 
-echo "export DT_ROOT=$DT_ROOT" | tee "$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
+echo "export DT_ROOT=$DT_ROOT" | tee "$OUTPUT_FILENAME"
 (
     echo "export DT_SUBJ_ROOT=$DT_SUBJ_ROOT"
     echo "export DT_SUBJ=$DT_SUBJ"

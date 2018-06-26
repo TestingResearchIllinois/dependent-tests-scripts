@@ -20,14 +20,14 @@ OLD_COMMIT_FILE="old-commit-list.txt"
 
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
-echo "[INFO] Downloading repository to select commits."
-git clone $GIT_URL temp-$PROJ_NAME
-
-if [[ -z "$NEW_COMMIT_FILE" ]]; then
-    bash sample-commits.sh "$(pwd)" "$START" "$COMMIT_NUM" uniform 58
+if [[ ! -e "$NEW_COMMIT_FILE" ]] || [[ ! -e "$OLD_COMMIT_FILE" ]]; then
+    echo "[INFO] Downloading repository to select commits."
+    git clone $GIT_URL "temp-$PROJ_NAME"
+    bash sample-commits.sh "temp-$PROJ_NAME" "$START" "$COMMIT_NUM" "$MODULE_PATH" uniform 58
+    echo "[INFO] Wrote commits to $NEW_COMMIT_FILE and $OLD_COMMIT_FILE."
+else
+    echo "[INFO] Skipping commit selections, $NEW_COMMIT_FILE and $OLD_COMMIT_FILE already exist."
 fi
-
-echo "[INFO] Using commits from $NEW_COMMIT_FILE and $OLD_COMMIT_FILE."
 
 new_commits=($(cat "$NEW_COMMIT_FILE"))
 old_commits=($(cat "$OLD_COMMIT_FILE"))
@@ -40,7 +40,7 @@ done
 
 for (( i=0; i<${#new_commits[@]}; i++ ))
 do
-    echo "[INFO] bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} ${old_commits[$i]} $MODULE_PATH $SUBJ_NAME $SUBJ_NAME_FORMAL"
-    bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} ${old_commits[$i]} $MODULE_PATH $SUBJ_NAME $SUBJ_NAME_FORMAL | tee "${PROJ_NAME}-${new_commits[$i]}-${old_commits[$i]}.txt" "$ORIGINAL_DT_SUBJ"
+    echo "[INFO] bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} ${old_commits[$i]} $MODULE_PATH $SUBJ_NAME $SUBJ_NAME_FORMAL \"$ORIGINAL_DT_SUBJ\""
+    bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} ${old_commits[$i]} $MODULE_PATH $SUBJ_NAME $SUBJ_NAME_FORMAL "$ORIGINAL_DT_SUBJ" | tee "${PROJ_NAME}-${new_commits[$i]}-${old_commits[$i]}.txt"
 done
 

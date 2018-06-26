@@ -1,6 +1,6 @@
 source ./constants.sh
 
-testTypes=(orig)
+testTypes=(orig auto)
 
 CLASSPATH=$NEW_DT_LIBS:$NEW_DT_CLASS:$NEW_DT_TESTS:
 

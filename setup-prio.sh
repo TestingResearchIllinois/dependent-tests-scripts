@@ -9,6 +9,12 @@ cd $DT_SUBJ
 echo "[DEBUG] Finding human written tests in old subject."
 bash "$DT_SCRIPTS/find-test-list.sh" old orig
 
+cd $NEW_DT_SUBJ
+echo "[DEBUG] Finding human written tests in new subject."
+bash "$DT_SCRIPTS/find-test-list.sh" new orig
+
+cd $DT_SUBJ
+
 # 2. Instrument the source and test files.
 # java -cp $DT_TOOLS:$DT_LIBS:$DT_CLASS:$DT_TESTS:$JAVA_HOME/jre/lib/*: edu.washington.cs.dt.impact.Main.InstrumentationMain -inputDir $DT_TESTS
 echo "[DEBUG] Instrumenting source and test files for old subject."
