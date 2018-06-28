@@ -18,7 +18,7 @@ OLD_COMMIT=$3
 MODULE_PATH=$4
 export SUBJ_NAME=$5
 export SUBJ_NAME_FORMAL=$6
-ORIGINAL_DT_SUBJ=$7
+ORIG_DT_SUBJ=$7
 
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
@@ -94,15 +94,15 @@ fi
 bash $DT_SCRIPTS/setup-prio.sh
 
 # Copy the auto tests over from the old version.
-bash $PRECOMPUTED_LIFETIME_ROOT/copy-auto-tests.sh "$ORIGINAL_DT_SUBJ/randoop"
+bash $PRECOMPUTED_LIFETIME_ROOT/copy-auto-tests.sh "$ORIG_DT_SUBJ/randoop"
 
 # Runs commands for "Instructions to setup a subject for test selection" section.
-bash $DT_SCRIPTS/setup-sele.sh
+bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele.sh
 
 # Runs commands for "Instructions to setup a subject for test parallelization" section.
 bash $DT_SCRIPTS/setup-para.sh
 
-bash run-with-deps.sh
+bash run-with-deps.sh "$ORIG_DT_SUBJ"
 
 # Save results for later
 result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
