@@ -12,4 +12,8 @@ export NEW_DT_CLASS=$DT_ROOT/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/
 export NEW_DT_TESTS=$DT_ROOT/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/test-classes
 export SUBJ_NAME=dubbo-dubbo-config-spring
 export SUBJ_NAME_FORMAL=dubbo-dubbo-config-spring
+
+export SUBJ_START_DATE=2017-12-27
+
 . $DT_ROOT/scripts/setup-vars.sh
+

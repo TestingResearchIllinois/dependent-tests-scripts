@@ -15,5 +15,7 @@ export SUBJ_NAME_FORMAL=accumulo-accumulo-master
 # The lowest level package that contains all of this subject's code. Used by PIT
 export SUBJ_PACKAGE="org.apache.accumulo.master.*"
 
+export SUBJ_START_DATE=2018-01-17
+
 . ../setup-vars.sh
 

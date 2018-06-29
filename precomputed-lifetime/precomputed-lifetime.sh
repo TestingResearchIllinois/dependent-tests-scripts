@@ -105,7 +105,7 @@ bash $DT_SCRIPTS/setup-para.sh
 bash run-with-deps.sh "$ORIG_DT_SUBJ"
 
 # Save results for later
-result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
+result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-lifetime/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
 mkdir -p $result_dir
 mv $DT_ROOT/prioritization-results $result_dir
 mv $DT_ROOT/selection-results $result_dir

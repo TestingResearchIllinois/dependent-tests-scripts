@@ -12,4 +12,8 @@ export NEW_DT_CLASS=$DT_ROOT/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/
 export NEW_DT_TESTS=$DT_ROOT/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/test-classes
 export SUBJ_NAME=camel-camel-cache
 export SUBJ_NAME_FORMAL=camel-camel-cache
+
+export SUBJ_START_DATE=2018-01-17
+
 . ../setup-vars.sh
+

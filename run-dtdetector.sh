@@ -56,9 +56,9 @@ fi
 RANDOMIZE_RESULTS="$RESULTS_DIR/${SUBJ_NAME}-${PREFIX}-${ORDER}-randomize"
 if [[ "$PREFIX" = "old" ]]; then
     cd $DT_SUBJ_SRC
-    java -Xmx8000M -cp $DT_TOOLS:$DT_TESTS:$DT_CLASS:$DT_LIBS:$DT_RANDOOP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode=RANDOM --rounds=1000 --test-order="$DT_SUBJ/${SUBJ_NAME}-${ORDER}-order" --output="$RANDOMIZE_RESULTS"
+    java -Xmx8000M -cp $DT_TOOLS:$DT_TESTS:$DT_CLASS:$DT_LIBS:$DT_RANDOOP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode RANDOM --rounds 1000 --test-order "$DT_SUBJ/${SUBJ_NAME}-${ORDER}-order" --output "$RANDOMIZE_RESULTS"
 else
     cd $NEW_DT_SUBJ_SRC
-    java -Xmx8000M -cp $DT_TOOLS:$NEW_DT_TESTS:$NEW_DT_CLASS:$NEW_DT_LIBS:$NEW_DT_RANDOOP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode=RANDOM --rounds=1000 --test-order="$NEW_DT_SUBJ/${SUBJ_NAME}-${ORDER}-order" --output="$RANDOMIZE_RESULTS"
+    java -Xmx8000M -cp $DT_TOOLS:$NEW_DT_TESTS:$NEW_DT_CLASS:$NEW_DT_LIBS:$NEW_DT_RANDOOP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode RANDOM --rounds 1000 --test-order "$NEW_DT_SUBJ/${SUBJ_NAME}-${ORDER}-order" --output "$RANDOMIZE_RESULTS"
 fi
 

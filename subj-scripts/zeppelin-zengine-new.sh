@@ -19,5 +19,7 @@ export SUBJ_NAME=zeppelin-zeppelin-zengine
 # The name of the subject you want to be displayed in the paper (e.g., XML Security)
 export SUBJ_NAME_FORMAL=Zeppelin-Zengine
 
+export SUBJ_START_DATE=2018-01-17
+
 source ../setup-vars.sh
 

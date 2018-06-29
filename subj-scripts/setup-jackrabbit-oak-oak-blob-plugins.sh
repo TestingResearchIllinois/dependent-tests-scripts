@@ -11,5 +11,8 @@ export NEW_DT_CLASS=$DT_ROOT/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df
 export NEW_DT_TESTS=$DT_ROOT/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/test-classes
 export SUBJ_NAME=jackrabbit-oak-oak-blob-plugins
 export SUBJ_NAME_FORMAL=jackrabbit-oak-oak-blob-plugins
+
+export SUBJ_START_DATE=2018-01-17
+
 . ../setup-vars.sh
 

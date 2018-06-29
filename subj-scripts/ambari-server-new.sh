@@ -21,4 +21,6 @@ export SUBJ_NAME=ambari-server
 # The name of the subject you want to be displayed in the paper (e.g., XML Security)
 export SUBJ_NAME_FORMAL=Ambari-Server
 
+export SUBJ_START_DATE=2018-01-17
+
 source ../setup-vars.sh

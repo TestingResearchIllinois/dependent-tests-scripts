@@ -23,7 +23,7 @@ PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 if [[ ! -e "$NEW_COMMIT_FILE" ]] || [[ ! -e "$OLD_COMMIT_FILE" ]]; then
     echo "[INFO] Downloading repository to select commits."
     git clone $GIT_URL "temp-$PROJ_NAME"
-    bash sample-commits.sh "temp-$PROJ_NAME" "$START" "$COMMIT_NUM" "$MODULE_PATH" uniform 58
+    bash sample-commits.sh "temp-$PROJ_NAME" "$START" "$COMMIT_NUM" "$MODULE_PATH" uniform $SUBJ_CUTOFF
     echo "[INFO] Wrote commits to $NEW_COMMIT_FILE and $OLD_COMMIT_FILE."
 else
     echo "[INFO] Skipping commit selections, $NEW_COMMIT_FILE and $OLD_COMMIT_FILE already exist."

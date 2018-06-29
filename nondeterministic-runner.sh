@@ -78,7 +78,7 @@ else
     cd $DT_SUBJ_SRC
 fi
 
-java -Xmx8000M -cp $experimentCP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode=NONDETERMINISTIC --rounds=1000 --test-order="$testOrder" --output="$NONDETERMINISTIC_FOLDER/dt-lists.txt"
+java -Xmx8000M -cp $experimentCP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode NONDETERMINISTIC --rounds 1000 --test-order "$testOrder" --output "$NONDETERMINISTIC_FOLDER/dt-lists.txt"
 
 # Make sure we ignore the nondeterministic tests for everything else.
 if [[ -e "$RESULTS_DIR/${SUBJ_NAME}-ignore-order" ]]; then

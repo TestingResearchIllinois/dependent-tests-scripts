@@ -16,5 +16,7 @@ export SUBJ_NAME_FORMAL=elastic-job-lite-elastic-job-common-core
 # The lowest level package that contains all of this subject's code. Used by PIT
 export SUBJ_PACKAGE="com.dangdang.ddframe.job.*"
 
+export SUBJ_START_DATE=2018-03-07
+
 . ../setup-vars.sh
 

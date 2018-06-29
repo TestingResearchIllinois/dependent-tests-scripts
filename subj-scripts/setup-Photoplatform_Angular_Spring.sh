@@ -16,5 +16,7 @@ export SUBJ_NAME_FORMAL=Photoplatform_Angular_Spring
 # The lowest level package(s) that contains all of this subject's code. Used by PIT
 export SUBJ_PACKAGE="de.htw.sdf.photoplatform.*"
 
+export SUBJ_START_DATE=2015-01-21
+
 . $DT_ROOT/scripts/setup-vars.sh
 

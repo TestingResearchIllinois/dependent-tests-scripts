@@ -17,5 +17,7 @@ export SUBJ_NAME=activemq-camel
 # The name of the subject you want to be displayed in the paper (e.g., XML Security)
 export SUBJ_NAME_FORMAL=ActiveMQ-Camel
 
+export SUBJ_START_DATE=2018-01-17
+
 source ../setup-vars.sh
 
