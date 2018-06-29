@@ -22,7 +22,7 @@ if [[ ! -z "$1" ]]; then
     cd $CURRENT
 fi
 
-echo "[INFO] Running subject ${SUBJ_NAME}, NEW_DT_SUBJ=$NEW_DT_SUBJ"
+echo "[INFO] Running subject ${SUBJ_NAME}"
 
 RESULTS_DIR="$DT_SCRIPTS/${SUBJ_NAME}-results"
 
