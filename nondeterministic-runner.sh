@@ -37,7 +37,6 @@ if [[ ! -z "$3" ]]; then
 fi
 
 numTimesToRun=100
-crossReferenceClass=edu.washington.cs.dt.impact.tools.CrossReferencer
 
 if [[ "$version" == "old" ]]; then
     if [[ "$testType" == "orig" ]]; then
@@ -56,7 +55,7 @@ else
 fi
 
 RESULTS_DIR="$DT_SCRIPTS/${SUBJ_NAME}-results"
-NONDETERMINISTIC_FOLDER="${SUBJ_NAME}-${version}-${testType}-nondeterministic"
+NONDETERMINISTIC_FOLDER="$RESULTS_DIR/${SUBJ_NAME}-${version}-${testType}-nondeterministic"
 
 echo "[INFO] Checking for results directory at $RESULTS_DIR"
 # Make the results directory if it doesn't exist (and copy the setup script if applicable)
@@ -71,10 +70,7 @@ if [[ ! -d "$RESULTS_DIR" ]]; then
 fi
 
 echo "[INFO] Results will be written to $RESULTS_DIR/$NONDETERMINISTIC_FOLDER"
-
 echo "[INFO] Running main program."
-
-echo -e "Starting experiment: $SUBJ_NAME"
 
 if [[ "$version" == "new" ]]; then
     cd $NEW_DT_SUBJ_SRC
@@ -82,70 +78,14 @@ else
     cd $DT_SUBJ_SRC
 fi
 
-if [[ -d "$NONDETERMINISTIC_FOLDER/" ]]; then
-    rm -rf $NONDETERMINISTIC_FOLDER
-fi
-mkdir $NONDETERMINISTIC_FOLDER/
-cp $testOrder $NONDETERMINISTIC_FOLDER/deterministic-order
-
-while [[ "$k" -le "$numTimesToRun" ]]
-do
-    echo '======================= Start ' $k ' ======================='
-
-    echo "[INFO] Running order for first time."
-    clearProjectFiles
-    java -cp $experimentCP edu.washington.cs.dt.main.ImpactMain -timeout 3600 -inputTests $NONDETERMINISTIC_FOLDER/deterministic-order > $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-order-results.txt
-
-    echo "[INFO] Re-running order."
-    clearProjectFiles
-    java -cp $experimentCP edu.washington.cs.dt.main.ImpactMain -timeout 3600 -inputTests $NONDETERMINISTIC_FOLDER/deterministic-order > $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-rerun-results.txt
-
-    echo "[INFO] Cross referencing."
-    java -cp $experimentCP $crossReferenceClass -origOrder $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-order-results.txt -testOrder $NONDETERMINISTIC_FOLDER/${SUBJ_NAME}-${testType}-rerun-results.txt > $NONDETERMINISTIC_FOLDER/cross-referencer-file.txt
-
-    if [[ $((k % 100)) = 0 ]] ; then
-      j=$(($j+1))
-      echo "" > $NONDETERMINISTIC_FOLDER/debug.log$j
-    fi
-
-    echo '======================= Start ' $k ' =======================' >> $NONDETERMINISTIC_FOLDER/debug.log$j
-    cat $NONDETERMINISTIC_FOLDER/cross-referencer-file.txt >> $NONDETERMINISTIC_FOLDER/debug.log$j
-    echo "" >> $NONDETERMINISTIC_FOLDER/debug.log$j
-
-    echo "[INFO] Finding non-deterministic tests"
-    java -cp $experimentCP edu.washington.cs.dt.impact.tools.UndeterministicTestFinder -undeterministicTestFile $NONDETERMINISTIC_FOLDER/undeterminisitic-order -deterministicTestFile $NONDETERMINISTIC_FOLDER/deterministic-order -crossReferenceFile $NONDETERMINISTIC_FOLDER/cross-referencer-file.txt -randomizeDeterministicTests
-
-    # Make sure we don't run any of the nondeterministic tests again (they could be long running tests and have timed out)
-    grep -hoFf $testOrder $NONDETERMINISTIC_FOLDER/debug.log* | sort | uniq > nondeterministic-list.txt
-    tmpFile=$(mktemp)
-    grep -Fvf nondeterministic-list.txt $NONDETERMINISTIC_FOLDER/deterministic-order > tmpFile
-    mv tmpFile $NONDETERMINISTIC_FOLDER/deterministic-order
-
-    k=$(($k+1))
-
-    curTime=$(date +%s)
-    timePerRound=$(( (curTime - startTime) / k ))
-    echo "[INFO] Estimated time remaining: $(( timePerRound * (numTimesToRun - k) ))"
-done
-clearProjectFiles
-
-
-if [[ -d "$RESULTS_DIR/$NONDETERMINISTIC_FOLDER" ]]; then
-    rm -rf "$RESULTS_DIR/$NONDETERMINISTIC_FOLDER"
-else
-    mv $NONDETERMINISTIC_FOLDER/ $RESULTS_DIR
-fi
-
-cd $RESULTS_DIR
-cd $NONDETERMINISTIC_FOLDER/
-grep -hoFf $testOrder debug.log* | sort | uniq > nondeterministic-list.txt
+java -Xmx8000M -cp $experimentCP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode=NONDETERMINISTIC --rounds=1000 --test-order="$testOrder" --output="$NONDETERMINISTIC_FOLDER/dt-lists.txt"
 
 # Make sure we ignore the nondeterministic tests for everything else.
 if [[ -e "$RESULTS_DIR/${SUBJ_NAME}-ignore-order" ]]; then
-    cat "nondeterministic-list.txt" "$RESULTS_DIR/${SUBJ_NAME}-ignore-order" | sort | uniq > temp
+    cat "list.txt" "$RESULTS_DIR/${SUBJ_NAME}-ignore-order" | sort | uniq > temp
     mv temp "$RESULTS_DIR/${SUBJ_NAME}-ignore-order"
 else
-    cp "nondeterministic-list.txt" "$RESULTS_DIR/${SUBJ_NAME}-ignore-order"
+    cp "list.txt" "$RESULTS_DIR/${SUBJ_NAME}-ignore-order"
 fi
 
 echo "[INFO] Finished. Found $(cat nondeterministic-list.txt | wc -l) nondeterministic tests."

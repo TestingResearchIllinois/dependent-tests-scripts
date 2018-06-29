@@ -53,31 +53,12 @@ if [[ ! -z "$2" ]]; then
     fi
 fi
 
+RANDOMIZE_RESULTS="$RESULTS_DIR/${SUBJ_NAME}-${PREFIX}-${ORDER}-randomize"
 if [[ "$PREFIX" = "old" ]]; then
     cd $DT_SUBJ_SRC
-    java -Xmx8000M -cp $DT_TOOLS:$DT_TESTS:$DT_CLASS:$DT_LIBS:$DT_RANDOOP: edu.washington.cs.dt.main.Main --randomize=true --round=1000 --tests=$DT_SUBJ/${SUBJ_NAME}-${ORDER}-order
+    java -Xmx8000M -cp $DT_TOOLS:$DT_TESTS:$DT_CLASS:$DT_LIBS:$DT_RANDOOP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode=RANDOM --rounds=1000 --test-order="$DT_SUBJ/${SUBJ_NAME}-${ORDER}-order" --output="$RANDOMIZE_RESULTS"
 else
     cd $NEW_DT_SUBJ_SRC
-    java -Xmx8000M -cp $DT_TOOLS:$NEW_DT_TESTS:$NEW_DT_CLASS:$NEW_DT_LIBS:$NEW_DT_RANDOOP: edu.washington.cs.dt.main.Main --randomize=true --round=1000 --tests=$NEW_DT_SUBJ/${SUBJ_NAME}-${ORDER}-order
+    java -Xmx8000M -cp $DT_TOOLS:$NEW_DT_TESTS:$NEW_DT_CLASS:$NEW_DT_LIBS:$NEW_DT_RANDOOP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode=RANDOM --rounds=1000 --test-order="$NEW_DT_SUBJ/${SUBJ_NAME}-${ORDER}-order" --output="$RANDOMIZE_RESULTS"
 fi
-
-RANDOMIZE_RESULTS="${SUBJ_NAME}-${PREFIX}-${ORDER}-randomize"
-
-# Move the results
-echo "[INFO] Moving results to $RANDOMIZE_RESULTS"
-mkdir "$RANDOMIZE_RESULTS"
-mv randomize_* "$RANDOMIZE_RESULTS"
-
-# Calculate how many unique tests there are and write them to a file.
-echo "[INFO] Counting unique dts"
-grep -hR "Test: " "$RANDOMIZE_RESULTS"/* | sed -E "s/Test: (.*)$/\1/g" | sort | uniq > "$RANDOMIZE_RESULTS/dt-list.txt"
-COUNT=$(cat "$RANDOMIZE_RESULTS/dt-list.txt" | wc -l)
-
-# Zip things (and remove old directory) and send to the results directory.
-echo "[INFO] Zipping results and copying to $RESULTS_DIR"
-zip -r "$RANDOMIZE_RESULTS.zip" "$RANDOMIZE_RESULTS"
-rm -rf "$RANDOMIZE_RESULTS"
-mv "$RANDOMIZE_RESULTS.zip" "$RESULTS_DIR"
-
-echo "[INFO] Found $COUNT dependent tests, wrote list to $RANDOMIZE_RESULTS/dt-list.txt"
 
