@@ -45,11 +45,10 @@ if [[ ! -z "$3" ]]; then
     ORDER="$3"
 fi
 
-PREFIX="new"
-
+PREFIX="old"
 if [[ ! -z "$2" ]]; then
-    if [[ "$2" = "old" ]]; then
-        PREFIX="old"
+    if [[ "$2" = "new" ]]; then
+        PREFIX="new"
     fi
 fi
 
