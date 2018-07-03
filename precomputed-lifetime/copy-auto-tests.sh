@@ -10,48 +10,6 @@ set -e
 
 AUTO_TEST_LOCATION="$1"
 
-mkdir -p "$DT_RANDOOP"
-cp "$AUTO_TEST_LOCATION"/*.java "$DT_RANDOOP/.."
-
-cd "$DT_RANDOOP/.."
-echo "[DEBUG] Removing incompatible auto tests."
-mkdir -p out/
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $DT_LIBS:$DT_CLASS:$DT_TOOLS: $(ls -1 | grep -E "[0-9]+\.java$")
-cp out/*.java .
-rm -rf out/
-
-#execute the correct javac line depending on situation to compile auto tests
-tcount=`ls -1 ErrorTest*.java 2>/dev/null | wc -l`
-echo "[DEBUG] Compiling auto tests with new subject."
-if [ $tcount != 0 ]; then
-    javac -cp $DT_LIBS:$DT_CLASS:$DT_TOOLS: ErrorTest*.java RegressionTest*.java
-else
-    javac -cp $DT_LIBS:$DT_CLASS:$DT_TOOLS: RegressionTest*.java
-fi
-
-mkdir -p bin
-mv *.class bin/
-
-# Find the automatically generated tests in the subject.
-cd $DT_SUBJ
-echo "[DEBUG] Finding auto tests in old subject."
-bash "$DT_SCRIPTS/find-test-list.sh" old auto
-
-if [[ "$INSTRMENT" == "true" ]]; then
-    echo "[DEBUG] Instrumenting auto tests."
-    java -cp $DT_TOOLS:$JAVA_HOME/jre/lib/*: edu.washington.cs.dt.impact.Main.InstrumentationMain --soot-cp $DT_LIBS:$DT_CLASS:$DT_RANDOOP:$JAVA_HOME/jre/lib/*: -inputDir $DT_RANDOOP
-    java -cp $DT_TOOLS:$DT_LIBS:$DT_CLASS:$JAVA_HOME/jre/lib/*: edu.washington.cs.dt.impact.Main.InstrumentationMain -inputDir $DT_CLASS --soot-cp $DT_LIBS:$DT_CLASS:$JAVA_HOME/jre/lib/*:
-
-    echo "[DEBUG] Running instrumented auto tests."
-    cd $DT_SUBJ_SRC
-    java -cp $DT_TOOLS: edu.washington.cs.dt.main.ImpactMain -classpath $DT_LIBS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-auto-order
-    mv sootTestOutput/ $DT_SUBJ/sootTestOutput-auto
-    cd $DT_SUBJ
-    rm -rf sootOutput/
-fi
-
-# Now perform (almost) the same process on the new subject.
-
 mkdir -p "$NEW_DT_RANDOOP"
 cp "$AUTO_TEST_LOCATION"/*.java "$NEW_DT_RANDOOP/.."
 

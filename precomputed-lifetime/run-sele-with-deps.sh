@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# Usage: bash run-sele-with-deps.sh ORIG_DT_SUBJ
+# Usage: bash run-sele-with-deps.sh DT_SUBJ
 # NOTE: Environment variables should have been set before running this.
 # NOTE: This script cannot be easily replaced the the subj-sele script in the
-#       normal scripts directory because of ORIG_DT_SUBJ.
-
-ORIG_DT_SUBJ="$1"
+#       normal scripts directory because of DT_SUBJ.
 
 source ./constants.sh
 
@@ -25,7 +23,7 @@ for k in "${testTypes[@]}"; do
         -coverage statement \
         -order original \
         -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-        -testInputDir $ORIG_DT_SUBJ/sootTestOutput-$k-selection \
+        -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
         -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
         -project "$SUBJ_NAME_FORMAL" \
         -testType $k \
@@ -43,7 +41,7 @@ for k in "${testTypes[@]}"; do
                 -coverage $i \
                 -order $j \
                 -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-                -testInputDir $ORIG_DT_SUBJ/sootTestOutput-$k-selection \
+                -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
                 -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
                 -project "$SUBJ_NAME_FORMAL" \
                 -testType $k \
@@ -61,7 +59,7 @@ for k in "${testTypes[@]}"; do
                 -coverage $i \
                 -order $j \
                 -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-                -testInputDir $ORIG_DT_SUBJ/sootTestOutput-$k-selection \
+                -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
                 -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
                 -project "$SUBJ_NAME_FORMAL" \
                 -testType $k \
