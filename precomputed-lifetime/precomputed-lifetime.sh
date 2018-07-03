@@ -94,7 +94,7 @@ fi
 bash $PRECOMPUTED_LIFETIME_ROOT/setup-prio-orig.sh
 
 # Copy the auto tests over from the old version.
-bash $PRECOMPUTED_LIFETIME_ROOT/copy-auto-tests.sh "$ORIG_DT_SUBJ/randoop"
+bash $PRECOMPUTED_LIFETIME_ROOT/copy-auto-tests.sh "$DT_SUBJ/randoop"
 
 # Runs commands for "Instructions to setup a subject for test selection" section.
 bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele-orig.sh
