@@ -2,6 +2,7 @@
 
 # Usage: python sample-commits.py COMMIT_LIST_PATH COMMIT_NUM <random|uniform>
 
+import math
 import random
 import sys
 
@@ -17,8 +18,9 @@ def choose(n, ls):
         for l in ls:
             yield l
     else:
-        for i in xrange(0, len(ls), len(ls) / n):
-            yield ls[i]
+        length = float(len(ls))
+        for i in xrange(n):
+            yield ls[int(math.ceil(i * length / n))]
 
 def staggered_pair(l):
     for a, b in zip(l, l[1:]):
