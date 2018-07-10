@@ -36,12 +36,16 @@ NEW_COMMIT_FILE="new-commit-list.txt"
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
 if [[ ! -e "$NEW_COMMIT_FILE" ]]; then
-    echo "[INFO] Downloading repository to select commits."
-    git clone $GIT_URL "temp-$PROJ_NAME"
-    bash sample-commits.sh "temp-$PROJ_NAME" "$START" "$COMMIT_NUM" "$MODULE_PATH" uniform $SUBJ_CUTOFF
-    echo "[INFO] Wrote commits to $NEW_COMMIT_FILE" # and $OLD_COMMIT_FILE."
-else
-    echo "[INFO] Skipping commit selections, $NEW_COMMIT_FILE" # and $OLD_COMMIT_FILE already exist."
+    echo "[ERROR] Commit list does not exist at $NEW_COMMIT_FILE!"
+    exit 1
+
+    # NOTE: If it's past 8/1/18 and this is still here, it can probably be safely deleted.
+    # echo "[INFO] Downloading repository to select commits."
+    # git clone $GIT_URL "temp-$PROJ_NAME"
+    # bash sample-commits.sh "temp-$PROJ_NAME" "$START" "$COMMIT_NUM" "$MODULE_PATH" uniform $SUBJ_CUTOFF
+    # echo "[INFO] Wrote commits to $NEW_COMMIT_FILE" # and $OLD_COMMIT_FILE."
+# else
+    # echo "[INFO] Skipping commit selections, $NEW_COMMIT_FILE" # and $OLD_COMMIT_FILE already exist."
 fi
 
 new_commits=($(cat "$NEW_COMMIT_FILE"))
