@@ -30,15 +30,12 @@ else
     exit 1
 fi
 
-export SUBJ_NAME=$SUBJ_NAME
-export SUBJ_NAME_FORMAL=$SUBJ_NAME_FORMAL
-
 NEW_COMMIT_FILE="new-commit-list.txt"
 # OLD_COMMIT_FILE="old-commit-list.txt"
 
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
-if [[ ! -e "$NEW_COMMIT_FILE" ]] || [[ ! -e "$OLD_COMMIT_FILE" ]]; then
+if [[ ! -e "$NEW_COMMIT_FILE" ]]; then
     echo "[INFO] Downloading repository to select commits."
     git clone $GIT_URL "temp-$PROJ_NAME"
     bash sample-commits.sh "temp-$PROJ_NAME" "$START" "$COMMIT_NUM" "$MODULE_PATH" uniform $SUBJ_CUTOFF
@@ -48,7 +45,7 @@ else
 fi
 
 new_commits=($(cat "$NEW_COMMIT_FILE"))
-old_commits=($(cat "$OLD_COMMIT_FILE"))
+# old_commits=($(cat "$OLD_COMMIT_FILE"))
 
 echo "[INFO] Selected commits:"
 for (( i=0; i<${#new_commits[@]}; i++ ))

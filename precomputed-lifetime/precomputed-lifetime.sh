@@ -5,20 +5,13 @@
 # $2 - commit to run (new)
 # $3 - commit to run (old)
 # $4 - path in repo (probably for module)
-# $5 - Subj name
-# $6 - Subj name formal
-# $7 - Original subject version's DT_SUBJ
 
 # Run to get things like DT_ROOT and DT_SCRIPTS
 . ../setup-vars.sh
 
 GIT_URL=$1
 NEW_COMMIT=$2
-OLD_COMMIT=$3
-MODULE_PATH=$4
-export SUBJ_NAME=$5
-export SUBJ_NAME_FORMAL=$6
-ORIG_DT_SUBJ=$7
+MODULE_PATH=$3
 
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
