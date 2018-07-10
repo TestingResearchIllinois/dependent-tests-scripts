@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
 
-# Usage: bash sample-commits.sh GIT_REPO_PATH START_COMMIT COMMIT_NUM MODULE_PATH [random|uniform] [CUTOFF_DAYS]
+# Usage: bash sample-commits.sh GIT_REPO_PATH START_COMMIT COMMIT_NUM MODULE_PATH SUCCESSFUL_COMMITS [random|uniform] 
 # Will sample COMMIT_NUM commits from git repository provided after the given date.
 # Can sample either randomly or uniformly (meaning at uniform intervals).
-# If CUTOFF_DAYS is provided, will sample COMMIT_NUM commits from CUTOFF_DAYS after START_COMMIT **AND** COMMIT_NUM commits from before CUTOFF_DAYS after START_COMMIT
-# Will write the commit lists to new-commit-list.txt and old-commit-list.txt
+# Will write the commit list to new-commit-list.txt
 
 GIT_REPO_PATH="$1"
 START_COMMIT="$2"
 COMMIT_NUM="$3"
 MODULE_PATH="$4"
-SELECT_TYPE="$5"
-CUTOFF_DAYS="$6"
+SUCCESSFUL_COMMITS="$5"
+SELECT_TYPE="$6"
 
 ORIGINAL_DIR="$(pwd)"
 
@@ -21,30 +20,33 @@ cd $GIT_REPO_PATH
 git pull # In case we are out of date, make sure we update to have the latest for the commit selection.
 
 startDate=$(git show -s --format="%ci" $START_COMMIT)
-cutoffDate=$(date -d "$startDate+$CUTOFF_DAYS days")
+cutoffDate=$(date -d "$startDate+$SUBJ_CUTOFF days")
+
+echo "[INFO] Cutoff date is $cutoffDate"
 
 runWithCommits() {
     COMMIT_PATH="$1"
 
     (
         cd "$ORIGINAL_DIR"
-        python sample-commits.py "$COMMIT_PATH" "$COMMIT_NUM" "$SELECT_TYPE"
+        
+        # Only get commits that are in both the commit path and the list fo successful commits that we have.
+        commitsTmp="$(mktemp)"
+        sort <(cat "$COMMIT_PATH") <(cat "$SUCCESSFUL_COMMITS") | uniq -d > "$commitsTmp"
+
+        echo "[INFO] Found $(cat $commitsTmp | wc -l) commits."
+
+        python sample-commits.py "$commitsTmp" "$COMMIT_NUM" "$SELECT_TYPE"
     )
 }
 
 # Clear files
 > "$ORIGINAL_DIR/new-commit-list.txt"
-# > "$ORIGINAL_DIR/old-commit-list.txt"
 
 tmpFile="$(mktemp)"
-if [[ -z "$CUTOFF_DAYS" ]]; then
-    git log -s --format="%H" --reverse ${START_COMMIT}..HEAD -- "$MODULE_PATH" > $tmpFile
-    runWithCommits $tmpFile
-else
-    git log -s --format="%H" --before="$cutoffDate" --reverse ${START_COMMIT}.. -- "$MODULE_PATH" > $tmpFile
-    runWithCommits $tmpFile
+git log -s --format="%H" --before="$cutoffDate" --reverse ${START_COMMIT}.. -- "$MODULE_PATH" > $tmpFile
+runWithCommits $tmpFile
 
-    git log -s --format="%H" --after="$cutoffDate" --reverse ${START_COMMIT}.. -- "$MODULE_PATH" > $tmpFile
-    runWithCommits $tmpFile
-fi
+git log -s --format="%H" --after="$cutoffDate" --reverse ${START_COMMIT}.. -- "$MODULE_PATH" > $tmpFile
+runWithCommits $tmpFile
 

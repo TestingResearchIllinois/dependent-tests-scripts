@@ -35,15 +35,10 @@ if __name__ == '__main__':
     select_type = sys.argv[3]
 
     if select_type == 'random':
-        commit_pairs = random.sample(commit_list, min(len(commit_list), commit_num))
+        commit_list = random.sample(commit_list, min(len(commit_list), commit_num))
     else:
-        commit_pairs = list(choose(commit_num, commit_list))
-
-    commit_pairs = list(staggered_pair(commit_pairs))
+        commit_list = list(choose(commit_num, commit_list))
 
     with open('new-commit-list.txt', 'a') as f:
-        f.write('\n'.join(map(lambda (_, new): new, commit_pairs)) + '\n')
-
-    with open('old-commit-list.txt', 'a') as f:
-        f.write('\n'.join(map(lambda (old, _): old, commit_pairs)) + '\n')
+        f.write('\n'.join(commit_list) + '\n')
 
