@@ -16,7 +16,12 @@ cp "$AUTO_TEST_LOCATION"/*.java "$NEW_DT_RANDOOP/.."
 cd "$NEW_DT_RANDOOP/.."
 echo "[DEBUG] Removing incompatible auto tests."
 mkdir -p out/
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $NEW_DT_LIBS:$NEW_DT_CLASS:$DT_TOOLS: $(ls -1 | grep -E "[0-9]+\.java$")
+
+# TODO: Update randoop so below is no longer necessary (hopefully).
+# Don't include randoop.jar because it includes an incompatible version of javaparser.
+TOOLS=$(find "$DT_TOOLS_DIR" -name "*.jar" -not -name "randoop.jar")
+TOOLS=$(echo $TOOLS | sed -E "s/ /:/g")
+java -cp $TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $NEW_DT_LIBS:$NEW_DT_CLASS:$DT_TOOLS: $(ls -1 | grep -E "[0-9]+\.java$")
 cp out/*.java .
 rm -rf out/
 
