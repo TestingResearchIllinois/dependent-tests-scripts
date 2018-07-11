@@ -1,0 +1,20 @@
+The following arguments were used to generate this output.
+[-technique, prioritization, -coverage, statement, -order, original, -origOrder, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/Photoplatform_Angular_Spring-orig-order, -testInputDir, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/sootTestOutput-orig, -filesToDelete, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/Photoplatform_Angular_Spring-env-files, -project, Photoplatform_Angular_Spring, -testType, orig, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/prioritization-results, -timesToRun, 5, -classpath, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/dependency/*:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/classes:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/randoop/bin:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/test-classes:, -getCoverage]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 9.897
+Number of tests selected out of total in original order: 15 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+APFD value: 0.6312531844179569
+Execution time for executing the following testing order: 0.602
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.CategoryDAOTest.testBasic, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetCategories, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testBasic, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetByUser, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetImages, de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy, de.htw.sdf.photoplatform.repository.ImageDAOTest.testBasic, de.htw.sdf.photoplatform.repository.ImageDAOTest.testGetPublicImages, de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, de.htw.sdf.photoplatform.repository.CollectionCategoryDAOTest.testGetCollectionCategoryBy, de.htw.sdf.photoplatform.common.ImportSQLTester.test1InitSqlData, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testGetPhotographersImages, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testBasicCollectionsServices, de.htw.sdf.photoplatform.webservice.util.UserUtilityTest.testValidateProfileData]
+
+Time each test takes to run in the new order:
+[795360, 19650168, 37198284, 21883397, 17430323, 21485584, 23114782, 21749728, 18112144, 24513113, 25514505, 17690452, 295746913, 33737605, 22992971]
+
+Coverage test list:
+[30.3, 8.8, 3.3, 0.0, 4.4, 2.2, 0.0, 0.0, 0.0, 2.2, 0.0, 18.1, 11.1, 16.1, 0.0]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 0.675

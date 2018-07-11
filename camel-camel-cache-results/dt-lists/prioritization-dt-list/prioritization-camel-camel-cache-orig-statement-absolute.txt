@@ -1,0 +1,12 @@
+Test: org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity
+Intended behavior: FAILURE
+when executed after: [org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.camel.component.cache.CacheProducerTest.testCheckExpiredDataFromCache
+Intended behavior: FAILURE
+when executed after: [org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity]
+The revealed different behavior: PASS
+when executed after: []
+

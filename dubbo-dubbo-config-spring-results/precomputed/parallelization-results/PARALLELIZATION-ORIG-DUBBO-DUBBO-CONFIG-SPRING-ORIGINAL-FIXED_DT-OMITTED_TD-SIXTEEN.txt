@@ -1,0 +1,216 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/dubbo-dubbo-config-spring-orig-order, -testInputDir, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/dubbo-dubbo-config-spring-env-files, -project, dubbo-dubbo-config-spring, -testType, orig, -numOfMachines, 16, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/dependency/*:/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/classes:/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/randoop/bin:/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/test-classes:, -resolveDependences, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/scripts/data/parallelization-dt-list/parallelization-dubbo-dubbo-config-spring-orig-16-original.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.555
+Number of tests selected out of total in original order: 4 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.021
+
+Test order list:
+[com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScanRegistrarTest.test, com.alibaba.dubbo.config.spring.context.annotation.DubboConfigBindingRegistrarTest.testRegisterBeanDefinitionsForSingle, com.alibaba.dubbo.config.spring.context.annotation.DubboConfigBindingRegistrarTest.testRegisterBeanDefinitionsForMultiple, com.alibaba.dubbo.config.spring.context.annotation.DubboConfigBindingsRegistrarTest.test]
+
+Time each test takes to run in the new order:
+[39178331, 1897028223, 51287837, 33295268]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.328
+Number of tests selected out of total in original order: 4 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.957
+
+Test order list:
+[com.alibaba.dubbo.config.spring.context.annotation.EnableDubboTest.test, com.alibaba.dubbo.config.spring.context.annotation.EnableDubboConfigTest.testSingle, com.alibaba.dubbo.config.spring.context.annotation.EnableDubboConfigTest.testMultiple, com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessorTest.test]
+
+Time each test takes to run in the new order:
+[181320947, 702515491, 2004448182, 68985908]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.723
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.515
+
+Test order list:
+[com.alibaba.dubbo.config.spring.util.PropertySourcesUtilsTest.testGetSubProperties, com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest.testGetOptionalBean, com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest.testGetOptionalBeanIfAbsent]
+
+Time each test takes to run in the new order:
+[355420787, 134942060, 25125443]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.401
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.090
+
+Test order list:
+[com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest.testGetBeans, com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest.testGetBeansIfAbsent, com.alibaba.dubbo.config.spring.ConfigTest.testGenericServiceConfig]
+
+Time each test takes to run in the new order:
+[480188929, 579782666, 30527075]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.469
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.722
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testSpringExtensionInject, com.alibaba.dubbo.config.spring.ConfigTest.testServiceClass, com.alibaba.dubbo.config.spring.ConfigTest.testReferGenericExport]
+
+Time each test takes to run in the new order:
+[33701690, 1299019144, 389115102]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.846
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.668
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testProviderNestedService, com.alibaba.dubbo.config.spring.ConfigTest.testToString, com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocol]
+
+Time each test takes to run in the new order:
+[21881583, 1212483404, 433451115]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.066
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.368
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolDefault, com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolError, com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolRegister]
+
+Time each test takes to run in the new order:
+[1698236819, 455971344, 213552679]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.847
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.299
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testMultiRegistry, com.alibaba.dubbo.config.spring.ConfigTest.testDelayFixedTime, com.alibaba.dubbo.config.spring.ConfigTest.testDelayOnInitialized]
+
+Time each test takes to run in the new order:
+[467251384, 129991195, 1701629281]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.939
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.317
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testRmiTimeout, com.alibaba.dubbo.config.spring.ConfigTest.testAutowireAndAOP, com.alibaba.dubbo.config.spring.ConfigTest.testAppendFilter]
+
+Time each test takes to run in the new order:
+[75279713, 173384591, 2067866553]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 23.106
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.445
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testInitReference, com.alibaba.dubbo.config.spring.ConfigTest.test_noMethodInterface_methodsKeyHasValue, com.alibaba.dubbo.config.spring.ConfigTest.test_RpcContext_getUrls]
+
+Time each test takes to run in the new order:
+[110008665, 570796584, 1764685307]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 12.260
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.187
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.test_retrySettingFail, com.alibaba.dubbo.config.spring.ConfigTest.test_returnSerializationFail, com.alibaba.dubbo.config.spring.ConfigTest.testXmlOverrideProperties]
+
+Time each test takes to run in the new order:
+[1952483324, 172335337, 62197233]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.045
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.464
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testApiOverrideProperties, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideProtocol, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol]
+
+Time each test takes to run in the new order:
+[498817805, 52090467, 912990850]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 199.910
+Number of tests selected out of total in original order: 4 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 2
+
+Average time to find one dependency: 97.3514813145
+Execution time for executing the following testing order: 1.433
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideReferenceConfig]
+
+Time each test takes to run in the new order:
+[836507217, 68103932, 141748571, 386367004]
+
+Dependent test list:
+[Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 158.308
+Number of tests selected out of total in original order: 6 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 1
+
+Average time to find one dependency: 94.278798528
+Execution time for executing the following testing order: 61.469
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApiDefault, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApi, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideProperties]
+
+Time each test takes to run in the new order:
+[14343275, 377206526, 126324211, 782146049, 14872439, 60153913441]
+
+Dependent test list:
+[Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApiDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.838
+Number of tests selected out of total in original order: 3 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.994
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testCustomizeParameter, com.alibaba.dubbo.config.spring.ConfigTest.testPath, com.alibaba.dubbo.config.spring.ConfigTest.testAnnotation]
+
+Time each test takes to run in the new order:
+[605800375, 1387600253, 278316]
+
+Dependent test list:
+[Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApiDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 210.828
+Number of tests selected out of total in original order: 7 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 1
+
+Average time to find one dependency: 102.597211448
+Execution time for executing the following testing order: 1.544
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApiDefault, com.alibaba.dubbo.config.spring.ConfigTest.testDubboProtocolPortOverride, com.alibaba.dubbo.config.spring.ConfigTest.testProtocolRandomPort, com.alibaba.dubbo.config.spring.ConfigTest.testGenericServiceConfigThroughSpring]
+
+Time each test takes to run in the new order:
+[10157614, 409727499, 127620589, 887284143, 26608307, 62145088, 20241421]
+
+Dependent test list:
+[Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXmlDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApiDefault, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideXml], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testGenericServiceConfigThroughSpring, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testDubboProtocolPortOverride], The revealed different behavior: PASS, when executed after: [], Test: com.alibaba.dubbo.config.spring.ConfigTest.testDubboProtocolPortOverride, Intended behavior: FAILURE, when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideApiDefault], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 89.502
+New order time: 61.469
+Total number of tests executed in all machines out of total in original order: 58 / 50

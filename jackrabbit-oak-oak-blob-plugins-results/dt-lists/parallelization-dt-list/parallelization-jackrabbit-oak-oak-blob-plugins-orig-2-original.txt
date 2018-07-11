@@ -1,0 +1,12 @@
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.testPropertySetup]
+The revealed different behavior: PASS
+when executed after: []
+

@@ -1,0 +1,198 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, time, -timeOrder, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-time.txt, -origOrder, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-order, -testInputDir, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-env-files, -numOfMachines, 16, -project, accumulo-accumulo-master, -testType, orig, -timesToRun, 5, -outputDir, /scratch/reedoei2/dependent-tests-experiments-auto/parallelization-results, -classpath, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes:, -resolveDependences, /scratch/reedoei2/dependent-tests-experiments-auto/data/parallelization-dt-list/parallelization-accumulo-accumulo-master-orig-16-time.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.370
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.004
+
+Test order list:
+[org.apache.accumulo.master.DefaultMapTest.testDefaultMap]
+
+Time each test takes to run in the new order:
+[4169531]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.514
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.200
+
+Test order list:
+[org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued]
+
+Time each test takes to run in the new order:
+[199859940]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.484
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.123
+
+Test order list:
+[org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName]
+
+Time each test takes to run in the new order:
+[122644483]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.548
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.209
+
+Test order list:
+[org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp]
+
+Time each test takes to run in the new order:
+[208874681]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.590
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.233
+
+Test order list:
+[org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset]
+
+Time each test takes to run in the new order:
+[233233090]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.358
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.007
+
+Test order list:
+[org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo]
+
+Time each test takes to run in the new order:
+[6647776]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.518
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.139
+
+Test order list:
+[org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization]
+
+Time each test takes to run in the new order:
+[138559424]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.607
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.206
+
+Test order list:
+[org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore]
+
+Time each test takes to run in the new order:
+[206442318]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.695
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.308
+
+Test order list:
+[org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName]
+
+Time each test takes to run in the new order:
+[307647783]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.677
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.323
+
+Test order list:
+[org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir]
+
+Time each test takes to run in the new order:
+[322802215]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.574
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.248
+
+Test order list:
+[org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown]
+
+Time each test takes to run in the new order:
+[248229622]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.494
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.120
+
+Test order list:
+[org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork]
+
+Time each test takes to run in the new order:
+[120102115]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.887
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.504
+
+Test order list:
+[org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics]
+
+Time each test takes to run in the new order:
+[504039491]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.625
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.230
+
+Test order list:
+[org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer]
+
+Time each test takes to run in the new order:
+[230343475]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.848
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.523
+
+Test order list:
+[org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany]
+
+Time each test takes to run in the new order:
+[523274150]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.724
+Number of tests selected out of total in original order: 1 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.319
+
+Test order list:
+[org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup]
+
+Time each test takes to run in the new order:
+[319349016]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 3.725
+New order time: 0.523
+Total number of tests executed in all machines out of total in original order: 16 / 16

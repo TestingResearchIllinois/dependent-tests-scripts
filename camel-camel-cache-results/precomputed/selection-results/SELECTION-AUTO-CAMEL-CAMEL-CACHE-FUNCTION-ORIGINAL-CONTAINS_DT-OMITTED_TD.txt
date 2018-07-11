@@ -1,0 +1,20 @@
+The following arguments were used to generate this output.
+[-technique, selection, -coverage, function, -order, original, -origOrder, /scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/camel-camel-cache-auto-order, -testInputDir, /scratch/winglam/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/sootTestOutput-auto-selection, -filesToDelete, /scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/camel-camel-cache-env-files, -project, camel-camel-cache, -testType, auto, -oldVersCFG, /scratch/winglam/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/selectionOutput, -newVersCFG, /scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/selectionOutput, -getCoverage, -outputDir, /homes/gws/winglam/winglam/run-new-subjects/camel/experiments/selection-results, -classpath, /scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/dependency/*:/scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/classes:/scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/randoop/bin:/scratch/winglam/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/test-classes:, -timesToRun, 1]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.181
+Number of tests selected out of total in original order: 2 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+APFD value: 0.011780002364373453
+Execution time for executing the following testing order: 0.975
+
+Test order list:
+[RegressionTest0.test152, RegressionTest0.test223]
+
+Time each test takes to run in the new order:
+[961749722, 13008566]
+
+Coverage test list:
+[1648, 219]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 1.203

@@ -1,0 +1,20 @@
+The following arguments were used to generate this output.
+[-technique, prioritization, -coverage, statement, -order, original, -origOrder, /scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order, -testInputDir, /scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files, -project, accumulo-accumulo-master, -testType, orig, -outputDir, /scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/prioritization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/dependency/*:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/classes:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/randoop/bin:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/test-classes:, -getCoverage]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.312
+Number of tests selected out of total in original order: 16 / 16
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+APFD value: 0.29641665256985555
+Execution time for executing the following testing order: 0.864
+
+Test order list:
+[org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown, org.apache.accumulo.master.DefaultMapTest.testDefaultMap, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics]
+
+Time each test takes to run in the new order:
+[57694528, 2074990, 1431944, 376971554, 8139085, 19739603, 737729, 41317490, 22792460, 217967841, 63841364, 35842663, 758401, 680951, 10038199, 3564675]
+
+Coverage test list:
+[17.1, 6.6, 3.3, 5.5, 0.0, 0.0, 0.0, 0.0, 0.0, 4.4, 2.2, 8.8, 0.0, 28.2, 2.2, 20.2]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 0.873

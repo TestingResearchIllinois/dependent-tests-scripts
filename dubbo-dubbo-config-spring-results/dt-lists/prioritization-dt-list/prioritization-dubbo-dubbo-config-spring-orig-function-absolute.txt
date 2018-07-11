@@ -1,0 +1,126 @@
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testDubboProtocolPortOverride
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testAnnotation]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.test_returnSerializationFail
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testInitReference]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testGenericServiceConfigThroughSpring
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testDubboProtocolPortOverride]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideProtocol]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideProtocol
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testApiOverrideProperties]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocol
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testServiceClass]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testServiceClass
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSpringExtensionInject]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testDelayOnInitialized
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testDelayFixedTime]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testAnnotation
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideMultiProtocol]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testApiOverrideProperties
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testXmlOverrideProperties]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testDelayFixedTime
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testMultiRegistry]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testSpringExtensionInject
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessorTest.test]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testAppendFilter
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testAutowireAndAOP]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessorTest.test
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.context.annotation.EnableDubboTest.test]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolRegister
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolDefault]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.context.annotation.EnableDubboTest.test
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScanRegistrarTest.test]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testMultiRegistry
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolRegister]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testAutowireAndAOP
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testDelayOnInitialized]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolDefault
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocol]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testXmlOverrideProperties
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.test_returnSerializationFail]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testInitReference
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testAppendFilter]
+The revealed different behavior: PASS
+when executed after: []
+

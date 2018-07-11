@@ -1,0 +1,20 @@
+The following arguments were used to generate this output.
+[-technique, selection, -coverage, function, -order, relative, -origOrder, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/camel-camel-cache-auto-order, -testInputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/sootTestOutput-auto-selection, -filesToDelete, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/camel-camel-cache-env-files, -project, camel-camel-cache, -testType, auto, -oldVersCFG, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/selectionOutput, -newVersCFG, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/selectionOutput, -getCoverage, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/selection-results, -classpath, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/dependency/*:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/classes:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/randoop/bin:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/test-classes:, -timesToRun, 5]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.978
+Number of tests selected out of total in original order: 2 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+APFD value: 0.0030220778122882924
+Execution time for executing the following testing order: 0.515
+
+Test order list:
+[RegressionTest0.test152, RegressionTest0.test223]
+
+Time each test takes to run in the new order:
+[513737545, 1557261]
+
+Coverage test list:
+[100.0, 0.0]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 0.634

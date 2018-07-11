@@ -1,0 +1,6 @@
+Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIgnoredPropertiesNotIndexed
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization]
+The revealed different behavior: PASS
+when executed after: []
+

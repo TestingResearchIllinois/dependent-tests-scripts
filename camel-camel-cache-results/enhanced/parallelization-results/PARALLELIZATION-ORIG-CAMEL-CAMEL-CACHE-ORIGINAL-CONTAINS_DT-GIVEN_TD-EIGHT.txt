@@ -1,0 +1,126 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/camel-camel-cache-orig-order, -testInputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/camel-camel-cache-env-files, -project, camel-camel-cache, -testType, orig, -numOfMachines, 8, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/dependency/*:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/classes:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/randoop/bin:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-new-ce4e54ed594dbea4859f105b9ea34f32aa892628/components/camel-cache/target/test-classes:, -dependentTestFile, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/scripts/data/parallelization-dt-list/parallelization-camel-camel-cache-orig-8-original.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.972
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.720
+
+Test order list:
+[org.apache.camel.component.cache.CacheConfigurationTest.doURICheck, org.apache.camel.component.cache.ObjectCacheProducerTest.testAddingMultipleDataInCacheAndGettingBack, org.apache.camel.component.cache.EHCacheUtilTest.testCreateCacheManagers, org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity]
+
+Time each test takes to run in the new order:
+[89820215, 398737975, 32296620, 1199072748]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 63.015
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.801
+
+Test order list:
+[org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testNoProvidedConfiguration, org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testFailSafeEHCacheManager, org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig, org.apache.camel.component.cache.CacheProducerTest.testAddingDataToCacheWithNonStringCacheKey]
+
+Time each test takes to run in the new order:
+[37781502, 104910390, 61163891444, 494713916]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.636
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.042
+
+Test order list:
+[org.apache.camel.component.cache.CacheProducerTest.testAddingDataToCache, org.apache.camel.component.cache.CacheProducerTest.testQueringNonExistingDataFromCacheDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testUpdatingDataInCacheDoesFailOnEmptyBody]
+
+Time each test takes to run in the new order:
+[205413536, 169382895, 248833565, 1418014980]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.521
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.934
+
+Test order list:
+[org.apache.camel.component.cache.CacheProducerTest.testDeletingDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testDeletingDataFromCacheDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testDeletingAllDataFromCacheDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testAddingDataElementIdle]
+
+Time each test takes to run in the new order:
+[67252874, 1558857475, 147216424, 161046618]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.514
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.014
+
+Test order list:
+[org.apache.camel.component.cache.CacheProducerTest.testAddingDataElementTimeToLive, org.apache.camel.component.cache.CacheProducerTest.testAddingDataToCacheDoesFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testAddingDataElementEternal, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCacheUsingUrlParameters]
+
+Time each test takes to run in the new order:
+[118857873, 117199602, 1680142319, 98078938]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.148
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.900
+
+Test order list:
+[org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCacheUsingUrlParametersMixed, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCacheUsingUrlParametersOverrided, org.apache.camel.component.cache.CacheProducerTest.testDeletingAllDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testAddingSerializableDataToCache]
+
+Time each test takes to run in the new order:
+[58515473, 1564642575, 166610794, 110592880]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.632
+Number of tests selected out of total in original order: 4 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.268
+
+Test order list:
+[org.apache.camel.component.cache.CacheProducerTest.testUpdatingDataInCache, org.apache.camel.component.cache.CacheProducerTest.testCheckDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testCheckDataFromCacheNegativeTest, org.apache.camel.component.cache.CacheProducerTest.testCheckExpiredDataFromCache]
+
+Time each test takes to run in the new order:
+[198497084, 230704524, 1489967201, 348739141]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.506
+Number of tests selected out of total in original order: 3 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.015
+
+Test order list:
+[org.apache.camel.component.cache.CacheProducerTest.testUnknownOperation, org.apache.camel.component.cache.CacheProducerTest.testUnknownOperationDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testQueringNonExistingDataFromCache]
+
+Time each test takes to run in the new order:
+[1367343196, 213084815, 434837162]
+
+Dependent test list:
+[]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 75.721
+New order time: 61.801
+Total number of tests executed in all machines out of total in original order: 31 / 31

@@ -1,0 +1,6 @@
+Test: org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity
+Intended behavior: FAILURE
+when executed after: [org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig]
+The revealed different behavior: PASS
+when executed after: []
+

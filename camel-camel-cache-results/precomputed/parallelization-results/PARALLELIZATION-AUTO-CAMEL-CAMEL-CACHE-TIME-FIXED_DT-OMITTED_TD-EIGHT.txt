@@ -1,0 +1,102 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, time, -timeOrder, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/camel-camel-cache-auto-time.txt, -origOrder, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/camel-camel-cache-auto-order, -testInputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/sootTestOutput-auto, -filesToDelete, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/camel-camel-cache-env-files, -numOfMachines, 8, -project, camel-camel-cache, -testType, auto, -timesToRun, 5, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/parallelization-results, -classpath, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/dependency/*:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/classes:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/randoop/bin:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/test-classes:, -resolveDependences, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/scripts/data/parallelization-dt-list/parallelization-camel-camel-cache-auto-8-time.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.894
+Number of tests selected out of total in original order: 57 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.237
+
+Test order list:
+[ErrorTest0.test1, RegressionTest0.test002, RegressionTest0.test302, RegressionTest0.test306, RegressionTest0.test307, RegressionTest0.test314, RegressionTest0.test315, RegressionTest0.test004, RegressionTest0.test023, RegressionTest0.test025, RegressionTest0.test035, RegressionTest0.test037, RegressionTest0.test045, RegressionTest0.test047, RegressionTest0.test049, RegressionTest0.test064, RegressionTest0.test073, RegressionTest0.test079, RegressionTest0.test085, RegressionTest0.test102, RegressionTest0.test108, RegressionTest0.test113, RegressionTest0.test114, RegressionTest0.test115, RegressionTest0.test127, RegressionTest0.test135, RegressionTest0.test137, RegressionTest0.test139, RegressionTest0.test140, RegressionTest0.test144, RegressionTest0.test147, RegressionTest0.test149, RegressionTest0.test156, RegressionTest0.test165, RegressionTest0.test168, RegressionTest0.test175, RegressionTest0.test183, RegressionTest0.test191, RegressionTest0.test195, RegressionTest0.test199, RegressionTest0.test209, RegressionTest0.test211, RegressionTest0.test212, RegressionTest0.test215, RegressionTest0.test217, RegressionTest0.test218, RegressionTest0.test231, RegressionTest0.test237, RegressionTest0.test243, RegressionTest0.test254, RegressionTest0.test261, RegressionTest0.test265, RegressionTest0.test275, RegressionTest0.test278, RegressionTest0.test280, RegressionTest0.test282, RegressionTest0.test286]
+
+Time each test takes to run in the new order:
+[40203245, 88953, 69108, 149514, 592116, 19954623, 74988, 374884, 117855, 117650, 21190470, 204925, 140385, 350985, 118900, 327896, 98208, 620362541, 15424669, 82572, 63141, 97678, 9236073, 2046917, 425296, 292847, 1676929, 129511, 97496, 122448, 88882, 2374463, 386435, 1407790, 103852, 17891071, 824653, 6092099, 96176018, 755513, 222239, 27668257, 23472901, 184885, 2158019, 249554, 1162404, 128060, 298932, 348611, 319352764, 239185, 110809, 82539, 107071, 89397, 539600]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.786
+Number of tests selected out of total in original order: 56 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.859
+
+Test order list:
+[RegressionTest0.test003, RegressionTest0.test008, RegressionTest0.test301, RegressionTest0.test304, RegressionTest0.test308, RegressionTest0.test316, RegressionTest0.test317, RegressionTest0.test018, RegressionTest0.test026, RegressionTest0.test027, RegressionTest0.test028, RegressionTest0.test033, RegressionTest0.test044, RegressionTest0.test048, RegressionTest0.test053, RegressionTest0.test055, RegressionTest0.test061, RegressionTest0.test062, RegressionTest0.test063, RegressionTest0.test067, RegressionTest0.test093, RegressionTest0.test094, RegressionTest0.test096, RegressionTest0.test099, RegressionTest0.test104, RegressionTest0.test117, RegressionTest0.test118, RegressionTest0.test119, RegressionTest0.test121, RegressionTest0.test122, RegressionTest0.test123, RegressionTest0.test126, RegressionTest0.test128, RegressionTest0.test145, RegressionTest0.test155, RegressionTest0.test159, RegressionTest0.test161, RegressionTest0.test172, RegressionTest0.test190, RegressionTest0.test202, RegressionTest0.test203, RegressionTest0.test206, RegressionTest0.test225, RegressionTest0.test226, RegressionTest0.test228, RegressionTest0.test230, RegressionTest0.test239, RegressionTest0.test256, RegressionTest0.test271, RegressionTest0.test272, RegressionTest0.test273, RegressionTest0.test274, RegressionTest0.test276, RegressionTest0.test279, RegressionTest0.test290, RegressionTest0.test296]
+
+Time each test takes to run in the new order:
+[584895, 129375, 244421, 105017, 1470105, 93897, 200693569, 300499, 72311, 151675, 1376350, 273824, 191702, 103025, 18157091, 21779433, 514851809, 313266, 168041, 14083131, 3339539, 181052, 73033, 15971002, 179520, 197865, 372747, 887911, 1274369, 71506, 259500, 467854, 270346, 612065, 73456, 363343, 117681, 92173, 1893183, 230838, 314064, 230727, 16402573, 97210, 121605, 190082, 23276902, 229055, 1492390, 6160578, 105226, 300299, 89397, 218723, 8064775, 128604]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.070
+Number of tests selected out of total in original order: 56 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.224
+
+Test order list:
+[RegressionTest0.test001, RegressionTest0.test303, RegressionTest0.test313, RegressionTest0.test320, RegressionTest0.test009, RegressionTest0.test030, RegressionTest0.test038, RegressionTest0.test039, RegressionTest0.test057, RegressionTest0.test070, RegressionTest0.test071, RegressionTest0.test072, RegressionTest0.test076, RegressionTest0.test078, RegressionTest0.test084, RegressionTest0.test098, RegressionTest0.test105, RegressionTest0.test120, RegressionTest0.test129, RegressionTest0.test131, RegressionTest0.test132, RegressionTest0.test133, RegressionTest0.test148, RegressionTest0.test151, RegressionTest0.test154, RegressionTest0.test158, RegressionTest0.test160, RegressionTest0.test163, RegressionTest0.test166, RegressionTest0.test169, RegressionTest0.test170, RegressionTest0.test179, RegressionTest0.test180, RegressionTest0.test181, RegressionTest0.test182, RegressionTest0.test187, RegressionTest0.test188, RegressionTest0.test193, RegressionTest0.test197, RegressionTest0.test220, RegressionTest0.test222, RegressionTest0.test227, RegressionTest0.test234, RegressionTest0.test238, RegressionTest0.test240, RegressionTest0.test241, RegressionTest0.test242, RegressionTest0.test244, RegressionTest0.test246, RegressionTest0.test252, RegressionTest0.test259, RegressionTest0.test266, RegressionTest0.test267, RegressionTest0.test277, RegressionTest0.test285, RegressionTest0.test294]
+
+Time each test takes to run in the new order:
+[437232, 346508, 70851, 16855974, 267719, 117300, 1379935, 72691, 172317, 175285, 152152, 102299, 635700841, 8472389, 4965253, 113672, 8356616, 159833, 14331131, 333194, 33861095, 102300, 256207, 1430651, 132385, 63926, 11279190, 1351815, 1797725, 297228, 206384, 99047, 254853, 143756, 200525, 117048, 3719198, 6388110, 270715, 11201006, 98964853, 6449617, 269787, 7425746, 487003, 193854, 625311, 419920, 132724, 472454, 3981762, 304945261, 7901906, 219798, 122871, 25761928]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.006
+Number of tests selected out of total in original order: 50 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.186
+
+Test order list:
+[RegressionTest0.test006, RegressionTest0.test309, RegressionTest0.test311, RegressionTest0.test318, RegressionTest0.test005, RegressionTest0.test011, RegressionTest0.test013, RegressionTest0.test014, RegressionTest0.test017, RegressionTest0.test021, RegressionTest0.test029, RegressionTest0.test036, RegressionTest0.test046, RegressionTest0.test051, RegressionTest0.test060, RegressionTest0.test069, RegressionTest0.test075, RegressionTest0.test077, RegressionTest0.test080, RegressionTest0.test083, RegressionTest0.test089, RegressionTest0.test090, RegressionTest0.test091, RegressionTest0.test092, RegressionTest0.test107, RegressionTest0.test116, RegressionTest0.test125, RegressionTest0.test130, RegressionTest0.test134, RegressionTest0.test157, RegressionTest0.test167, RegressionTest0.test177, RegressionTest0.test185, RegressionTest0.test198, RegressionTest0.test200, RegressionTest0.test207, RegressionTest0.test214, RegressionTest0.test229, RegressionTest0.test232, RegressionTest0.test235, RegressionTest0.test236, RegressionTest0.test248, RegressionTest0.test257, RegressionTest0.test264, RegressionTest0.test269, RegressionTest0.test270, RegressionTest0.test281, RegressionTest0.test287, RegressionTest0.test292, RegressionTest0.test298]
+
+Time each test takes to run in the new order:
+[527040, 239145, 70825, 100412, 204830, 91682, 1852096, 110038, 730977, 1193316, 95623, 3214797, 2140473, 127696, 486567, 116413, 166724, 155615, 90931, 12259723, 50519605, 62015, 64806, 2613345, 9790249, 73047, 77892, 123838, 1258033, 179953, 2896512, 123831, 161952, 22181907, 77648855, 310597270, 186851, 17196659, 156168, 81319, 67364, 1556478, 110342, 1624704, 217333, 88937, 344646, 194155, 79277, 662083229]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.155
+Number of tests selected out of total in original order: 53 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.287
+
+Test order list:
+[RegressionTest0.test300, RegressionTest0.test310, RegressionTest0.test319, RegressionTest0.test321, RegressionTest0.test010, RegressionTest0.test012, RegressionTest0.test015, RegressionTest0.test016, RegressionTest0.test024, RegressionTest0.test040, RegressionTest0.test043, RegressionTest0.test052, RegressionTest0.test058, RegressionTest0.test068, RegressionTest0.test081, RegressionTest0.test082, RegressionTest0.test086, RegressionTest0.test087, RegressionTest0.test088, RegressionTest0.test095, RegressionTest0.test103, RegressionTest0.test109, RegressionTest0.test111, RegressionTest0.test136, RegressionTest0.test138, RegressionTest0.test141, RegressionTest0.test146, RegressionTest0.test150, RegressionTest0.test152, RegressionTest0.test153, RegressionTest0.test164, RegressionTest0.test171, RegressionTest0.test173, RegressionTest0.test174, RegressionTest0.test178, RegressionTest0.test186, RegressionTest0.test189, RegressionTest0.test194, RegressionTest0.test201, RegressionTest0.test204, RegressionTest0.test210, RegressionTest0.test213, RegressionTest0.test216, RegressionTest0.test223, RegressionTest0.test245, RegressionTest0.test247, RegressionTest0.test250, RegressionTest0.test251, RegressionTest0.test255, RegressionTest0.test268, RegressionTest0.test283, RegressionTest0.test295, RegressionTest0.test297]
+
+Time each test takes to run in the new order:
+[1760001, 11602350, 366173, 211387, 20764801, 297565, 81911, 92447, 1256697, 178063, 474261, 4726703, 192138, 107697, 111447, 65548, 253782, 461216, 268620, 9446378, 532404, 493054526, 728296, 307938, 6829028, 127756, 643049150, 339449, 152352, 98774, 22213677, 223943, 65561, 18289648, 1521668, 154051, 61197, 135422, 101145, 1466064, 19100865, 22082922, 340157, 66512, 350458, 256894, 214307, 181712, 287115, 343860, 1190575, 117850, 63436]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.033
+Number of tests selected out of total in original order: 49 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.157
+
+Test order list:
+[RegressionTest0.test007, RegressionTest0.test299, RegressionTest0.test312, RegressionTest0.test019, RegressionTest0.test020, RegressionTest0.test022, RegressionTest0.test031, RegressionTest0.test032, RegressionTest0.test034, RegressionTest0.test041, RegressionTest0.test042, RegressionTest0.test050, RegressionTest0.test054, RegressionTest0.test056, RegressionTest0.test059, RegressionTest0.test065, RegressionTest0.test066, RegressionTest0.test074, RegressionTest0.test097, RegressionTest0.test100, RegressionTest0.test101, RegressionTest0.test106, RegressionTest0.test110, RegressionTest0.test112, RegressionTest0.test124, RegressionTest0.test142, RegressionTest0.test143, RegressionTest0.test162, RegressionTest0.test176, RegressionTest0.test184, RegressionTest0.test192, RegressionTest0.test196, RegressionTest0.test205, RegressionTest0.test208, RegressionTest0.test219, RegressionTest0.test221, RegressionTest0.test224, RegressionTest0.test233, RegressionTest0.test249, RegressionTest0.test253, RegressionTest0.test258, RegressionTest0.test260, RegressionTest0.test262, RegressionTest0.test263, RegressionTest0.test284, RegressionTest0.test288, RegressionTest0.test289, RegressionTest0.test291, RegressionTest0.test293]
+
+Time each test takes to run in the new order:
+[166632, 332366, 134011, 1346249, 149252, 139329, 270519, 188445, 272422, 181918, 65107792, 14119696, 116925, 207847, 17442775, 55725, 60969, 318808, 96739, 69649, 4751419, 67394, 188967, 102241, 166798, 6949326, 83193, 147957, 695079, 291551, 63844, 104457, 607571, 19198891, 98046, 4487431, 1349864, 13653230, 91716, 72820, 143526, 59980, 305665797, 94706, 166826, 695555047, 69655, 1324254, 277240]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.382
+Number of tests selected out of total in original order: 1 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.969
+
+Test order list:
+[RegressionTest0.test305]
+
+Time each test takes to run in the new order:
+[968698439]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.189
+Number of tests selected out of total in original order: 1 / 323
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.680
+
+Test order list:
+[ErrorTest0.test2]
+
+Time each test takes to run in the new order:
+[679553489]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 8.714
+New order time: 1.287
+Total number of tests executed in all machines out of total in original order: 323 / 323

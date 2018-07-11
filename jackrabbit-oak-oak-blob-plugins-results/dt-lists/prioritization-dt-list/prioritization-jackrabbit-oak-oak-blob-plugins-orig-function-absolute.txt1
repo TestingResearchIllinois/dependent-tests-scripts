@@ -1,0 +1,12 @@
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.testPropertySetup]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster]
+The revealed different behavior: PASS
+when executed after: []
+

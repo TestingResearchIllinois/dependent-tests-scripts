@@ -1,0 +1,126 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/elastic-job-lite-elastic-job-common-core-orig-order, -testInputDir, /scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/elastic-job-lite-elastic-job-common-core-env-files, -project, elastic-job-lite-elastic-job-common-core, -testType, orig, -numOfMachines, 8, -outputDir, /scratch/reedoei2/elastic-job-lite/experiments/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/dependency/*:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/randoop/bin:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-new-8dacc40b895d9f8adca224e7a026d7d0deadfd91/elastic-job-common/elastic-job-common-core/target/test-classes:, -dependentTestFile, /scratch/reedoei2/elastic-job-lite/experiments/scripts/data/parallelization-dt-list/parallelization-elastic-job-lite-elastic-job-common-core-orig-8-original.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.312
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.626
+
+Test order list:
+[com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithError, com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithException, com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithNull, com.dangdang.ddframe.job.exception.JobSystemExceptionTest.assertGetCause, com.dangdang.ddframe.job.exception.JobSystemExceptionTest.assertGetMessage, com.dangdang.ddframe.job.exception.JobConfigurationExceptionTest.assertGetCause, com.dangdang.ddframe.job.exception.JobConfigurationExceptionTest.assertGetMessage, com.dangdang.ddframe.job.exception.JobStatisticExceptionTest.assertGetCause, com.dangdang.ddframe.job.exception.JobExecutionEnvironmentExceptionTest.assertGetMessage, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNullAndEmpty, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForUnStreamingProcessAndSingleShardingItem, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForUnStreamingProcessAndMultipleShardingItems, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForStreamingProcessAndSingleShardingItem, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForStreamingProcessAndMultipleShardingItems, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndProcessFailureWithExceptionForStreamingProcess, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndIsEligibleForJobRunningForStreamingProcess, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndIsNotEligibleForJobRunningForStreamingProcess, com.dangdang.ddframe.job.executor.type.WrongJobExecutorTest.assertWrongJobExecutorWithSingleItem, com.dangdang.ddframe.job.executor.type.WrongJobExecutorTest.assertWrongJobExecutorWithMultipleItems, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenExecuteFailureForMultipleShardingItems, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteSuccessForMultipleShardingItems, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteSuccessForSingleShardingItems, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenExecuteFailureForSingleShardingItems]
+
+Time each test takes to run in the new order:
+[4095532, 5580688, 4325893, 11574953, 704283, 7958826, 454232, 5577342, 273826, 163327982, 6004571, 11296317, 5402261, 344968397, 8891585, 574704, 8480471, 8988251, 8241167, 7800230, 371895, 10562479, 541135]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.124
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.435
+
+Test order list:
+[com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenCommandLineIsEmpty, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertNewExecutorWithDefaultHandlers, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenCheckMaxTimeDiffSecondsIntolerable, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenPreviousJobStillRunning, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenShardingItemsIsEmpty, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceAndThrowExceptionForSingleShardingItem, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceAndThrowExceptionForMultipleShardingItems, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceSuccessForSingleShardingItems, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceSuccessForMultipleShardingItems, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfireIsEmpty, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfireIsNotEmptyButIsNotEligibleForJobRunning, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfire, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertBeforeJobExecutedFailure, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertAfterJobExecutedFailure, com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertRemove, com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertGetExecutorServiceHandlerForSameThread, com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertGetExecutorServiceHandlerForConcurrent, com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandlerTest.assertHandleException, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutInvalidKey, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutNullValue, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutSuccess, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertGetWhenValueIsEmpty, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertGetWhenValueIsNotEmpty]
+
+Time each test takes to run in the new order:
+[1917893, 223302, 3420850, 5215426, 1452586, 1324139, 6772070, 4393532, 31690774, 163910, 451325, 1540624, 633553, 10096918, 163196, 7115746, 9769813, 12875946, 6757397, 2709074, 308359704, 8866642, 9569236]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.116
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.562
+
+Test order list:
+[com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJson, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJobPropertiesEnumFromInvalidValue, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJobPropertiesEnumFromValidValue, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForScriptJob, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForSimpleJob, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForDataflowJob, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorWhenJobClassWhenUnsupportedJob, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorTwice, com.dangdang.ddframe.job.util.env.HostExceptionTest.assertGetCause, com.dangdang.ddframe.job.util.env.TimeServiceTest.assertGetCurrentMillis, com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObjectTest.assertCreateExecutorService, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemList, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertTtoItemListWhenNull, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListWhenEmpty, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListForDuplicated, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsStringWhenEmpty, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsString, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertNewWhenPairFormatInvalid, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertNewWhenItemIsNotNumber, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMapWhenIsEmpty, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMap, com.dangdang.ddframe.job.util.json.GsonFactoryTest.assertGetGson, com.dangdang.ddframe.job.util.json.GsonFactoryTest.assertRegisterTypeAdapter]
+
+Time each test takes to run in the new order:
+[200738, 152365, 210623941, 126862, 559306, 135111, 135551, 117343, 274386970, 851162, 86047, 1814482, 200526, 2584239, 2128705, 1652020, 2482354, 792798, 496151, 934263, 3088002, 85235, 58795085]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 21.363
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 20.913
+
+Test order list:
+[com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToSimpleJobJson, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToDataflowJobJson, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToScriptJobJson, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromScriptJobJson, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromDataflowJobJson, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromSimpleJobJson, com.dangdang.ddframe.job.util.digest.EncryptionTest.assertMd5, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest.assertGetWithoutValue, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest.assertGetFromCache, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfigurationTest.assertNewZookeeperConfigurationForServerListsAndNamespace, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertIsExisted, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetFromServer, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetChildrenKeys, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetNumChildren, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetRegistryCenterTime, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetWithoutNode, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertRemove, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeral, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersist, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertUpdate, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterInitFailureTest.assertInitFailure]
+
+Time each test takes to run in the new order:
+[1043235351, 541723114, 542478711, 559705008, 528003038, 1024564367, 2491489764, 69891289, 272754, 1646669, 2149182, 572747908, 16015448, 1059887555, 535582358, 529441964, 529773357, 2347735, 539359585, 575628259, 979693, 4659155, 9741482466]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 6.811
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 6.317
+
+Test order list:
+[com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest.assertInitWithDigestSuccess, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest.assertInitWithDigestFailure, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetRawClient, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetRawCache, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetZkConfig, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithOtherException, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithConnectionLossException, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithNoNodeException, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithNoNodeExistsException, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedConnectionLossException, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedNoNodeException, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedNoNodeExistsException, com.dangdang.ddframe.job.event.rdb.JobEventRdbIdentityTest.assertGetIdentity, com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertGetDataSource, com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertCreateJobEventListenerSuccess, com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertCreateJobEventListenerFailure, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithSort, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorSort, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithTime, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithFields, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorFields]
+
+Time each test takes to run in the new order:
+[831964, 1028088, 220338725, 1497361, 7146183, 1746540, 15516366, 251302, 1037546076, 517895298, 550889780, 387531784, 143216, 306010, 1016776058, 2510778305, 1228584, 38799638, 1218633, 183635, 4956160, 372108, 298223]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.852
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.093
+
+Test order list:
+[com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithPageSizeAndNumber, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorPageSizeAndNumber, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithSort, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorSort, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithFields, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorFields, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccess, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskFailedState, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailure, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccessAndConflict, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailureAndConflict, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailureAndMessageExceed, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertFindJobExecutionEvent, com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobExecutionEvent, com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobStatusTraceEvent, com.dangdang.ddframe.job.event.JobExecutionEventTest.assertNewJobExecutionEvent, com.dangdang.ddframe.job.event.JobExecutionEventTest.assertExecutionSuccess, com.dangdang.ddframe.job.event.JobExecutionEventTest.assertExecutionFailure, com.dangdang.ddframe.job.event.JobEventBusTest.assertRegisterFailure]
+
+Time each test takes to run in the new order:
+[3455048, 11793727, 839636, 6487791, 3210100, 4568059, 7039743, 19090986, 2216884, 8768982, 847095775, 679030, 9176918, 627732, 16599494, 6345784, 6362347, 566405, 1470715, 7328366, 1341121, 122631132, 5032561]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.585
+Number of tests selected out of total in original order: 23 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.956
+
+Test order list:
+[com.dangdang.ddframe.job.event.JobEventBusTest.assertPost, com.dangdang.ddframe.job.event.JobEventBusTest.assertPostWithoutListener, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildAllProperties, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildRequiredProperties, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenJobNameIsNull, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenCronIsNull, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenTotalSHardingCountIsNegative, com.dangdang.ddframe.job.api.ShardingContextTest.assertToString, com.dangdang.ddframe.job.api.ShardingContextTest.assertNew, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskResultStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskRunningStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddJobRunningStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddJobRegisterStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWithDifferentFromDate, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatisticsWhenTableIsEmpty]
+
+Time each test takes to run in the new order:
+[22054723, 17430918, 14183031, 20506815, 2264914, 300520674, 17357073, 15449049, 16211766, 3866335, 426241234, 207096, 160913, 13285871, 5759848, 2041306, 260277, 14364462, 28258924, 159430, 281652, 18607791, 16430326]
+
+Dependent test list:
+[]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.248
+Number of tests selected out of total in original order: 22 / 183
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.728
+
+Test order list:
+[com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWithDifferentFromDate, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatistics, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatisticsWhenTableIsEmpty, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatistics, com.dangdang.ddframe.job.context.TaskContextTest.assertNew, com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId, com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo, com.dangdang.ddframe.job.context.TaskContextTest.assertTaskContextFrom, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfo, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskId, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfoWithoutShardingItems, com.dangdang.ddframe.job.context.TaskContextTest.assertSetSlaveId, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskIdWithoutShardingItems, com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave, com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName, com.dangdang.ddframe.job.context.TaskContextTest.assertGetExecutorId, com.dangdang.ddframe.job.context.TaskContextTest.assertSetIdle]
+
+Time each test takes to run in the new order:
+[16608825, 29665148, 247040, 15900897, 536763974, 220623, 143798, 26188537, 15114504, 14121310, 10753961, 348385, 17924800, 154180, 126033, 151813, 156084, 147451, 157588, 2217142, 27436329, 13550771]
+
+Dependent test list:
+[]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 31.694
+New order time: 20.913
+Total number of tests executed in all machines out of total in original order: 183 / 183

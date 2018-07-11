@@ -1,0 +1,712 @@
+[INFO] Checking for results directory at /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/scripts/dubbo-dubbo-config-spring-results
+[INFO] Results will be written to /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/scripts/dubbo-dubbo-config-spring-results/dubbo-dubbo-config-spring-old-orig-nondeterministic
+[INFO] Running main program.
+Starting experiment: dubbo-dubbo-config-spring
+======================= Start   =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 17523
+======================= Start  1  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 11368
+======================= Start  2  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9215
+======================= Start  3  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8160
+======================= Start  4  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 7505
+======================= Start  5  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+Total undeterministic tests found for this round: 1
+[INFO] Estimated time remaining: 7050
+======================= Start  6  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6696
+======================= Start  7  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 11960
+======================= Start  8  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 11011
+======================= Start  9  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 10260
+======================= Start  10  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9701
+======================= Start  11  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9240
+======================= Start  12  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8613
+======================= Start  13  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8256
+======================= Start  14  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9690
+======================= Start  15  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9324
+======================= Start  16  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8881
+======================= Start  17  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8528
+======================= Start  18  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8748
+======================= Start  19  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8400
+======================= Start  20  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8137
+======================= Start  21  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9126
+======================= Start  22  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8778
+======================= Start  23  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9500
+======================= Start  24  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 9150
+======================= Start  25  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8880
+======================= Start  26  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8541
+======================= Start  27  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8280
+======================= Start  28  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 8023
+======================= Start  29  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 7770
+======================= Start  30  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 7521
+======================= Start  31  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 7276
+======================= Start  32  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 7102
+======================= Start  33  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6864
+======================= Start  34  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6695
+======================= Start  35  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6464
+======================= Start  36  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6867
+======================= Start  37  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6634
+======================= Start  38  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6405
+======================= Start  39  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6240
+======================= Start  40  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 6018
+======================= Start  41  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5974
+======================= Start  42  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5814
+======================= Start  43  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5656
+======================= Start  44  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5500
+======================= Start  45  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5346
+======================= Start  46  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5194
+======================= Start  47  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 5044
+======================= Start  48  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4896
+======================= Start  49  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4750
+======================= Start  50  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4949
+======================= Start  51  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+Total undeterministic tests found for this round: 1
+[INFO] Estimated time remaining: 4800
+======================= Start  52  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4653
+======================= Start  53  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4508
+======================= Start  54  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4725
+======================= Start  55  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4576
+======================= Start  56  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4429
+======================= Start  57  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4410
+======================= Start  58  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4346
+======================= Start  59  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4280
+======================= Start  60  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 4134
+======================= Start  61  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3990
+======================= Start  62  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3848
+======================= Start  63  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3744
+======================= Start  64  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3745
+======================= Start  65  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3604
+======================= Start  66  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3630
+======================= Start  67  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3488
+======================= Start  68  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3348
+======================= Start  69  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3420
+======================= Start  70  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3364
+======================= Start  71  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3220
+======================= Start  72  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 3078
+======================= Start  73  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2938
+======================= Start  74  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2800
+======================= Start  75  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2688
+======================= Start  76  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2553
+======================= Start  77  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+Total undeterministic tests found for this round: 1
+[INFO] Estimated time remaining: 2398
+======================= Start  78  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2268
+======================= Start  79  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2140
+======================= Start  80  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 2071
+======================= Start  81  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1980
+======================= Start  82  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1853
+======================= Start  83  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1744
+======================= Start  84  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1620
+======================= Start  85  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1498
+======================= Start  86  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1391
+======================= Start  87  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1344
+======================= Start  88  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1210
+======================= Start  89  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 1100
+======================= Start  90  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 981
+======================= Start  91  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 872
+======================= Start  92  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 763
+======================= Start  93  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 666
+======================= Start  94  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 550
+======================= Start  95  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 436
+======================= Start  96  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 327
+======================= Start  97  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 216
+======================= Start  98  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 108
+======================= Start  99  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: 0
+======================= Start  100  =======================
+[INFO] Running order for first time.
+[INFO] Re-running order.
+[INFO] Cross referencing.
+[INFO] Finding non-deterministic tests
+There are no tests missing or undeterministic tests this round!
+[INFO] Estimated time remaining: -106
+[INFO] Finished. Found 3 nondeterministic tests.

@@ -1,0 +1,38 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, time, -timeOrder, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/camel-camel-cache-orig-time.txt, -origOrder, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/camel-camel-cache-orig-order, -testInputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/camel-camel-cache-env-files, -numOfMachines, 2, -project, camel-camel-cache, -testType, orig, -timesToRun, 5, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/parallelization-results, -classpath, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/dependency/*:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/classes:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/randoop/bin:/scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/camel-old-8013229758c2ec46e00fe392f08f90a42f98af3e/components/camel-cache/target/test-classes:, -resolveDependences, /scratch/reedoei2/dt-tools/run-new-subjects/camel/experiments/scripts/data/parallelization-dt-list/parallelization-camel-camel-cache-orig-2-time.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 199.158
+Number of tests selected out of total in original order: 31 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 1
+
+Average time to find one dependency: 129.828951099
+Execution time for executing the following testing order: 63.600
+
+Test order list:
+[org.apache.camel.component.cache.CacheConfigurationTest.doURICheck, org.apache.camel.component.cache.EHCacheUtilTest.testCreateCacheManagers, org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig, org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity, org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testNoProvidedConfiguration, org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testFailSafeEHCacheManager, org.apache.camel.component.cache.ObjectCacheProducerTest.testAddingMultipleDataInCacheAndGettingBack, org.apache.camel.component.cache.CacheProducerTest.testAddingDataToCacheWithNonStringCacheKey, org.apache.camel.component.cache.CacheProducerTest.testAddingDataElementEternal, org.apache.camel.component.cache.CacheProducerTest.testAddingDataElementIdle, org.apache.camel.component.cache.CacheProducerTest.testAddingDataToCache, org.apache.camel.component.cache.CacheProducerTest.testAddingDataToCacheDoesFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testAddingSerializableDataToCache, org.apache.camel.component.cache.CacheProducerTest.testUpdatingDataInCache, org.apache.camel.component.cache.CacheProducerTest.testAddingDataElementTimeToLive, org.apache.camel.component.cache.CacheProducerTest.testDeletingDataFromCacheDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testDeletingAllDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testDeletingDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testUpdatingDataInCacheDoesFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testUnknownOperation, org.apache.camel.component.cache.CacheProducerTest.testUnknownOperationDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testQueringNonExistingDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testQueringNonExistingDataFromCacheDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testDeletingAllDataFromCacheDoesNotFailOnEmptyBody, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCacheUsingUrlParametersMixed, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCacheUsingUrlParametersOverrided, org.apache.camel.component.cache.CacheProducerTest.testCheckDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testCheckDataFromCacheNegativeTest, org.apache.camel.component.cache.CacheProducerTest.testCheckExpiredDataFromCache, org.apache.camel.component.cache.CacheProducerTest.testQueringDataFromCacheUsingUrlParameters]
+
+Time each test takes to run in the new order:
+[76294936, 68350166, 30877579, 80451848, 384083475, 36758921, 62471672, 71991501, 57415616, 40812320, 505434361, 77852166, 65681836, 50683543, 90842168, 86520112, 73715753, 306709885, 60668319095, 62895101, 87328737, 37539858, 86910877, 65851450, 67421679, 47941134, 45693012, 49621614, 54957450, 65561851, 92773599]
+
+Dependent test list:
+[Test: org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity, Intended behavior: FAILURE, when executed after: [org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 62.557
+Number of tests selected out of total in original order: 1 / 31
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 61.218
+
+Test order list:
+[org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig]
+
+Time each test takes to run in the new order:
+[61218179147]
+
+Dependent test list:
+[Test: org.apache.camel.component.cache.DefaultCacheManagerFactoryTest.testEHCacheCompatiblity, Intended behavior: FAILURE, when executed after: [org.apache.camel.component.cache.CacheRoutesManagementTest.testConfig], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 124.908
+New order time: 63.600
+Total number of tests executed in all machines out of total in original order: 32 / 31

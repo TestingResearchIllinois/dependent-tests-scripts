@@ -1,0 +1,72 @@
+Test: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskResultStatistics]
+The revealed different behavior: PASS
+when executed after: []
+

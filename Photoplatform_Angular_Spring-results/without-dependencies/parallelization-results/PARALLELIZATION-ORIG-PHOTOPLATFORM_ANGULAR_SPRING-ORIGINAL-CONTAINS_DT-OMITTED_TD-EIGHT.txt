@@ -1,0 +1,114 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/Photoplatform_Angular_Spring-orig-order, -testInputDir, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/sootTestOutput-orig, -filesToDelete, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-new-3a7d9e76d9b741895c9b4c2cbaccbf6f5edf541f/target/Photoplatform_Angular_Spring-env-files, -project, Photoplatform_Angular_Spring, -testType, orig, -numOfMachines, 8, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/parallelization-results, -timesToRun, 5, -classpath, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/dependency/*:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/classes:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/randoop/bin:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/test-classes]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 6.888
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 6.160
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.CategoryDAOTest.testBasic, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetCategories]
+
+Time each test takes to run in the new order:
+[6129831522, 29676143]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 7.105
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 6.061
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.CollectionDAOTest.testBasic, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetByUser]
+
+Time each test takes to run in the new order:
+[17607747, 6043478931]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 7.687
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 6.106
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetImages, de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy]
+
+Time each test takes to run in the new order:
+[40677599, 6065063745]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 5.500
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 2
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 5.809
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.ImageDAOTest.testBasic, de.htw.sdf.photoplatform.repository.ImageDAOTest.testGetPublicImages]
+
+Time each test takes to run in the new order:
+[5792130602, 16801567]
+
+DTs not fixed are:
+[de.htw.sdf.photoplatform.repository.ImageDAOTest.testBasic, de.htw.sdf.photoplatform.repository.ImageDAOTest.testGetPublicImages]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 7.379
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 2
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 5.877
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, de.htw.sdf.photoplatform.repository.CollectionCategoryDAOTest.testGetCollectionCategoryBy]
+
+Time each test takes to run in the new order:
+[30262766, 5846834775]
+
+DTs not fixed are:
+[de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, de.htw.sdf.photoplatform.repository.CollectionCategoryDAOTest.testGetCollectionCategoryBy]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 6.921
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 2
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 5.973
+
+Test order list:
+[de.htw.sdf.photoplatform.common.ImportSQLTester.test1InitSqlData, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testGetPhotographersImages]
+
+Time each test takes to run in the new order:
+[45891483, 5927307913]
+
+DTs not fixed are:
+[de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testGetPhotographersImages, de.htw.sdf.photoplatform.common.ImportSQLTester.test1InitSqlData]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 6.996
+Number of tests selected out of total in original order: 2 / 15
+Number of DTs not fixed: 2
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 5.281
+
+Test order list:
+[de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testBasicCollectionsServices]
+
+Time each test takes to run in the new order:
+[17080719, 5264142132]
+
+DTs not fixed are:
+[de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testBasicCollectionsServices]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 6.752
+Number of tests selected out of total in original order: 1 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 5.639
+
+Test order list:
+[de.htw.sdf.photoplatform.webservice.util.UserUtilityTest.testValidateProfileData]
+
+Time each test takes to run in the new order:
+[5638706341]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 46.923
+New order time: 6.160
+Total number of tests executed in all machines out of total in original order: 15 / 15

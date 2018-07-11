@@ -1,0 +1,144 @@
+Test: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskFailedState
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccess]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccess
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobStatusTraceEvent]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobStatusTraceEvent
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToScriptJobJson]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToScriptJobJson
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToDataflowJobJson]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToDataflowJobJson
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToSimpleJobJson]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToSimpleJobJson
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.env.TimeServiceTest.assertGetCurrentMillis]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.env.TimeServiceTest.assertGetCurrentMillis
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsStringWhenEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsStringWhenEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListForDuplicated]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListForDuplicated
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertTtoItemListWhenNull]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertTtoItemListWhenNull
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMap]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMap
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatistics]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatistics
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatisticsWhenTableIsEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatisticsWhenTableIsEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatistics]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatistics
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWithDifferentFromDate]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWithDifferentFromDate
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatistics]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatistics
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatisticsWhenTableIsEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatisticsWhenTableIsEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskResultStatistics]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskFailedState]
+The revealed different behavior: PASS
+when executed after: []
+

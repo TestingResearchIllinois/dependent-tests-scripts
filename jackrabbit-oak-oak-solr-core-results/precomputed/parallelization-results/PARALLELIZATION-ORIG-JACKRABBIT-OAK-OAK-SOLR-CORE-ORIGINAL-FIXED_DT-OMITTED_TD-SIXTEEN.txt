@@ -1,0 +1,221 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/jackrabbit-oak-oak-solr-core-orig-order, -testInputDir, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/jackrabbit-oak-oak-solr-core-env-files, -project, jackrabbit-oak-oak-solr-core, -testType, orig, -numOfMachines, 16, -outputDir, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/dependency/*:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/classes:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/randoop/bin:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-solr-core/target/test-classes:, -resolveDependences, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/experiments/scripts/data/parallelization-dt-list/parallelization-jackrabbit-oak-oak-solr-core-orig-16-original.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.491
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.499
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testSize, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoNegativeCost, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoMoreThanThreeSolrRequests]
+
+Time each test takes to run in the new order:
+[94178355, 3038725, 1401670099]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.135
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.055
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoIndexPlanWithNoRestrictions, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPathRestrictions, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithOnlyPathRestrictionsEnabled]
+
+Time each test takes to run in the new order:
+[4959514, 2371605, 1047872478]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.368
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.463
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyAndPathRestrictionsEnabled, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictions, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyRestrictionsEnabled]
+
+Time each test takes to run in the new order:
+[1993494, 823709, 460204656]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.641
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.547
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPrimaryTypeRestrictions, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithOnlyPrimaryTypeRestrictionsEnabled, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyAndPrimaryTypeRestrictionsEnabled]
+
+Time each test takes to run in the new order:
+[18504321, 527271619, 1543629]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.968
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.851
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictionsEnabledButPropertyIgnored, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyRestrictionsEnabledButNotUsedProperty, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testPlanWithPropertyRestrictionsEnabledAndUsedProperty]
+
+Time each test takes to run in the new order:
+[5822328, 712992, 844060245]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.732
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.617
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testNoPlanWithPropertyNotListedInUsedProperties, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrQueryIndexTest.testUnion, org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testMultipleUpdates]
+
+Time each test takes to run in the new order:
+[169517658, 20390957, 427561756]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.415
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.033
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testEstimate, org.apache.jackrabbit.oak.plugins.index.solr.query.LMSEstimatorTest.testUpdate, org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testMatchAllConversionWithNoConstraints]
+
+Time each test takes to run in the new order:
+[35215010, 299083550, 698986106]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.485
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.507
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testAllChildrenQueryParsing, org.apache.jackrabbit.oak.plugins.index.solr.query.FilterQueryParserTest.testCollapseJcrContentNodes, org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookupTest.collectPathOnRootNode]
+
+Time each test takes to run in the new order:
+[4281649, 17227081, 485201418]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 7.025
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 5.155
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.query.SolrIndexLookupTest.collectPathOnSubNode, org.apache.jackrabbit.oak.plugins.index.solr.server.RemoteSolrServerProviderIT.testCloudRemoteServerCreation, org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization]
+
+Time each test takes to run in the new order:
+[1501576178, 22849042, 3630954695]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 87.951
+Number of tests selected out of total in original order: 4 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 1
+
+Average time to find one dependency: 72.134279725
+Execution time for executing the following testing order: 5.643
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.util.NodeTypeIndexingUtilsTest.testSynonymsFileCreation, org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization, org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIgnoredPropertiesNotIndexed]
+
+Time each test takes to run in the new order:
+[441978160, 2299756206, 533629601, 2367839987]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.055
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.254
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testExactPathIndexingTokenizationAndSearch, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathSearchingTokenization, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathIndexingTokenization]
+
+Time each test takes to run in the new order:
+[251178052, 1796733, 1187285]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.939
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.272
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenPathMatching, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenPathMatchingOnRootNode, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathMatching]
+
+Time each test takes to run in the new order:
+[4022091, 266935353, 902594]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.738
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.271
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testParentPathMatching, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathSearchingTokenization, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenIndexingTokenization]
+
+Time each test takes to run in the new order:
+[20091251, 455753, 250699289]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.418
+Number of tests selected out of total in original order: 3 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.974
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testAllChildrenSearchingTokenization, org.apache.jackrabbit.oak.plugins.index.solr.configuration.DefaultAnalyzersConfigurationTest.testDirectChildrenPathIndexingTokenization, org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testExistingPath]
+
+Time each test takes to run in the new order:
+[3014330, 247204460, 723634322]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.676
+Number of tests selected out of total in original order: 2 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.656
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testNonExistingPath, org.apache.jackrabbit.oak.plugins.index.solr.configuration.nodestate.OakSolrNodeStateConfigurationTest.testWrongNodeState]
+
+Time each test takes to run in the new order:
+[648964900, 7384568]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.208
+Number of tests selected out of total in original order: 2 / 46
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.415
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationTest.testCreateRemoteServerFromConfig, org.apache.jackrabbit.oak.plugins.index.solr.configuration.SolrServerConfigurationTest.testCreteEmbeddedServerFromConfig]
+
+Time each test takes to run in the new order:
+[407343767, 7677189]
+
+Dependent test list:
+[Test: org.apache.jackrabbit.oak.plugins.index.solr.index.SolrIndexEditorTest.testIndexedProperties, Intended behavior: FAILURE, when executed after: [org.apache.jackrabbit.oak.plugins.index.solr.server.EmbeddedSolrServerProviderTest.testEmbeddedSolrServerInitialization], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 20.237
+New order time: 5.643
+Total number of tests executed in all machines out of total in original order: 47 / 46

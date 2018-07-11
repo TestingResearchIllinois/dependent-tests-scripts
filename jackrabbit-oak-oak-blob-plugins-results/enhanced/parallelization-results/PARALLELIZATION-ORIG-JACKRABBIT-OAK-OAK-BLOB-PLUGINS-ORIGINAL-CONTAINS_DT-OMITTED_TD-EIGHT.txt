@@ -1,0 +1,111 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/jackrabbit-oak-oak-blob-plugins-orig-order, -testInputDir, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-old-cd3d6e5c89597ebc4d39e7ce9344eed7215559d7/oak-blob-plugins/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/jackrabbit-oak-oak-blob-plugins-env-files, -project, jackrabbit-oak-oak-blob-plugins, -testType, orig, -numOfMachines, 8, -outputDir, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/dependency/*:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/classes:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/randoop/bin:/scratch/reedoei2/run-new-subjects/jackrabbit-oak-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77-new/experiments/jackrabbit-oak-new-865c56c8f02fdfc7a76ac12c6ce207df42ee9d77/oak-blob-plugins/target/test-classes:]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 33.701
+Number of tests selected out of total in original order: 19 / 149
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 49.542
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.datastore.InMemoryDataRecordTest.testGetInstance, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiers, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiersRelative1, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testGetAllIdentifiersRelative2, org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStoreTest.testNoOpMap, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.testPropertySetup, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshot, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotRetrieve, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotAdd, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotAddSnapshot, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addRestart, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addCloseRestart, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addConcurrentSnapshot, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addSnapshotConcurrentRetrieve, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.snapshotConcurrentRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.addBulkAdd, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerStoreTest.bulkAddConcurrentCompact, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.addCloseRestart]
+
+Time each test takes to run in the new order:
+[11545427866, 119563322, 9537359, 225787, 7344717937, 1407435621, 10375934, 1382210536, 1150633869, 10252814, 13942991, 48605208, 1227625777, 11557477446, 1208335704, 1212200895, 11230018155, 51417875, 12130354]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.625
+Number of tests selected out of total in original order: 19 / 149
+Number of DTs not fixed: 5
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.489
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filterWithNoActiveDeletion, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.noFilter, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filterWithExtraElements, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileAll, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileNone, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcile, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.reconcileExtraElements, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.track, org.apache.jackrabbit.oak.plugins.blob.datastore.ActiveDeletionTrackerStoreTest.filter, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotRetrieveIgnored, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.CachingFileDataStoreTest.assertReferenceKey, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testGetAllIdentifiers, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testAddRecord, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testGetRecord]
+
+Time each test takes to run in the new order:
+[162791433, 9626016, 519630359, 64909709, 450069, 160566596, 16332661, 66485897, 8134551, 68799731, 92524154, 26742837, 19443596, 218144953, 12101978, 14278424, 481508, 24489082, 2660162]
+
+DTs not fixed are:
+[org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.692
+Number of tests selected out of total in original order: 19 / 149
+Number of DTs not fixed: 2
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.613
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testDeleteRecord, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testReference, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testSingleThread, org.apache.jackrabbit.oak.plugins.blob.datastore.AbstractDataStoreTest.testMultiThreaded, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.configCachingFileDataStore, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.mbeanRegs, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.configFileDataStore, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreServiceTest.registerAndCheckReferenceKey, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testReference, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testInlineBinary, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testEncodedBlobId, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testAddOnTrackError, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testExternalBinary, org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreBlobStoreTest.testGetAllChunks, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.getAllIdentifiers, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.reference, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.zeroCacheAddGetDelete]
+
+Time each test takes to run in the new order:
+[434611783, 63313744, 4390385, 110231118, 14439882, 64645016, 39302912, 2826148, 4306529, 82927951, 225977358, 318454216, 125337052, 55909027, 1912835, 38582032, 9296166, 808389, 15981281]
+
+DTs not fixed are:
+[org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster, org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 3.007
+Number of tests selected out of total in original order: 19 / 149
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 2.367
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.zeroStagingCacheAddGetDelete, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.syncAddGetDelete, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.syncAddGetLoadCache, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.getRecordNotAvailable, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.lazyLoadStream, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.addDelete, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.addStagingAndDelete, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.referenceNoCache, org.apache.jackrabbit.oak.plugins.blob.CachingDataStoreTest.exists, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.zeroCache, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getIfPresentObjectNoCache, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.retrieveSameConcurrent, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getDifferentConcurrent, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.retrievePutConcurrent, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictExplicit, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictImplicit, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.evictReplace, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.getInvalidateConcurrent, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.rebuild]
+
+Time each test takes to run in the new order:
+[64374862, 44726115, 50116980, 53609398, 7880566, 155329317, 29945561, 364552549, 17141261, 1093513297, 80628285, 56852676, 35313736, 22903092, 44395180, 151688714, 52186329, 19016089, 22395492]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 7.134
+Number of tests selected out of total in original order: 19 / 149
+Number of DTs not fixed: 2
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 6.255
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.upgrade, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.add, org.apache.jackrabbit.oak.plugins.blob.FileCacheTest.put, org.apache.jackrabbit.oak.plugins.blob.BlobStoreStatsTest.upload, org.apache.jackrabbit.oak.plugins.blob.BlobStoreStatsTest.download, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testAddMetadata, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetAllChunkIds, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testStreamFromGetAllRecords, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetRecordForId, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testGetAllRecords, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.test, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAllIdentifiers, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testAddUploadException, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAddDifferent, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testZeroCache, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testDefaultStatsProvider, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testAdd, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetNoAdd, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testGetAllIdentifiersNoAdd]
+
+Time each test takes to run in the new order:
+[76547263, 104684135, 53834744, 2294332, 44660048, 66203410, 24612133, 88694879, 61312932, 152536479, 35712154, 192239563, 3986750, 8950113, 131554510, 90190844, 51487675, 5026051897, 39688369]
+
+DTs not fixed are:
+[org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.test, org.apache.jackrabbit.oak.plugins.blob.SharedDataStoreUtilsTest.testAddMetadata]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 12.527
+Number of tests selected out of total in original order: 18 / 149
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 11.329
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testInvalidateNoAdd, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testPutMoveFileError, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testCacheFullAdd, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testInvalidate, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentSameAdd, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentDifferentAdd, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentGetDelete, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentPutDeleteSame, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testConcurrentPutDeleteDifferent, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testBuild, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testBuildMoreThanCacheSize, org.apache.jackrabbit.oak.plugins.blob.UploadStagingCacheTest.testUpgrade, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeldNoAddition, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeldMaxAgeChange, org.apache.jackrabbit.oak.plugins.blob.BlobGCCheckpointRefTest.gcCheckpointHeld, org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.noGc, org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gcCheckDeletedSize, org.apache.jackrabbit.oak.plugins.blob.BlobGCTest.gc]
+
+Time each test takes to run in the new order:
+[85548242, 126452217, 20372085, 23839614, 43067354, 54016720, 16282605, 5162241279, 20090884, 150548912, 156868847, 55231974, 84225476, 21057113, 50446257, 46104205, 67247351, 5145069046]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.620
+Number of tests selected out of total in original order: 18 / 149
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 0.882
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializerTest.blobs, org.apache.jackrabbit.oak.plugins.blob.serializer.FSBlobSerializerTest.errorBlob, org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializerTest.inMemoryBlob, org.apache.jackrabbit.oak.plugins.blob.serializer.BlobIdSerializerTest.blobStoreBlob, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.invalidate, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.zeroCache, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentObjectNoCache, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentNoCache, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getNoCache, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.addCacheFull, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.invalidateStaging, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getIfPresentStaged, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getStaged, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.getLoad, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.concurrentAddGet, org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.add, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.noPath, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.nullString]
+
+Time each test takes to run in the new order:
+[25905185, 96041659, 2204448, 9042990, 3005479, 42393211, 46874105, 24931152, 15564941, 44364333, 18932306, 16643291, 71424754, 34988090, 119956665, 214783180, 44437741, 50039609]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.952
+Number of tests selected out of total in original order: 18 / 149
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 1.202
+
+Test order list:
+[org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.emptyString, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.differentPaths, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multiplePropertiesAndBinarySynced, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multipleBinaryPropsAllSynced, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.multipleBinaryPropsNotAllSynced, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryPropSingle, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binariesPropertyMultiple, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binariesPropertyNotAllSynced, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binarySyncedAndBinariesNotSynced, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryNotSyncedAndBinariesSynced, org.apache.jackrabbit.oak.plugins.blob.ConsolidatedDataStoreStatsTest.binaryAndBinariesSynced, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgrade, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoDownloads, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoDownloadsDelPendingFileFalse, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeMoveDownloadsFalse, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoUploads, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeNoUploadMap, org.apache.jackrabbit.oak.plugins.blob.DataStoreCacheUpgradeUtilsTest.upgradeDelPendingFileFalse]
+
+Time each test takes to run in the new order:
+[19494944, 210525721, 42302332, 65990666, 50905022, 34107524, 23350750, 33377406, 32345852, 45116923, 140479714, 22067835, 27707415, 36932021, 33791702, 28547178, 25500366, 329949485]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 74.733
+New order time: 49.542
+Total number of tests executed in all machines out of total in original order: 149 / 149

@@ -1,0 +1,920 @@
+Executing fixed runner now.
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithNoNodeExistsException
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/plume.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-classic-1.1.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersist
+256 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServerMain - Starting server
+358 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+359 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:host.name=bicycle.cs.washington.edu
+359 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.version=1.8.0_171
+359 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.vendor=Oracle Corporation
+359 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre
+359 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.class.path=/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/ant-mvn-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/asm-debug-all-5.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/axml-2.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/commons-io-2.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dexlib2-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-fixer.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/functionaljava-4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-all-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/heros-1.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoagent.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoant.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasmin-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasminclasses-2.5.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9e.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/javaparser-core-2.4.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-common-core-2.5.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-logging-spi-2.1.2.GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jcommander-1.64.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jsr305-1.3.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit-4.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/org.hamcrest.core_1.3.0.v201303031735.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot-2006.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/randoop.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-api-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-simple-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/soot-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/util-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm-ant-junit-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/xmlpull-1.1.3.4d_b4_min.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/plume.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-impact-tracer-1.0.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dtdetector-1.1.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/test-classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang3-3.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-recipes-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/netty-3.7.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/ognl-2.6.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-collections-3.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-inline-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/unitils-core-3.4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jline-0.9.94.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/quartz-2.2.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-agent-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/gson-2.6.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-logging-1.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/zookeeper-3.4.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-exec-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-pool-1.5.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-math-2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/javassist-3.18.1-GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang-2.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-test-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-core-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-1.2.16.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/objenesis-2.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-core-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-client-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-dbcp-1.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/h2-1.4.184.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jcl-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/junit-4.12.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-framework-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-classic-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/slf4j-api-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/lombok-1.16.4.jar::/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/ant-mvn-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/asm-debug-all-5.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/axml-2.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/commons-io-2.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dexlib2-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-fixer.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/functionaljava-4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-all-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/heros-1.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoagent.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoant.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasmin-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasminclasses-2.5.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9e.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/javaparser-core-2.4.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-common-core-2.5.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-logging-spi-2.1.2.GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jcommander-1.64.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jsr305-1.3.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit-4.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/org.hamcrest.core_1.3.0.v201303031735.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot-2006.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/randoop.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-api-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-simple-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/soot-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/util-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm-ant-junit-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/xmlpull-1.1.3.4d_b4_min.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/plume.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-impact-tracer-1.0.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dtdetector-1.1.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/test-classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang3-3.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-recipes-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/netty-3.7.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/ognl-2.6.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-collections-3.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-inline-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/unitils-core-3.4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jline-0.9.94.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/quartz-2.2.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-agent-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/gson-2.6.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-logging-1.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/zookeeper-3.4.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-exec-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-pool-1.5.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-math-2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/javassist-3.18.1-GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang-2.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-test-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-core-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-1.2.16.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/objenesis-2.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-core-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-client-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-dbcp-1.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/h2-1.4.184.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jcl-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/junit-4.12.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-framework-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-classic-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/slf4j-api-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/lombok-1.16.4.jar:
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.library.path=/opt/rh/devtoolset-4/root/usr/lib64:/opt/rh/devtoolset-4/root/usr/lib:/opt/rh/rh-ruby22/root/usr/lib64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.io.tmpdir=/tmp
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:java.compiler=<NA>
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.name=Linux
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.arch=amd64
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:os.version=4.4.110-1.el7.elrepo.x86_64
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.name=reedoei2
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.home=/homes/gws/reedoei2
+360 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - Server environment:user.dir=/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target
+368 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - tickTime set to 3000
+368 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - minSessionTimeout set to -1
+368 [Thread-0] INFO org.apache.zookeeper.server.ZooKeeperServer - maxSessionTimeout set to -1
+389 [Thread-0] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - binding to port 0.0.0.0/0.0.0.0:3181
+1640 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+1661 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+1661 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:host.name=bicycle.cs.washington.edu
+1661 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_171
+1661 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+1661 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre
+1661 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/ant-mvn-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/asm-debug-all-5.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/axml-2.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/commons-io-2.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dexlib2-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-fixer.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/functionaljava-4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-all-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/heros-1.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoagent.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoant.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasmin-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasminclasses-2.5.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9e.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/javaparser-core-2.4.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-common-core-2.5.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-logging-spi-2.1.2.GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jcommander-1.64.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jsr305-1.3.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit-4.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/org.hamcrest.core_1.3.0.v201303031735.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot-2006.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/randoop.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-api-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-simple-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/soot-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/util-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm-ant-junit-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/xmlpull-1.1.3.4d_b4_min.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/plume.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-impact-tracer-1.0.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dtdetector-1.1.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/test-classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang3-3.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-recipes-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/netty-3.7.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/ognl-2.6.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-collections-3.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-inline-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/unitils-core-3.4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jline-0.9.94.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/quartz-2.2.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-agent-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/gson-2.6.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-logging-1.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/zookeeper-3.4.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-exec-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-pool-1.5.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-math-2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/javassist-3.18.1-GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang-2.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-test-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-core-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-1.2.16.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/objenesis-2.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-core-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-client-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-dbcp-1.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/h2-1.4.184.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jcl-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/junit-4.12.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-framework-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-classic-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/slf4j-api-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/lombok-1.16.4.jar::/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/ant-mvn-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/asm-debug-all-5.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/axml-2.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/commons-io-2.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dexlib2-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-fixer.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/functionaljava-4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-all-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/heros-1.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoagent.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jacocoant.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasmin-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jasminclasses-2.5.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup-0.9e.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/java_cup.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/javaparser-core-2.4.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-common-core-2.5.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jboss-logging-spi-2.1.2.GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jcommander-1.64.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/jsr305-1.3.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit-4.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/junit.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/org.hamcrest.core_1.3.0.v201303031735.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot-2006.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/polyglot.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/randoop.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-api-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/slf4j-simple-1.7.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/soot-3.0.0-SNAPSHOT.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/util-2.2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm-ant-junit-formatter.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/vmvm.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/xmlpull-1.1.3.4d_b4_min.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/plume.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dt-impact-tracer-1.0.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/impact-tools/dtdetector-1.1.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/test-classes:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang3-3.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-recipes-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/netty-3.7.0.Final.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/ognl-2.6.9.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-collections-3.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-inline-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/unitils-core-3.4.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jline-0.9.94.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/quartz-2.2.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-agent-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/gson-2.6.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-logging-1.1.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/zookeeper-3.4.6.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-exec-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-pool-1.5.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-math-2.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/javassist-3.18.1-GA.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-lang-2.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-test-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-core-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/log4j-1.2.16.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/objenesis-2.5.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/mockito-core-2.7.21.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-client-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/hamcrest-core-1.3.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/commons-dbcp-1.4.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/h2-1.4.184.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/jcl-over-slf4j-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/junit-4.12.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/guava-18.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/curator-framework-2.10.0.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/logback-classic-1.1.2.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/byte-buddy-1.6.11.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/slf4j-api-1.7.7.jar:/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target/dependency/lombok-1.16.4.jar:
+1662 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/opt/rh/devtoolset-4/root/usr/lib64:/opt/rh/devtoolset-4/root/usr/lib:/opt/rh/rh-ruby22/root/usr/lib64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+1662 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/tmp
+1662 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+1662 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+1662 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+1662 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:os.version=4.4.110-1.el7.elrepo.x86_64
+1663 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.name=reedoei2
+1663 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.home=/homes/gws/reedoei2
+1663 [main] INFO org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/scratch/reedoei2/elastic-job-lite/experiments/elastic-job-lite-old-c38c35ac31ce5ae935d5466d904c6670d1017743/elastic-job-common/elastic-job-common-core/target
+1664 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@50d0686
+1684 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+1703 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+1703 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52642
+1710 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52642
+1714 [SyncThread:0] INFO org.apache.zookeeper.server.persistence.FileTxnLog - Creating new log file: log.1
+1795 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30000 with negotiated timeout 60000 for client /127.0.0.1:52642
+1795 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30000, negotiated timeout = 60000
+1802 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+1828 [main] WARN org.apache.curator.utils.ZKPaths - The version of ZooKeeper being used doesn't support Container nodes. CreateMode.PERSISTENT will be used instead.
+1856 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30000 type:create cxid:0x6 zxid:0x4 txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/test/deep Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/test/deep
+1868 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+1869 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@140e5a13
+1870 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+1871 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34118
+1871 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+1872 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34118
+1872 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30001 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34118
+1872 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30001, negotiated timeout = 60000
+1873 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+1902 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30001 type:create cxid:0xb zxid:0xd txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/persist Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/persist
+2417 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+2418 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30001
+2420 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30001 closed
+2420 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+2420 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34118 which had sessionid 0x163c3a621c30001
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWithDifferentFromDate
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWithDifferentFromDate
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJobPropertiesEnumFromValidValue
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatistics
+Test being executed: com.dangdang.ddframe.job.exception.JobConfigurationExceptionTest.assertGetMessage
+Test being executed: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenJobNameIsNull
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest.assertInitWithDigestFailure
+2839 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+2840 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=5000 watcher=org.apache.curator.ConnectionState@74f0ea28
+2889 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+2890 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34148
+2942 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+2945 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34148
+3011 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30002 with negotiated timeout 6000 for client /0:0:0:0:0:0:0:1:34148
+3012 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30002, negotiated timeout = 6000
+3012 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+3012 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /0:0:0:0:0:0:0:1:34148
+3066 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /0:0:0:0:0:0:0:1:34148
+3068 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /0:0:0:0:0:0:0:1:34148
+3068 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /0:0:0:0:0:0:0:1:34148
+3084 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30002 type:create cxid:0x6 zxid:0x14 txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest/test/deep Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest/test/deep
+3090 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+3090 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=5000 watcher=org.apache.curator.ConnectionState@2a3b5b47
+3143 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+3144 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52684
+3144 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+3145 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52684
+3146 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30003 with negotiated timeout 6000 for client /127.0.0.1:52684
+3147 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30003, negotiated timeout = 6000
+3147 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+3147 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /127.0.0.1:52684
+3148 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /127.0.0.1:52684
+3148 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /127.0.0.1:52684
+3148 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /127.0.0.1:52684
+3169 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+3170 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3023df74
+3171 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+3171 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+3171 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34158
+3172 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34158
+3172 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30004 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34158
+3172 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30004, negotiated timeout = 60000
+3221 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+3787 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+3789 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30003
+3792 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52684 which had sessionid 0x163c3a621c30003
+3792 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+3792 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30003 closed
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskIdWithoutShardingItems
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics
+Test being executed: com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithError
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetNumChildren
+3920 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+3921 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@a1153bc
+3971 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+3972 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52712
+3972 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+3973 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52712
+3974 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30005 with negotiated timeout 60000 for client /127.0.0.1:52712
+3975 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30005, negotiated timeout = 60000
+4026 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+4086 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30005 type:create cxid:0x6 zxid:0x21 txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest/test/deep Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest/test/deep
+4161 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+4162 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@13c9d689
+4164 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+4165 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52718
+4165 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+4165 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52718
+4166 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30006 with negotiated timeout 60000 for client /127.0.0.1:52718
+4166 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30006, negotiated timeout = 60000
+4166 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+4727 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+4729 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30006
+4730 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30006 closed
+4730 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+4730 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52718 which had sessionid 0x163c3a621c30006
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetRawClient
+4783 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+4784 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5b7a5baa
+4786 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+4787 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+4787 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52736
+4788 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52736
+4789 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30007 with negotiated timeout 60000 for client /127.0.0.1:52736
+4789 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30007, negotiated timeout = 60000
+4789 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+4792 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30007 type:create cxid:0x4 zxid:0x2c txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest Error:KeeperErrorCode = NodeExists for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest
+4795 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+4795 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@408d971b
+4850 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+4850 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+4851 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34212
+4851 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34212
+4852 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30008 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34212
+4852 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30008, negotiated timeout = 60000
+4852 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+5359 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+5361 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30008
+5363 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34212 which had sessionid 0x163c3a621c30008
+5363 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30008 closed
+5363 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobStatusTraceEvent
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest.assertGetWithoutValue
+7627 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+7628 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@4cf8b2dc
+7629 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+7630 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+7631 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34286
+7632 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34286
+7634 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30009 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34286
+7634 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30009, negotiated timeout = 60000
+7634 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+7653 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30009 type:create cxid:0x6 zxid:0x32 txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest/test/deep Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest/test/deep
+7666 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+7666 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@2a5b3fee
+7667 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+7669 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+7669 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52818
+7670 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52818
+7671 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3000a with negotiated timeout 60000 for client /127.0.0.1:52818
+7671 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3000a, negotiated timeout = 60000
+7671 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+7686 [main-EventThread] ERROR org.apache.curator.framework.imps.CuratorFrameworkImpl - Background exception was not retry-able or retry gave up
+java.util.concurrent.RejectedExecutionException: Task org.apache.curator.utils.CloseableExecutorService$InternalFutureTask@395a568f rejected from java.util.concurrent.ThreadPoolExecutor@7c58cfc0[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:668)
+	at org.apache.curator.utils.CloseableExecutorService.submit(CloseableExecutorService.java:191)
+	at org.apache.curator.framework.recipes.cache.TreeCache.publishEvent(TreeCache.java:835)
+	at org.apache.curator.framework.recipes.cache.TreeCache.publishEvent(TreeCache.java:827)
+	at org.apache.curator.framework.recipes.cache.TreeCache.access$700(TreeCache.java:71)
+	at org.apache.curator.framework.recipes.cache.TreeCache$TreeNode.processResult(TreeCache.java:452)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:749)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:522)
+	at org.apache.curator.framework.imps.GetDataBuilderImpl$3.processResult(GetDataBuilderImpl.java:256)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:561)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+8186 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+8188 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3000a
+8268 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3000a closed
+8268 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+8268 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52818 which had sessionid 0x163c3a621c3000a
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertFindJobExecutionEvent
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListForDuplicated
+Test being executed: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenTotalSHardingCountIsNegative
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccessAndConflict
+Test being executed: com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteSuccessForSingleShardingItems
+Test being executed: com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForScriptJob
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListWhenEmpty
+Test being executed: com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenExecuteFailureForSingleShardingItems
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetFromServer
+8644 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+8645 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@64bc21ac
+8647 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+8648 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52844
+8648 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+8649 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52844
+8707 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3000b with negotiated timeout 60000 for client /127.0.0.1:52844
+8708 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3000b, negotiated timeout = 60000
+8708 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9221 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+9222 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3000b
+9224 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3000b closed
+9224 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+9224 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52844 which had sessionid 0x163c3a621c3000b
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfigurationTest.assertNewZookeeperConfigurationForServerListsAndNamespace
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithNoNodeException
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertCreateJobEventListenerSuccess
+Test being executed: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromDataflowJobJson
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetRawCache
+9245 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+9245 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@7bf9b098
+9246 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+9247 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+9247 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:52862
+9247 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:52862
+9248 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3000c with negotiated timeout 60000 for client /127.0.0.1:52862
+9248 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3000c, negotiated timeout = 60000
+9248 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+9750 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+9752 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3000c
+9754 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52862 which had sessionid 0x163c3a621c3000c
+9754 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+9754 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3000c closed
+Test being executed: com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenExecuteFailureForMultipleShardingItems
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndProcessFailureWithExceptionForStreamingProcess
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithConnectionLossException
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobExecutionEvent
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemList
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailureAndConflict
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterInitFailureTest.assertInitFailure
+9884 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+9884 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:1 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5ae81e1
+9885 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+9886 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+9987 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+9989 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+11089 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+11090 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+11191 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+11191 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+12292 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+12293 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+12394 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+12395 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+13496 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+13497 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+13597 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+13598 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+14699 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+14700 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+14800 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+14801 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+15902 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+15903 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+16004 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+16004 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+17105 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+17106 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+17207 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+17207 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+18308 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+18309 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+18409 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:1. Will not attempt to authenticate using SASL (unknown error)
+18410 [main-SendThread(localhost:1)] WARN org.apache.zookeeper.ClientCnxn - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+18885 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+19511 [main-SendThread(localhost:1)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:1. Will not attempt to authenticate using SASL (unknown error)
+19613 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x0 closed
+19613 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertSetSlaveId
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertTaskContextFrom
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName
+Test being executed: com.dangdang.ddframe.job.api.ShardingContextTest.assertToString
+Test being executed: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToDataflowJobJson
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertGetWhenValueIsNotEmpty
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceAndThrowExceptionForSingleShardingItem
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfire
+Test being executed: com.dangdang.ddframe.job.util.json.GsonFactoryTest.assertGetGson
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddJobRunningStatistics
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMap
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber
+Test being executed: com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertGetExecutorServiceHandlerForConcurrent
+Test being executed: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenCronIsNull
+Test being executed: com.dangdang.ddframe.job.event.JobEventBusTest.assertPost
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertAfterJobExecutedFailure
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithFields
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForSimpleJob
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenCheckMaxTimeDiffSecondsIntolerable
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfo
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedNoNodeException
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceSuccessForMultipleShardingItems
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorSort
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertGetDataSource
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskFailedState
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertTtoItemListWhenNull
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetChildrenKeys
+20490 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+20490 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@f1a45f8
+20492 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+20493 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+20493 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34660
+20494 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34660
+20496 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3000d with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34660
+20497 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c3000d, negotiated timeout = 60000
+20497 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+21010 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+21011 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3000d
+21012 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3000d closed
+21012 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+21012 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34660 which had sessionid 0x163c3a621c3000d
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbIdentityTest.assertGetIdentity
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetZkConfig
+21015 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+21015 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@342726f1
+21018 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+21019 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+21019 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53206
+21019 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53206
+21020 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3000e with negotiated timeout 60000 for client /127.0.0.1:53206
+21020 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3000e, negotiated timeout = 60000
+21020 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+21522 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+21523 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3000e
+21525 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3000e closed
+21525 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+21525 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53206 which had sessionid 0x163c3a621c3000e
+Test being executed: com.dangdang.ddframe.job.event.JobExecutionEventTest.assertNewJobExecutionEvent
+Test being executed: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull
+Test being executed: com.dangdang.ddframe.job.exception.JobConfigurationExceptionTest.assertGetCause
+Test being executed: com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertRemove
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMapWhenIsEmpty
+Test being executed: com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObjectTest.assertCreateExecutorService
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNullAndEmpty
+Test being executed: com.dangdang.ddframe.job.event.JobExecutionEventTest.assertExecutionSuccess
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutNullValue
+Test being executed: com.dangdang.ddframe.job.util.digest.EncryptionTest.assertMd5
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertRemove
+22300 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+22301 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@7c1c5936
+22302 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+22303 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+22303 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53236
+22304 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53236
+22305 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3000f with negotiated timeout 60000 for client /127.0.0.1:53236
+22305 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3000f, negotiated timeout = 60000
+22305 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+22317 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c3000f type:delete cxid:0x8 zxid:0x4d txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/test Error:KeeperErrorCode = Directory not empty for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/test
+22826 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+22827 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3000f
+22829 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53236 which had sessionid 0x163c3a621c3000f
+22829 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3000f closed
+22829 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+Test being executed: com.dangdang.ddframe.job.exception.JobSystemExceptionTest.assertGetCause
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate
+Test being executed: com.dangdang.ddframe.job.util.json.GsonFactoryTest.assertRegisterTypeAdapter
+Test being executed: com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertGetExecutorServiceHandlerForSameThread
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorSort
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertCreateJobEventListenerFailure
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskRunningStatistics
+Test being executed: com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenCommandLineIsEmpty
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertNewWhenPairFormatInvalid
+Test being executed: com.dangdang.ddframe.job.util.env.HostExceptionTest.assertGetCause
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest.assertInitWithDigestSuccess
+22974 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+22975 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=5000 watcher=org.apache.curator.ConnectionState@6ff415ad
+22976 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+22976 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+22976 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53258
+22977 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53258
+23031 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30010 with negotiated timeout 6000 for client /127.0.0.1:53258
+23032 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30010, negotiated timeout = 6000
+23032 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+23032 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /127.0.0.1:53258
+23032 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /127.0.0.1:53258
+23039 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+23039 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@69fa8e76
+23089 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+23090 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+23090 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34734
+23091 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34734
+23091 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30011 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34734
+23092 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30011, negotiated timeout = 60000
+23092 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+23092 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /0:0:0:0:0:0:0:1:34734
+23092 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /0:0:0:0:0:0:0:1:34734
+23093 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - got auth packet /0:0:0:0:0:0:0:1:34734
+23093 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - auth success /0:0:0:0:0:0:0:1:34734
+23594 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+23597 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30010
+23599 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30010 closed
+23599 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+23600 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53258 which had sessionid 0x163c3a621c30010
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeral
+24105 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+24107 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5d1b9c3d
+24109 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+24109 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+24110 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53294
+24110 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53294
+24112 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30012 with negotiated timeout 60000 for client /127.0.0.1:53294
+24112 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30012, negotiated timeout = 60000
+24112 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+24118 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30012 type:create cxid:0x5 zxid:0x5b txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/test/deep Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/test/deep
+24632 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+24634 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30012
+24636 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53294 which had sessionid 0x163c3a621c30012
+24636 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+24636 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30012 closed
+24637 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+24638 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@243f003c
+24642 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+24642 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53308
+24642 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+24643 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53308
+24644 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30013 with negotiated timeout 60000 for client /127.0.0.1:53308
+24644 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30013, negotiated timeout = 60000
+24644 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+24648 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+24648 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@22590e3e
+24649 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+24650 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+24650 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34780
+24650 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34780
+24652 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30014 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34780
+24652 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30014, negotiated timeout = 60000
+24652 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+25152 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+25154 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30014
+25155 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34780 which had sessionid 0x163c3a621c30014
+25156 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30014 closed
+25156 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+Test being executed: com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithNull
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorPageSizeAndNumber
+Test being executed: com.dangdang.ddframe.job.executor.type.WrongJobExecutorTest.assertWrongJobExecutorWithMultipleItems
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedNoNodeExistsException
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfoWithoutShardingItems
+Test being executed: com.dangdang.ddframe.job.executor.type.WrongJobExecutorTest.assertWrongJobExecutorWithSingleItem
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential
+25188 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+25189 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@75308740
+25191 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+25192 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+25192 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53328
+25193 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53328
+25194 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30015 with negotiated timeout 60000 for client /127.0.0.1:53328
+25195 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30015, negotiated timeout = 60000
+25195 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+25206 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30015 type:create cxid:0x8 zxid:0x69 txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/sequential Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest/sequential
+25215 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+25216 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@5533dc72
+25218 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+25218 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34800
+25219 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+25219 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34800
+25220 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30016 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34800
+25220 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30016, negotiated timeout = 60000
+25220 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+25724 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+25725 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30015
+25726 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30015 closed
+25726 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53328 which had sessionid 0x163c3a621c30015
+25726 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJson
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenPreviousJobStillRunning
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccess
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceAndThrowExceptionForMultipleShardingItems
+Test being executed: com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorTwice
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenShardingItemsIsEmpty
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatistics
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJobPropertiesEnumFromInvalidValue
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceSuccessForSingleShardingItems
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest.assertGetFromCache
+25791 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+25792 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@451882b2
+25793 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+25793 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+25794 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53348
+25794 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53348
+25795 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30017 with negotiated timeout 60000 for client /127.0.0.1:53348
+25796 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c30017, negotiated timeout = 60000
+25796 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+26308 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+26309 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30017
+26311 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30017 closed
+26311 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53348 which had sessionid 0x163c3a621c30017
+26311 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailure
+Test being executed: com.dangdang.ddframe.job.event.JobEventBusTest.assertRegisterFailure
+26821 [main] ERROR com.dangdang.ddframe.job.event.JobEventBus - Elastic job: create JobEventListener failure, error is: 
+com.dangdang.ddframe.job.event.JobEventListenerConfigurationException: java.lang.RuntimeException: assert failure
+	at com.dangdang.ddframe.job.event.fixture.TestJobEventFailureConfiguration.createJobEventListener(TestJobEventFailureConfiguration.java:28)
+	at com.dangdang.ddframe.job.event.JobEventBus.register(JobEventBus.java:57)
+	at com.dangdang.ddframe.job.event.JobEventBus.<init>(JobEventBus.java:52)
+	at com.dangdang.ddframe.job.event.JobEventBusTest.assertRegisterFailure(JobEventBusTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:68)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:74)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:161)
+	at edu.washington.cs.dt.util.JUnitTestRunner$4.evaluate(JUnitTestRunner.java:302)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:280)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:222)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:246)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Caused by: java.lang.RuntimeException: assert failure
+	... 34 more
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForUnStreamingProcessAndMultipleShardingItems
+Test being executed: com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandlerTest.assertHandleException
+26830 [main] ERROR com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandler - Job 'test_job' exception occur in job processing
+java.lang.RuntimeException: test
+	at com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandlerTest.assertHandleException(DefaultJobExceptionHandlerTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.mockito.internal.runners.DefaultInternalRunner$1.run(DefaultInternalRunner.java:68)
+	at org.mockito.internal.runners.DefaultInternalRunner.run(DefaultInternalRunner.java:74)
+	at org.mockito.internal.runners.StrictRunner.run(StrictRunner.java:39)
+	at org.mockito.junit.MockitoJUnitRunner.run(MockitoJUnitRunner.java:161)
+	at edu.washington.cs.dt.util.JUnitTestRunner$4.evaluate(JUnitTestRunner.java:302)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:280)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:222)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:246)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: com.dangdang.ddframe.job.event.JobExecutionEventTest.assertExecutionFailure
+Test being executed: com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForDataflowJob
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatistics
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskResultStatistics
+Test being executed: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToSimpleJobJson
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent
+Test being executed: com.dangdang.ddframe.job.util.env.TimeServiceTest.assertGetCurrentMillis
+Test being executed: com.dangdang.ddframe.job.util.env.IpUtilsTest.assertGetHostName
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndIsEligibleForJobRunningForStreamingProcess
+Test being executed: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildAllProperties
+Test being executed: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToScriptJobJson
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithOtherException
+Test being executed: com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteSuccessForMultipleShardingItems
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetRegistryCenterTime
+26882 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+26882 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@38a1a26
+26885 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+26885 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+26886 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34850
+26886 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34850
+26887 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30018 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34850
+26887 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30018, negotiated timeout = 60000
+26887 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+26894 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Got user-level KeeperException when processing sessionid:0x163c3a621c30018 type:create cxid:0xc zxid:0x78 txntype:-1 reqpath:n/a Error Path:/com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest/_systemTime Error:KeeperErrorCode = NoNode for /com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest/_systemTime
+1527995861308,1527995861310
+27400 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+27402 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30018
+27403 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30018 closed
+27403 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+27403 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34850 which had sessionid 0x163c3a621c30018
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithFields
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertBeforeJobExecutedFailure
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorFields
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailureAndMessageExceed
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForUnStreamingProcessAndSingleShardingItem
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsString
+Test being executed: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildRequiredProperties
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorFields
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertNewExecutorWithDefaultHandlers
+27447 [main] WARN com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor - Cannot instantiation class 'java.lang.Object', use default 'executor_service_handler' class.
+27447 [main] WARN com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor - Cannot instantiation class 'ErrorHandler', use default 'job_exception_handler' class.
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetWithoutNode
+27449 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+27449 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3a230001
+27452 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+27452 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+27452 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34868
+27453 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34868
+27454 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c30019 with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34868
+27454 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c30019, negotiated timeout = 60000
+27454 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+27460 [main-EventThread] ERROR org.apache.curator.framework.imps.CuratorFrameworkImpl - Background exception was not retry-able or retry gave up
+java.util.concurrent.RejectedExecutionException: Task org.apache.curator.utils.CloseableExecutorService$InternalFutureTask@17bfb4ec rejected from java.util.concurrent.ThreadPoolExecutor@52bd287f[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:668)
+	at org.apache.curator.utils.CloseableExecutorService.submit(CloseableExecutorService.java:191)
+	at org.apache.curator.framework.recipes.cache.TreeCache.publishEvent(TreeCache.java:835)
+	at org.apache.curator.framework.recipes.cache.TreeCache.publishEvent(TreeCache.java:817)
+	at org.apache.curator.framework.recipes.cache.TreeCache.access$1200(TreeCache.java:71)
+	at org.apache.curator.framework.recipes.cache.TreeCache$TreeNode.processResult(TreeCache.java:479)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.sendToBackgroundCallback(CuratorFrameworkImpl.java:749)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.processBackgroundOperation(CuratorFrameworkImpl.java:522)
+	at org.apache.curator.framework.imps.GetChildrenBuilderImpl$2.processResult(GetChildrenBuilderImpl.java:166)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:593)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+27961 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+27961 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c30019
+27962 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c30019 closed
+27962 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+27962 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34868 which had sessionid 0x163c3a621c30019
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential
+27964 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+27965 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@350a94ce
+27967 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+27967 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+27967 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34882
+27968 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34882
+27968 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3001a with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34882
+27968 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c3001a, negotiated timeout = 60000
+27969 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+27979 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+27980 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@3baf6936
+27982 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+27983 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+27983 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53414
+27983 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53414
+27989 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3001b with negotiated timeout 60000 for client /127.0.0.1:53414
+27989 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3001b, negotiated timeout = 60000
+27989 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+28494 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+28496 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3001a
+28497 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3001a closed
+28497 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34882 which had sessionid 0x163c3a621c3001a
+28497 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+java.lang.AssertionError: 
+Expected: is <2>
+     but: was <4>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:865)
+	at org.junit.Assert.assertThat(Assert.java:832)
+	at com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential(ZookeeperRegistryCenterModifyTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:222)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:246)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: com.dangdang.ddframe.job.exception.JobStatisticExceptionTest.assertGetCause
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertSetIdle
+Test being executed: com.dangdang.ddframe.job.exception.JobExecutionEnvironmentExceptionTest.assertGetMessage
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithSort
+Test being executed: com.dangdang.ddframe.job.event.JobEventBusTest.assertPostWithoutListener
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertGetWhenValueIsEmpty
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithSort
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskId
+Test being executed: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithPageSizeAndNumber
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutSuccess
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddJobRegisterStatistics
+Test being executed: com.dangdang.ddframe.job.exception.JobSystemExceptionTest.assertGetMessage
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndIsNotEligibleForJobRunningForStreamingProcess
+Test being executed: com.dangdang.ddframe.job.util.env.IpUtilsTest.assertGetIp
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatistics
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForStreamingProcessAndSingleShardingItem
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsStringWhenEmpty
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertGetExecutorId
+Test being executed: com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithException
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfireIsEmpty
+Test being executed: com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfireIsNotEmptyButIsNotEligibleForJobRunning
+Test being executed: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromSimpleJobJson
+Test being executed: com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForStreamingProcessAndMultipleShardingItems
+Test being executed: com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorWhenJobClassWhenUnsupportedJob
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertNew
+Test being executed: com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutInvalidKey
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertUpdate
+28586 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+28586 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@77eb5790
+28588 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+28588 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/0:0:0:0:0:0:0:1:3181, initiating session
+28588 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /0:0:0:0:0:0:0:1:34902
+28588 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /0:0:0:0:0:0:0:1:34902
+28591 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3001c with negotiated timeout 60000 for client /0:0:0:0:0:0:0:1:34902
+28591 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/0:0:0:0:0:0:0:1:3181, sessionid = 0x163c3a621c3001c, negotiated timeout = 60000
+28591 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+29101 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+29101 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3001c
+29105 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3001c closed
+29105 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+29105 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34902 which had sessionid 0x163c3a621c3001c
+Test being executed: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertIsExisted
+29608 [main] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+29609 [main] INFO org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=localhost:3181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@161f6623
+29611 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/127.0.0.1:3181. Will not attempt to authenticate using SASL (unknown error)
+29614 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Socket connection established to localhost/127.0.0.1:3181, initiating session
+29614 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - Accepted socket connection from /127.0.0.1:53462
+29614 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.ZooKeeperServer - Client attempting to establish new session at /127.0.0.1:53462
+29616 [SyncThread:0] INFO org.apache.zookeeper.server.ZooKeeperServer - Established session 0x163c3a621c3001d with negotiated timeout 60000 for client /127.0.0.1:53462
+29617 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Session establishment complete on server localhost/127.0.0.1:3181, sessionid = 0x163c3a621c3001d, negotiated timeout = 60000
+29617 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+30128 [Curator-Framework-0] INFO org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+30130 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - Processed session termination for sessionid: 0x163c3a621c3001d
+30131 [main] INFO org.apache.zookeeper.ZooKeeper - Session: 0x163c3a621c3001d closed
+30131 [main-EventThread] INFO org.apache.zookeeper.ClientCnxn - EventThread shut down
+30132 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53462 which had sessionid 0x163c3a621c3001d
+Test being executed: com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo
+Test being executed: com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromScriptJobJson
+Test being executed: com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertNewWhenItemIsNotNumber
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWhenTableIsEmpty
+Test being executed: com.dangdang.ddframe.job.api.ShardingContextTest.assertNew
+Test being executed: com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedConnectionLossException
+30694 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52712 which had sessionid 0x163c3a621c30005
+30695 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53308 which had sessionid 0x163c3a621c30013
+30695 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34148 which had sessionid 0x163c3a621c30002
+30695 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52736 which had sessionid 0x163c3a621c30007
+30695 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30005, likely server has closed socket, closing socket connection and attempting reconnect
+30695 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34734 which had sessionid 0x163c3a621c30011
+30695 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30002, likely server has closed socket, closing socket connection and attempting reconnect
+30695 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30007, likely server has closed socket, closing socket connection and attempting reconnect
+30696 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30013, likely server has closed socket, closing socket connection and attempting reconnect
+30788 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34800 which had sessionid 0x163c3a621c30016
+30788 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30011, likely server has closed socket, closing socket connection and attempting reconnect
+30788 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:53414 which had sessionid 0x163c3a621c3001b
+30789 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30016, likely server has closed socket, closing socket connection and attempting reconnect
+30789 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34158 which had sessionid 0x163c3a621c30004
+30789 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /127.0.0.1:52642 which had sessionid 0x163c3a621c30000
+30789 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c3001b, likely server has closed socket, closing socket connection and attempting reconnect
+30840 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30000, likely server has closed socket, closing socket connection and attempting reconnect
+30840 [Thread-1] INFO org.apache.zookeeper.server.NIOServerCnxn - Closed socket connection for client /0:0:0:0:0:0:0:1:34286 which had sessionid 0x163c3a621c30009
+30840 [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:3181] INFO org.apache.zookeeper.server.NIOServerCnxnFactory - NIOServerCnxn factory exited run method
+30842 [Thread-1] INFO org.apache.zookeeper.server.ZooKeeperServer - shutting down
+30842 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30009, likely server has closed socket, closing socket connection and attempting reconnect
+30842 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30842 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Unable to read additional data from server sessionid 0x163c3a621c30004, likely server has closed socket, closing socket connection and attempting reconnect
+30844 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30844 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30845 [Thread-1] INFO org.apache.zookeeper.server.SessionTrackerImpl - Shutting down
+30845 [Thread-1] INFO org.apache.zookeeper.server.PrepRequestProcessor - Shutting down
+30845 [ProcessThread(sid:0 cport:-1):] INFO org.apache.zookeeper.server.PrepRequestProcessor - PrepRequestProcessor exited loop!
+30845 [Thread-1] INFO org.apache.zookeeper.server.SyncRequestProcessor - Shutting down
+30845 [SyncThread:0] INFO org.apache.zookeeper.server.SyncRequestProcessor - SyncRequestProcessor exited!
+30846 [Thread-1] INFO org.apache.zookeeper.server.FinalRequestProcessor - shutdown of request processor complete
+30889 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30907 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30908 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30908 [main-EventThread] INFO org.apache.curator.framework.state.ConnectionStateManager - State change: SUSPENDED
+30910 [main-SendThread(localhost:3181)] INFO org.apache.zookeeper.ClientCnxn - Opening socket connection to server localhost/0:0:0:0:0:0:0:1:3181. Will not attempt to authenticate using SASL (unknown error)
+30911 [main-SendThread(localhost:3181)] WARN org.apache.zookeeper.ClientCnxn - Session 0x163c3a621c30013 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+Total execution time: 31531741194
+
+Pass: 183, Fail: 0, Error: 1, Skipped: 0, Ignored: 0
+{com.dangdang.ddframe.job.util.json.GsonFactoryTest.assertRegisterTypeAdapter=PASS, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForScriptJob=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetNumChildren=PASS, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertNewWhenItemIsNotNumber=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddJobRunningStatistics=PASS, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsStringWhenEmpty=PASS, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromSimpleJobJson=PASS, com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithNull=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailure=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskIdWithoutShardingItems=PASS, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenCronIsNull=PASS, com.dangdang.ddframe.job.util.env.HostExceptionTest.assertGetCause=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertUpdate=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential=PASS, com.dangdang.ddframe.job.executor.type.WrongJobExecutorTest.assertWrongJobExecutorWithSingleItem=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertRemove=PASS, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemsString=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatistics=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskResultStatistics=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertCreateJobEventListenerSuccess=PASS, com.dangdang.ddframe.job.api.ShardingContextTest.assertNew=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertSetSlaveId=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJobPropertiesEnumFromValidValue=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest.assertGetWithoutValue=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertGetWhenValueIsEmpty=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForUnStreamingProcessAndSingleShardingItem=PASS, com.dangdang.ddframe.job.util.env.IpUtilsTest.assertGetIp=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedNoNodeExistsException=PASS, com.dangdang.ddframe.job.executor.type.WrongJobExecutorTest.assertWrongJobExecutorWithMultipleItems=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithFields=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfireIsNotEmptyButIsNotEligibleForJobRunning=PASS, com.dangdang.ddframe.job.util.concurrent.ExecutorServiceObjectTest.assertCreateExecutorService=PASS, com.dangdang.ddframe.job.event.JobEventBusTest.assertPostWithoutListener=PASS, com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertRemove=PASS, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromDataflowJobJson=PASS, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenExecuteFailureForSingleShardingItems=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertNew=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertBeforeJobExecutedFailure=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithCacheTest.assertGetFromCache=PASS, com.dangdang.ddframe.job.event.JobEventBusTest.assertRegisterFailure=PASS, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForDataflowJob=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithSort=PASS, com.dangdang.ddframe.job.exception.JobStatisticExceptionTest.assertGetCause=PASS, com.dangdang.ddframe.job.exception.JobSystemExceptionTest.assertGetMessage=PASS, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorForSimpleJob=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutInvalidKey=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndIsEligibleForJobRunningForStreamingProcess=PASS, com.dangdang.ddframe.job.exception.JobConfigurationExceptionTest.assertGetMessage=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccess=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithSort=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenShardingItemsIsEmpty=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertGetDataSource=PASS, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToSimpleJobJson=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndIsNotEligibleForJobRunningForStreamingProcess=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithFields=PASS, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMapWhenIsEmpty=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfoWithoutShardingItems=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobExecutionEvent=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedNoNodeException=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetRawClient=PASS, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertNewWhenPairFormatInvalid=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskRunningStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForStreamingProcessAndSingleShardingItem=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertNewExecutorWithDefaultHandlers=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertGetExecutorId=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutSuccess=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWithDifferentFromDate=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithPageSizeAndNumber=PASS, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorWhenJobClassWhenUnsupportedJob=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfigurationTest.assertNewZookeeperConfigurationForServerListsAndNamespace=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJson=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorSort=PASS, com.dangdang.ddframe.job.event.JobExecutionEventTest.assertExecutionSuccess=PASS, com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithException=PASS, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteSuccessForSingleShardingItems=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorFields=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddJobRegisterStatistics=PASS, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemList=PASS, com.dangdang.ddframe.job.event.JobExecutionEventTest.assertExecutionFailure=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetRawCache=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskRunningStatistics=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetChildrenKeys=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfire=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithOtherException=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent=PASS, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildAllProperties=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertAfterJobExecutedFailure=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenPreviousJobStillRunning=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatistics=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskFailedState=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfo=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListForDuplicated=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeral=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithNoNodeException=PASS, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteSuccessForMultipleShardingItems=PASS, com.dangdang.ddframe.job.util.env.TimeServiceTest.assertGetCurrentMillis=PASS, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertToItemListWhenEmpty=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorFields=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithNoNodeExistsException=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWithDifferentFromDate=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRunningStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenExecuteFailureForMultipleShardingItems=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetRegistryCenterTime=PASS, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToScriptJobJson=PASS, com.dangdang.ddframe.job.exception.JobConfigurationExceptionTest.assertGetCause=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceWithMisfireIsEmpty=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest.assertInitWithDigestFailure=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRegisterStatistics=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForUnStreamingProcessAndMultipleShardingItems=PASS, com.dangdang.ddframe.job.event.JobEventBusTest.assertPost=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyForStreamingProcessAndMultipleShardingItems=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceSuccessForSingleShardingItems=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithConnectionLossException=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertFindJobExecutionEvent=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertJobPropertiesEnumFromInvalidValue=PASS, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenJobNameIsNull=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorSort=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenCheckMaxTimeDiffSecondsIntolerable=PASS, com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertGetExecutorServiceHandlerForConcurrent=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskId=PASS, com.dangdang.ddframe.job.util.config.ShardingItemParametersTest.assertGetMap=PASS, com.dangdang.ddframe.job.exception.JobExecutionEnvironmentExceptionTest.assertGetMessage=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNullAndEmpty=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertIsExisted=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbConfigurationTest.assertCreateJobEventListenerFailure=PASS, com.dangdang.ddframe.job.executor.JobExecutorFactoryTest.assertGetJobExecutorTwice=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersist=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithErrorPageSizeAndNumber=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestJobRunningStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertTaskContextFrom=PASS, com.dangdang.ddframe.job.exception.JobSystemExceptionTest.assertGetCause=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterForAuthTest.assertInitWithDigestSuccess=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterInitFailureTest.assertInitFailure=PASS, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenSuccessAndConflict=PASS, com.dangdang.ddframe.job.api.ShardingContextTest.assertToString=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.util.digest.EncryptionTest.assertMd5=PASS, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildRequiredProperties=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbListenerTest.assertPostJobStatusTraceEvent=PASS, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertFromScriptJobJson=PASS, com.dangdang.ddframe.job.context.TaskContextTest.assertSetIdle=PASS, com.dangdang.ddframe.job.executor.type.ScriptJobExecutorTest.assertExecuteWhenCommandLineIsEmpty=PASS, com.dangdang.ddframe.job.util.json.JobConfigurationGsonTypeAdapterTest.assertToDataflowJobJson=PASS, com.dangdang.ddframe.job.executor.type.DataflowJobExecutorTest.assertExecuteWhenFetchDataIsNotEmptyAndProcessFailureWithExceptionForStreamingProcess=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceAndThrowExceptionForMultipleShardingItems=PASS, com.dangdang.ddframe.job.event.JobExecutionEventTest.assertNewJobExecutionEvent=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetFromServer=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceSuccessForMultipleShardingItems=PASS, com.dangdang.ddframe.job.executor.handler.impl.DefaultJobExceptionHandlerTest.assertHandleException=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertGetWhenValueIsNotEmpty=PASS, com.dangdang.ddframe.job.executor.handler.JobPropertiesTest.assertPutNullValue=PASS, com.dangdang.ddframe.job.util.json.GsonFactoryTest.assertGetGson=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailureAndConflict=PASS, com.dangdang.ddframe.job.util.env.IpUtilsTest.assertGetHostName=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWhenTableIsEmpty=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatistics=PASS, com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterMiscellaneousTest.assertGetZkConfig=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential=ERROR, com.dangdang.ddframe.job.util.config.ShardingItemsTest.assertTtoItemListWhenNull=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbIdentityTest.assertGetIdentity=PASS, com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterQueryWithoutCacheTest.assertGetWithoutNode=PASS, com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertUpdateJobExecutionEventWhenFailureAndMessageExceed=PASS, com.dangdang.ddframe.job.exception.ExceptionUtilTest.assertTransformWithError=PASS, com.dangdang.ddframe.job.reg.exception.RegExceptionHandlerTest.assertHandleExceptionWithCausedConnectionLossException=PASS, com.dangdang.ddframe.job.executor.type.SimpleJobExecutorTest.assertExecuteWhenRunOnceAndThrowExceptionForSingleShardingItem=PASS, com.dangdang.ddframe.job.executor.handler.ExecutorServiceHandlerRegistryTest.assertGetExecutorServiceHandlerForSameThread=PASS, com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenTotalSHardingCountIsNegative=PASS}
+

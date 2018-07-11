@@ -1,0 +1,2 @@
+org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.concurrentGetCached
+org.apache.jackrabbit.oak.plugins.blob.CompositeDataStoreCacheTest.concurrentGetFromStagedAndCached

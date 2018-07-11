@@ -1,0 +1,1928 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo Master Server 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-basic-rules) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.2:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-master ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: src/main/resources/META-INF/services/*
+[INFO] Exclude: nbproject/**
+[INFO] Exclude: nb-configuration.xml
+[INFO] Exclude: nbactions.xml
+[INFO] 94 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 94 licence.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.0.1:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 91 in 00:01.441
+[INFO]         Already Sorted: 91
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.6.0:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 91
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         91 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-basic-rules) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.2:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-master ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: src/main/resources/META-INF/services/*
+[INFO] Exclude: nbproject/**
+[INFO] Exclude: nb-configuration.xml
+[INFO] Exclude: nbactions.xml
+[INFO] 94 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 94 licence.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.0.1:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 91 in 00:00.657
+[INFO]         Already Sorted: 91
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.6.0:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 91
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         91 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 18.433 s
+[INFO] Finished at: 2018-04-21T14:44:14-07:00
+[INFO] Final Memory: 46M/2396M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo Master Server 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-basic-rules) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.2:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-master ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: src/main/resources/META-INF/services/*
+[INFO] Exclude: nbproject/**
+[INFO] Exclude: nb-configuration.xml
+[INFO] Exclude: nbactions.xml
+[INFO] 94 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 94 licence.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.0.1:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 91 in 00:01.455
+[INFO]         Already Sorted: 91
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.6.0:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 91
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         91 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-master ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.4.0:modernizer (modernizer) @ accumulo-master ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.0.0:check (check-junit-categories-on-its) @ accumulo-master ---
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ accumulo-master ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:jar (default-jar) @ accumulo-master ---
+[INFO] Building jar: /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-master-2.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (run-integration-tests) @ accumulo-master ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (analyze) @ accumulo-master ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (check-style) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (run-integration-tests) @ accumulo-master ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] >>> findbugs-maven-plugin:3.0.3:check (run-findbugs) > :findbugs @ accumulo-master >>>
+[INFO] 
+[INFO] --- findbugs-maven-plugin:3.0.3:findbugs (findbugs) @ accumulo-master ---
+[INFO] Fork Value is true
+[INFO] Done FindBugs Analysis....
+[INFO] 
+[INFO] <<< findbugs-maven-plugin:3.0.3:check (run-findbugs) < :findbugs @ accumulo-master <<<
+[INFO] 
+[INFO] --- findbugs-maven-plugin:3.0.3:check (run-findbugs) @ accumulo-master ---
+[INFO] BugInstance size is 0
+[INFO] Error size is 0
+[INFO] No errors/warnings found
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ accumulo-master ---
+[INFO] Installing /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-master-2.0.0-SNAPSHOT.jar to /homes/gws/winglam/.m2/repository/org/apache/accumulo/accumulo-master/2.0.0-SNAPSHOT/accumulo-master-2.0.0-SNAPSHOT.jar
+[INFO] Installing /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/pom.xml to /homes/gws/winglam/.m2/repository/org/apache/accumulo/accumulo-master/2.0.0-SNAPSHOT/accumulo-master-2.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (default-cli) @ accumulo-master ---
+[INFO] Copying accumulo-core-2.0.0-SNAPSHOT.jar to /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/accumulo-core-2.0.0-SNAPSHOT.jar
+[INFO] Copying accumulo-start-2.0.0-SNAPSHOT.jar to /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/accumulo-start-2.0.0-SNAPSHOT.jar
+[INFO] Copying accumulo-fate-2.0.0-SNAPSHOT.jar to /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/accumulo-fate-2.0.0-SNAPSHOT.jar
+[INFO] Copying accumulo-server-base-2.0.0-SNAPSHOT.jar to /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/accumulo-server-base-2.0.0-SNAPSHOT.jar
+[INFO] Copying jaxb-api-2.2.12.jar to /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/jaxb-api-2.2.12.jar
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-common:jar:2.6.4 already exists in destination.
+[INFO] log4j:log4j:jar:1.2.17 already exists in destination.
+[INFO] org.apache.htrace:htrace-core:jar:3.1.0-incubating already exists in destination.
+[INFO] com.google.protobuf:protobuf-java:jar:2.5.0 already exists in destination.
+[INFO] org.apache.thrift:libthrift:jar:0.10.0 already exists in destination.
+[INFO] io.netty:netty:jar:3.10.5.Final already exists in destination.
+[INFO] commons-lang:commons-lang:jar:2.4 already exists in destination.
+[INFO] org.apache.httpcomponents:httpcore:jar:4.3 already exists in destination.
+[INFO] org.apache.commons:commons-compress:jar:1.4.1 already exists in destination.
+[INFO] com.beust:jcommander:jar:1.72 already exists in destination.
+[INFO] org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M15 already exists in destination.
+[INFO] org.apache.curator:curator-recipes:jar:2.6.0 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-client:jar:2.6.4 already exists in destination.
+[INFO] com.google.auto.service:auto-service:jar:1.0-rc2 already exists in destination.
+[INFO] org.fusesource.leveldbjni:leveldbjni-all:jar:1.8 already exists in destination.
+[INFO] com.github.ben-manes.caffeine:caffeine:jar:2.3.3 already exists in destination.
+[INFO] org.mortbay.jetty:jetty-util:jar:6.1.26 already exists in destination.
+[INFO] org.apache.commons:commons-math3:jar:3.6.1 already exists in destination.
+[INFO] org.slf4j:slf4j-log4j12:jar:1.7.21 already exists in destination.
+[INFO] commons-io:commons-io:jar:2.4 already exists in destination.
+[INFO] commons-logging:commons-logging:jar:1.1.1 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-annotations:jar:2.6.4 already exists in destination.
+[INFO] org.hamcrest:hamcrest-core:jar:1.3 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.6.4 already exists in destination.
+[INFO] com.sun.jersey:jersey-core:jar:1.9 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-jaxrs:jar:1.9.13 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.6.4 already exists in destination.
+[INFO] xmlenc:xmlenc:jar:0.52 already exists in destination.
+[INFO] com.thoughtworks.paranamer:paranamer:jar:2.3 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-core-asl:jar:1.9.13 already exists in destination.
+[INFO] org.apache.directory.api:api-util:jar:1.0.0-M20 already exists in destination.
+[INFO] org.apache.directory.api:api-asn1-api:jar:1.0.0-M20 already exists in destination.
+[INFO] com.sun.jersey:jersey-client:jar:1.9 already exists in destination.
+[INFO] org.apache.curator:curator-client:jar:2.6.0 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-common:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-api:jar:2.6.4 already exists in destination.
+[INFO] commons-configuration:commons-configuration:jar:1.6 already exists in destination.
+[INFO] commons-net:commons-net:jar:3.1 already exists in destination.
+[INFO] com.google.code.findbugs:jsr305:jar:1.3.9 already exists in destination.
+[INFO] commons-digester:commons-digester:jar:1.8 already exists in destination.
+[INFO] org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15 already exists in destination.
+[INFO] commons-beanutils:commons-beanutils:jar:1.7.0 already exists in destination.
+[INFO] org.easymock:easymock:jar:3.4 already exists in destination.
+[INFO] org.apache.httpcomponents:httpclient:jar:4.3.1 already exists in destination.
+[INFO] org.htrace:htrace-core:jar:3.0.4 already exists in destination.
+[INFO] com.google.auto:auto-common:jar:0.3 already exists in destination.
+[INFO] org.tukaani:xz:jar:1.0 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-server-common:jar:2.6.4 already exists in destination.
+[INFO] org.apache.curator:curator-framework:jar:2.11.0 already exists in destination.
+[INFO] commons-cli:commons-cli:jar:1.2 already exists in destination.
+[INFO] com.google.guava:guava:jar:14.0.1 already exists in destination.
+[INFO] commons-codec:commons-codec:jar:1.4 already exists in destination.
+[INFO] com.google.code.gson:gson:jar:2.7 already exists in destination.
+[INFO] org.slf4j:slf4j-api:jar:1.7.21 already exists in destination.
+[INFO] commons-beanutils:commons-beanutils-core:jar:1.8.0 already exists in destination.
+[INFO] jline:jline:jar:2.11 already exists in destination.
+[INFO] commons-collections:commons-collections:jar:3.2.2 already exists in destination.
+[INFO] junit:junit:jar:4.12 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-xc:jar:1.9.13 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-auth:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-hdfs:jar:2.6.4 already exists in destination.
+[INFO] javax.servlet:servlet-api:jar:2.5 already exists in destination.
+[INFO] org.objenesis:objenesis:jar:2.2 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.6.4 already exists in destination.
+[INFO] org.apache.zookeeper:zookeeper:jar:3.4.10 already exists in destination.
+[INFO] org.xerial.snappy:snappy-java:jar:1.0.4.1 already exists in destination.
+[INFO] org.apache.commons:commons-vfs2:jar:2.1 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-client:jar:2.6.4 already exists in destination.
+[INFO] org.apache.avro:avro:jar:1.7.4 already exists in destination.
+[INFO] commons-httpclient:commons-httpclient:jar:3.1 already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.333 s
+[INFO] Finished at: 2018-04-21T14:44:54-07:00
+[INFO] Final Memory: 67M/5496M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo Master Server 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-basic-rules) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.2:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-master ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: src/main/resources/META-INF/services/*
+[INFO] Exclude: nbproject/**
+[INFO] Exclude: nb-configuration.xml
+[INFO] Exclude: nbactions.xml
+[INFO] 94 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 94 licence.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.0.1:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 91 in 00:01.388
+[INFO]         Already Sorted: 91
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.7.1:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 91
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         91 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-basic-rules) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.2:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-master ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: src/main/resources/META-INF/services/*
+[INFO] Exclude: nbproject/**
+[INFO] Exclude: nb-configuration.xml
+[INFO] Exclude: nbactions.xml
+[INFO] 94 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 94 licence.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.0.1:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 91 in 00:00.571
+[INFO]         Already Sorted: 91
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.7.1:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 91
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         91 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          0s
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.067 s
+[INFO] Finished at: 2018-04-21T14:45:10-07:00
+[INFO] Final Memory: 43M/2479M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Apache Accumulo Master Server 2.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.10:parse-version (parse-project-version) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-basic-rules) @ accumulo-master ---
+[INFO] 
+[INFO] --- mavanagaiata:0.7.2:commit (git-commit) @ accumulo-master ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.11:check (check-licenses) @ accumulo-master ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: DEPENDENCIES
+[INFO] Exclude: src/main/resources/META-INF/services/*
+[INFO] Exclude: nbproject/**
+[INFO] Exclude: nb-configuration.xml
+[INFO] Exclude: nbactions.xml
+[INFO] 94 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 94 licence.
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:sort (sort-pom) @ accumulo-master ---
+[INFO] Sorting file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- impsort-maven-plugin:1.0.1:sort (sort-imports) @ accumulo-master ---
+[INFO]  Total Files Processed: 91 in 00:01.335
+[INFO]         Already Sorted: 91
+[INFO]         Needed Sorting:  0
+[INFO] 
+[INFO] --- formatter-maven-plugin:2.7.1:format (format-java-source) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to format source files.
+[INFO] Number of files to be formatted: 91
+[INFO] Successfully formatted:          0 file(s)
+[INFO] Fail to format:                  0 file(s)
+[INFO] Skipped:                         91 file(s)
+[INFO] Read only skipped:               0 file(s)
+[INFO] Approximate time taken:          1s
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- sortpom-maven-plugin:2.5.0:verify (verify-sorted-pom) @ accumulo-master ---
+[INFO] Verifying file /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ accumulo-master ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ accumulo-master ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-java-signatures) @ accumulo-master ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- modernizer-maven-plugin:1.4.0:modernizer (modernizer) @ accumulo-master ---
+[INFO] 
+[INFO] --- warbucks-maven-plugin:1.0.0:check (check-junit-categories-on-its) @ accumulo-master ---
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ accumulo-master ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.0.0:jar (default-jar) @ accumulo-master ---
+[INFO] Building jar: /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-master-2.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (run-integration-tests) @ accumulo-master ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:analyze-only (analyze) @ accumulo-master ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (check-style) @ accumulo-master ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (run-integration-tests) @ accumulo-master ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] >>> findbugs-maven-plugin:3.0.5:check (run-findbugs) > :findbugs @ accumulo-master >>>
+[INFO] 
+[INFO] --- findbugs-maven-plugin:3.0.5:findbugs (findbugs) @ accumulo-master ---
+[INFO] Fork Value is true
+[INFO] Done FindBugs Analysis....
+[INFO] 
+[INFO] <<< findbugs-maven-plugin:3.0.5:check (run-findbugs) < :findbugs @ accumulo-master <<<
+[INFO] 
+[INFO] --- findbugs-maven-plugin:3.0.5:check (run-findbugs) @ accumulo-master ---
+[INFO] BugInstance size is 0
+[INFO] Error size is 0
+[INFO] No errors/warnings found
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ accumulo-master ---
+[INFO] Installing /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-master-2.0.0-SNAPSHOT.jar to /homes/gws/winglam/.m2/repository/org/apache/accumulo/accumulo-master/2.0.0-SNAPSHOT/accumulo-master-2.0.0-SNAPSHOT.jar
+[INFO] Installing /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/pom.xml to /homes/gws/winglam/.m2/repository/org/apache/accumulo/accumulo-master/2.0.0-SNAPSHOT/accumulo-master-2.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (default-cli) @ accumulo-master ---
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-common:jar:2.6.4 already exists in destination.
+[INFO] log4j:log4j:jar:1.2.17 already exists in destination.
+[INFO] org.apache.htrace:htrace-core:jar:3.1.0-incubating already exists in destination.
+[INFO] com.google.protobuf:protobuf-java:jar:2.5.0 already exists in destination.
+[INFO] org.apache.thrift:libthrift:jar:0.10.0 already exists in destination.
+[INFO] io.netty:netty:jar:3.10.5.Final already exists in destination.
+[INFO] commons-lang:commons-lang:jar:2.4 already exists in destination.
+[INFO] javax.xml.bind:jaxb-api:jar:2.2.12 already exists in destination.
+[INFO] org.apache.httpcomponents:httpcore:jar:4.3 already exists in destination.
+[INFO] org.apache.commons:commons-compress:jar:1.4.1 already exists in destination.
+[INFO] com.beust:jcommander:jar:1.72 already exists in destination.
+[INFO] org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M15 already exists in destination.
+[INFO] org.apache.curator:curator-recipes:jar:2.6.0 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-client:jar:2.6.4 already exists in destination.
+[INFO] com.google.auto.service:auto-service:jar:1.0-rc2 already exists in destination.
+[INFO] org.fusesource.leveldbjni:leveldbjni-all:jar:1.8 already exists in destination.
+[INFO] com.github.ben-manes.caffeine:caffeine:jar:2.3.3 already exists in destination.
+[INFO] org.mortbay.jetty:jetty-util:jar:6.1.26 already exists in destination.
+[INFO] org.apache.commons:commons-math3:jar:3.6.1 already exists in destination.
+[INFO] org.slf4j:slf4j-log4j12:jar:1.7.21 already exists in destination.
+[INFO] commons-io:commons-io:jar:2.4 already exists in destination.
+[INFO] commons-logging:commons-logging:jar:1.1.1 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-annotations:jar:2.6.4 already exists in destination.
+[INFO] org.hamcrest:hamcrest-core:jar:1.3 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.6.4 already exists in destination.
+[INFO] com.sun.jersey:jersey-core:jar:1.9 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-jaxrs:jar:1.9.13 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.6.4 already exists in destination.
+[INFO] xmlenc:xmlenc:jar:0.52 already exists in destination.
+[INFO] com.thoughtworks.paranamer:paranamer:jar:2.3 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-core-asl:jar:1.9.13 already exists in destination.
+[INFO] org.apache.directory.api:api-util:jar:1.0.0-M20 already exists in destination.
+[INFO] org.apache.directory.api:api-asn1-api:jar:1.0.0-M20 already exists in destination.
+[INFO] com.sun.jersey:jersey-client:jar:1.9 already exists in destination.
+[INFO] org.apache.curator:curator-client:jar:2.6.0 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-common:jar:2.6.4 already exists in destination.
+[INFO] org.apache.accumulo:accumulo-core:jar:2.0.0-SNAPSHOT already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-api:jar:2.6.4 already exists in destination.
+[INFO] commons-configuration:commons-configuration:jar:1.6 already exists in destination.
+[INFO] commons-net:commons-net:jar:3.1 already exists in destination.
+[INFO] com.google.code.findbugs:jsr305:jar:1.3.9 already exists in destination.
+[INFO] commons-digester:commons-digester:jar:1.8 already exists in destination.
+[INFO] org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15 already exists in destination.
+[INFO] commons-beanutils:commons-beanutils:jar:1.7.0 already exists in destination.
+[INFO] org.apache.accumulo:accumulo-server-base:jar:2.0.0-SNAPSHOT already exists in destination.
+[INFO] org.easymock:easymock:jar:3.4 already exists in destination.
+[INFO] org.apache.httpcomponents:httpclient:jar:4.3.1 already exists in destination.
+[INFO] org.htrace:htrace-core:jar:3.0.4 already exists in destination.
+[INFO] com.google.auto:auto-common:jar:0.3 already exists in destination.
+[INFO] org.tukaani:xz:jar:1.0 already exists in destination.
+[INFO] org.apache.accumulo:accumulo-start:jar:2.0.0-SNAPSHOT already exists in destination.
+[INFO] org.apache.hadoop:hadoop-yarn-server-common:jar:2.6.4 already exists in destination.
+[INFO] org.apache.curator:curator-framework:jar:2.11.0 already exists in destination.
+[INFO] commons-cli:commons-cli:jar:1.2 already exists in destination.
+[INFO] com.google.guava:guava:jar:14.0.1 already exists in destination.
+[INFO] commons-codec:commons-codec:jar:1.4 already exists in destination.
+[INFO] com.google.code.gson:gson:jar:2.7 already exists in destination.
+[INFO] org.slf4j:slf4j-api:jar:1.7.21 already exists in destination.
+[INFO] commons-beanutils:commons-beanutils-core:jar:1.8.0 already exists in destination.
+[INFO] jline:jline:jar:2.11 already exists in destination.
+[INFO] org.apache.accumulo:accumulo-fate:jar:2.0.0-SNAPSHOT already exists in destination.
+[INFO] commons-collections:commons-collections:jar:3.2.2 already exists in destination.
+[INFO] junit:junit:jar:4.12 already exists in destination.
+[INFO] org.codehaus.jackson:jackson-xc:jar:1.9.13 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-auth:jar:2.6.4 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-hdfs:jar:2.6.4 already exists in destination.
+[INFO] javax.servlet:servlet-api:jar:2.5 already exists in destination.
+[INFO] org.objenesis:objenesis:jar:2.2 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.6.4 already exists in destination.
+[INFO] org.apache.zookeeper:zookeeper:jar:3.4.10 already exists in destination.
+[INFO] org.xerial.snappy:snappy-java:jar:1.0.4.1 already exists in destination.
+[INFO] org.apache.commons:commons-vfs2:jar:2.1 already exists in destination.
+[INFO] org.apache.hadoop:hadoop-client:jar:2.6.4 already exists in destination.
+[INFO] org.apache.avro:avro:jar:1.7.4 already exists in destination.
+[INFO] commons-httpclient:commons-httpclient:jar:3.1 already exists in destination.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 38.762 s
+[INFO] Finished at: 2018-04-21T14:45:51-07:00
+[INFO] Final Memory: 89M/6195M
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Finding human written tests in old subject.
+org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest
+org.apache.accumulo.master.replication.SequentialWorkAssignerTest
+org.apache.accumulo.master.replication.UnorderedWorkAssignerTest
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest
+org.apache.accumulo.master.replication.WorkMakerTest
+org.apache.accumulo.master.DefaultMapTest
+org.apache.accumulo.master.state.RootTabletStateStoreTest$Node
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore
+org.apache.accumulo.master.state.RootTabletStateStoreTest
+org.apache.accumulo.master.tableOps.ImportTableTest
+org.apache.accumulo.master.tableOps.ShutdownTServerTest
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest$TestMetrics2ReplicationMetrics
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest
+[DEBUG] Instrumenting source and test files for old subject.
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk/jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:45:53 PDT 2018
+Soot finished on Sat Apr 21 14:45:54 PDT 2018
+Soot has run for 0 min. 1 sec.
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk/jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:45:55 PDT 2018
+Soot finished on Sat Apr 21 14:45:59 PDT 2018
+Soot has run for 0 min. 3 sec.
+[DEBUG] Running instrumented tests.
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Total execution time: 1706849603
+
+Pass: 15, Fail: 0, Error: 1
+{org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer=PASS, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset=ERROR, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS}
+
+[DEBUG] Getting list of public classes.
+[DEBUG] Generating auto tests.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Ignoring abstract class org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssigner specified via --classlist or --testclass.
+Ignoring abstract class org.apache.accumulo.master.tableOps.MasterRepo specified via --classlist or --testclass.
+Ignoring interface org.apache.accumulo.master.metrics.ReplicationMetricsMBean specified via --classlist or --testclass.
+PUBLIC MEMBERS=257
+Explorer = randoop.generation.ForwardGenerator@78e67e0a
+
+Progress update: test inputs generated=0, failing inputs=0      (Sat Apr 21 14:46:03 PDT 2018)log4j:WARN No appenders could be found for logger (org.apache.accumulo.core.conf.SiteConfiguration).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+
+Progress update: test inputs generated=85, failing inputs=1      (Sat Apr 21 14:46:08 PDT 2018)mv: cannot stat ‘*.java’: No such file or directory
+[DEBUG] Compiling auto tests.
+javac: file not found: RegressionTest*.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+mv: cannot stat ‘*.class’: No such file or directory
+[DEBUG] Finding auto tests.
+[DEBUG] Instrumenting auto tests.
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk//jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:46:10 PDT 2018
+Soot finished on Sat Apr 21 14:46:10 PDT 2018
+Soot has run for 0 min. 0 sec.
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk//jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:46:11 PDT 2018
+Soot finished on Sat Apr 21 14:46:16 PDT 2018
+Soot has run for 0 min. 4 sec.
+[DEBUG] Running instrumented auto tests.
+Executing fixed runner now.
+Total execution time: 426286679
+
+Pass: 0, Fail: 0, Error: 0
+{}
+
+mv: cannot stat ‘sootTestOutput/’: No such file or directory
+[DEBUG] Removing incompatible auto tests.
+Usage: java FailedTestRemover <classpath> <filenames>
+
+Tries to compile the files specified by <filenames> using the <classpath> (separated by :), removing methods until it compiles. Writes out each changed file to to out/<filename> after each attempted compilation/removal cycle.
+
+Example ($DT_TOOLS should include the javaparser .jar and the .jar for the FailedTestRemover): 
+
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover . Test.java
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover $NEW_DT_LIBS:$NEW_DT_CLASS:$DT_TOOLS: RegressionTest0.java
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.FailedTestRemover . Test.java Test2.java
+mv: cannot stat ‘*.java’: No such file or directory
+[DEBUG] Compiling auto tests with new subject.
+javac: file not found: RegressionTest*.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+mv: cannot stat ‘*.class’: No such file or directory
+[DEBUG] Finding auto tests in new subject.
+[DEBUG] Instrumenting subject for selection ($DT_TESTS).
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk/jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:46:19 PDT 2018
+2844 [Thread-51] ERROR heros.solver.CountingThreadPoolExecutor - Worker thread execution failed: selectionOutput directory could not be created.
+2861 [Thread-52] ERROR heros.solver.CountingThreadPoolExecutor - Worker thread execution failed: selectionOutput directory could not be created.
+java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "Thread-52" java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "Thread-51" java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Ouuups... something went wrong! Sorry about that.
+Follow these steps to fix the problem:
+1.) Are you sure you used the right command line?
+    Click here to double-check:
+    https://soot-build.cs.uni-paderborn.de/doc/sootoptions/
+
+2.) Not sure whether it's a bug? Feel free to discuss
+    the issue on the Soot mailing list:
+    https://github.com/Sable/soot/wiki/Getting-help
+
+3.) Sure it's a bug? Click this link to report it.
+    https://github.com/Sable/soot/issues/new?title=java.lang.RuntimeException+when+...&body=Steps+to+reproduce%3A%0A1.%29+...%0A%0AFiles+used+to+reproduce%3A+%0A...%0A%0ASoot+version%3A+%3Cpre%3Etrunk%3C%2Fpre%3E%0A%0ACommand+line%3A%0A%3Cpre%3E-process-path+%2Fscratch%2Fwinglam%2Frun-new-subjects%2Faccumulo%2Fexperiments%2Faccumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298%2Fserver%2Fmaster%2Ftarget%2Ftest-classes+-keep-line-number+-pp+-asm-backend+-allow-phantom-refs%3C%2Fpre%3E%0A%0AMax+Memory%3A%0A%3Cpre%3E27305MB%3C%2Fpre%3E%0A%0AStack+trace%3A%0A%3Cpre%3Ejava.lang.RuntimeException%3A+selectionOutput+directory+could+not+be+created.%0A%09at+edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput%28Instrumenter.java%3A294%29%0A%09at+edu.washington.cs.dt.impact.util.Instrumenter.internalTransform%28Instrumenter.java%3A257%29%0A%09at+soot.BodyTransformer.transform%28BodyTransformer.java%3A54%29%0A%09at+soot.Transform.apply%28Transform.java%3A108%29%0A%09at+soot.BodyPack.internalApply%28BodyPack.java%3A52%29%0A%09at+soot.Pack.apply%28Pack.java%3A125%29%0A%09at+soot.PackManager.runBodyPacks%28PackManager.java%3A1001%29%0A%09at+soot.PackManager.access%24000%28PackManager.java%3A141%29%0A%09at+soot.PackManager%241.run%28PackManager.java%3A649%29%0A%09at+java.util.concurrent.ThreadPoolExecutor.runWorker%28ThreadPoolExecutor.java%3A1149%29%0A%09at+java.util.concurrent.ThreadPoolExecutor%24Worker.run%28ThreadPoolExecutor.java%3A624%29%0A%09at+java.lang.Thread.run%28Thread.java%3A748%29%0A%3C%2Fpre%3E
+    Please be as precise as possible when giving us
+    information on how to reproduce the problem. Thanks!
+[DEBUG] Instrumenting subject for selection ($DT_RANDOOP).
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk/jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:46:22 PDT 2018
+Soot finished on Sat Apr 21 14:46:22 PDT 2018
+Soot has run for 0 min. 0 sec.
+[DEBUG] Instrumenting subject for selection ($DT_CLASS).
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk/jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:46:23 PDT 2018
+Soot finished on Sat Apr 21 14:46:29 PDT 2018
+Soot has run for 0 min. 6 sec.
+[DEBUG] Running the instrumented auto tests.
+Executing fixed runner now.
+Total execution time: 473522707
+
+Pass: 0, Fail: 0, Error: 0
+{}
+
+mv: cannot stat ‘sootTestOutput/’: No such file or directory
+[DEBUG] Running the instrumented human-written tests.
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Exception in thread "main" java.lang.RuntimeException: java.lang.ClassNotFoundException: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest
+	at edu.washington.cs.dt.util.JUnitTestExecutor.<init>(JUnitTestExecutor.java:48)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:21)
+Caused by: java.lang.ClassNotFoundException: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.<init>(JUnitTestExecutor.java:45)
+	... 2 more
+Exception in thread "main" java.lang.RuntimeException: Test num not equal. Results is size 0. Tests is size 16.
+	at edu.washington.cs.dt.util.Utils.checkTrue(Utils.java:39)
+	at edu.washington.cs.dt.util.TestExecUtils.executeTestsInFreshJVMForkTestExecution(TestExecUtils.java:149)
+	at edu.washington.cs.dt.util.TestExecUtils.executeTestsInFreshJVM(TestExecUtils.java:44)
+	at edu.washington.cs.dt.runners.FixedOrderRunner.run(FixedOrderRunner.java:41)
+	at edu.washington.cs.dt.main.ImpactMain.main(ImpactMain.java:97)
+mv: cannot stat ‘sootTestOutput/’: No such file or directory
+[DEBUG] Instrumenting the new subject for selection.
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/dependency/
+/usr/lib/jvm/java-1.8.0-openjdk/jre/lib/
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Soot started on Sat Apr 21 14:46:32 PDT 2018
+4358 [Thread-101] ERROR heros.solver.CountingThreadPoolExecutor - Worker thread execution failed: selectionOutput directory could not be created.
+java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "Thread-101" java.lang.RuntimeException: selectionOutput directory could not be created.
+	at edu.washington.cs.dt.impact.util.Instrumenter.selectionOutput(Instrumenter.java:294)
+	at edu.washington.cs.dt.impact.util.Instrumenter.internalTransform(Instrumenter.java:257)
+	at soot.BodyTransformer.transform(BodyTransformer.java:54)
+	at soot.Transform.apply(Transform.java:108)
+	at soot.BodyPack.internalApply(BodyPack.java:52)
+	at soot.Pack.apply(Pack.java:125)
+	at soot.PackManager.runBodyPacks(PackManager.java:1001)
+	at soot.PackManager.access$000(PackManager.java:141)
+	at soot.PackManager$1.run(PackManager.java:649)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+java.util.concurrent.RejectedExecutionException: Task soot.PackManager$1@4e4b9736 rejected from heros.solver.CountingThreadPoolExecutor@66a5a697[Shutting down, pool size = 37, active threads = 37, queued tasks = 0, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2063)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:830)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1379)
+	at heros.solver.CountingThreadPoolExecutor.execute(CountingThreadPoolExecutor.java:51)
+	at soot.PackManager.runBodyPacks(PackManager.java:645)
+	at soot.PackManager.runBodyPacks(PackManager.java:536)
+	at soot.PackManager.runPacksNormally(PackManager.java:512)
+	at soot.PackManager.runPacks(PackManager.java:414)
+	at soot.Main.run(Main.java:276)
+	at soot.Main.main(Main.java:144)
+	at edu.washington.cs.dt.impact.Main.InstrumentationMain.main(InstrumentationMain.java:115)
+
+
+Ouuups... something went wrong! Sorry about that.
+Follow these steps to fix the problem:
+1.) Are you sure you used the right command line?
+    Click here to double-check:
+    https://soot-build.cs.uni-paderborn.de/doc/sootoptions/
+
+2.) Not sure whether it's a bug? Feel free to discuss
+    the issue on the Soot mailing list:
+    https://github.com/Sable/soot/wiki/Getting-help
+
+3.) Sure it's a bug? Click this link to report it.
+    https://github.com/Sable/soot/issues/new?title=java.util.concurrent.RejectedExecutionException+when+...&body=Steps+to+reproduce%3A%0A1.%29+...%0A%0AFiles+used+to+reproduce%3A+%0A...%0A%0ASoot+version%3A+%3Cpre%3Etrunk%3C%2Fpre%3E%0A%0ACommand+line%3A%0A%3Cpre%3E-process-path+%2Fscratch%2Fwinglam%2Frun-new-subjects%2Faccumulo%2Fexperiments%2Faccumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7%2Fserver%2Fmaster%2Ftarget%2Fclasses+-keep-line-number+-pp+-asm-backend+-allow-phantom-refs%3C%2Fpre%3E%0A%0AMax+Memory%3A%0A%3Cpre%3E27305MB%3C%2Fpre%3E%0A%0AStack+trace%3A%0A%3Cpre%3Ejava.util.concurrent.RejectedExecutionException%3A+Task+soot.PackManager%241%404e4b9736+rejected+from+heros.solver.CountingThreadPoolExecutor%4066a5a697%5BShutting+down%2C+pool+size+%3D+37%2C+active+threads+%3D+37%2C+queued+tasks+%3D+0%2C+completed+tasks+%3D+0%5D%0A%09at+java.util.concurrent.ThreadPoolExecutor%24AbortPolicy.rejectedExecution%28ThreadPoolExecutor.java%3A2063%29%0A%09at+java.util.concurrent.ThreadPoolExecutor.reject%28ThreadPoolExecutor.java%3A830%29%0A%09at+java.util.concurrent.ThreadPoolExecutor.execute%28ThreadPoolExecutor.java%3A1379%29%0A%09at+heros.solver.CountingThreadPoolExecutor.execute%28CountingThreadPoolExecutor.java%3A51%29%0A%09at+soot.PackManager.runBodyPacks%28PackManager.java%3A645%29%0A%09at+soot.PackManager.runBodyPacks%28PackManager.java%3A536%29%0A%09at+soot.PackManager.runPacksNormally%28PackManager.java%3A512%29%0A%09at+soot.PackManager.runPacks%28PackManager.java%3A414%29%0A%09at+soot.Main.run%28Main.java%3A276%29%0A%09at+soot.Main.main%28Main.java%3A144%29%0A%09at+edu.washington.cs.dt.impact.Main.InstrumentationMain.main%28InstrumentationMain.java%3A115%29%0A%3C%2Fpre%3E
+    Please be as precise as possible when giving us
+    information on how to reproduce the problem. Thanks!
+[DEBUG] Getting time for auto tests.
+[DEBUG] Getting time for orig tests.
+[DEBUG] Finding human written dts.
+org.apache.accumulo.master.state.RootTabletStateStoreTest$Node
+org.apache.accumulo.master.state.RootTabletStateStoreTest$FakeZooStore
+org.apache.accumulo.master.state.RootTabletStateStoreTest
+org.apache.accumulo.master.tableOps.ImportTableTest
+org.apache.accumulo.master.tableOps.ShutdownTServerTest
+org.apache.accumulo.master.replication.SequentialWorkAssignerTest
+org.apache.accumulo.master.replication.UnorderedWorkAssignerTest
+org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest
+org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest
+org.apache.accumulo.master.replication.WorkMakerTest
+org.apache.accumulo.master.DefaultMapTest
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest$TestMetrics2ReplicationMetrics
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/impact-tools/sootclasses-trunk-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/dependency/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest
+[DEBUG] Running one-subj.sh
+[INFO] Running prioritization-runner script
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage statement         -order absolute         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType orig         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage statement         -order relative         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType orig         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage function         -order absolute         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType orig         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage function         -order relative         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType orig         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage statement         -order absolute         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType auto         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage statement         -order relative         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType auto         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage function         -order absolute         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType auto         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner         -technique prioritization         -coverage function         -order relative         -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order         -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto         -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files         -getCoverage         -project accumulo-accumulo-master         -testType auto         -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/prioritization-results         -timesToRun 1         -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"         
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[INFO] Running selection-runner script
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[INFO] Running parallelization-runner script
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType orig       -numOfMachines 2       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 2       -project accumulo-accumulo-master       -testType orig       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType orig       -numOfMachines 4       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 4       -project accumulo-accumulo-master       -testType orig       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType orig       -numOfMachines 8       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 8       -project accumulo-accumulo-master       -testType orig       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType orig       -numOfMachines 16       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-orig-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 16       -project accumulo-accumulo-master       -testType orig       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+Getting median in iteration: 1 / 1
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+No dependent tests found and allDTList is null, setting to empty.
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType auto       -numOfMachines 2       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-auto-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 2       -project accumulo-accumulo-master       -testType auto       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType auto       -numOfMachines 4       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-auto-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 4       -project accumulo-accumulo-master       -testType auto       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType auto       -numOfMachines 8       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-auto-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 8       -project accumulo-accumulo-master       -testType auto       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order original       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -project "accumulo-accumulo-master"       -testType auto       -numOfMachines 16       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -timesToRun 1       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+[DEBUG] java -cp /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/impact-tools/*: edu.washington.cs.dt.impact.runner.OneConfigurationRunner       -technique parallelization       -order time       -timeOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-auto-time.txt       -origOrder /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-auto-order       -testInputDir /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-auto       -filesToDelete /scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-new-a770d44b57027fcee5b25dc2fa9778959e7807c7/server/master/target/accumulo-accumulo-master-env-files       -numOfMachines 16       -project accumulo-accumulo-master       -testType auto       -timesToRun 1       -outputDir /homes/gws/winglam/winglam/run-new-subjects/accumulo/experiments/parallelization-results       -classpath "/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes"       
+/scratch/winglam/run-new-subjects/accumulo/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/
+Exception in thread "main" java.lang.NullPointerException
+	at edu.washington.cs.dt.impact.runner.Runner.parseArgs(Runner.java:463)
+	at edu.washington.cs.dt.impact.runner.OneConfigurationRunner.main(OneConfigurationRunner.java:48)
+accumulo-accumulo-master: [org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset]
+
+------------------------------------------------------
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at edu.washington.cs.dt.impact.figure.generator.NumDependentTestsFigureGenerator.generateLatexString(NumDependentTestsFigureGenerator.java:114)
+	at edu.washington.cs.dt.impact.figure.generator.NumDependentTestsFigureGenerator.generateLatexFile(NumDependentTestsFigureGenerator.java:542)
+	at edu.washington.cs.dt.impact.figure.generator.NumDependentTestsFigureGenerator.main(NumDependentTestsFigureGenerator.java:229)
+[INFO] Script has finished running.
+[INFO] Start time was Sat Apr 21 14:46:38 PDT 2018
+[INFO] End time is Sat Apr 21 14:48:55 PDT 2018

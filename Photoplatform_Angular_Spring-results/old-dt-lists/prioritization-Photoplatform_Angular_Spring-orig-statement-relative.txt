@@ -1,0 +1,48 @@
+Test: de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.CollectionCategoryDAOTest.testGetCollectionCategoryBy]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetImages]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.repository.CollectionCategoryDAOTest.testGetCollectionCategoryBy
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.repository.CollectionDAOTest.testBasic
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetByUser]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testBasicCollectionsServices
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetByUser
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.CategoryDAOTest.testBasic]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetImages
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetCategories]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetCategories
+Intended behavior: FAILURE
+when executed after: [de.htw.sdf.photoplatform.repository.CollectionDAOTest.testBasic]
+The revealed different behavior: PASS
+when executed after: []
+

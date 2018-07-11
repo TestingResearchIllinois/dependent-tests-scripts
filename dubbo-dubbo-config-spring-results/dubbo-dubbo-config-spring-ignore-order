@@ -1,0 +1,3 @@
+com.alibaba.dubbo.config.spring.ConfigTest.testDelayFixedTime
+com.alibaba.dubbo.config.spring.ConfigTest.test_retrySettingFail
+com.alibaba.dubbo.config.spring.ConfigTest.testSpringExtensionInject

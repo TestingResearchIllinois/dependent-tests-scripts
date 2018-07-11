@@ -1,0 +1,96 @@
+Executing fixed runner now.
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/impact-tools/plume.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/impact-tools/randoop.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/impact-tools/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/scratch/reedoei2/accumulo-a770d44b57027fcee5b25dc2fa9778959e7807c7-daeffd8d9cf980814fb7d131a0d89cbdfd856298/experiments/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+Test being executed: org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir
+Test being executed: org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp
+Test being executed: org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics
+[main] WARN org.apache.accumulo.core.conf.SiteConfiguration - Accumulo configuration 'accumulo-site.xml' is not on classpath
+java.lang.Throwable
+	at org.apache.accumulo.core.conf.SiteConfiguration.getXmlConfig(SiteConfiguration.java:110)
+	at org.apache.accumulo.core.conf.SiteConfiguration.<init>(SiteConfiguration.java:60)
+	at org.apache.accumulo.core.conf.SiteConfiguration.getInstance(SiteConfiguration.java:85)
+	at org.apache.accumulo.server.zookeeper.ZooReaderWriter.getInstance(ZooReaderWriter.java:36)
+	at org.apache.accumulo.server.zookeeper.ZooCache.<init>(ZooCache.java:27)
+	at org.apache.accumulo.server.zookeeper.ZooCache.<init>(ZooCache.java:23)
+	at org.apache.accumulo.server.replication.ReplicationUtil.<init>(ReplicationUtil.java:71)
+	at org.apache.accumulo.master.metrics.Metrics2ReplicationMetrics.<init>(Metrics2ReplicationMetrics.java:70)
+	at org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest$TestMetrics2ReplicationMetrics.<init>(Metrics2ReplicationMetricsTest.java:42)
+	at org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics(Metrics2ReplicationMetricsTest.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+[main] WARN org.apache.accumulo.core.conf.ConfigSanityCheck - Use of instance.dfs.uri and instance.dfs.dir are deprecated. Consider using instance.volumes instead.
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization
+Test being executed: org.apache.accumulo.master.DefaultMapTest.testDefaultMap
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+java.lang.AssertionError: 
+  Unexpected method call Master.getInstance():
+    Master.getInstance(): expected: 1, actual: 2
+	at org.easymock.internal.MockInvocationHandler.invoke(MockInvocationHandler.java:44)
+	at org.easymock.internal.ObjectMethodsFilter.invoke(ObjectMethodsFilter.java:94)
+	at org.easymock.internal.ClassProxyFactory$MockMethodInterceptor.intercept(ClassProxyFactory.java:97)
+	at org.apache.accumulo.master.Master$$EnhancerByCGLIB$$13277a78.getInstance(<generated>)
+	at org.apache.accumulo.server.security.SecurityOperation.getInstance(SecurityOperation.java:84)
+	at org.apache.accumulo.master.replication.MasterReplicationCoordinator.<init>(MasterReplicationCoordinator.java:64)
+	at org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer(MasterReplicationCoordinatorTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at edu.washington.cs.dt.util.JUnitTestRunner.runChild(JUnitTestRunner.java:263)
+	at edu.washington.cs.dt.util.JUnitTestRunner.run(JUnitTestRunner.java:66)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.execute(JUnitTestExecutor.java:242)
+	at edu.washington.cs.dt.util.JUnitTestExecutor.executeWithJUnit4Runner(JUnitTestExecutor.java:266)
+Test being executed: org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork
+	at edu.washington.cs.dt.util.JUnitTestExecutor.runOrder(JUnitTestExecutor.java:49)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.runTests(TestRunnerWrapperFileInputs.java:59)
+	at edu.washington.cs.dt.util.TestRunnerWrapperFileInputs.main(TestRunnerWrapperFileInputs.java:23)
+Test being executed: org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup
+[main] INFO org.apache.accumulo.master.replication.SequentialWorkAssigner - Removed 1 elements from internal workqueue state because the work was complete
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany
+[main] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Failed to load Accumulo configuration 'accumulo-site.xml' from classpath
+[main] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Using default value '/tmp' for 'general.vfs.cache.dir' as there is no Accumulo configuration on classpath
+[main] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Using default value 'null' for 'general.classpaths' as there is no Accumulo configuration on classpath
+[main] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Using default value '' for 'general.vfs.classpaths' as there is no Accumulo configuration on classpath
+[main] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Using default value '$ACCUMULO_HOME/lib/ext/[^.].*.jar' for 'general.dynamic.classpaths' as there is no Accumulo configuration on classpath
+[main] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Using default value '/tmp' for 'general.vfs.cache.dir' as there is no Accumulo configuration on classpath
+[main] WARN org.apache.accumulo.start.classloader.vfs.AccumuloVFSClassLoader - ignoring classpath entry file:///lib/ext/[^.].*.jar
+[main] INFO org.apache.accumulo.core.conf.AccumuloConfiguration - Loaded class : org.apache.accumulo.server.security.handler.ZKAuthorizor
+[main] INFO org.apache.accumulo.core.conf.AccumuloConfiguration - Loaded class : org.apache.accumulo.server.security.handler.ZKAuthenticator
+[main] INFO org.apache.accumulo.core.conf.AccumuloConfiguration - Loaded class : org.apache.accumulo.server.security.handler.ZKPermHandler
+Test being executed: org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore
+Test being executed: org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset
+Test being executed: org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued
+Test being executed: org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName
+[Thread-1] WARN org.apache.accumulo.start.classloader.AccumuloClassLoader - Using default value '/tmp' for 'general.vfs.cache.dir' as there is no Accumulo configuration on classpath
+Total execution time: 1926692396
+
+Pass: 15, Fail: 0, Error: 1, Skipped: 0, Ignored: 0
+{org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany=PASS, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer=ERROR, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS}
+

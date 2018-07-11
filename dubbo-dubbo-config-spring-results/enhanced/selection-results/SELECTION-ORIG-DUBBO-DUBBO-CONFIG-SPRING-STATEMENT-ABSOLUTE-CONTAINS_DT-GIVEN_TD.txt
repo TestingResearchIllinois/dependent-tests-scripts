@@ -1,0 +1,23 @@
+The following arguments were used to generate this output.
+[-technique, selection, -coverage, statement, -order, absolute, -origOrder, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/dubbo-dubbo-config-spring-orig-order, -testInputDir, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/sootTestOutput-orig-selection, -filesToDelete, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/dubbo-dubbo-config-spring-env-files, -project, dubbo-dubbo-config-spring, -testType, orig, -oldVersCFG, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-old-0467e151b45588f907557f2656782898b7443544/dubbo-config/dubbo-config-spring/target/selectionOutput, -newVersCFG, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/selectionOutput, -getCoverage, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/selection-results, -timesToRun, 5, -classpath, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/dependency/*:/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/classes:/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/randoop/bin:/scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/dubbo-new-7322f3ead103c4acbe2123404add364745a0a054/dubbo-config/dubbo-config-spring/target/test-classes:, -dependentTestFile, /scratch/reedoei2/dt-tools/run-new-subjects/dubbo-0467e151b455/experiments/scripts/data/selection-dt-list/selection-dubbo-dubbo-config-spring-orig-statement-absolute.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 4.207
+Number of tests selected out of total in original order: 9 / 50
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+APFD value: 0.2336392713220251
+Execution time for executing the following testing order: 3.574
+
+Test order list:
+[com.alibaba.dubbo.config.spring.ConfigTest.testAnnotation, com.alibaba.dubbo.config.spring.ConfigTest.testDelayFixedTime, com.alibaba.dubbo.config.spring.ConfigTest.testDelayOnInitialized, com.alibaba.dubbo.config.spring.ConfigTest.testMultiProtocolRegister, com.alibaba.dubbo.config.spring.ConfigTest.testMultiRegistry, com.alibaba.dubbo.config.spring.ConfigTest.testGenericServiceConfig, com.alibaba.dubbo.config.spring.ConfigTest.testProtocolRandomPort, com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest.testGetBeans, com.alibaba.dubbo.config.spring.util.BeanFactoryUtilsTest.testGetOptionalBean]
+
+Time each test takes to run in the new order:
+[2145902690, 126751097, 520562678, 30299543, 51078544, 85876517, 103069504, 37271601, 472810885]
+
+Dependent test list:
+[]
+
+Coverage test list:
+[24.2, 0.0, 0.0, 0.0, 0.0, 1.1, 1.1, 20.2, 7.7]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 3.670

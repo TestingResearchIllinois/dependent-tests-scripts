@@ -1,0 +1,64 @@
+The following arguments were used to generate this output.
+[-technique, parallelization, -order, original, -origOrder, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/Photoplatform_Angular_Spring-orig-order, -testInputDir, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/sootTestOutput-orig, -filesToDelete, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/Photoplatform_Angular_Spring-env-files, -project, Photoplatform_Angular_Spring, -testType, orig, -numOfMachines, 4, -outputDir, /scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/parallelization-results, -timesToRun, 5, -classpath, /boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/dependency/*:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/classes:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/randoop/bin:/boom/scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/Photoplatform_Angular_Spring-old-83d49399648b81fbc134fd4d329d575907ffc788/target/test-classes:, -resolveDependences, /scratch/reedoei2/dt-tools/run-new-subjects/Photoplatform_Angular_Spring-3a7d9e7/experiments/scripts/data/parallelization-dt-list/parallelization-Photoplatform_Angular_Spring-orig-4-original.txt]
+
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 20.482
+Number of tests selected out of total in original order: 4 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 18.775
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.CategoryDAOTest.testBasic, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetByUser, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testBasic, de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetCategories]
+
+Time each test takes to run in the new order:
+[19820843, 18725652005, 15768082, 14175795]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 19.475
+Number of tests selected out of total in original order: 4 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 0
+Execution time for executing the following testing order: 19.559
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.CollectionDAOTest.testGetImages, de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy, de.htw.sdf.photoplatform.repository.ImageDAOTest.testBasic, de.htw.sdf.photoplatform.repository.ImageDAOTest.testGetPublicImages]
+
+Time each test takes to run in the new order:
+[96402300, 84053581, 19335059067, 43636975]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 176.569
+Number of tests selected out of total in original order: 5 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 1
+
+Average time to find one dependency: 138.073552189
+Execution time for executing the following testing order: 16.717
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy, de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, de.htw.sdf.photoplatform.repository.CollectionCategoryDAOTest.testGetCollectionCategoryBy, de.htw.sdf.photoplatform.common.ImportSQLTester.test1InitSqlData, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testGetPhotographersImages]
+
+Time each test takes to run in the new order:
+[31461082, 358605961, 56393221, 15903946837, 366383918]
+
+Dependent test list:
+[Test: de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, Intended behavior: FAILURE, when executed after: [de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 217.928
+Number of tests selected out of total in original order: 5 / 15
+Number of DTs not fixed: 0
+Number of DTs fixed: 1
+
+Average time to find one dependency: 176.011758433
+Execution time for executing the following testing order: 19.541
+
+Test order list:
+[de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy, de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection, de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testBasicCollectionsServices, de.htw.sdf.photoplatform.webservice.util.UserUtilityTest.testValidateProfileData]
+
+Time each test takes to run in the new order:
+[283360426, 4423375, 18712858160, 47771281, 492686003]
+
+Dependent test list:
+[Test: de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest, Intended behavior: FAILURE, when executed after: [de.htw.sdf.photoplatform.repository.UserImageDAOTest.testGetUserImagesBy], The revealed different behavior: PASS, when executed after: [], Test: de.htw.sdf.photoplatform.webservice.PhotographerControllerTest.testCreateCollection, Intended behavior: FAILURE, when executed after: [de.htw.sdf.photoplatform.repository.RoleDAOTest.findTest], The revealed different behavior: PASS, when executed after: []]
+--------------------------
+Total time (of all machines and iterations plus initial TestListGenerator): 74.605
+New order time: 19.559
+Total number of tests executed in all machines out of total in original order: 18 / 15
