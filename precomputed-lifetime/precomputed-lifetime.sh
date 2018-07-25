@@ -105,5 +105,8 @@ mv $DT_ROOT/prioritization-results $result_dir
 mv $DT_ROOT/selection-results $result_dir
 mv $DT_ROOT/parallelization-results $result_dir
 
+# Copy the properties file
+cp "$DT_SCRIPTS/$SUBJ_NAME-results/subject.properties" "$result_dir"
+
 cd $PRECOMPUTED_LIFETIME_ROOT
 
