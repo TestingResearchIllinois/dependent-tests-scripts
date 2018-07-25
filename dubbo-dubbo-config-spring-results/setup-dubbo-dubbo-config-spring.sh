@@ -15,5 +15,5 @@ export SUBJ_NAME_FORMAL=dubbo-dubbo-config-spring
 
 export SUBJ_START_DATE=2017-12-27
 
-. $DT_ROOT/scripts/setup-vars.sh
+. ../setup-vars.sh
 
