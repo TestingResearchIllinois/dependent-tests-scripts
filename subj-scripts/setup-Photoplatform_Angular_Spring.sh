@@ -18,5 +18,5 @@ export SUBJ_PACKAGE="de.htw.sdf.photoplatform.*"
 
 export SUBJ_START_DATE=2015-01-21
 
-. $DT_ROOT/scripts/setup-vars.sh
+. ../setup-vars.sh
 

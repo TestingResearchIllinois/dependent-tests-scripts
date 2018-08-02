@@ -2,7 +2,12 @@
 
 # Automates the "Instructions for compiling subjects" section.
 
-# 1. Compile the old subject.
+# 1. Compile the subjects.
+
+if bash check-compiled.sh "$DT_CLASS:$DT_TESTS:$DT_LIBS:$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_LIBS"; then
+    echo "[INFO] Project already compiled, exiting."
+    exit 0
+fi
 
 # Try to compile just the module we need.
 (
