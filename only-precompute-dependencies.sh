@@ -1,12 +1,63 @@
 #!/usr/bin/env bash
 
-SKIP_COMPILE="N"
+# Usage: bash only-precomputed-dependencies.sh URL commit path/to/module
 
-if [[ ! -z "$1" ]]; then
-    SKIP_COMPILE="$1"
-fi
+URL="$1"
+COMMIT="$2"
+PATH="$3"
+
+PWD=$(pwd)
 
 # Setup the environment variables
+source ./constants.sh
+source ./setup-vars.sh
+
+PROJ_NAME=$(basename $URL)
+
+export DT_SUBJ_ROOT="$DT_ROOT/$PROJ_NAME-old-$COMMIT"
+SUBJECT_RESULTS="$DT_SCRIPTS/${SUBJ_NAME}-results"
+
+echo "[INFO] Cloning project..."
+git clone "$1" "$SUBJ_ROOT"
+
+if [[ -d "$DT_SUBJ_ROOT" ]]; then
+    (
+        cd "$DT_SUBJ_ROOT"
+        git checkout "$COMMIT"
+    )
+else
+    echo "[INFO] Error occurred while cloning: directory does not exist"
+    exit 1
+fi
+
+module=$(basename $PATH)
+
+echo "[INFO] Setting environment variables."
+export DT_SUBJ=${OLD_SUBJ_MODULE_DIRS[$i]}/target
+export DT_SUBJ_SRC=${OLD_SUBJ_MODULE_DIRS[$i]}
+
+if [[ "$module" = "." ]]; then
+    export SUBJ_NAME="${PROJ_NAME}"
+    export SUBJ_NAME_FORMAL="${PROJ_NAME}"
+else
+    export SUBJ_NAME="${PROJ_NAME}-$module"
+    export SUBJ_NAME_FORMAL="${PROJ_NAME}-$module"
+fi
+
+echo "[INFO] Checking for test files."
+
+cd "$DT_SUBJ_SRC"
+export DT_TEST_SRC=$(mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
+echo "[INFO] Test source directory for ${SUBJ_NAME} (old) is $DT_TEST_SRC"
+if [[ ! -d "$DT_TEST_SRC" ]]; then
+    echo "[INFO] $SUBJ_NAME has no test files, skipping."
+    exit 1
+fi
+cd "$PWD"
+
+bash write-setup-script.sh
+
+# Setup the environment variables again, now that we have all subject specific stuff set up.
 source ./constants.sh
 source ./setup-vars.sh
 
