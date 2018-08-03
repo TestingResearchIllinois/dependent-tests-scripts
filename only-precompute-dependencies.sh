@@ -8,19 +8,21 @@ url="$1"
 commit="$2"
 path="$3"
 
-PWD=$(pwd)
+CWD=$(pwd)
 
 # Setup the environment variables
-# . ./constants.sh
-# . ./setup-vars.sh
+. ./constants.sh
+. ./setup-vars.sh
 
 PROJ_NAME=$(basename $url)
 
 export DT_SUBJ_ROOT="$DT_ROOT/$PROJ_NAME-old-$commit"
 SUBJECT_RESULTS="$DT_SCRIPTS/${SUBJ_NAME}-results"
 
-echo "[INFO] Cloning project..."
-git clone "$url" "$SUBJ_ROOT"
+if [[ ! -d "$DT_SUBJ_ROOT" ]]; then
+    echo "[INFO] Cloning project..."
+    git clone "$url" "$DT_SUBJ_ROOT"
+fi
 
 if [[ -d "$DT_SUBJ_ROOT" ]]; then
     (
@@ -55,7 +57,7 @@ if [[ ! -d "$DT_TEST_SRC" ]]; then
     echo "[INFO] $SUBJ_NAME has no test files, skipping."
     exit 1
 fi
-cd "$PWD"
+cd "$CWD"
 
 RESULTS_DIR="$DT_SCRIPTS/${SUBJ_NAME}-results"
 
@@ -66,12 +68,14 @@ if [[ ! -d "$RESULTS_DIR" ]]; then
     mkdir "$RESULTS_DIR"
 fi
 
-SETUP_SCRIPT="$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
-bash write-setup-script.sh "$SETUP_SCRIPT"
-
 # Setup the environment variables again, now that we have all subject specific stuff set up.
 source ./constants.sh
 source ./setup-vars.sh
+
+SETUP_SCRIPT="$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
+bash write-setup-script.sh "$SETUP_SCRIPT"
+
+exit 0
 
 if [[ "$SKIP_COMPILE" == "N" ]]; then
     bash ./compile-subj.sh
