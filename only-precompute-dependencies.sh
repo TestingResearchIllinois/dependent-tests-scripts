@@ -2,39 +2,41 @@
 
 # Usage: bash only-precomputed-dependencies.sh URL commit path/to/module
 
-URL="$1"
-COMMIT="$2"
-PATH="$3"
+set -e
+
+url="$1"
+commit="$2"
+path="$3"
 
 PWD=$(pwd)
 
 # Setup the environment variables
-source ./constants.sh
-source ./setup-vars.sh
+# . ./constants.sh
+# . ./setup-vars.sh
 
-PROJ_NAME=$(basename $URL)
+PROJ_NAME=$(basename $url)
 
-export DT_SUBJ_ROOT="$DT_ROOT/$PROJ_NAME-old-$COMMIT"
+export DT_SUBJ_ROOT="$DT_ROOT/$PROJ_NAME-old-$commit"
 SUBJECT_RESULTS="$DT_SCRIPTS/${SUBJ_NAME}-results"
 
 echo "[INFO] Cloning project..."
-git clone "$1" "$SUBJ_ROOT"
+git clone "$url" "$SUBJ_ROOT"
 
 if [[ -d "$DT_SUBJ_ROOT" ]]; then
     (
         cd "$DT_SUBJ_ROOT"
-        git checkout "$COMMIT"
+        git checkout "$commit"
     )
 else
     echo "[INFO] Error occurred while cloning: directory does not exist"
     exit 1
 fi
 
-module=$(basename $PATH)
+module=$(basename $path)
 
 echo "[INFO] Setting environment variables."
-export DT_SUBJ=${OLD_SUBJ_MODULE_DIRS[$i]}/target
-export DT_SUBJ_SRC=${OLD_SUBJ_MODULE_DIRS[$i]}
+export DT_SUBJ="$DT_SUBJ_ROOT/$path/target"
+export DT_SUBJ_SRC="$DT_SUBJ_ROOT/$path"
 
 if [[ "$module" = "." ]]; then
     export SUBJ_NAME="${PROJ_NAME}"
