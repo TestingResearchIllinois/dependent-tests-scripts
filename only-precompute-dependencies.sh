@@ -55,7 +55,17 @@ if [[ ! -d "$DT_TEST_SRC" ]]; then
 fi
 cd "$PWD"
 
-bash write-setup-script.sh
+RESULTS_DIR="$DT_SCRIPTS/${SUBJ_NAME}-results"
+
+echo "[INFO] Checking for results directory at $RESULTS_DIR"
+# Make the results directory if it doesn't exist (and copy the setup script if applicable)
+if [[ ! -d "$RESULTS_DIR" ]]; then
+    echo "[INFO] Creating results directory"
+    mkdir "$RESULTS_DIR"
+fi
+
+SETUP_SCRIPT="$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
+bash write-setup-script.sh "$SETUP_SCRIPT"
 
 # Setup the environment variables again, now that we have all subject specific stuff set up.
 source ./constants.sh
@@ -67,6 +77,20 @@ if [[ "$SKIP_COMPILE" == "N" ]]; then
         exit 1
     fi
 fi
+
+NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output.txt"
+echo "[INFO] Running nondeterministic runner for ${SUBJ_NAME}"
+echo
+bash nondeterministic-runner.sh $SETUP_SCRIPT &> "$NONDETERMINISTIC_OUTPUT"
+
+DTDETECTOR_OUTPUT="$RESULTS_DIR/randomize-output.txt"
+echo "[INFO] Running dtdetector for ${SUBJ_NAME}"
+echo
+bash run-dtdetector.sh $SETUP_SCRIPT &> "$DTDETECTOR_OUTPUT"
+
+DT_COUNT=$(cat "$DTDETECTOR_OUTPUT" | wc -l)
+
+echo "[INFO] Found $DT_COUNT dependent tests using the dtdetector."
 
 # Runs commands for "Instructions to setup a subject for test prioritization" section.
 bash ./setup-prio-first.sh

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # $1 - Optional. Location of the setup script to run.
-# $2 - Optional (new or old). Whether to run new or old subject. Defaults to 'new'.
+# $2 - Optional (new or old). Whether to run new or old subject. Defaults to 'old'.
 # $3 - Optional (orig or auto). Whether to run for the auto tests or the orig tests. Defaults to 'orig'.
 
 set -e
