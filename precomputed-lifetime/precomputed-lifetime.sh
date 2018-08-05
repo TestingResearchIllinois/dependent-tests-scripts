@@ -43,6 +43,13 @@ cd $NEW_DT_SUBJ_ROOT
 new_date=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d-%H-%M-%S")
 echo "[INFO] Date of new commit is: $new_date"
 
+result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-lifetime/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
+
+if [[ -d "$result_dir" ]]; then
+    echo "[INFO] $result_dir already exists, not recomputing."
+    exit 0
+fi
+
 # if [[ -d "$DT_SUBJ_ROOT" ]]; then
 #     cd $DT_SUBJ_ROOT
 #     echo "[INFO] Resetting $DT_SUBJ_ROOT to $OLD_COMMIT"
@@ -99,7 +106,6 @@ bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele-orig.sh
 bash run-with-deps.sh
 
 # Save results for later
-result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-lifetime/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
 mkdir -p $result_dir
 mv $DT_ROOT/prioritization-results $result_dir
 mv $DT_ROOT/selection-results $result_dir
