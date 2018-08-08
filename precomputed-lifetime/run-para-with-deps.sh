@@ -78,7 +78,7 @@ for j in "${testTypes[@]}"; do
                 -timesToRun $medianTimes \
                 -outputDir $DT_ROOT/$paraDir \
                 -classpath $CLASSPATH \
-                -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt\" \
+                -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-$original.txt\" \
                 $postProcessFlag"
             java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                 -technique parallelization \
@@ -93,7 +93,7 @@ for j in "${testTypes[@]}"; do
                 -timesToRun $medianTimes \
                 -outputDir $DT_ROOT/$paraDir \
                 -classpath "$CLASSPATH" \
-                -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt"
+                -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-$original.txt"
                 $postProcessFlag
         done
     done
