@@ -1,0 +1,2 @@
+org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer
+org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset

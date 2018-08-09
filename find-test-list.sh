@@ -36,7 +36,7 @@ java -cp $DT_TOOLS:$LIBS:$CLASS:$TESTS: edu.washington.cs.dt.tools.UnitTestFinde
 mv allunittests.txt $TEST_ORDER
 
 cd ..
-java -cp $DT_TOOLS: ed.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
 cd target
 
 if [[ -e "$IGNORE_TESTS_LIST" ]]; then
