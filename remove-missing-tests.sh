@@ -9,10 +9,10 @@ if [[ ! -z "$2" ]]; then
 fi
 
 if [[ "$PREFIX" = "old" ]]; then
-    cd $DT_SUBJ
+    cd $DT_SUBJ_SRC
     CLASSPATH=$DT_LIBS:$DT_TESTS:$DT_CLASS:
 else
-    cd $NEW_DT_SUBJ
+    cd $NEW_DT_SUBJ_SRC
     CLASSPATH=$NEW_DT_LIBS:$NEW_DT_TESTS:$NEW_DT_CLASS:
 fi
 

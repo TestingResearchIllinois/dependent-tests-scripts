@@ -13,9 +13,13 @@ if [[ ! -e "$NEW_DT_SUBJ/$TEST_ORDER" ]]; then
     cp "$DT_SUBJ/$TEST_ORDER" "$NEW_DT_SUBJ/$TEST_ORDER"
 
     # Remove the tests we're ignoring
+    echo "[INFO] Removing ignored tests (from $IGNORE_TESTS_LIST)"
     temp="$(mktemp)"
     grep -Fvf "$IGNORE_TESTS_LIST" "$NEW_DT_SUBJ/$TEST_ORDER" > "$temp"
     mv "$temp" "$NEW_DT_SUBJ/$TEST_ORDER"
     rm "$temp"
+
+    echo "[INFO] Removing missing tests."
+    bash "$DT_SCRIPTS/remove-missing-tests.sh" "$NEW_DT_SUBJ/$TEST_ORDER" new
 fi
 
