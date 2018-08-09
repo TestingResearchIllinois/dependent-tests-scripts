@@ -7,7 +7,7 @@
 version=$1
 testType=$2
 
-TEST_ORDER="${SUBJ_NAME}-${testType}-order"
+TEST_ORDER="$(pwd)/${SUBJ_NAME}-${testType}-order"
 IGNORE_TESTS_LIST="$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-ignore-order"
 
 TESTS=$DT_TESTS
@@ -34,6 +34,10 @@ fi
 java -cp $DT_TOOLS:$LIBS:$CLASS:$TESTS: edu.washington.cs.dt.tools.UnitTestFinder --pathOrJarFile $TESTS --junit3and4=true
 
 mv allunittests.txt $TEST_ORDER
+
+cd ..
+java -cp $DT_TOOLS: ed.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
+cd target
 
 if [[ -e "$IGNORE_TESTS_LIST" ]]; then
     temp=$(mktemp)

@@ -15,17 +15,20 @@ cd $SCRIPT_DIR
 
 cd $CURRENT
 
-DIR="$DT_SCRIPTS/$SUBJ_NAME-results/enhanced"
+> orig
+> auto
+
+DIR="$DT_SCRIPTS/$SUBJ_NAME-results/without-dependencies"
 
 go() {
-    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetAllUniqueDTs -prioDirectory $DIR/$1 -paraDirectory temp/ -seleDirectory temp/ -minBoundOrigDTFile orig -minBoundAutoDTFile auto > /dev/null
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetAllUniqueDTs -prioDirectory $DIR/$1 -paraDirectory temp/ -seleDirectory temp/ -minBoundOrigDTFile orig -minBoundAutoDTFile auto # > /dev/null
     origNum=$(cat orig | head -1 | cut -f2 -d"|")
     autoNum=$(cat auto | head -1 | cut -f2 -d"|")
 
     echo "subject.$2.orig.dts=$origNum"
     echo "subject.$2.auto.dts=$autoNum"
 
-    > orig 
+    > orig
     > auto
 }
 
