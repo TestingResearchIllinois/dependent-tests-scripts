@@ -1,0 +1,42 @@
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.DataStoreUtils.testPropertySetup
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshot
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotExecuteAfterRemove
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.snapshotIgnoreAfterRemove
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveShared
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerClusterSharedTest.addRetrieveCluster]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.addSnapshotRemove
+Intended behavior: FAILURE
+when executed after: [org.apache.jackrabbit.oak.plugins.blob.datastore.BlobIdTrackerTest.externalAddOffline]
+The revealed different behavior: PASS
+when executed after: []
+

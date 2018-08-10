@@ -42,14 +42,14 @@ java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.OutputPrecomputedDependenc
 echo "[INFO] Copying dt-lists."
 RESULTS_DIR="$DT_SCRIPTS/${SUBJ_NAME}-results/dt-lists/"
 mkdir -p "$RESULTS_DIR/$prioList"
-mv "$DT_SCRIPTS/data/$prioList/*${SUBJ_NAME_FORMAL}*" "$RESULTS_DIR/$prioList"
+mv "$DT_ROOT/data/$prioList/*${SUBJ_NAME_FORMAL}*" "$RESULTS_DIR/$prioList"
 mkdir -p "$RESULTS_DIR/$seleList"
-mv "$DT_SCRIPTS/data/$seleList/*${SUBJ_NAME_FORMAL}*" "$RESULTS_DIR/$seleList"
+mv "$DT_ROOT/data/$seleList/*${SUBJ_NAME_FORMAL}*" "$RESULTS_DIR/$seleList"
 mkdir -p "$RESULTS_DIR/$paraList"
-mv "$DT_SCRIPTS/data/$paraList/*${SUBJ_NAME_FORMAL}*" "$RESULTS_DIR/$paraList"
+mv "$DT_ROOT/data/$paraList/*${SUBJ_NAME_FORMAL}*" "$RESULTS_DIR/$paraList"
 
 # Defined in constants.sh
-copy-results "precomputed"
+copy_results "precomputed"
 
 echo "[INFO] Script has finished running."
 
