@@ -1,0 +1,36 @@
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testDubboProtocolPortOverride
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideProtocol]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.test_returnSerializationFail
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.context.annotation.EnableDubboTest.test]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testSystemPropertyOverrideProtocol
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.testXmlOverrideProperties]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.context.annotation.EnableDubboTest.test
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScanRegistrarTest.test]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.ConfigTest.testXmlOverrideProperties
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.ConfigTest.test_returnSerializationFail]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScanRegistrarTest.test
+Intended behavior: FAILURE
+when executed after: [com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessorTest.test]
+The revealed different behavior: PASS
+when executed after: []
+

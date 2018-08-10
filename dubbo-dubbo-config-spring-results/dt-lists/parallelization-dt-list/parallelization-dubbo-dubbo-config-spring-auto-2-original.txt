@@ -6,7 +6,7 @@ when executed after: []
 
 Test: RegressionTest2.test282
 Intended behavior: FAILURE
-when executed after: [RegressionTest0.test006]
+when executed after: [RegressionTest0.test012]
 The revealed different behavior: PASS
 when executed after: []
 
