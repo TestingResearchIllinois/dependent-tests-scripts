@@ -1,72 +1,72 @@
-Test: com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistEphemeralSequential
-Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenterModifyTest.assertPersistSequential]
-The revealed different behavior: PASS
-when executed after: []
-
 Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber]
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithPageSizeAndNumber
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEventWhenFailoverWithTaskStagingState
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobStatusTraceEvent
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskIdWithoutShardingItems]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbStorageTest.assertAddJobExecutionEvent
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskIdWithoutShardingItems
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfoWithoutShardingItems]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindJobRegisterStatisticsWithDifferentFromDate
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfoWithoutShardingItems
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskId]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskRunningStatisticsWhenTableIsEmpty
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithTaskId
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfo]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatistics
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertMetaInfoFromWithMetaInfo
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertTaskContextFrom]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindLatestTaskResultStatisticsWhenTableIsEmpty
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertTaskContextFrom
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertGetSummedTaskResultStatisticsWhenTableIsEmpty
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate]
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertFindTaskResultStatisticsWithDifferentFromDate
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId
 Intended behavior: FAILURE
-when executed after: [com.dangdang.ddframe.job.statistics.rdb.StatisticRdbRepositoryTest.assertAddTaskResultStatistics]
+when executed after: [com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.api.ShardingContextTest.assertNew]
 The revealed different behavior: PASS
 when executed after: []
 

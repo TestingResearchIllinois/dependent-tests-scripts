@@ -1,0 +1,66 @@
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobStatusTraceEventsWithTime
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.event.rdb.JobEventRdbSearchTest.assertFindJobExecutionEventsWithErrorPageSizeAndNumber
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertGetTaskName
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertGetIdForUnassignedSlave
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertGetMetaInfo
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertNewWithoutSlaveId
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.context.TaskContextTest.assertNew]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.context.TaskContextTest.assertNew
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildRequiredProperties]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildRequiredProperties
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenTotalSHardingCountIsNegative]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenTotalSHardingCountIsNegative
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildAllProperties]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildAllProperties
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: com.dangdang.ddframe.job.config.JobCoreConfigurationTest.assertBuildWhenOptionalParametersIsNull
+Intended behavior: FAILURE
+when executed after: [com.dangdang.ddframe.job.api.ShardingContextTest.assertToString]
+The revealed different behavior: PASS
+when executed after: []
+
