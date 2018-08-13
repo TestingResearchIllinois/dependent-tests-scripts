@@ -4,6 +4,8 @@
 # NOTE: Environment variables should have been set before running this script.
 # TECHNIQUES: techniques to use (e.g., "prio-sele-para" or "para" or "sele-prio"). Optional. If not provided, then will use all techniques
 
+. "$DT_SCRIPTS/constants.sh"
+
 startTime=`date`
 
 TECHNIQUES="$1"
