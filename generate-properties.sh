@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Usage: bash generate-properties.sh SETUP_SCRIPT
+# Usage: bash generate-properties.sh SETUP_SCRIPT DIR
 
 # Run the setup script
 CURRENT=$(pwd)
@@ -18,12 +18,13 @@ cd $CURRENT
 > orig
 > auto
 
-DIR="$DT_SCRIPTS/$SUBJ_NAME-results/without-dependencies"
+DIR="$2"
+RESULTS_DIR="$DT_SCRIPTS/$SUBJ_NAME-results"
 
 go() {
     java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetAllUniqueDTs -prioDirectory $DIR/$1 -paraDirectory temp/ -seleDirectory temp/ -minBoundOrigDTFile orig -minBoundAutoDTFile auto > /dev/null
-    origNum=$(cat orig | head -1 | cut -f2 -d"|")
-    autoNum=$(cat auto | head -1 | cut -f2 -d"|")
+    origNum=$(cat orig | grep "$SUBJ_NAME_FORMAL" | head -1 | cut -f2 -d"|")
+    autoNum=$(cat auto | grep "$SUBJ_NAME_FORMAL" | head -1 | cut -f2 -d"|")
 
     echo "subject.$2.orig.dts=$origNum"
     echo "subject.$2.auto.dts=$autoNum"
@@ -38,5 +39,5 @@ go() {
     go prioritization-results prio
     go selection-results sele
     go parallelization-results para
-) | tee "$DIR/../subject.properties"
+) | tee "$RESULTS_DIR/subject.properties"
 

@@ -7,7 +7,6 @@ CLASSPATH=$NEW_DT_LIBS:$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_RANDOOP:
 # Set the pwd dependening on classpath/version
 . "$DT_SCRIPTS/set-directory.sh" $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-rm -rf "$DT_ROOT/$prioDir"
 mkdir -p "$DT_ROOT/$prioDir"
 
 for k in "${testTypes[@]}"; do
