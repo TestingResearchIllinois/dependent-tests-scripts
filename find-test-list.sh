@@ -35,6 +35,12 @@ java -cp $DT_TOOLS:$LIBS:$CLASS:$TESTS: edu.washington.cs.dt.tools.UnitTestFinde
 
 mv allunittests.txt $TEST_ORDER
 
+if [[ -e "$IGNORE_TESTS_LIST" ]]; then
+    temp=$(mktemp)
+    grep -Fvf "$IGNORE_TESTS_LIST" $TEST_ORDER > $temp
+    mv $temp $TEST_ORDER
+fi
+
 cd ..
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
 cd target
