@@ -3,8 +3,7 @@
 # Inputs:
 # $1 - Git repo url
 # $2 - commit to run (new)
-# $3 - commit to run (old)
-# $4 - path in repo (probably for module)
+# $3 - path in repo (probably for module)
 
 # Run to get things like DT_ROOT and DT_SCRIPTS
 . ../setup-vars.sh
