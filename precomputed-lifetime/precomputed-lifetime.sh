@@ -3,15 +3,17 @@
 # Inputs:
 # $1 - Git repo url
 # $2 - commit to run (new)
-# $3 - commit to run (old)
-# $4 - path in repo (probably for module)
+# $3 - path in repo (probably for module)
+# $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
 
 # Run to get things like DT_ROOT and DT_SCRIPTS
 . ../setup-vars.sh
+. ../constants.sh
 
 GIT_URL=$1
 NEW_COMMIT=$2
 MODULE_PATH=$3
+TECHNIQUES=$4
 
 PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
 
@@ -103,7 +105,7 @@ bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele-orig.sh
 # bash $DT_SCRIPTS/setup-para.sh
 # This doesn't need to be done if we are using the original old version as the old version.
 
-bash run-with-deps.sh
+bash run-with-deps.sh "$TECHNIQUES"
 
 # Save results for later
 mkdir -p $result_dir
