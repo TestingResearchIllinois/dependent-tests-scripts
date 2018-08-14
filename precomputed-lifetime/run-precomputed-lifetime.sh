@@ -2,12 +2,14 @@
 # $1 - Git repo url
 # $2 - path in repo (probably for module)
 # $3 - Setup script
+# $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
 
 COMMIT_NUM=10
 
 GIT_URL=$1
 MODULE_PATH=$2
 SETUP_SCRIPT=$3
+TECHNIQUES="$4"
 
 if [[ -e "$SETUP_SCRIPT" ]]; then
     # Generally the setup scripts are written so that they assume you are in a particular directory, so
@@ -49,9 +51,7 @@ done
 
 for (( i=0; i<${#new_commits[@]}; i++ ))
 do
-    # echo "[INFO] bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} ${old_commits[$i]} $MODULE_PATH $SUBJ_NAME $SUBJ_NAME_FORMAL \"$ORIGINAL_DT_SUBJ\""
-    # bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} ${old_commits[$i]} $MODULE_PATH $SUBJ_NAME $SUBJ_NAME_FORMAL "$ORIGINAL_DT_SUBJ" | tee "${PROJ_NAME}-${new_commits[$i]}-${old_commits[$i]}.txt"
-    echo "[INFO] bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} $MODULE_PATH"
-    bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} $MODULE_PATH | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
+    echo "[INFO] bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} $MODULE_PATH \"$TECHNIQUES\""
+    bash precomputed-lifetime.sh $GIT_URL ${new_commits[$i]} $MODULE_PATH "$TECHNIQUES" | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
 done
 
