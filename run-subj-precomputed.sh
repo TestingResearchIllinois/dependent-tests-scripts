@@ -53,6 +53,7 @@ rm -rf "$DT_ROOT/data/parallelization-dt-list/parallelization-$SUBJ_NAME"*
 if [[ -d "$RESULTS_DIR/precomputed" ]]; then
     echo "[INFO] Removing old results files at $RESULTS_DIR/precomputed"
     rm -rf "$RESULTS_DIR/precomputed"
+    rm -rf "$RESULTS_DIR/dt-lists"
 fi
 
 # Calculate new precomputed dependencies
