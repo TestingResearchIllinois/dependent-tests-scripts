@@ -33,7 +33,11 @@ fi
 
 java -cp $DT_TOOLS:$LIBS:$CLASS:$TESTS: edu.washington.cs.dt.tools.UnitTestFinder --pathOrJarFile $TESTS --junit3and4=true
 
-mv allunittests.txt $TEST_ORDER
+if [[ "$testType" == "auto" ]]; then
+    grep -i "randoop" allunittests.txt > $TEST_ORDER
+else
+    mv allunittests.txt $TEST_ORDER
+fi
 
 if [[ -e "$IGNORE_TESTS_LIST" ]]; then
     temp=$(mktemp)

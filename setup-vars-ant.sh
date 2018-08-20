@@ -16,7 +16,7 @@ export DT_LIBS=$DT_SUBJ/lib/*
 # Compiled class files of the old subject
 export DT_CLASS=$DT_SUBJ/bin
 # Compiled automatically-generated test files of the old subject
-export DT_RANDOOP=$DT_SUBJ/bin/randoop
+export DT_RANDOOP=$DT_SUBJ/bin
 # Compiled human-written test files of the old subject
 export DT_TESTS=$DT_SUBJ/bin
 
@@ -25,7 +25,7 @@ export NEW_DT_LIBS=$NEW_DT_SUBJ/lib/*
 # Compiled class files of the new subject
 export NEW_DT_CLASS=$NEW_DT_SUBJ/bin
 # Compiled automatically-generated test files of the new subject
-export NEW_DT_RANDOOP=$NEW_DT_SUBJ/bin/randoop
+export NEW_DT_RANDOOP=$NEW_DT_SUBJ/bin
 # Compiled human-written test files of the new subject
 export NEW_DT_TESTS=$NEW_DT_SUBJ/bin
 
