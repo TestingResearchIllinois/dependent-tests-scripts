@@ -41,7 +41,7 @@ echo "[INFO] Getting new test lists"
 (
     cd $DT_SUBJ
 
-    bash "$DT_SCRIPTS/find-test-list.sh" old orig
+    bash "$DT_SCRIPTS/get-test-order.sh"
     bash "$DT_SCRIPTS/find-test-list.sh" old auto
 )
 
