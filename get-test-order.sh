@@ -45,3 +45,22 @@ tests=($(grep -h "Running .*" "test-log.txt" | sed -E "s/.*Running (.*)/\1/g"))
     done
 ) > "$output_file_name"
 
+if [[ ! -z "$SUBJ_NAME" ]]; then
+    TEST_ORDER="$output_file_name"
+    IGNORE_TESTS_LIST="$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-ignore-order"
+
+    if [[ -e "$IGNORE_TESTS_LIST" ]]; then
+        temp=$(mktemp)
+        grep -Fvf "$IGNORE_TESTS_LIST" $TEST_ORDER > $temp
+        mv $temp $TEST_ORDER
+    fi
+
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
+
+    if [[ -e "$IGNORE_TESTS_LIST" ]]; then
+        temp=$(mktemp)
+        grep -Fvf "$IGNORE_TESTS_LIST" $TEST_ORDER > $temp
+        mv $temp $TEST_ORDER
+    fi
+fi
+
