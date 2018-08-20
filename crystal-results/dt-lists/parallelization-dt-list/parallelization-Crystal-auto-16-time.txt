@@ -1,0 +1,732 @@
+Test: randoop.crystal.RandoopTest4.test16
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test8]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test264
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test255]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test124
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test437]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test331
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test302]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test497
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test206]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test206
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test189]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test492
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test490]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test495
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test492]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test127
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest6.test123]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test63
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test462]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test462
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test257]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test129
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test122]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test301
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test228]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test228
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test227]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test28
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test488]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test488
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test456]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test232
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test154]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test494
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test490]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test53
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test494]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test462
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test455]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test140
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test139]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test111
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test100]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test122
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test118]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test68
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test43]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test118
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test68]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test154
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test44]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test154
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test130]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test490
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test484]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test43
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test13]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test183
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test101]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test101
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test63]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test222
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test132]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test128
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test114]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test484
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test440]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test370
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test252]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test13
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test370]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test114
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test111]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test100
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test85]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test167
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test70]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test484
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test473]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test404
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test364]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test188
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test143]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test409
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test404]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test56
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test362]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test166
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test410]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test70
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest6.test62]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test62
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest6.test56]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test206
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test193]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test193
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test166]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test269
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test234]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test234
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test206]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test55
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test49]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test459
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test409]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test490
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test487]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test487
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test470]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test80
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test78]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test376
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test355]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test132
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test128]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test364
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test360]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test437
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test285]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test313
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test281]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test85
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test82]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test26
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test16]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test121
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test13]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test97
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest6.test81]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test463
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test336]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test355
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test330]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test70
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test50]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test49
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest6.test30]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test78
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test269]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test81
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest6.test78]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test445
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test411]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test317
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test129]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test411
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test317]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test171
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test414]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test414
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test400]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test410
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test311]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test311
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test308]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test451
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test198]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test322
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test319]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test319
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test131]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test123
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test331]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test49
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test34]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test470
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test459]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test12
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test10]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test10
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test499]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test308
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test231]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test49
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test331]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test321
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test211]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test331
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test321]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test447
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test445]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test34
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test33]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test350
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test264]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test231
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test211]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test255
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test54]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test360
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test350]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test33
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test26]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test78
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test53]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test82
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test55]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test85
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test80]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test129
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test49]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest2.test211
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test12]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest6.test21
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test382]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test323
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test129]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test382
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test323]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test135
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test301]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test285
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test146]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test146
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test116]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test176
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test167]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest0.test234
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test154]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest3.test54
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest2.test447]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test252
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest1.test222]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test130
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test128]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test302
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test232]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test330
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test322]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test8
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest3.test495]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test455
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test376]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest5.test440
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest5.test313]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test131
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test130]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test130
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test85]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest4.test473
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest4.test462]
+The revealed different behavior: PASS
+when executed after: []
+
+Test: randoop.crystal.RandoopTest1.test128
+Intended behavior: FAILURE
+when executed after: [randoop.crystal.RandoopTest0.test457]
+The revealed different behavior: PASS
+when executed after: []
+

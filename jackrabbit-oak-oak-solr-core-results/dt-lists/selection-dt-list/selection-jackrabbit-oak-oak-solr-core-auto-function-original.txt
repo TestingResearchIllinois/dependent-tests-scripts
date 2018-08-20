@@ -1,4 +1,4 @@
-Test: RegressionTest1.test005
+Test: RegressionTest1.test002
 Intended behavior: FAILURE
 when executed after: [RegressionTest0.test403]
 The revealed different behavior: PASS
@@ -49,12 +49,6 @@ when executed after: []
 Test: RegressionTest1.test013
 Intended behavior: FAILURE
 when executed after: [RegressionTest1.test002]
-The revealed different behavior: PASS
-when executed after: []
-
-Test: RegressionTest1.test002
-Intended behavior: FAILURE
-when executed after: [RegressionTest1.test005]
 The revealed different behavior: PASS
 when executed after: []
 

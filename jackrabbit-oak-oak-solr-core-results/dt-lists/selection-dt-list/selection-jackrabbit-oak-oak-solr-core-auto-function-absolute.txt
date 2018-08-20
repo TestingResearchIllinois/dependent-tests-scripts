@@ -18,11 +18,11 @@ when executed after: []
 
 Test: RegressionTest2.test018
 Intended behavior: FAILURE
-when executed after: [RegressionTest1.test498]
+when executed after: [RegressionTest1.test386]
 The revealed different behavior: PASS
 when executed after: []
 
-Test: RegressionTest1.test437
+Test: RegressionTest1.test386
 Intended behavior: FAILURE
 when executed after: [RegressionTest1.test375]
 The revealed different behavior: PASS
@@ -281,12 +281,6 @@ The revealed different behavior: PASS
 when executed after: []
 
 Test: RegressionTest2.test148
-Intended behavior: FAILURE
-when executed after: [RegressionTest2.test018]
-The revealed different behavior: PASS
-when executed after: []
-
-Test: RegressionTest1.test498
 Intended behavior: FAILURE
 when executed after: [RegressionTest1.test441]
 The revealed different behavior: PASS

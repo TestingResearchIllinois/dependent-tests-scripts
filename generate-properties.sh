@@ -33,11 +33,18 @@ go() {
     > auto
 }
 
+if [[ -e "$RESULTS_DIR/subject.properties" ]]; then
+    START_DATE=$(grep "subject.start_date=" "$RESULTS_DIR/subject.properties")
+else
+    START_DATE=""
+fi
+
 (
     echo "subject.name=$SUBJ_NAME"
     echo "subject.formal_name=$SUBJ_NAME_FORMAL"
     go prioritization-results prio
     go selection-results sele
     go parallelization-results para
+    echo "$START_DATE"
 ) | tee "$RESULTS_DIR/subject.properties"
 
