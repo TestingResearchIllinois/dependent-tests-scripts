@@ -40,16 +40,16 @@ numTimesToRun=100
 
 if [[ "$version" == "old" ]]; then
     if [[ "$testType" == "orig" ]]; then
-        experimentCP=$DT_TOOLS:$DT_CLASS:$DT_TESTS:$DT_LIBS:
+        experimentCP=$DT_CLASS:$DT_TESTS:$DT_LIBS:
     else
-        experimentCP=$DT_TOOLS:$DT_CLASS:$DT_RANDOOP:$DT_LIBS:
+        experimentCP=$DT_CLASS:$DT_RANDOOP:$DT_LIBS:
     fi
     testOrder=$DT_SUBJ/${SUBJ_NAME}-${testType}-order
 else
     if [[ "$testType" == "orig" ]]; then
-        experimentCP=$DT_TOOLS:$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_LIBS:
+        experimentCP=$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_LIBS:
     else
-        experimentCP=$DT_TOOLS:$NEW_DT_CLASS:$NEW_DT_RANDOOP:$NEW_DT_LIBS:
+        experimentCP=$NEW_DT_CLASS:$NEW_DT_RANDOOP:$NEW_DT_LIBS:
     fi
     testOrder=$NEW_DT_SUBJ/${SUBJ_NAME}-${testType}-order
 fi
@@ -78,7 +78,7 @@ else
     cd $DT_SUBJ_SRC
 fi
 
-java -Xmx8000M -cp $experimentCP: edu.washington.cs.dt.impact.tools.detectors.DetectorMain --mode NONDETERMINISTIC --rounds 100 --test-order "$testOrder" --output "$NONDETERMINISTIC_FOLDER/dt-lists.txt"
+java -Xmx8000M -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.DetectorMain -cp $experimentCP: --mode NONDETERMINISTIC --rounds 100 --test-order "$testOrder" --output "$NONDETERMINISTIC_FOLDER/dt-lists.txt"
 
 # Make sure we ignore the nondeterministic tests for everything else.
 if [[ -e "$RESULTS_DIR/${SUBJ_NAME}-ignore-order" ]]; then
