@@ -33,7 +33,15 @@ fi
 
 java -cp $DT_TOOLS:$LIBS:$CLASS:$TESTS: edu.washington.cs.dt.tools.UnitTestFinder --pathOrJarFile $TESTS --junit3and4=true
 
-mv allunittests.txt $TEST_ORDER
+if [[ ! -e "$DT_SUBJ_SRC/pom.xml" ]]; then
+    if [[ "$testType" == "auto" ]]; then
+        grep -i "randoop" allunittests.txt > $TEST_ORDER
+    else
+        grep -vi "randoop" allunittests.txt > $TEST_ORDER
+    fi
+else
+    mv allunittests.txt "$TEST_ORDER"
+fi
 
 if [[ -e "$IGNORE_TESTS_LIST" ]]; then
     temp=$(mktemp)
@@ -42,7 +50,7 @@ if [[ -e "$IGNORE_TESTS_LIST" ]]; then
 fi
 
 cd $DT_SUBJ_SRC
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$CLASS:$TESTS:$LIBS" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
 cd $DT_SUBJ
 
 if [[ -e "$IGNORE_TESTS_LIST" ]]; then

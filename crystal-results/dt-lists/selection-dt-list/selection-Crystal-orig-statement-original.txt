@@ -1,0 +1,6 @@
+Test: crystal.model.DataSourceTest.testIsHidden
+Intended behavior: FAILURE
+when executed after: [crystal.model.DataSourceTest.testSetField]
+The revealed different behavior: PASS
+when executed after: []
+

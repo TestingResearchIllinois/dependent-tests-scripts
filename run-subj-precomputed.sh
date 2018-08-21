@@ -41,7 +41,11 @@ echo "[INFO] Getting new test lists"
 (
     cd $DT_SUBJ
 
-    bash "$DT_SCRIPTS/find-test-list.sh" old orig
+    if [[ ! -e "$DT_SUBJ_SRC/pom.xml" ]]; then
+        bash "$DT_SCRIPTS/find-test-list.sh" old orig
+    else
+        bash "$DT_SCRIPTS/get-test-order.sh"
+    fi
     bash "$DT_SCRIPTS/find-test-list.sh" old auto
 )
 
@@ -53,6 +57,7 @@ rm -rf "$DT_ROOT/data/parallelization-dt-list/parallelization-$SUBJ_NAME"*
 if [[ -d "$RESULTS_DIR/precomputed" ]]; then
     echo "[INFO] Removing old results files at $RESULTS_DIR/precomputed"
     rm -rf "$RESULTS_DIR/precomputed"
+    rm -rf "$RESULTS_DIR/dt-lists"
 fi
 
 # Calculate new precomputed dependencies
