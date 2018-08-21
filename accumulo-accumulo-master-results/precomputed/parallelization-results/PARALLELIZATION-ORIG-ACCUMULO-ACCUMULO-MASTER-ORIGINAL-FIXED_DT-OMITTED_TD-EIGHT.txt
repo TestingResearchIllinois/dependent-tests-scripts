@@ -1,102 +1,174 @@
 The following arguments were used to generate this output.
-[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-order, -testInputDir, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-env-files, -project, accumulo-accumulo-master, -testType, orig, -numOfMachines, 8, -outputDir, /scratch/reedoei2/dependent-tests-experiments-auto/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/reedoei2/dependent-tests-experiments-auto/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes:, -resolveDependences, /scratch/reedoei2/dependent-tests-experiments-auto/data/parallelization-dt-list/parallelization-accumulo-accumulo-master-orig-8-original.txt]
+[-technique, parallelization, -order, original, -origOrder, /scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-orig-order, -testInputDir, /scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/sootTestOutput-orig, -filesToDelete, /scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/accumulo-accumulo-master-env-files, -project, accumulo-accumulo-master, -testType, orig, -numOfMachines, 8, -outputDir, /scratch/reedoei2/recompute-everything/accumulo-master/parallelization-results, -timesToRun, 5, -classpath, /scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/dependency/*:/scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/classes:/scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/randoop/bin:/scratch/reedoei2/recompute-everything/accumulo-master/accumulo-old-daeffd8d9cf980814fb7d131a0d89cbdfd856298/server/master/target/test-classes:, -resolveDependences, /scratch/reedoei2/recompute-everything/accumulo-master/data/parallelization-dt-list/parallelization-accumulo-accumulo-master-orig-8-original.txt]
 
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.703
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 2.119
+Number of tests selected out of total in original order: 2 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.334
+Execution time for executing the following testing order: 0.673
 
 Test order list:
-[org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName]
+[org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS}
 
 Time each test takes to run in the new order:
-[17041084, 316475660]
+[658494448, 14919069]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.589
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.138
+Number of tests selected out of total in original order: 2 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.213
+Execution time for executing the following testing order: 0.382
 
 Test order list:
-[org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp]
+[org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
 
 Time each test takes to run in the new order:
-[17269522, 195549860]
+[152204023, 229975750]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.576
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.175
+Number of tests selected out of total in original order: 2 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.229
+Execution time for executing the following testing order: 0.430
 
 Test order list:
-[org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName]
+[org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS}
 
 Time each test takes to run in the new order:
-[106372099, 122361772]
+[427356300, 2894118]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.643
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.728
+Number of tests selected out of total in original order: 2 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.352
+Execution time for executing the following testing order: 0.287
 
 Test order list:
-[org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServer]
+[org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS}
 
 Time each test takes to run in the new order:
-[215141371, 136861448]
+[47324150, 239395282]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.839
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.475
+Number of tests selected out of total in original order: 2 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.537
+Execution time for executing the following testing order: 0.270
 
 Test order list:
-[org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.invalidOffset, org.apache.accumulo.master.replication.MasterReplicationCoordinatorTest.randomServerFromMany]
+[org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS}
 
 Time each test takes to run in the new order:
-[220573347, 316532307]
+[266406052, 3261095]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.695
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.078
+Number of tests selected out of total in original order: 1 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.349
+Execution time for executing the following testing order: 0.339
 
 Test order list:
-[org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown]
+[org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS}
 
 Time each test takes to run in the new order:
-[31416901, 317433672]
+[338973486]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.406
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.093
+Number of tests selected out of total in original order: 1 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.008
+Execution time for executing the following testing order: 0.332
 
 Test order list:
-[org.apache.accumulo.master.DefaultMapTest.testDefaultMap, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo]
+[org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS}
 
 Time each test takes to run in the new order:
-[4103446, 3672260]
+[331561916]
 --------------------------
-Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 0.853
-Number of tests selected out of total in original order: 2 / 16
+Execution time of TLG and its time to find/nullify any DTs for 1 machine (does not include the time to run the tests in the new order): 1.297
+Number of tests selected out of total in original order: 1 / 13
 Number of DTs not fixed: 0
 Number of DTs fixed: 0
-Execution time for executing the following testing order: 0.507
+Execution time for executing the following testing order: 0.005
 
 Test order list:
-[org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics]
+[org.apache.accumulo.master.DefaultMapTest.testDefaultMap]
+
+Original order results:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=PASS, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=PASS, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=PASS, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=PASS, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=PASS, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=PASS, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=PASS, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=PASS, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=PASS, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=PASS}
+
+Original order times:
+{org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.createsValidZKNodeName=15673873, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workQueuedUsingFileName=1322769, org.apache.accumulo.master.replication.DistributedWorkQueueWorkAssignerHelperTest.queueKeySerialization=1583266, org.apache.accumulo.master.replication.WorkMakerTest.closedStatusRecordsStillMakeWork=21994365, org.apache.accumulo.master.tableOps.ImportTableTest.testTabletDir=4946701, org.apache.accumulo.master.tableOps.ShutdownTServerTest.testSingleShutdown=41522753, org.apache.accumulo.master.metrics.Metrics2ReplicationMetricsTest.testAddReplicationQueueTimeMetrics=711652592, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.workNotInZooKeeperIsCleanedUp=1048457, org.apache.accumulo.master.DefaultMapTest.testDefaultMap=897486, org.apache.accumulo.master.state.RootTabletStateStoreTest.testRootTabletStateStore=15909070, org.apache.accumulo.master.state.RootTabletStateStoreTest.testFakeZoo=2927742, org.apache.accumulo.master.replication.UnorderedWorkAssignerTest.existingWorkIsReQueued=683139, org.apache.accumulo.master.replication.SequentialWorkAssignerTest.basicZooKeeperCleanup=45829994}
+
+Test order results:
+{org.apache.accumulo.master.DefaultMapTest.testDefaultMap=PASS}
 
 Time each test takes to run in the new order:
-[295329676, 211955002]
+[5350440]
 --------------------------
-Total time (of all machines and iterations plus initial TestListGenerator): 2.537
-New order time: 0.537
-Total number of tests executed in all machines out of total in original order: 16 / 16
+Total time (of all machines and iterations plus initial TestListGenerator): 2.726
+New order time: 0.673
+Total number of tests executed in all machines out of total in original order: 13 / 13

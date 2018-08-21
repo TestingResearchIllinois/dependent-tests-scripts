@@ -18,13 +18,13 @@ fi
 if [[ ! -z "$DT_SUBJ_ROOT" ]]; then
     (
         cd $DT_SUBJ_ROOT
-        mvn install -fn -DskipTests -Drat.skip=true
+        mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
     )
 else
-    mvn install -fn -DskipTests -Drat.skip=true
+    mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
 fi
 
-mvn test -Drat.skip=true |& tee "test-log.txt"
+mvn test -Dmavanagaiata.skip=true -Drat.skip=true |& tee "test-log.txt"
 
 tests=($(grep -h "Running .*" "test-log.txt" | sed -E "s/.*Running (.*)/\1/g"))
 (
