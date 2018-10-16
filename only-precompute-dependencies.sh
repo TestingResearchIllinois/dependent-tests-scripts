@@ -74,35 +74,40 @@ source ./setup-vars.sh
 
 SETUP_SCRIPT="$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
 bash write-setup-script.sh "$SETUP_SCRIPT"
+source "$SETUP_SCRIPT"
 
-exit 0
-
-if [[ "$SKIP_COMPILE" == "N" ]]; then
-    bash ./compile-subj.sh
-    if [[ $? -ne 0 ]]; then
-        exit 1
-    fi
-fi
-
-NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output.txt"
-echo "[INFO] Running nondeterministic runner for ${SUBJ_NAME}"
-echo
-bash nondeterministic-runner.sh $SETUP_SCRIPT &> "$NONDETERMINISTIC_OUTPUT"
-
-DTDETECTOR_OUTPUT="$RESULTS_DIR/randomize-output.txt"
-echo "[INFO] Running dtdetector for ${SUBJ_NAME}"
-echo
-bash run-dtdetector.sh $SETUP_SCRIPT &> "$DTDETECTOR_OUTPUT"
-
-DT_COUNT=$(cat "$DTDETECTOR_OUTPUT" | wc -l)
-
-echo "[INFO] Found $DT_COUNT dependent tests using the dtdetector."
-
-# Runs commands for "Instructions to setup a subject for test prioritization" section.
-bash ./setup-prio-first.sh
+bash "$DT_SCRIPTS/compile-module.sh" "$DT_CLASS:$DT_TESTS:$DT_LIBS" "$DT_SUBJ_SRC" "$DT_SUBJ_ROOT"
 
 # Instructions to generate automatically-generated tests for a subject
 bash ./generate-sootTestOutput-auto-first.sh
+
+(
+    cd $DT_SUBJ
+
+    bash "$DT_SCRIPTS/get-test-order.sh"
+    bash "$DT_SCRIPTS/find-test-list.sh" old auto
+)
+
+NONDETERMINISTIC_OUTPUT_ORIG="$RESULTS_DIR/nondeterministic-output-orig.txt"
+echo "[INFO] Running nondeterministic runner for orig ${SUBJ_NAME}"
+echo
+bash nondeterministic-runner.sh $SETUP_SCRIPT old orig &> "$NONDETERMINISTIC_OUTPUT_ORIG"
+NONDETERMINISTIC_OUTPUT_AUTO="$RESULTS_DIR/nondeterministic-output-auto.txt"
+echo "[INFO] Running nondeterministic runner for auto ${SUBJ_NAME}"
+echo
+bash nondeterministic-runner.sh $SETUP_SCRIPT old auto &> "$NONDETERMINISTIC_OUTPUT_AUTO"
+
+DTDETECTOR_OUTPUT_ORIG="$RESULTS_DIR/randomize-output-orig.txt"
+echo "[INFO] Running dtdetector for orig ${SUBJ_NAME}"
+echo
+bash run-dtdetector.sh $SETUP_SCRIPT old orig &> "$DTDETECTOR_OUTPUT_ORIG"
+DTDETECTOR_OUTPUT_AUTO="$RESULTS_DIR/randomize-output-auto.txt"
+echo "[INFO] Running dtdetector for auto ${SUBJ_NAME}"
+echo
+bash run-dtdetector.sh $SETUP_SCRIPT old auto &> "$DTDETECTOR_OUTPUT_AUTO"
+
+# Runs commands for "Instructions to setup a subject for test prioritization" section.
+bash ./setup-prio-first.sh
 
 # Runs commands for "Instructions to setup a subject for test selection" section.
 bash ./setup-sele-first.sh
