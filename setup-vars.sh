@@ -38,6 +38,7 @@ export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
 
 # Directory for all the jar files containing the DT-impact tools and its dependencies
 export DT_TOOLS=$DT_SCRIPTS/impact-tools/*
+export DT_TOOLS=$(echo $DT_TOOLS | sed 's; ;:;g')
 
 # Directory for all the jars necessary to run PIT
 export PIT_JARS=$DT_SCRIPTS/pit-jars
