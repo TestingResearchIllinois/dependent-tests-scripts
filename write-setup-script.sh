@@ -31,6 +31,6 @@ echo "export DT_ROOT=$DT_ROOT" | tee "$OUTPUT_FILENAME"
     echo "export NEW_DT_TEST_SRC=$NEW_DT_TEST_SRC"
     echo "export SUBJ_NAME=$SUBJ_NAME"
     echo "export SUBJ_NAME_FORMAL=$SUBJ_NAME_FORMAL"
-    echo ". $DT_ROOT/scripts/setup-vars.sh"
+    echo ". $DT_ROOT/dependent-tests-scripts/setup-vars.sh"
 ) | sed -E "s|$DT_ROOT|\$DT_ROOT|g" | tee -a "$OUTPUT_FILENAME"
 

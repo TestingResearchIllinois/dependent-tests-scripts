@@ -33,6 +33,7 @@ export PARA_RESULTS=$DT_ROOT/parallelization-results
 export DT_SCRIPTS=$(cd "$(dirname $BASH_SOURCE)"; pwd)
 # Directory for all the hardcoded data related to our subjects
 export DT_DATA=$DT_ROOT/data
+mkdir -p $DT_DATA
 export DT_TOOLS_DIR=$DT_SCRIPTS/impact-tools/
 
 # Directory for all the jar files containing the DT-impact tools and its dependencies
