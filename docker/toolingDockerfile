@@ -1,0 +1,15 @@
+# docker build -t toolingaccommodaterbase:latest - < toolingDockerfile
+
+# Start from the base detect image
+FROM accommodaterbase:latest
+
+WORKDIR /home/awshi2
+USER awshi2
+
+## Install the tooling
+RUN \
+  git clone https://github.com/TestingResearchIllinois/dependent-tests-impact && \
+  cd dependent-tests-impact/ && /home/awshi2/apache-maven/bin/mvn clean install && cd /home/awshi2 && \
+  git clone https://github.com/TestingResearchIllinois/dependent-tests-scripts && \
+  git clone https://github.com/ReedOei/testrunner && \
+  cd testrunner/ && /home/awshi2/apache-maven/bin/mvn clean install && cd /home/awshi2
