@@ -28,11 +28,11 @@ echo "[INFO] Checking for results directory at $RESULTS_DIR"
 # Make the results directory if it doesn't exist (and copy the setup script if applicable)
 if [[ ! -d "$RESULTS_DIR" ]]; then
     echo "[INFO] Creating results directory"
-    mkdir "$RESULTS_DIR"
+    mkdir -p "$RESULTS_DIR"
 
     if [[ ! -z "$1" ]]; then
         echo "[INFO] Copying setup script"
-        cp "$1" "$RESULTS_DIR"
+        cp -f "$1" "$RESULTS_DIR"
     fi
 fi
 
