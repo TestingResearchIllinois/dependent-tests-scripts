@@ -19,8 +19,7 @@ commit=$2
 timeout=$3
 
 # Setup prolog stuff
-cd /home/awshi2/dependent-tests-scripts/
-./docker/setup
+/home/awshi2/dependent-tests-scripts/docker/setup
 
 # Set environment up, just in case
 source ~/.bashrc
@@ -28,7 +27,7 @@ source ~/.bashrc
 echo "*******************ACCOMMODATER************************"
 echo "Running accommodater script"
 date
-./run_accommdator_tools.sh ${slug} ${commit} ${commit}~10 ${timeout}
+/home/awshi2/dependent-tests-scripts/docker/run_accommdator_tools.sh ${slug} ${commit} ${commit}~10 ${timeout}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_project.sh"
