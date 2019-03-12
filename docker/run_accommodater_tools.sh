@@ -34,7 +34,7 @@ timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh /h
 cd /home/awshi2/dependent-tests-scripts/
 RESULTSDIR=/home/awshi2/output/
 mkdir -p ${RESULTSDIR}
-for d in $(find -name "-results" -type d -maxdepth 1); do mv $d ${RESULTSDIR}; done
+for d in $(find -maxdepth 1 -type d -name "*-results"); do mv $d ${RESULTSDIR}/; done
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_accommodater_tools.sh"
