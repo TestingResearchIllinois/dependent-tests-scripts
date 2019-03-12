@@ -209,7 +209,7 @@ do
                     # Make sure compile-output exists
                     mkdir -p "$DT_SCRIPTS/compile-output"
 
-                    mkdir "$DT_SCRIPTS/${SUBJ_NAME}-results"
+                    mkdir -p "$DT_SCRIPTS/${SUBJ_NAME}-results"
                     cd $DT_SCRIPTS
 
                     # Generate a setup script.
