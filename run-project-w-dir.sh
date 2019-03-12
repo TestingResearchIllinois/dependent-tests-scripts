@@ -180,7 +180,7 @@ do
                     echo "[INFO] Checking for test files."
 
                     cd $DT_SUBJ_SRC
-                    export DT_TEST_SRC=$(mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
+                    export DT_TEST_SRC=$(/home/awshi2/apache-maven/bin/mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
                     echo "[INFO] Test source directory for ${SUBJ_NAME} (old) is $DT_TEST_SRC"
                     if [[ ! -d "$DT_TEST_SRC" ]]; then
                         echo "[INFO] $module in the old subject has no test files, skipping."
@@ -188,7 +188,7 @@ do
                     fi
 
                     cd $NEW_DT_SUBJ_SRC
-                    export NEW_DT_TEST_SRC=$(mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
+                    export NEW_DT_TEST_SRC=$(/home/awshi2/apache-maven/bin/mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
                     echo "[INFO] Test source directory for ${SUBJ_NAME} (new) is $NEW_DT_TEST_SRC"
                     if [[ ! -d "$NEW_DT_TEST_SRC" ]]; then
                         echo "[INFO] $module in the new subject has no test files, skipping."
