@@ -1,7 +1,8 @@
 #!/bin/bash
 
-git rev-parse HEAD
+cd /home/awshi2/dependent-tests-scripts/
 
+git rev-parse HEAD
 date
 
 # This script is run inside the Docker image, for single experiment (one project)
@@ -27,7 +28,7 @@ source ~/.bashrc
 echo "*******************ACCOMMODATER************************"
 echo "Running accommodater script"
 date
-/home/awshi2/dependent-tests-scripts/docker/run_accommdator_tools.sh ${slug} ${commit} ${commit}~10 ${timeout}
+/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} ${commit} ${commit}~10 ${timeout}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_project.sh"
