@@ -1,7 +1,7 @@
 # docker build -t <IMAGE>:latest - < <MODIFIEDSLUG>_Dockerfile
 
 # Start from the tooling image
-FROM toolingdetectorbase:latest
+FROM toolingaccommodaterbase:latest
 
 WORKDIR /home/awshi2
 USER awshi2
