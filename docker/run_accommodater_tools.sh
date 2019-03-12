@@ -16,7 +16,7 @@ fi
 
 slug=$1
 oldcommit=$2
-newcommit=$2
+newcommit=$3
 timeout=$4
 
 # Run the plugin, get module test times
