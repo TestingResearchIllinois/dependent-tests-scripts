@@ -50,7 +50,7 @@ fi
 
 . ./setup-vars.sh # Set up the basic environment variables (e.g. $DT_ROOT)
 
-PROJ_NAME=$(echo $1 | rev | cut -d/ -f1,2 | rev) # Detect the project name
+PROJ_NAME="${1//\//.}"
 
 # Download the project
 cd $DT_ROOT
