@@ -87,9 +87,9 @@ if [[ -d "$DT_SUBJ_ROOT" ]]; then
 fi
 
 # git clone "$1" "$NEW_DT_SUBJ_ROOT"
-cp -r "$1" "$NEW_DT_SUBJ_ROOT"
+cp -r "/home/awshi2/$1" "$NEW_DT_SUBJ_ROOT"
 # git clone "$1" "$DT_SUBJ_ROOT"
-cp -r "$1" "$DT_SUBJ_ROOT"
+cp -r "/home/awshi2/$1" "$DT_SUBJ_ROOT"
 
 echo
 echo "[INFO] Resetting old version to $OLD_VERSION."
