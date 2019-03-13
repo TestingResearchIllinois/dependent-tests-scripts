@@ -6,8 +6,6 @@
 # OR:
 # - Be in the same directory as the pom.xml before running this script.
 
-source /home/awshi2/.bashrc
-
 if [[ ! -z "$DT_SUBJ_SRC" ]]; then
     cd "$DT_SUBJ_SRC"
 fi
@@ -20,13 +18,13 @@ fi
 if [[ ! -z "$DT_SUBJ_ROOT" ]]; then
     (
         cd $DT_SUBJ_ROOT
-        mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
+        /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
     )
 else
-    mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
+    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
 fi
 
-mvn test -Dmavanagaiata.skip=true -Drat.skip=true |& tee "test-log.txt"
+/home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true |& tee "test-log.txt"
 
 tests=($(grep -h "Running .*" "test-log.txt" | sed -E "s/.*Running (.*)/\1/g"))
 (

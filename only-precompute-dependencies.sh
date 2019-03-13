@@ -2,8 +2,6 @@
 
 # Usage: bash only-precomputed-dependencies.sh URL commit path/to/module
 
-source /home/awshi2/.bashrc
-
 set -e
 
 url="$1"
@@ -53,7 +51,7 @@ fi
 echo "[INFO] Checking for test files."
 
 cd "$DT_SUBJ_SRC"
-export DT_TEST_SRC=$(mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
+export DT_TEST_SRC=$(/home/awshi2/apache-maven/bin/mvn -B help:evaluate -Dexpression=project.build.testSourceDirectory | grep -vE "\[")
 echo "[INFO] Test source directory for ${SUBJ_NAME} (old) is $DT_TEST_SRC"
 if [[ ! -d "$DT_TEST_SRC" ]]; then
     echo "[INFO] $SUBJ_NAME has no test files, skipping."
