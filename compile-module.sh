@@ -22,10 +22,10 @@ fi
     /home/awshi2/apache-maven/bin/mvn install -fn -Dmaven.javadoc.skip=true -DskipTests dependency:copy-dependencies -Drat.skip=true -Dcobertura.skip
 
     bash "$DT_SCRIPTS/unsign-jars.sh" "$MODULE_PATH/target/dependency"
-) | tee "$DT_SCRIPTS/compile-output/${PROJ_NAME}-module.txt"
+) | tee "$DT_SCRIPTS/compile-output/${SUBJ_NAME}-module.txt"
 
-if grep -q "BUILD FAILURE" "$DT_SCRIPTS/compile-output/${PROJ_NAME}-module.txt"; then
-    >&2 echo "[INFO] One or more builds failed. See ${PROJ_NAME}-module.txt for more information. Trying to compile from root."
+if grep -q "BUILD FAILURE" "$DT_SCRIPTS/compile-output/${SUBJ_NAME}-module.txt"; then
+    >&2 echo "[INFO] One or more builds failed. See ${SUBJ_NAME}-module.txt for more information. Trying to compile from root."
 
     (
         cd "$ROOT_PATH"
@@ -35,10 +35,10 @@ if grep -q "BUILD FAILURE" "$DT_SCRIPTS/compile-output/${PROJ_NAME}-module.txt";
         /home/awshi2/apache-maven/bin/mvn install -fn -Dmaven.javadoc.skip=true -DskipTests dependency:copy-dependencies -Drat.skip=true -Dcobertura.skip
 
         bash "$DT_SCRIPTS/unsign-jars.sh" "$MODULE_PATH/target/dependency"
-    ) | tee "$DT_SCRIPTS/compile-output/${PROJ_NAME}-root.txt"
+    ) | tee "$DT_SCRIPTS/compile-output/${SUBJ_NAME}-root.txt"
 
-    if grep -q "BUILD FAILURE" "$DT_SCRIPTS/compile-output/${PROJ_NAME}-root.txt"; then
-        >&2 echo "[INFO] Compiling from root failed. See ${PROJ_NAME}-root.txt for more information."
+    if grep -q "BUILD FAILURE" "$DT_SCRIPTS/compile-output/${SUBJ_NAME}-root.txt"; then
+        >&2 echo "[INFO] Compiling from root failed. See ${SUBJ_NAME}-root.txt for more information."
         exit 1
     fi
 fi

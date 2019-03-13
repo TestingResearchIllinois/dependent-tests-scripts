@@ -50,14 +50,14 @@ fi
 
 . ./setup-vars.sh # Set up the basic environment variables (e.g. $DT_ROOT)
 
-PROJ_NAME="${1//\//.}"
-SUBJ_NAME="$1"
+SUBJ_NAME="${1//\//.}"
+PATH_NAME="$1"
 
 # Download the project
 cd $DT_ROOT
 
 echo
-echo "[INFO] Running for project: ${PROJ_NAME}"
+echo "[INFO] Running for project: ${PATH_NAME}"
 
 # echo
 # echo "[INFO] Cloning project..."
@@ -67,8 +67,8 @@ cd "$1"
 
 NEW_COMMIT=`git rev-parse "$NEW_VERSION"`
 OLD_COMMIT=`git rev-parse "$OLD_VERSION"`
-export DT_SUBJ_ROOT="$DT_ROOT/${SUBJ_NAME}-old-$OLD_COMMIT"
-export NEW_DT_SUBJ_ROOT="$DT_ROOT/${SUBJ_NAME}-new-$NEW_COMMIT"
+export DT_SUBJ_ROOT="$DT_ROOT/${PATH_NAME}-old-$OLD_COMMIT"
+export NEW_DT_SUBJ_ROOT="$DT_ROOT/${PATH_NAME}-new-$NEW_COMMIT"
 echo "[INFO] Cloning projects into $NEW_DT_SUBJ_ROOT and $DT_SUBJ_ROOT"
 cd $DT_ROOT
 
@@ -143,8 +143,8 @@ done
 for (( i=0; i<${OLD_MODULE_COUNT}; i++ ));
 do
     module="${OLD_SUBJ_MODULES[$i]}"
-    if grep -Fq "${PROJ_NAME}-$module" "$DT_SCRIPTS/modules-tried.txt"; then
-        echo "[INFO] Already tried ${PROJ_NAME}-$module, skipping."
+    if grep -Fq "${SUBJ_NAME}-$module" "$DT_SCRIPTS/modules-tried.txt"; then
+        echo "[INFO] Already tried ${SUBJ_NAME}-$module, skipping."
         continue
     fi
 
@@ -169,11 +169,11 @@ do
                     export NEW_DT_SUBJ_SRC=${NEW_SUBJ_MODULE_DIRS[$j]}
 
                     if [[ "$module" = "." ]]; then
-                        export SUBJ_NAME="${1}"
-                        export SUBJ_NAME_FORMAL="${PROJ_NAME}"
+                        #export SUBJ_NAME="${1}"
+                        export SUBJ_NAME_FORMAL="${SUBJ_NAME}"
                     else
-                        export SUBJ_NAME="${1}-$module"
-                        export SUBJ_NAME_FORMAL="${PROJ_NAME}-$module"
+                        export SUBJ_NAME="${SUBJ_NAME}-$module"
+                        export SUBJ_NAME_FORMAL="${SUBJ_NAME}-$module"
                     fi
 
                     . $DT_SCRIPTS/setup-vars.sh
@@ -199,31 +199,31 @@ do
                     cd $DT_SCRIPTS
 
                     # Keep track that we tried this one:
-                    echo "${PROJ_NAME}-$module" >> "$DT_SCRIPTS/modules-tried.txt"
+                    echo "${SUBJ_NAME}-$module" >> "$DT_SCRIPTS/modules-tried.txt"
 
                     # Save the results if we already did it.
-                    if [[ -d "$DT_SCRIPTS/${PROJ_NAME}-results" ]]; then
-                        echo "Moving from $DT_SCRIPTS/${PROJ_NAME}-results to $DT_SCRIPTS/${PROJ_NAME}-old-results"
-                        mv "$DT_SCRIPTS/${PROJ_NAME}-results" "$DT_SCRIPTS/${PROJ_NAME}-old-results"
+                    if [[ -d "$DT_SCRIPTS/${SUBJ_NAME}-results" ]]; then
+                        echo "Moving from $DT_SCRIPTS/${SUBJ_NAME}-results to $DT_SCRIPTS/${SUBJ_NAME}-old-results"
+                        mv "$DT_SCRIPTS/${SUBJ_NAME}-results" "$DT_SCRIPTS/${SUBJ_NAME}-old-results"
                     fi
 
                     # Make sure compile-output exists
                     mkdir -p "$DT_SCRIPTS/compile-output"
 
-                    mkdir -p "$DT_SCRIPTS/${PROJ_NAME}-results"
+                    mkdir -p "$DT_SCRIPTS/${SUBJ_NAME}-results"
                     cd $DT_SCRIPTS
 
                     # Generate a setup script.
-                    SETUP_SCRIPT="$DT_SCRIPTS/${PROJ_NAME}-results/setup-$PROJ_NAME.sh"
+                    SETUP_SCRIPT="$DT_SCRIPTS/${SUBJ_NAME}-results/setup-$SUBJ_NAME.sh"
                     bash "$DT_SCRIPTS/write-setup-script.sh" "$SETUP_SCRIPT"
 
                     echo
                     echo "[INFO] Calling main script: $DT_SCRIPTS/run-module.sh"
 
                     if [[ "$PARALLEL" = "Y" ]]; then
-                        nohup bash run-module.sh $SETUP_SCRIPT &> "$DT_SCRIPTS/${PROJ_NAME}-results/module-output.txt" &
+                        nohup bash run-module.sh $SETUP_SCRIPT &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
                     else
-                        bash run-module.sh $SETUP_SCRIPT &> "$DT_SCRIPTS/${PROJ_NAME}-results/module-output.txt"
+                        bash run-module.sh $SETUP_SCRIPT &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
                     fi
                 )
 
@@ -235,5 +235,5 @@ do
     done
 done
 
-echo "[INFO] Finished $PROJ_NAME"
+echo "[INFO] Finished $SUBJ_NAME"
 
