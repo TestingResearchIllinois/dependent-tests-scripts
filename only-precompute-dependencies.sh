@@ -2,6 +2,8 @@
 
 # Usage: bash only-precomputed-dependencies.sh URL commit path/to/module
 
+source /home/awshi2/.bashrc
+
 set -e
 
 url="$1"

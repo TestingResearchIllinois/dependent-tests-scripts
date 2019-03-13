@@ -6,6 +6,8 @@
 # OR:
 # - Be in the same directory as the pom.xml before running this script.
 
+source /home/awshi2/.bashrc
+
 if [[ ! -z "$DT_SUBJ_SRC" ]]; then
     cd "$DT_SUBJ_SRC"
 fi

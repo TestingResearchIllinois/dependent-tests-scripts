@@ -4,6 +4,8 @@
 # Classpath is a list of files (separated by ':') which should exist after compilation
 # MODULE_PATH is the path to compile from first, then will try ROOT_PATH (if exists and different)
 
+source /home/awshi2/.bashrc
+
 CLASSPATH="$1"
 MODULE_PATH="$2"
 ROOT_PATH="$3"

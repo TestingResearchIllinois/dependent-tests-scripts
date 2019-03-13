@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /home/awshi2/.bashrc
+
 if [[ "$1" == "--help" ]]; then
     echo "Usage: ./run_project.sh project-dir [new commit] [old commit] [autoremove directory if exists (Y/N)]"
     exit 1
