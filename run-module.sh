@@ -75,7 +75,7 @@ echo
 bash run-subj.sh $SKIP_COMPILE |& tee "$RESULTS_DIR/output.txt" | grep --line-buffered -v "Test being executed"
 
 echo "[INFO] Copying results."
-mv figure* "$RESULTS_DIR"
+mv figure* "$RESULTS_DIR" || true
 
 if [[ ! "$@" =~ "skip-precomputed" ]]; then
     echo "[INFO] Running precomputed dependencies."

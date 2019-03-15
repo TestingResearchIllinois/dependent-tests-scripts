@@ -28,7 +28,7 @@ source ~/.bashrc
 echo "*******************ACCOMMODATER************************"
 echo "Running accommodater script"
 date
-/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} "${commit}~10" ${commit} ${timeout}
+/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} "${commit}~100" ${commit} ${timeout}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_project.sh"
