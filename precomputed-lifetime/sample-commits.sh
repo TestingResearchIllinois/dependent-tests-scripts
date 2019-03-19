@@ -1,9 +1,19 @@
 #!/usr/bin/env bash
 
-# Usage: bash sample-commits.sh GIT_REPO_PATH START_COMMIT COMMIT_NUM MODULE_PATH SUCCESSFUL_COMMITS [random|uniform] 
+# Usage: bash sample-commits.sh GIT_REPO_PATH START_COMMIT COMMIT_NUM MODULE_PATH [random|uniform]
 # Will sample COMMIT_NUM commits from git repository provided after the given date.
 # Can sample either randomly or uniformly (meaning at uniform intervals).
 # Will write the commit list to new-commit-list.txt
+
+if [[ "$1" == "--help" ]]; then
+    echo "Usage: ./sample-commits.sh project-dir start-commit num-commits path-of-module [random|uniform]"
+    exit 1
+fi
+
+if [[ "$#" -lt 1 ]]; then
+    echo "Usage: ./sample-commits.sh project-dir start-commit num-commits path-of-module [random|uniform]"
+    exit 1
+fi
 
 GIT_REPO_PATH="$1"
 START_COMMIT="$2"
