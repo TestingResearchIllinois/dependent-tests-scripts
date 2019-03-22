@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Inputs:
-# $1 - Git repo url
+# $1 - project slug
 # $2 - commit to run (new)
 # $3 - path in repo (probably for module)
 # $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
@@ -10,23 +10,25 @@
 . ../setup-vars.sh
 . ../constants.sh
 
-GIT_URL=$1
+PROJ_SLUG=$1
 NEW_COMMIT=$2
 MODULE_PATH=$3
 TECHNIQUES=$4
 
-PROJ_NAME=$(echo $GIT_URL | grep -Eo "([^/]+)\$") # Detect the project name
+PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
 
-MAIN_ROOT="$DT_ROOT/${PROJ_NAME}"
+#MAIN_ROOT="$DT_ROOT/${PROJ_NAME}"
+MAIN_ROOT="$HOME/${PROJ_SLUG}"
 PRECOMPUTED_LIFETIME_ROOT="$DT_SCRIPTS/precomputed-lifetime"
 
 # export DT_SUBJ_ROOT="${MAIN_ROOT}-old-$OLD_COMMIT"
 export NEW_DT_SUBJ_ROOT="${MAIN_ROOT}-new-$NEW_COMMIT"
 
 echo "[INFO] Starting $PROJ_NAME with commit $NEW_COMMIT" #and $OLD_COMMIT"
-# 1. Download project at specified commit (INPUT)
+# Copy the cloned repository to the relevant location
 # git clone $GIT_URL $DT_SUBJ_ROOT
-git clone $GIT_URL $NEW_DT_SUBJ_ROOT
+# git clone $GIT_URL $NEW_DT_SUBJ_ROOT
+git clone $HOME/$PROJ_SLUG $NEW_DT_SUBJ_ROOT
 
 # Set project version.
 echo "[INFO] Setting project version."
