@@ -17,7 +17,6 @@ if [[ ! -e "$NEW_DT_SUBJ/$TEST_ORDER" ]]; then
     temp="$(mktemp)"
     grep -Fvf "$IGNORE_TESTS_LIST" "$NEW_DT_SUBJ/$TEST_ORDER" > "$temp"
     mv "$temp" "$NEW_DT_SUBJ/$TEST_ORDER"
-    rm "$temp"
 
     echo "[INFO] Removing missing tests."
     bash "$DT_SCRIPTS/remove-missing-tests.sh" "$NEW_DT_SUBJ/$TEST_ORDER" new
