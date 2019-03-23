@@ -172,8 +172,8 @@ do
                         #export SUBJ_NAME="${1}"
                         export SUBJ_NAME_FORMAL="${SUBJ_NAME}"
                     else
-                        export SUBJ_NAME="${SUBJ_NAME}-$module"
                         export SUBJ_NAME_FORMAL="${SUBJ_NAME}-$module"
+                        export SUBJ_NAME="${SUBJ_NAME}-$module"
                     fi
 
                     . $DT_SCRIPTS/setup-vars.sh
