@@ -24,7 +24,7 @@ export NEW_DT_TESTS=$NEW_DT_SUBJ/test-classes
 # Compiled automatically-generated test files of the new subject
 export NEW_DT_RANDOOP=$NEW_DT_SUBJ/randoop/bin
 
-# Directory for all the jar files containing the DT-impact tools and its dependencies
+# Directory for all the the results for each technique
 export PRIO_RESULTS=$DT_ROOT/prioritization-results
 export SELE_RESULTS=$DT_ROOT/selection-results
 export PARA_RESULTS=$DT_ROOT/parallelization-results
@@ -43,12 +43,16 @@ export DT_TOOLS=$(echo $DT_TOOLS | sed 's; ;:;g')
 # Directory for all the jars necessary to run PIT
 export PIT_JARS=$DT_SCRIPTS/pit-jars
 
-# Directory for all the jar files containing the DT-impact tools and its dependencies
+# Directory for all the dt lists
 export PRIO_DT_LISTS=$DT_DATA/prioritization-dt-list
 export SELE_DT_LISTS=$DT_DATA/selection-dt-list
 export PARA_DT_LISTS=$DT_DATA/parallelization-dt-list
+mkdir -p $PRIO_DT_LISTS
+mkdir -p $SELE_DT_LISTS
+mkdir -p $PARA_DT_LISTS
 
 # Files containing the minimum number of dependent tests a subject has
 export AUTO_MIN_DTS=$DT_DATA/AUTO_MIN_DTs.txt
 export ORIG_MIN_DTS=$DT_DATA/ORIG_MIN_DTs.txt
-
+touch $AUTO_MIN_DTS
+touch $ORIG_MIN_DTS
