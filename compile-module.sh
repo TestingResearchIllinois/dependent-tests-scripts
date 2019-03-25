@@ -16,6 +16,7 @@ fi
 # Try to compile just the module we need.
 (
     cd "$MODULE_PATH"
+    /home/awshi2/apache-maven/bin/mvn clean
     /home/awshi2/apache-maven/bin/mvn compile test-compile -Dmaven.javadoc.skip=true -DskipTests -Drat.skip=true -Dcobertura.skip
 
     # 2. Gather the dependencies of the old subject.

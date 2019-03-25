@@ -34,4 +34,3 @@ bash ./generate-num-dependencies.sh
 
 # Copy the results. Defined in constants.sh
 copy_results "without-dependencies"
-

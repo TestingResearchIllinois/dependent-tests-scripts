@@ -169,7 +169,7 @@ do
                     export NEW_DT_SUBJ_SRC=${NEW_SUBJ_MODULE_DIRS[$j]}
 
                     if [[ "$module" = "." ]]; then
-                        #export SUBJ_NAME="${1}"
+                        export SUBJ_NAME="${SUBJ_NAME}"
                         export SUBJ_NAME_FORMAL="${SUBJ_NAME}"
                     else
                         export SUBJ_NAME_FORMAL="${SUBJ_NAME}-$module"

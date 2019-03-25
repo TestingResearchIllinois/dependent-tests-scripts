@@ -59,12 +59,12 @@ fi
 NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output.txt"
 echo "[INFO] Running nondeterministic runner for ${SUBJ_NAME}"
 echo
-bash nondeterministic-runner.sh $SETUP_SCRIPT &> "$NONDETERMINISTIC_OUTPUT"
+#bash nondeterministic-runner.sh $SETUP_SCRIPT &> "$NONDETERMINISTIC_OUTPUT"
 
 DTDETECTOR_OUTPUT="$RESULTS_DIR/randomize-output.txt"
 echo "[INFO] Running dtdetector for ${SUBJ_NAME}"
 echo
-bash run-dtdetector.sh $SETUP_SCRIPT &> "$DTDETECTOR_OUTPUT"
+#bash run-dtdetector.sh $SETUP_SCRIPT &> "$DTDETECTOR_OUTPUT"
 
 DT_COUNT=$(cat "$DTDETECTOR_OUTPUT" | wc -l)
 
@@ -73,6 +73,8 @@ SKIP_COMPILE="Y" # Always skip compile, because we did it already.
 echo "[INFO] Running initial setup and runner (without dependencies.)"
 echo
 bash run-subj.sh $SKIP_COMPILE |& tee "$RESULTS_DIR/output.txt" | grep --line-buffered -v "Test being executed"
+
+exit
 
 echo "[INFO] Copying results."
 mv figure* "$RESULTS_DIR" || true
