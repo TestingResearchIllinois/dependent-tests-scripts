@@ -8,10 +8,10 @@ CLASSPATH="$1"
 MODULE_PATH="$2"
 ROOT_PATH="$3"
 
-if bash "$DT_SCRIPTS/check-compiled.sh" "$CLASSPATH"; then
-    echo "[INFO] Project already compiled, exiting."
-    exit 0
-fi
+#if bash "$DT_SCRIPTS/check-compiled.sh" "$CLASSPATH"; then
+#    echo "[INFO] Project already compiled, exiting."
+#    exit 0
+#fi
 
 # Try to compile just the module we need.
 (
