@@ -31,7 +31,7 @@ testName=$4
 git rev-parse HEAD
 date
 
-sudo apt-get install -y zip unzip
+sudo apt-get install -y zip unzip libxml2-utils
 
 # Update all tooling
 su - awshi2 -c "cd /home/awshi2/dependent-tests-scripts/; git pull"
