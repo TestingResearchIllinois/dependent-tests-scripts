@@ -49,11 +49,11 @@ fi
 (
     cd $DT_SUBJ
     echo "[DEBUG] Finding human written tests in old subject."
-    bash "$DT_SCRIPTS/find-test-list.sh" old orig
+    bash "$DT_SCRIPTS/get-test-order.sh" old
 
     cd $NEW_DT_SUBJ
     echo "[DEBUG] Finding human written tests in new subject."
-    bash "$DT_SCRIPTS/find-test-list.sh" old orig
+    bash "$DT_SCRIPTS/get-test-order.sh" new
 )
 
 NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output.txt"
