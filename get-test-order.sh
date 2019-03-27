@@ -1,29 +1,39 @@
 #!/usr/bin/env bash
 
-# Usage: bash get-test-order.sh
+# Usage: bash get-test-order.sh <old|new>
 # EITHER:
 # - Run the setup script before running this script
 # OR:
 # - Be in the same directory as the pom.xml before running this script.
+# Only run for human-written tests
 
-if [[ ! -z "$DT_SUBJ_SRC" ]]; then
-    cd "$DT_SUBJ_SRC"
+version=$1
+
+if [[ "$version" == "new" ]]; then
+    TESTS=$NEW_DT_TESTS
+    CLASS=$NEW_DT_CLASS
+    LIBS=$NEW_DT_LIBS
+    SUBJ=$NEW_DT_SUBJ
+    SUBJ_SRC=$NEW_DT_SUBJ_SRC
+else
+    TESTS=$DT_TESTS
+    CLASS=$DT_CLASS
+    LIBS=$DT_LIBS
+    SUBJ=$DT_SUBJ
+    SUBJ_SRC=$DT_SUBJ_SRC
+fi
+
+
+if [[ ! -z "$SUBJ_SRC" ]]; then
+    cd "$SUBJ_SRC"
 fi
 
 output_file_name="test-order"
 if [[ ! -z "$SUBJ_NAME" ]]; then
-    output_file_name="$SUBJ_NAME-orig-order"
+    output_file_name="$SUBJ/$SUBJ_NAME-orig-order"
 fi
 
-if [[ ! -z "$DT_SUBJ_ROOT" ]]; then
-    (
-        cd $DT_SUBJ_ROOT
-        /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
-    )
-else
-    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -fn -DskipTests -Drat.skip=true
-fi
-
+# Run the tests (assume has already been compiled)
 /home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true |& tee "test-log.txt"
 
 tests=($(grep -h "Running .*" "test-log.txt" | sed -E "s/.*Running (.*)/\1/g"))
@@ -55,7 +65,7 @@ if [[ ! -z "$SUBJ_NAME" ]]; then
         mv $temp $TEST_ORDER
     fi
 
-    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$DT_CLASS:$DT_TESTS:$DT_LIBS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
+    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$CLASS:$TESTS:$LIBS:$DT_TOOLS:" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
 
     if [[ -e "$IGNORE_TESTS_LIST" ]]; then
         temp=$(mktemp)
