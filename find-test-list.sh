@@ -50,7 +50,7 @@ if [[ -e "$IGNORE_TESTS_LIST" ]]; then
 fi
 
 cd $DT_SUBJ_SRC
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$CLASS:$TESTS:$LIBS" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.detectors.FailingTestDetector --classpath "$CLASS:$TESTS:$LIBS:$DT_TOOLS" --tests "$TEST_ORDER" --output "$IGNORE_TESTS_LIST"
 cd $DT_SUBJ
 
 if [[ -e "$IGNORE_TESTS_LIST" ]]; then
