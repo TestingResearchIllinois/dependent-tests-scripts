@@ -5,7 +5,7 @@ set -e
 
 cd $NEW_DT_SUBJ
 echo "[DEBUG] Finding human written tests in the new subject."
-bash "$DT_SCRIPTS/find-test-list.sh" new orig
+bash "$DT_SCRIPTS/get-test-order.sh" new
 
 # Make sure the env-files exist
 if [ ! -e $DT_SUBJ/$SUBJ_NAME-env-files ]; then

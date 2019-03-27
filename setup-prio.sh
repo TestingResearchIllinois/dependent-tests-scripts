@@ -7,11 +7,11 @@ set -e
 # 1. Find the human-written tests in the old subject.
 cd $DT_SUBJ
 echo "[DEBUG] Finding human written tests in old subject."
-bash "$DT_SCRIPTS/find-test-list.sh" old orig
+bash "$DT_SCRIPTS/get-test-order.sh" old
 
 cd $NEW_DT_SUBJ
 echo "[DEBUG] Finding human written tests in new subject."
-bash "$DT_SCRIPTS/find-test-list.sh" new orig
+bash "$DT_SCRIPTS/get-test-order.sh" new
 
 cd $DT_SUBJ
 
