@@ -14,3 +14,4 @@ The following are expected to be in this directory.
 - subj-prio.sh - Generates the test priorization results for a specific subject.
 - subj-sele.sh - Generates the test selection results for a specific subject.
 
+The version of randoop used is version 3.1.5.
