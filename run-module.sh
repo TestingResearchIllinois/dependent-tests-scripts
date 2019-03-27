@@ -66,7 +66,7 @@ echo "[INFO] Running dtdetector for ${SUBJ_NAME}"
 echo
 #bash run-dtdetector.sh $SETUP_SCRIPT &> "$DTDETECTOR_OUTPUT"
 
-DT_COUNT=$(cat "$DTDETECTOR_OUTPUT" | wc -l)
+DT_COUNT=$(cat "$$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-orig-randomize/list.txt" | wc -l)
 
 echo "[INFO] Found $DT_COUNT dependent tests using the dtdetector."
 SKIP_COMPILE="Y" # Always skip compile, because we did it already.
