@@ -74,8 +74,6 @@ echo "[INFO] Running initial setup and runner (without dependencies.)"
 echo
 bash run-subj.sh $SKIP_COMPILE |& tee "$RESULTS_DIR/output.txt" | grep --line-buffered -v "Test being executed"
 
-exit
-
 echo "[INFO] Copying results."
 mv figure* "$RESULTS_DIR" || true
 
