@@ -12,7 +12,7 @@ fi
 
 startTime=`date`
 
-CLASSPATH=$DT_LIBS:$DT_CLASS:$DT_RANDOOP:$DT_TESTS:
+CLASSPATH=$DT_LIBS:$DT_CLASS:$DT_RANDOOP:$DT_TESTS:$DT_TOOLS
 
 # ======================================================
 
@@ -20,7 +20,7 @@ if [[ "$STAGE" == "prio" ]] || [[ -z "$STAGE" ]]; then
     echo "[INFO] Running prioritization-runner script to generate precomputed dependences for $SUBJ_NAME"
     rm -rf $DT_ROOT/${prioDir}
     mkdir $DT_ROOT/${prioDir}
-    
+
     bash ./subj-prio.sh $DT_SUBJ $DT_ROOT $SUBJ_NAME "$SUBJ_NAME_FORMAL" $DT_SUBJ true true false $CLASSPATH
 fi
 
@@ -30,13 +30,14 @@ if [[ "$STAGE" == "para" ]] || [[ -z "$STAGE" ]]; then
     echo "[INFO] Running parallelization-runner script to generate precomputed dependences for $SUBJ_NAME"
     rm -rf $DT_ROOT/${paraDir}
     mkdir $DT_ROOT/${paraDir}
-    
+
     bash ./subj-para.sh $DT_SUBJ $DT_ROOT $SUBJ_NAME "$SUBJ_NAME_FORMAL" $DT_SUBJ true true false $CLASSPATH
 fi
 
 # ======================================================
 
 # Generate dt lists
+echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.OutputPrecomputedDependences -prioDirectory $PRIO_RESULTS -paraDirectory $PARA_RESULTS -prioOutputDirectory "$DT_DATA/$prioList" -seleOutputDirectory "$DT_DATA/$seleList" -paraOutputDirectory "$DT_DATA/$paraList""
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.OutputPrecomputedDependences -prioDirectory $PRIO_RESULTS -paraDirectory $PARA_RESULTS -prioOutputDirectory "$DT_DATA/$prioList" -seleOutputDirectory "$DT_DATA/$seleList" -paraOutputDirectory "$DT_DATA/$paraList"
 
 echo "[INFO] Copying dt-lists."

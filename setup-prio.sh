@@ -37,7 +37,8 @@ rsync -av test-classes/ sootOutput/ --exclude-from=exclude-list.txt
 # 3. Run the instrumented tests.
 echo "[DEBUG] Running instrumented tests."
 cd $DT_SUBJ_SRC
-java -cp $DT_TOOLS: edu.washington.cs.dt.main.ImpactMain -classpath $DT_LIBS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order
+echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order"
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order
 mv sootTestOutput/ $DT_SUBJ/sootTestOutput-orig
 cd $DT_SUBJ
 rm -rf sootOutput/

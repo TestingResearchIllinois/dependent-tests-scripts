@@ -51,7 +51,8 @@ echo "[DEBUG] Running instrumented auto tests."
 # Make sure to change directories to the src directory.
 # Sometimes tests require that the pwd is a particular directory, and this is usually it.
 cd $DT_SUBJ_SRC
-java -cp $DT_TOOLS: edu.washington.cs.dt.main.ImpactMain -classpath $DT_LIBS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-auto-order
+echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-auto-order"
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-auto-order
 mv sootTestOutput/ $DT_SUBJ/sootTestOutput-auto
 cd $DT_SUBJ
 rm -rf sootOutput/
