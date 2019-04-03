@@ -68,10 +68,10 @@ echo
 #DT_COUNT=$(cat "$$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-orig-randomize/list.txt" | wc -l)
 #echo "[INFO] Found $DT_COUNT dependent tests using the dtdetector."
 
-#SKIP_COMPILE="Y" # Always skip compile, because we did it already.
-#echo "[INFO] Running initial setup and runner (without dependencies.)"
-#echo
-#bash run-subj.sh $SKIP_COMPILE |& tee "$RESULTS_DIR/output.txt" | grep --line-buffered -v "Test being executed"
+SKIP_COMPILE="Y" # Always skip compile, because we did it already.
+echo "[INFO] Running initial setup and runner (without dependencies.)"
+echo
+bash run-subj.sh $SKIP_COMPILE |& tee "$RESULTS_DIR/output.txt" | grep --line-buffered -v "Test being executed"
 
 echo "[INFO] Copying results."
 mv figure* "$RESULTS_DIR" || true
