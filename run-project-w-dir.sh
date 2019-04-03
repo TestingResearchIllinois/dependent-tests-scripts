@@ -50,7 +50,7 @@ fi
 
 . ./setup-vars.sh # Set up the basic environment variables (e.g. $DT_ROOT)
 
-SUBJ_NAME="${1//\//.}"
+BASE_SUBJ_NAME="${1//\//.}"
 PATH_NAME="$1"
 
 # Download the project
@@ -87,9 +87,13 @@ if [[ -d "$DT_SUBJ_ROOT" ]]; then
 fi
 
 # git clone "$1" "$NEW_DT_SUBJ_ROOT"
-cp -r "/home/awshi2/$1" "$NEW_DT_SUBJ_ROOT"
+if ! [[ -d $NEW_DT_SUBJ_ROOT ]]; then
+    cp -r "/home/awshi2/$1" "$NEW_DT_SUBJ_ROOT"
+fi
 # git clone "$1" "$DT_SUBJ_ROOT"
-cp -r "/home/awshi2/$1" "$DT_SUBJ_ROOT"
+if ! [[ -d $DT_SUBJ_ROO ]]; then
+    cp -r "/home/awshi2/$1" "$DT_SUBJ_ROOT"
+fi
 
 echo
 echo "[INFO] Resetting old version to $OLD_VERSION."
@@ -143,8 +147,8 @@ done
 for (( i=0; i<${OLD_MODULE_COUNT}; i++ ));
 do
     module="${OLD_SUBJ_MODULES[$i]}"
-    if grep -Fq "${SUBJ_NAME}-$module" "$DT_SCRIPTS/modules-tried.txt"; then
-        echo "[INFO] Already tried ${SUBJ_NAME}-$module, skipping."
+    if ! grep -Fqx "${BASE_SUBJ_NAME}-$module" "$DT_SCRIPTS/modules-torun.txt"; then
+        echo "[INFO] Not supposed to run ${BASE_SUBJ_NAME}-$module, skipping."
         continue
     fi
 
@@ -169,11 +173,11 @@ do
                     export NEW_DT_SUBJ_SRC=${NEW_SUBJ_MODULE_DIRS[$j]}
 
                     if [[ "$module" = "." ]]; then
-                        export SUBJ_NAME="${SUBJ_NAME}"
+                        export SUBJ_NAME="${BASE_SUBJ_NAME}"
                         export SUBJ_NAME_FORMAL="${SUBJ_NAME}"
                     else
-                        export SUBJ_NAME_FORMAL="${SUBJ_NAME}-$module"
-                        export SUBJ_NAME="${SUBJ_NAME}-$module"
+                        export SUBJ_NAME="${BASE_SUBJ_NAME}-$module"
+                        export SUBJ_NAME_FORMAL="${SUBJ_NAME}"
                     fi
 
                     . $DT_SCRIPTS/setup-vars.sh
