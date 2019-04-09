@@ -91,7 +91,7 @@ if ! [[ -d $NEW_DT_SUBJ_ROOT ]]; then
     git clone "/home/awshi2/$1" "$NEW_DT_SUBJ_ROOT"
 fi
 # git clone "$1" "$DT_SUBJ_ROOT"
-if ! [[ -d $DT_SUBJ_ROO ]]; then
+if ! [[ -d $DT_SUBJ_ROOT ]]; then
     git clone "/home/awshi2/$1" "$DT_SUBJ_ROOT"
 fi
 
