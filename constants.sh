@@ -25,7 +25,7 @@ seleList=selection-dt-list
 paraList=parallelization-dt-list
 
 # Which method of handling DTs should be used.
-postProcessFlag="" #"-postProcessDTs"
+postProcessFlags=("" "-postProcessDTs")
 
 function clearTemp() {
   rm -rf tmpfile.txt

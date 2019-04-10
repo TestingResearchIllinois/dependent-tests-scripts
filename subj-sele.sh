@@ -31,67 +31,70 @@ fi
 # Set the pwd dependening on classpath/version
 . set-directory.sh $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-for k in "${testTypes[@]}"; do
+for p in "${postProcessFlags[@]}"; do
 
-  if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-    echo "[INFO] Running prioritization for ${testTypes[@]} test type"
-    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique prioritization \
-      -coverage statement \
-      -order original \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -project "$SUBJ_NAME_FORMAL" \
-      -testType $k \
-      -outputDir $DT_ROOT/$seleDir \
-      -timesToRun $medianTimes \
-      -classpath "$CLASSPATH" \
-      -getCoverage \
-      $postProcessFlag
-  fi
-
-  for i in "${coverages[@]}"; do
-    for j in "${seleOrders[@]}"; do
+    for k in "${testTypes[@]}"; do
 
       if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-        # [INFO] Running selection without resolveDependences and with dependentTestFile
+        echo "[INFO] Running prioritization for ${testTypes[@]} test type"
         java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-          -technique selection \
-          -coverage $i \
-          -order $j \
+          -technique prioritization \
+          -coverage statement \
+          -order original \
           -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
           -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
           -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
           -project "$SUBJ_NAME_FORMAL" \
           -testType $k \
-          -oldVersCFG $DT_SUBJ/selectionOutput \
-          -newVersCFG $NEW_DT_SUBJ/selectionOutput \
-          -getCoverage \
           -outputDir $DT_ROOT/$seleDir \
           -timesToRun $medianTimes \
           -classpath "$CLASSPATH" \
-          -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
-          $postProcessFlag
+          -getCoverage \
+          $p
       fi
 
-      # [INFO] Running selection without resolveDependences and without dependentTestFile
-      java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique selection \
-        -coverage $i \
-        -order $j \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $k \
-        -oldVersCFG $DT_SUBJ/selectionOutput \
-        -newVersCFG $NEW_DT_SUBJ/selectionOutput \
-        -getCoverage \
-        -outputDir $DT_ROOT/$seleDir \
-        -classpath "$CLASSPATH" \
-        -timesToRun $medianTimes \
-        $postProcessFlag
+      for i in "${coverages[@]}"; do
+        for j in "${seleOrders[@]}"; do
+
+          if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
+            # [INFO] Running selection without resolveDependences and with dependentTestFile
+            java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+              -technique selection \
+              -coverage $i \
+              -order $j \
+              -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+              -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
+              -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+              -project "$SUBJ_NAME_FORMAL" \
+              -testType $k \
+              -oldVersCFG $DT_SUBJ/selectionOutput \
+              -newVersCFG $NEW_DT_SUBJ/selectionOutput \
+              -getCoverage \
+              -outputDir $DT_ROOT/$seleDir \
+              -timesToRun $medianTimes \
+              -classpath "$CLASSPATH" \
+              -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
+              $p
+          fi
+
+          # [INFO] Running selection without resolveDependences and without dependentTestFile
+          java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique selection \
+            -coverage $i \
+            -order $j \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $k \
+            -oldVersCFG $DT_SUBJ/selectionOutput \
+            -newVersCFG $NEW_DT_SUBJ/selectionOutput \
+            -getCoverage \
+            -outputDir $DT_ROOT/$seleDir \
+            -classpath "$CLASSPATH" \
+            -timesToRun $medianTimes \
+            $p
+        done
+      done
     done
-  done
 done

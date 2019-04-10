@@ -33,101 +33,104 @@ fi
 # Set the pwd dependening on classpath/version
 . set-directory.sh $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-for k in "${testTypes[@]}"; do
+for p in "${postProcessFlags[@]}"; do
 
-  if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-    echo "[INFO] Running prioritization for $k test type"
-    echo "$(pwd)"
-    java -cp $DT_TOOLS:: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique prioritization \
-      -coverage statement \
-      -order original \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$k \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -project "$SUBJ_NAME_FORMAL" \
-      -testType $k \
-      -outputDir $DT_ROOT/$prioDir \
-      -timesToRun $medianTimes \
-      -classpath "$CLASSPATH" \
-      -getCoverage \
-      $postProcessFlag
-  fi
-
-  for i in "${coverages[@]}"; do
-    for j in "${priorOrders[@]}"; do
-
-      PRECOMPUTE_FLAG=""
-      if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
-        PRECOMPUTE_FLAG="-resolveDependences $PRIO_DT_LISTS/prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt"
-      fi
-
-      # Running prioritization with resolveDependences and without dependentTestFile
-      echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique prioritization \
-        -coverage $i \
-        -order $j \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$k \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -getCoverage \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $k \
-        -outputDir $DT_ROOT/$prioDir \
-        -timesToRun $medianTimes \
-        -classpath \"$CLASSPATH\" \
-        $PRECOMPUTE_FLAG \
-        $postProcessFlag"
-      java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique prioritization \
-        -coverage $i \
-        -order $j \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$k \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -getCoverage \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $k \
-        -outputDir $DT_ROOT/$prioDir \
-        -timesToRun $medianTimes \
-        -classpath "$CLASSPATH" \
-        $PRECOMPUTE_FLAG \
-        $postProcessFlag
+    for k in "${testTypes[@]}"; do
 
       if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-        echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+        echo "[INFO] Running prioritization for $k test type"
+        echo "$(pwd)"
+        java -cp $DT_TOOLS:: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
           -technique prioritization \
-          -coverage $i \
-          -order $j \
+          -coverage statement \
+          -order original \
           -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
           -testInputDir $DT_SUBJ/sootTestOutput-$k \
           -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-          -getCoverage \
-          -project "$SUBJ_NAME_FORMAL" \
-          -testType $k \
-          -outputDir $DT_ROOT/$prioDir \
-          -timesToRun $medianTimes \
-          -classpath \"$CLASSPATH\" \
-          -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt\" \
-          $postProcessFlag"
-        java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-          -technique prioritization \
-          -coverage $i \
-          -order $j \
-          -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-          -testInputDir $DT_SUBJ/sootTestOutput-$k \
-          -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-          -getCoverage \
           -project "$SUBJ_NAME_FORMAL" \
           -testType $k \
           -outputDir $DT_ROOT/$prioDir \
           -timesToRun $medianTimes \
           -classpath "$CLASSPATH" \
-          -dependentTestFile $PRIO_DT_LISTS/"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
-          $postProcessFlag
+          -getCoverage \
+          $p
       fi
+
+      for i in "${coverages[@]}"; do
+        for j in "${priorOrders[@]}"; do
+
+          PRECOMPUTE_FLAG=""
+          if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
+            PRECOMPUTE_FLAG="-resolveDependences $PRIO_DT_LISTS/prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt"
+          fi
+
+          # Running prioritization with resolveDependences and without dependentTestFile
+          echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique prioritization \
+            -coverage $i \
+            -order $j \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$k \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -getCoverage \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $k \
+            -outputDir $DT_ROOT/$prioDir \
+            -timesToRun $medianTimes \
+            -classpath \"$CLASSPATH\" \
+            $PRECOMPUTE_FLAG \
+            $p"
+          java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique prioritization \
+            -coverage $i \
+            -order $j \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$k \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -getCoverage \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $k \
+            -outputDir $DT_ROOT/$prioDir \
+            -timesToRun $medianTimes \
+            -classpath "$CLASSPATH" \
+            $PRECOMPUTE_FLAG \
+            $p
+
+          if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
+            echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+              -technique prioritization \
+              -coverage $i \
+              -order $j \
+              -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+              -testInputDir $DT_SUBJ/sootTestOutput-$k \
+              -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+              -getCoverage \
+              -project "$SUBJ_NAME_FORMAL" \
+              -testType $k \
+              -outputDir $DT_ROOT/$prioDir \
+              -timesToRun $medianTimes \
+              -classpath \"$CLASSPATH\" \
+              -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt\" \
+              $p"
+            java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+              -technique prioritization \
+              -coverage $i \
+              -order $j \
+              -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+              -testInputDir $DT_SUBJ/sootTestOutput-$k \
+              -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+              -getCoverage \
+              -project "$SUBJ_NAME_FORMAL" \
+              -testType $k \
+              -outputDir $DT_ROOT/$prioDir \
+              -timesToRun $medianTimes \
+              -classpath "$CLASSPATH" \
+              -dependentTestFile $PRIO_DT_LISTS/"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
+              $p
+          fi
+        done
+      done
+      clearTemp
     done
-  done
-  clearTemp
 done
 

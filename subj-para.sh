@@ -33,164 +33,167 @@ fi
 # Set the pwd dependening on classpath/version
 . set-directory.sh $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-for j in "${testTypes[@]}"; do
+for p in "${postProcessFlags[@]}"; do
 
-  if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-    echo "[INFO] Running prioritization for $j test type"
-    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique prioritization \
-      -coverage statement \
-      -order original \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$j \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -project "$SUBJ_NAME_FORMAL" \
-      -testType $j \
-      -outputDir $DT_ROOT/$paraDir \
-      -timesToRun $medianTimes \
-      -getCoverage \
-      -classpath "$CLASSPATH" \
-      $postProcessFlag
-  fi
+    for j in "${testTypes[@]}"; do
 
-  for k in "${machines[@]}"; do
+      if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
+        echo "[INFO] Running prioritization for $j test type"
+        java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+          -technique prioritization \
+          -coverage statement \
+          -order original \
+          -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+          -testInputDir $DT_SUBJ/sootTestOutput-$j \
+          -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+          -project "$SUBJ_NAME_FORMAL" \
+          -testType $j \
+          -outputDir $DT_ROOT/$paraDir \
+          -timesToRun $medianTimes \
+          -getCoverage \
+          -classpath "$CLASSPATH" \
+          $p
+      fi
 
-    PRECOMPUTE_FLAG=""
-    if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
-      PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt"
-    fi
+      for k in "${machines[@]}"; do
 
-    # [INFO] Running parallelization with resolveDependences and without dependentTestFile for original order
-    echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique parallelization \
-      -order original \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$j \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -project \"$SUBJ_NAME_FORMAL\" \
-      -testType $j \
-      -numOfMachines $k \
-      -outputDir $DT_ROOT/$paraDir \
-      -timesToRun $medianTimes \
-      -classpath \"$CLASSPATH\" \
-      $PRECOMPUTE_FLAG \
-      $postProcessFlag"
-    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique parallelization \
-      -order original \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$j \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -project "$SUBJ_NAME_FORMAL" \
-      -testType $j \
-      -numOfMachines $k \
-      -outputDir $DT_ROOT/$paraDir \
-      -timesToRun $medianTimes \
-      -classpath "$CLASSPATH" \
-      $PRECOMPUTE_FLAG \
-      $postProcessFlag
+        PRECOMPUTE_FLAG=""
+        if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
+          PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt"
+        fi
 
-    if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-      echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique parallelization \
-        -order original \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$j \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $j \
-        -numOfMachines $k \
-        -outputDir $DT_ROOT/$paraDir \
-        -timesToRun $medianTimes \
-        -classpath \"$CLASSPATH\" \
-        -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt\" \
-        $postProcessFlag"
-      java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique parallelization \
-        -order original \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$j \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $j \
-        -numOfMachines $k \
-        -outputDir $DT_ROOT/$paraDir \
-        -timesToRun $medianTimes \
-        -classpath "$CLASSPATH" \
-        -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt" \
-        $postProcessFlag
-    fi
+        # [INFO] Running parallelization with resolveDependences and without dependentTestFile for original order
+        echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+          -technique parallelization \
+          -order original \
+          -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+          -testInputDir $DT_SUBJ/sootTestOutput-$j \
+          -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+          -project \"$SUBJ_NAME_FORMAL\" \
+          -testType $j \
+          -numOfMachines $k \
+          -outputDir $DT_ROOT/$paraDir \
+          -timesToRun $medianTimes \
+          -classpath \"$CLASSPATH\" \
+          $PRECOMPUTE_FLAG \
+          $p"
+        java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+          -technique parallelization \
+          -order original \
+          -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+          -testInputDir $DT_SUBJ/sootTestOutput-$j \
+          -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+          -project "$SUBJ_NAME_FORMAL" \
+          -testType $j \
+          -numOfMachines $k \
+          -outputDir $DT_ROOT/$paraDir \
+          -timesToRun $medianTimes \
+          -classpath "$CLASSPATH" \
+          $PRECOMPUTE_FLAG \
+          $p
 
-    PRECOMPUTE_FLAG=""
-    if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
-      PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt"
-    fi
+        if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
+          echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique parallelization \
+            -order original \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$j \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $j \
+            -numOfMachines $k \
+            -outputDir $DT_ROOT/$paraDir \
+            -timesToRun $medianTimes \
+            -classpath \"$CLASSPATH\" \
+            -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt\" \
+            $p"
+          java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique parallelization \
+            -order original \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$j \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $j \
+            -numOfMachines $k \
+            -outputDir $DT_ROOT/$paraDir \
+            -timesToRun $medianTimes \
+            -classpath "$CLASSPATH" \
+            -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt" \
+            $p
+        fi
 
-    # [INFO] Running parallelization with resolveDependences and without dependentTestFile for time order
-    echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique parallelization \
-      -order time \
-      -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$j \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -numOfMachines $k \
-      -project "$SUBJ_NAME_FORMAL" \
-      -testType $j \
-      -timesToRun $medianTimes \
-      -outputDir $DT_ROOT/$paraDir \
-      -classpath \"$CLASSPATH\" \
-      $PRECOMPUTE_FLAG \
-      $postProcessFlag"
-    java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-      -technique parallelization \
-      -order time \
-      -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
-      -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-      -testInputDir $DT_SUBJ/sootTestOutput-$j \
-      -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-      -numOfMachines $k \
-      -project "$SUBJ_NAME_FORMAL" \
-      -testType $j \
-      -timesToRun $medianTimes \
-      -outputDir $DT_ROOT/$paraDir \
-      -classpath "$CLASSPATH" \
-      $PRECOMPUTE_FLAG \
-      $postProcessFlag
+        PRECOMPUTE_FLAG=""
+        if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
+          PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt"
+        fi
 
-    if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
-      echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique parallelization \
-        -order time \
-        -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$j \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -numOfMachines $k \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $j \
-        -timesToRun $medianTimes \
-        -outputDir $DT_ROOT/$paraDir \
-        -classpath $CLASSPATH \
-        -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt\" \
-        $postProcessFlag"
-      java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-        -technique parallelization \
-        -order time \
-        -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
-        -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-        -testInputDir $DT_SUBJ/sootTestOutput-$j \
-        -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-        -numOfMachines $k \
-        -project "$SUBJ_NAME_FORMAL" \
-        -testType $j \
-        -timesToRun $medianTimes \
-        -outputDir $DT_ROOT/$paraDir \
-        -classpath "$CLASSPATH" \
-        -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt" \
-        $postProcessFlag
-    fi
-  done
+        # [INFO] Running parallelization with resolveDependences and without dependentTestFile for time order
+        echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+          -technique parallelization \
+          -order time \
+          -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
+          -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+          -testInputDir $DT_SUBJ/sootTestOutput-$j \
+          -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+          -numOfMachines $k \
+          -project "$SUBJ_NAME_FORMAL" \
+          -testType $j \
+          -timesToRun $medianTimes \
+          -outputDir $DT_ROOT/$paraDir \
+          -classpath \"$CLASSPATH\" \
+          $PRECOMPUTE_FLAG \
+          $p"
+        java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+          -technique parallelization \
+          -order time \
+          -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
+          -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+          -testInputDir $DT_SUBJ/sootTestOutput-$j \
+          -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+          -numOfMachines $k \
+          -project "$SUBJ_NAME_FORMAL" \
+          -testType $j \
+          -timesToRun $medianTimes \
+          -outputDir $DT_ROOT/$paraDir \
+          -classpath "$CLASSPATH" \
+          $PRECOMPUTE_FLAG \
+          $p
 
-  clearTemp
+        if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
+          echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique parallelization \
+            -order time \
+            -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$j \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -numOfMachines $k \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $j \
+            -timesToRun $medianTimes \
+            -outputDir $DT_ROOT/$paraDir \
+            -classpath $CLASSPATH \
+            -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt\" \
+            $p"
+          java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique parallelization \
+            -order time \
+            -timeOrder $DT_SUBJ/$SUBJ_NAME-$j-time.txt \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$j \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -numOfMachines $k \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $j \
+            -timesToRun $medianTimes \
+            -outputDir $DT_ROOT/$paraDir \
+            -classpath "$CLASSPATH" \
+            -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt" \
+            $p
+        fi
+      done
+
+      clearTemp
+    done
 done
