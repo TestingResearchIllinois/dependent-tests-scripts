@@ -58,6 +58,23 @@ for p in "${postProcessFlags[@]}"; do
 
           if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
             # [INFO] Running selection without resolveDependences and with dependentTestFile
+            echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+              -technique selection \
+              -coverage $i \
+              -order $j \
+              -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+              -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
+              -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+              -project "$SUBJ_NAME_FORMAL" \
+              -testType $k \
+              -oldVersCFG $DT_SUBJ/selectionOutput \
+              -newVersCFG $NEW_DT_SUBJ/selectionOutput \
+              -getCoverage \
+              -outputDir $DT_ROOT/$seleDir \
+              -timesToRun $medianTimes \
+              -classpath "$CLASSPATH" \
+              -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
+              $p"
             java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
               -technique selection \
               -coverage $i \
@@ -78,6 +95,22 @@ for p in "${postProcessFlags[@]}"; do
           fi
 
           # [INFO] Running selection without resolveDependences and without dependentTestFile
+          echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
+            -technique selection \
+            -coverage $i \
+            -order $j \
+            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
+            -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
+            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
+            -project "$SUBJ_NAME_FORMAL" \
+            -testType $k \
+            -oldVersCFG $DT_SUBJ/selectionOutput \
+            -newVersCFG $NEW_DT_SUBJ/selectionOutput \
+            -getCoverage \
+            -outputDir $DT_ROOT/$seleDir \
+            -classpath "$CLASSPATH" \
+            -timesToRun $medianTimes \
+            $p"
           java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
             -technique selection \
             -coverage $i \
