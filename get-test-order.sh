@@ -36,24 +36,26 @@ fi
 # Run the tests (assume has already been compiled)
 /home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true |& tee "test-log.txt"
 
-tests=($(grep -h "Running .*" "test-log.txt" | sed -E "s/.*Running (.*)/\1/g"))
-(
-    for test_name in "${tests[@]}"; do
-        test_case_names=($(xmllint --xpath "//testsuite/testcase/@name" "target/surefire-reports/TEST-$test_name.xml" | sed -E "s/name=\"([^\"]*)\"/\1/g"))
-        test_class_names=($(xmllint --xpath "//testsuite/testcase/@classname" "target/surefire-reports/TEST-$test_name.xml" | sed -E "s/classname=\"([^\"]*)\"/\1/g"))
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetOriginalOrder $output_file_name "target/" "test-log.txt"
 
-        n="${#test_class_names[@]}"
+# tests=($(grep -h "Running .*" "test-log.txt" | sed -E "s/.*Running (.*)/\1/g"))
+# (
+#     for test_name in "${tests[@]}"; do
+#         test_case_names=($(xmllint --xpath "//testsuite/testcase/@name" "target/surefire-reports/TEST-$test_name.xml" | sed -E "s/name=\"([^\"]*)\"/\1/g"))
+#         test_class_names=($(xmllint --xpath "//testsuite/testcase/@classname" "target/surefire-reports/TEST-$test_name.xml" | sed -E "s/classname=\"([^\"]*)\"/\1/g"))
 
-        for (( i=0; i<"$n"; i++ )); do
-            test_case_name="${test_case_names[$i]}"
-            test_class_name="${test_class_names[$i]}"
+#         n="${#test_class_names[@]}"
 
-            fqn="$test_class_name.$test_case_name"
+#         for (( i=0; i<"$n"; i++ )); do
+#             test_case_name="${test_case_names[$i]}"
+#             test_class_name="${test_class_names[$i]}"
 
-            echo "$fqn"
-        done
-    done
-) > "$output_file_name"
+#             fqn="$test_class_name.$test_case_name"
+
+#             echo "$fqn"
+#         done
+#     done
+# ) > "$output_file_name"
 
 if [[ ! -z "$SUBJ_NAME" ]]; then
     TEST_ORDER="$output_file_name"
