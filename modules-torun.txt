@@ -5,7 +5,7 @@ apache.incubator-dubbo-dubbo-serialization-fst
 apache.jackrabbit-oak-oak-core
 dropwizard.dropwizard-dropwizard-logging
 elasticjob.elastic-job-lite-elastic-job-lite-core
-jfree-jfreechart-.
+jfree.jfreechart-.
 kevinsawicki.http-request-lib
 undertow-io.undertow-websockets-jsr
 wildfly.wildfly-naming
