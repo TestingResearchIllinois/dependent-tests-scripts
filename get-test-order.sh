@@ -34,7 +34,7 @@ if [[ ! -z "$SUBJ_NAME" ]]; then
 fi
 
 # Run the tests (assume has already been compiled)
-/home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true |& tee "test-log.txt"
+/home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true |& tee "test-log.txt"
 
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetOriginalOrder $output_file_name "target/" "test-log.txt"
 
