@@ -15,12 +15,14 @@ if [[ "$version" == "new" ]]; then
     LIBS=$NEW_DT_LIBS
     SUBJ=$NEW_DT_SUBJ
     SUBJ_SRC=$NEW_DT_SUBJ_SRC
+    ROOT_DIR=$NEW_DT_SUBJ_ROOT
 else
     TESTS=$DT_TESTS
     CLASS=$DT_CLASS
     LIBS=$DT_LIBS
     SUBJ=$DT_SUBJ
     SUBJ_SRC=$DT_SUBJ_SRC
+    ROOT_DIR=$DT_SUBJ_ROOT
 fi
 
 
@@ -33,8 +35,12 @@ if [[ ! -z "$SUBJ_NAME" ]]; then
     output_file_name="$SUBJ/$SUBJ_NAME-orig-order"
 fi
 
-# Run the tests (assume has already been compiled)
-/home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true |& tee "test-log.txt"
+# Run the tests, but force to re-compile from top level just in case of needing local dependencies upgraded
+(
+    cd $ROOT_DIR
+    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests
+)
+/home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip |& tee "test-log.txt"
 
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetOriginalOrder $output_file_name "target/" "test-log.txt"
 
