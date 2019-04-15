@@ -35,6 +35,15 @@ timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${
 
 # timeout ${timeout}s /home/awshi2/apache-maven/bin/mvn testrunner:testplugin -Ddiagnosis.run_detection=false -Denforcer.skip=true -Drat.skip=true -Dtestplugin.className=edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin -fn -B -e |& tee fixer.log
 
+# In case of timeout (or other errors...), put the other stuff into the results
+if [[ $? != 0 ]]; then
+    mkdir timeout-results/
+    mv /home/awshi2/data/ timeout-results/
+    mv /home/awshi2/prioritization-results/ timeout-results/
+    mv /home/awshi2/parallelization-results/ timeout-results/
+    mv /home/awshi2/selection-results/ timeout-results/
+fi
+
 # Gather the results, put them up top
 cd /home/awshi2/dependent-tests-scripts/
 RESULTSDIR=/home/awshi2/output/
