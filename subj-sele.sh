@@ -36,6 +36,7 @@ for post in "${postProcessFlags[@]}"; do
         p=false
     else
         p=true
+    fi
 
     for k in "${testTypes[@]}"; do
 
