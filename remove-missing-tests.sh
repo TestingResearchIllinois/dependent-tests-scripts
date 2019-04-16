@@ -10,10 +10,10 @@ fi
 
 if [[ "$PREFIX" = "old" ]]; then
     cd $DT_SUBJ_SRC
-    CLASSPATH=$DT_LIBS:$DT_TESTS:$DT_CLASS:
+    CLASSPATH=$DT_LIBS:$DT_TESTS:$DT_CLASS:$DT_TOOLS:
 else
     cd $NEW_DT_SUBJ_SRC
-    CLASSPATH=$NEW_DT_LIBS:$NEW_DT_TESTS:$NEW_DT_CLASS:
+    CLASSPATH=$NEW_DT_LIBS:$NEW_DT_TESTS:$NEW_DT_CLASS:$DT_TOOLS:
 fi
 
 MODIFIED_ORDER="$1-modified"
@@ -26,7 +26,7 @@ cp $1 $MODIFIED_ORDER
 while true
 do
     echo "[INFO] Running $(cat $MODIFIED_ORDER | wc -l) tests."
-    MISSING_TEST=$(java -cp $DT_TOOLS: edu.washington.cs.dt.main.ImpactMain -classpath $CLASSPATH -inputTests $MODIFIED_ORDER |& grep "Test method not found: " | head -1 | sed -E "s/.*Test method not found: (.*)/\1/g")
+    MISSING_TEST=$(java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $CLASSPATH -inputTests $MODIFIED_ORDER |& grep "Test method not found: " | head -1 | sed -E "s/.*Test method not found: (.*)/\1/g")
 
     if [[ -z "$MISSING_TEST" ]]; then
         break
