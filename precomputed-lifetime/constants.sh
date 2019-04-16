@@ -2,14 +2,12 @@
 # file.
 
 # Number of times to run the test order before taking the median
-#medianTimes=5
-medianTimes=1
+medianTimes=5
 # Number of times to randomize the test order when calculating the
 # precomputed dependences
 randomTimes=100
 
-#testTypes=(orig auto)
-testTypes=(orig)
+testTypes=(orig auto)
 coverages=(statement function)
 machines=(2 4 8 16)
 
