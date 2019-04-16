@@ -2,22 +2,22 @@
 # $1 - project slug
 # $2 - path in repo (probably for module)
 # $3 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
+# $4 - path to file with commits for the project/module
 
 if [[ "$1" == "--help" ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path [techniques]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path [techniques] commit-list"
     exit 1
 fi
 
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path [techniques]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path [techniques] commit-list"
     exit 1
 fi
 
 PROJ_SLUG=$1
 MODULE_PATH=$2
 TECHNIQUES="$3"
-
-NEW_COMMIT_FILE="new-commit-list.txt"
+NEW_COMMIT_FILE="$4"
 # OLD_COMMIT_FILE="old-commit-list.txt"
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
@@ -27,7 +27,7 @@ if [[ ! -e "$NEW_COMMIT_FILE" ]]; then
     exit 1
 fi
 
-new_commits=($(cat "$NEW_COMMIT_FILE"))
+new_commits=($(tac "$NEW_COMMIT_FILE"))
 # old_commits=($(cat "$OLD_COMMIT_FILE"))
 
 echo "[INFO] Selected commits:"
