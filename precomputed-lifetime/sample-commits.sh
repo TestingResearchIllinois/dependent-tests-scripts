@@ -49,8 +49,34 @@ runWithCommits() {
 
 tmpFile="$(mktemp)"
 #git log -s --format="%H" --before="$cutoffDate" --reverse ${START_COMMIT}.. -- "$MODULE_PATH" > $tmpFile
-git log -s --format="%H" --reverse "${START_COMMIT}"~100.. -- "$MODULE_PATH" > $tmpFile   # Only look back at most 100 commits
-runWithCommits $tmpFile
+git log -s --format="%H" --reverse "${START_COMMIT}" -- "$MODULE_PATH" > $tmpFile   # Only look back at most 100 commits
+#runWithCommits $tmpFile
+for c in $(tac $tmpFile); do
+    # Skip commits without any change to java file in the module
+    if [[ $(git show --name-only --oneline ${c} | grep ".java$") == "" ]]; then
+        continue
+    fi
+
+    # Try checking out the commit and installing/testing, only keeping those that succeed
+    git checkout -f ${c}
+    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests &> /dev/null
+    # If does not compile, skip
+    if [[ $? != 0 ]]; then
+        continue
+    fi
+    (
+        cd $GIT_REPO_PATH/$MODULE_PATH
+        /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip &> /dev/null
+        # If it all works, report it successful
+        if [[ $? == 0 ]]; then
+            echo ${c} >> "$ORIGINAL_DIR/new-commit-list.txt"
+        fi
+    )
+
+    if [[ $(cat "$ORIGINAL_DIR/new-commit-list.txt" | wc -l) == $COMMIT_NUM ]]; then
+        break
+    fi
+done
 rm ${tmpFile}
 
 #git log -s --format="%H" --after="$cutoffDate" --reverse ${START_COMMIT}.. -- "$MODULE_PATH" > $tmpFile
