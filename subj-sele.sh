@@ -31,7 +31,11 @@ fi
 # Set the pwd dependening on classpath/version
 . set-directory.sh $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-for p in "${postProcessFlags[@]}"; do
+for post in "${postProcessFlags[@]}"; do
+    if [ "$post" = "" ]; then
+        p=false
+    else
+        p=true
 
     for k in "${testTypes[@]}"; do
 
@@ -50,7 +54,7 @@ for p in "${postProcessFlags[@]}"; do
           -timesToRun $medianTimes \
           -classpath "$CLASSPATH" \
           -getCoverage \
-          $p
+          $post
       fi
 
       for i in "${coverages[@]}"; do
@@ -73,8 +77,8 @@ for p in "${postProcessFlags[@]}"; do
               -outputDir $DT_ROOT/$seleDir \
               -timesToRun $medianTimes \
               -classpath "$CLASSPATH" \
-              -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
-              $p"
+              -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
+              $post"
             java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
               -technique selection \
               -coverage $i \
@@ -90,8 +94,8 @@ for p in "${postProcessFlags[@]}"; do
               -outputDir $DT_ROOT/$seleDir \
               -timesToRun $medianTimes \
               -classpath "$CLASSPATH" \
-              -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
-              $p
+              -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
+              $post
           fi
 
           # [INFO] Running selection without resolveDependences and without dependentTestFile
@@ -110,7 +114,7 @@ for p in "${postProcessFlags[@]}"; do
             -outputDir $DT_ROOT/$seleDir \
             -classpath "$CLASSPATH" \
             -timesToRun $medianTimes \
-            $p"
+            $post"
           java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
             -technique selection \
             -coverage $i \
@@ -126,7 +130,7 @@ for p in "${postProcessFlags[@]}"; do
             -outputDir $DT_ROOT/$seleDir \
             -classpath "$CLASSPATH" \
             -timesToRun $medianTimes \
-            $p
+            $post
         done
       done
     done

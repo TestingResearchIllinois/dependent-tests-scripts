@@ -33,7 +33,12 @@ fi
 # Set the pwd dependening on classpath/version
 . set-directory.sh $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-for p in "${postProcessFlags[@]}"; do
+for post in "${postProcessFlags[@]}"; do
+    if [ "$post" = "" ]; then
+        p=false
+    else
+        p=true
+    fi
 
     for j in "${testTypes[@]}"; do
 
@@ -52,14 +57,14 @@ for p in "${postProcessFlags[@]}"; do
           -timesToRun $medianTimes \
           -getCoverage \
           -classpath "$CLASSPATH" \
-          $p
+          $post
       fi
 
       for k in "${machines[@]}"; do
 
         PRECOMPUTE_FLAG=""
         if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
-          PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt"
+            PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-original-$p.txt"
         fi
 
         # [INFO] Running parallelization with resolveDependences and without dependentTestFile for original order
@@ -76,7 +81,7 @@ for p in "${postProcessFlags[@]}"; do
           -timesToRun $medianTimes \
           -classpath \"$CLASSPATH\" \
           $PRECOMPUTE_FLAG \
-          $p"
+          $post"
         java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
           -technique parallelization \
           -order original \
@@ -90,7 +95,7 @@ for p in "${postProcessFlags[@]}"; do
           -timesToRun $medianTimes \
           -classpath "$CLASSPATH" \
           $PRECOMPUTE_FLAG \
-          $p
+          $post
 
         if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
           echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
@@ -105,8 +110,8 @@ for p in "${postProcessFlags[@]}"; do
             -outputDir $DT_ROOT/$paraDir \
             -timesToRun $medianTimes \
             -classpath \"$CLASSPATH\" \
-            -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt\" \
-            $p"
+            -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original-$p.txt\" \
+            $post"
           java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
             -technique parallelization \
             -order original \
@@ -119,13 +124,13 @@ for p in "${postProcessFlags[@]}"; do
             -outputDir $DT_ROOT/$paraDir \
             -timesToRun $medianTimes \
             -classpath "$CLASSPATH" \
-            -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original.txt" \
-            $p
+            -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-original-$p.txt" \
+            $post
         fi
 
         PRECOMPUTE_FLAG=""
         if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
-          PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt"
+          PRECOMPUTE_FLAG="-resolveDependences $PARA_DT_LISTS/parallelization-$SUBJ_NAME_FORMAL-$j-$k-time-$p.txt"
         fi
 
         # [INFO] Running parallelization with resolveDependences and without dependentTestFile for time order
@@ -143,7 +148,7 @@ for p in "${postProcessFlags[@]}"; do
           -outputDir $DT_ROOT/$paraDir \
           -classpath \"$CLASSPATH\" \
           $PRECOMPUTE_FLAG \
-          $p"
+          $post"
         java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
           -technique parallelization \
           -order time \
@@ -158,7 +163,7 @@ for p in "${postProcessFlags[@]}"; do
           -outputDir $DT_ROOT/$paraDir \
           -classpath "$CLASSPATH" \
           $PRECOMPUTE_FLAG \
-          $p
+          $post
 
         if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
           echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
@@ -174,8 +179,8 @@ for p in "${postProcessFlags[@]}"; do
             -timesToRun $medianTimes \
             -outputDir $DT_ROOT/$paraDir \
             -classpath $CLASSPATH \
-            -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt\" \
-            $p"
+            -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time-$p.txt\" \
+            $post"
           java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
             -technique parallelization \
             -order time \
@@ -189,8 +194,8 @@ for p in "${postProcessFlags[@]}"; do
             -timesToRun $medianTimes \
             -outputDir $DT_ROOT/$paraDir \
             -classpath "$CLASSPATH" \
-            -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time.txt" \
-            $p
+            -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-time-$p.txt" \
+            $post
         fi
       done
 

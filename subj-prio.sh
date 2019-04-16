@@ -33,7 +33,12 @@ fi
 # Set the pwd dependening on classpath/version
 . set-directory.sh $DT_SUBJ $NEW_DT_SUBJ $CLASSPATH
 
-for p in "${postProcessFlags[@]}"; do
+for post in "${postProcessFlags[@]}"; do
+    if [ "$post" = "" ]; then
+        p=false
+    else
+        p=true
+    fi
 
     for k in "${testTypes[@]}"; do
 
@@ -53,7 +58,7 @@ for p in "${postProcessFlags[@]}"; do
           -timesToRun $medianTimes \
           -classpath "$CLASSPATH" \
           -getCoverage \
-          $p
+          $post
       fi
 
       for i in "${coverages[@]}"; do
@@ -61,7 +66,7 @@ for p in "${postProcessFlags[@]}"; do
 
           PRECOMPUTE_FLAG=""
           if [ "$PRECOMPUTE_DEPENDENCES" = "true" ]; then
-            PRECOMPUTE_FLAG="-resolveDependences $PRIO_DT_LISTS/prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt"
+            PRECOMPUTE_FLAG="-resolveDependences $PRIO_DT_LISTS/prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt"
           fi
 
           # Running prioritization with resolveDependences and without dependentTestFile
@@ -79,7 +84,7 @@ for p in "${postProcessFlags[@]}"; do
             -timesToRun $medianTimes \
             -classpath \"$CLASSPATH\" \
             $PRECOMPUTE_FLAG \
-            $p"
+            $post"
           java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
             -technique prioritization \
             -coverage $i \
@@ -94,7 +99,7 @@ for p in "${postProcessFlags[@]}"; do
             -timesToRun $medianTimes \
             -classpath "$CLASSPATH" \
             $PRECOMPUTE_FLAG \
-            $p
+            $post
 
           if [ "$GEN_ENHANCED_RESULTS" = "true" ]; then
             echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
@@ -110,8 +115,8 @@ for p in "${postProcessFlags[@]}"; do
               -outputDir $DT_ROOT/$prioDir \
               -timesToRun $medianTimes \
               -classpath \"$CLASSPATH\" \
-              -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt\" \
-              $p"
+              -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt\" \
+              $post"
             java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
               -technique prioritization \
               -coverage $i \
@@ -125,8 +130,8 @@ for p in "${postProcessFlags[@]}"; do
               -outputDir $DT_ROOT/$prioDir \
               -timesToRun $medianTimes \
               -classpath "$CLASSPATH" \
-              -dependentTestFile $PRIO_DT_LISTS/"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j.txt" \
-              $p
+              -dependentTestFile $PRIO_DT_LISTS/"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
+              $post
           fi
         done
       done
