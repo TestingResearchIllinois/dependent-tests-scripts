@@ -49,6 +49,7 @@ cd /home/awshi2/dependent-tests-scripts/
 RESULTSDIR=/home/awshi2/output/
 mkdir -p ${RESULTSDIR}
 for d in $(find -maxdepth 1 -type d -name "*-results"); do mv $d ${RESULTSDIR}/; done
+cp -r /home/awshi2/${slug}-old-* ${RESULTSDIR}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_accommodater_tools.sh"
