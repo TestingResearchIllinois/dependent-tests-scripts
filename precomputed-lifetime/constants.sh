@@ -7,13 +7,16 @@ medianTimes=5
 # precomputed dependences
 randomTimes=100
 
-testTypes=(orig auto)
+#testTypes=(orig auto)
+testTypes=(orig)
 coverages=(statement function)
-machines=(2 4 8 16)
+#machines=(2 4 8 16)
+machines=(2 4)
 
 # Ordering for the three techniques
 priorOrders=(absolute relative)
 seleOrders=(original absolute relative)
+paraOrders=(original time)
 
 # Directory to output the results
 prioDir=prioritization-results
