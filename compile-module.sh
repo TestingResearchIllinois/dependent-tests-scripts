@@ -15,11 +15,12 @@ ROOT_PATH="$3"
 
 # Try to compile just the module we need.
 (
-    cd "$MODULE_PATH"
-    /home/awshi2/apache-maven/bin/mvn clean
-    /home/awshi2/apache-maven/bin/mvn compile test-compile -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip
+    # Compile all modules for the current version.
+    cd "$ROOT_PATH"
+    /home/awshi2/apache-maven/bin/mvn clean install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests
 
-    # 2. Gather the dependencies of the old subject.
+    # 2. Gather the dependencies of the old subject for that module.
+    cd "$MODULE_PATH"
     /home/awshi2/apache-maven/bin/mvn install -fn -DskipTests -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip dependency:copy-dependencies -Drat.skip=true -Dcobertura.skip
 
     bash "$DT_SCRIPTS/unsign-jars.sh" "$MODULE_PATH/target/dependency"
