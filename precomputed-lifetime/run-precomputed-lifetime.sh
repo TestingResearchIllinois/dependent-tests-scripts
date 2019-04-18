@@ -52,9 +52,9 @@ do
     bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH "$TECHNIQUES" | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
 
     # Shift environment variables for next run
-    OLD_COMMIT=${new_commits[$i]}
-    export DT_SUBJ_ROOT=$HOME/${PROJ_SLUG}-new-${OLD_COMMIT}
-    export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
-    export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
+    #OLD_COMMIT=${new_commits[$i]}
+    #export DT_SUBJ_ROOT=$HOME/${PROJ_SLUG}-new-${OLD_COMMIT}
+    #export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
+    #export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
 done
 
