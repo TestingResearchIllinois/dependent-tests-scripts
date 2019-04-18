@@ -5,9 +5,9 @@
 
 if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
     echo "arg1 - GitHub SLUG"
-    echo "arg2 - SHA"
-    echo "arg3 - Timeout in seconds"
-    echo "arg4 - Test name (Optional)"
+    echo "arg2 - new SHA"
+    echo "arg3 - old SHA"
+    echo "arg4 - Timeout in seconds"
     echo "arg5 - Script to run (Optional)"
     exit
 fi
@@ -24,9 +24,9 @@ else
 fi
 
 slug=$1
-sha=$2
-timeout=$3
-testName=$4
+newsha=$2
+oldsha=$3
+timeout=$4
 
 git rev-parse HEAD
 date
@@ -48,7 +48,7 @@ if [[ -e "/home/awshi2/mvn-test-time.log" ]] && [[ ! -e "/home/awshi2/$slug/mvn-
 fi
 
 # Start the script using the awshi2 user
-su - awshi2 -c "$script_to_run ${slug} ${sha} ${timeout} ${testName}"
+su - awshi2 -c "$script_to_run ${slug} ${newsha} ${oldsha} ${timeout}"
 
 # Change permissions of results and copy outside the Docker image (assume outside mounted under /Scratch)
 modifiedslug=$(echo ${slug} | sed 's;/;.;' | tr '[:upper:]' '[:lower:]')

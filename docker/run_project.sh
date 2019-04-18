@@ -8,16 +8,18 @@ date
 # This script is run inside the Docker image, for single experiment (one project)
 # Should only be invoked by the run_experiment.sh script
 
-if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
+if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]]; then
     echo "arg1 - GitHub SLUG"
     echo "arg2 - New commit"
-    echo "arg3 - Timeout in seconds"
+    echo "arg3 - Old commit"
+    echo "arg4 - Timeout in seconds"
     exit
 fi
 
 slug=$1
-commit=$2
-timeout=$3
+newcommit=$2
+oldcommit=$3
+timeout=$4
 
 # Setup prolog stuff
 /home/awshi2/dependent-tests-scripts/docker/setup
@@ -28,7 +30,7 @@ source ~/.bashrc
 echo "*******************ACCOMMODATER************************"
 echo "Running accommodater script"
 date
-/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} "${commit}~25" ${commit} ${timeout}
+/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} ${oldcommit} ${newcommit} ${timeout}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_project.sh"
