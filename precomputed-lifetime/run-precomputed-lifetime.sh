@@ -1,23 +1,23 @@
 # Inputs:
 # $1 - project slug
 # $2 - path in repo (probably for module)
-# $3 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
-# $4 - path to file with commits for the project/module
+# $3 - path to file with commits for the project/module
+# $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
 
 if [[ "$1" == "--help" ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path [techniques] commit-list"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques]"
     exit 1
 fi
 
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path [techniques] commit-list"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques]"
     exit 1
 fi
 
 PROJ_SLUG=$1
 MODULE_PATH=$2
-TECHNIQUES="$3"
-NEW_COMMIT_FILE="$4"
+NEW_COMMIT_FILE="$3"
+TECHNIQUES="$4"
 # OLD_COMMIT_FILE="old-commit-list.txt"
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
@@ -52,9 +52,9 @@ do
     bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH "$TECHNIQUES" | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
 
     # Shift environment variables for next run
-    OLD_COMMIT=${new_commits[$i]}
-    export DT_SUBJ_ROOT=$HOME/${PROJ_SLUG}-new-${OLD_COMMIT}
-    export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
-    export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
+    #OLD_COMMIT=${new_commits[$i]}
+    #export DT_SUBJ_ROOT=$HOME/${PROJ_SLUG}-new-${OLD_COMMIT}
+    #export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
+    #export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
 done
 
