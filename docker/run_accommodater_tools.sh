@@ -6,18 +6,20 @@ echo "Starting run_accommodater_tools.sh"
 # This script is run inside the Docker image, for single experiment (one project)
 # Should only be invoked by the run_experiment.sh script
 
-if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]]; then
+if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5 == "" ]]; then
     echo "arg1 - GitHub SLUG"
-    echo "arg2 - Old commit SHA/HEAD"
-    echo "arg3 - New commit SHA/HEAD"
-    echo "arg4 - Timeout in seconds"
+    echo "arg2 - Module"
+    echo "arg3 - Old commit SHA/HEAD"
+    echo "arg4 - New commit SHA/HEAD"
+    echo "arg5 - Timeout in seconds"
     exit
 fi
 
 slug=$1
-oldcommit=$2
-newcommit=$3
-timeout=$4
+module=$2
+oldcommit=$3
+newcommit=$4
+timeout=$5
 
 # Run the plugin, get module test times
 echo "*******************ACCOMMODATER************************"
@@ -31,6 +33,12 @@ mkdir -p /home/awshi2/data
 cd /home/awshi2/dependent-tests-scripts/
 
 set -x
+
+# Modify the modules-torun.txt to only include the relevant one for the specified module
+grep "${slug//\//.}-${module}" modules-torun.txt > /tmp/mod
+mv /tmp/mod modules-torun.txt
+
+# Actually run the script
 timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${slug} ${newcommit} ${oldcommit}
 
 # timeout ${timeout}s /home/awshi2/apache-maven/bin/mvn testrunner:testplugin -Ddiagnosis.run_detection=false -Denforcer.skip=true -Drat.skip=true -Dtestplugin.className=edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin -fn -B -e |& tee fixer.log
