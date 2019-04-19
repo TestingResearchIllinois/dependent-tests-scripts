@@ -13,4 +13,6 @@ RUN \
   git clone https://github.com/ReedOei/testrunner && \
   cd testrunner/ && /home/awshi2/apache-maven/bin/mvn clean install && cd /home/awshi2 && \
   git clone https://ordtesters:2067790833w@github.com/TestingResearchIllinois/dependent-tests-impact.git && \
-  cd dependent-tests-impact/ && /home/awshi2/apache-maven/bin/mvn clean install -DskipTests && cd /home/awshi2
+  cd dependent-tests-impact/ && \
+  /home/awshi2/apache-maven/bin/mvn install:install-file -Dfile=/home/awshi2/dependent-tests-scripts/impact-tools/dtdetector-1.2.0.jar -DgroupId=edu.washington.cs.dt -DartifactId=dtdetector -Dversion=1.2.0 -Dpackaging=jar && \
+  /home/awshi2/apache-maven/bin/mvn clean install -DskipTests && cd /home/awshi2
