@@ -4,7 +4,7 @@ echo "*******************LIFETIME************************"
 echo "Starting run_lifetime_tools.sh"
 
 # This script is run inside the Docker image, for single experiment (one project)
-# Should only be invoked by the run_experiment.sh script
+# Should only be invoked by the run_project_lifetime.sh script
 
 if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5 == "" ]]; then
     echo "arg1 - GitHub SLUG"
