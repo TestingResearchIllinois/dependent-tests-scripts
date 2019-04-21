@@ -67,7 +67,7 @@ fi
 )
 
 # Actually run the script
-timeout ${timeout}s /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${rel_module_path} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-${module}_commits
+timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${rel_module_path} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-${module}_commits
 
 # timeout ${timeout}s /home/awshi2/apache-maven/bin/mvn testrunner:testplugin -Ddiagnosis.run_detection=false -Denforcer.skip=true -Drat.skip=true -Dtestplugin.className=edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin -fn -B -e |& tee fixer.log
 
