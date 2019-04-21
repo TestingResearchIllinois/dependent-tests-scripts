@@ -45,7 +45,7 @@ cd precomputed-lifetime/
 
 # Hack to figure out relative path to module based on the passed in module name
 if [[ ${module} != "." ]]; then
-    rel_module_path=$(find /home/awshi2/${slug} -name ${module} | sed "s;/home/awshi2/${slug}/;;")
+    rel_module_path=$(find /home/awshi2/${slug} -name ${module} | grep "src/" | sed "s;/home/awshi2/${slug}/;;" | head -1)
 else
     rel_module_path="."
 fi
@@ -63,7 +63,7 @@ fi
     owner=$(echo ${slug} | cut -d'/' -f1)
     projname=$(echo ${slug} | cut -d'/' -f2)
     mv ${name}/${projname}-old-* /home/awshi2/${owner}/
-    mkdir /home/awshi2/data/
+    mkdir -p /home/awshi2/data/
     mv ${name}/${name}-results/dt-lists/* /home/awshi2/data/
 )
 
