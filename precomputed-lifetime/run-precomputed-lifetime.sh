@@ -41,8 +41,14 @@ OLD_COMMIT=${new_commits[0]}
 export DT_SUBJ_ROOT=$HOME/${PROJ_SLUG}-old-${OLD_COMMIT}
 export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
 export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
-export SUBJ_NAME=${PROJ_SLUG//\//.}-${MODULE_PATH}
-export SUBJ_NAME_FORMAL=${PROJ_SLUG//\//.}-${MODULE_PATH}
+module=$(basename $MODULE_PATH) # The module name expected is just the last part of the path
+if [[ "$module" = "." ]]; then
+    export SUBJ_NAME=${PROJ_SLUG//\//.}
+    export SUBJ_NAME_FORMAL=${SUBJ_NAME}
+else
+    export SUBJ_NAME=${PROJ_SLUG//\//.}-${module}
+    export SUBJ_NAME_FORMAL=${PROJ_SLUG//\//.}-${module}
+fi
 
 . ../setup-vars.sh
 
