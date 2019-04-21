@@ -63,7 +63,8 @@ fi
     owner=$(echo ${slug} | cut -d'/' -f1)
     projname=$(echo ${slug} | cut -d'/' -f2)
     mv ${name}/${projname}-old-* /home/awshi2/${owner}/
-    mv ${name}/${name}-results/dt-lists/* /home/awshi2/
+    mkdir /home/awshi2/data/
+    mv ${name}/${name}-results/dt-lists/* /home/awshi2/data/
 )
 
 # Actually run the script
