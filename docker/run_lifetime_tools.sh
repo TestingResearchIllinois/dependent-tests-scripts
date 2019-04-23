@@ -45,7 +45,13 @@ cd precomputed-lifetime/
 
 # Hack to figure out relative path to module based on the passed in module name
 if [[ ${module} != "." ]]; then
-    rel_module_path=$(find /home/awshi2/${slug} -name ${module} | grep -v "target/" | sed "s;/home/awshi2/${slug}/;;" | head -1)
+    srcdirs=$(find /home/awshi2/${slug} src)
+    for d in ${srcdirs}; do
+        if [[ $(echo ${d} | rev | cut -d'/' -f2 | rev | grep "${module}") != "" ]]; then
+            rel_module_path=$(dirname ${d})
+            break
+        fi
+    done
 else
     rel_module_path="."
 fi
