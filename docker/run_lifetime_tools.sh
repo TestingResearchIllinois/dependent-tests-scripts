@@ -48,7 +48,7 @@ if [[ ${module} != "." ]]; then
     srcdirs=$(find /home/awshi2/${slug} src)
     for d in ${srcdirs}; do
         if [[ $(echo ${d} | rev | cut -d'/' -f2 | rev | grep "${module}") != "" ]]; then
-            rel_module_path=$(dirname ${d})
+            rel_module_path=$(dirname ${d} | sed "s;/home/awshi2/${slug}/;;")
             break
         fi
     done
