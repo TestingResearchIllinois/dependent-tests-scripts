@@ -7,11 +7,9 @@ medianTimes=5
 # precomputed dependences
 randomTimes=100
 
-#testTypes=(orig auto)
-testTypes=(orig)
+testTypes=(orig auto)
 coverages=(statement function)
-#machines=(2 4 8 16)
-machines=(2 4)
+machines=(2 4 8 16)
 
 # Ordering for the three techniques
 priorOrders=(absolute relative)
