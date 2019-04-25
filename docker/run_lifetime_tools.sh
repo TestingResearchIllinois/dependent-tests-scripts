@@ -37,24 +37,11 @@ set -x
 modifiedslug=${slug//\//.}
 
 # Modify the modules-torun.txt to only include the relevant one for the specified module
-grep "${modifiedslug}-${module}" modules-torun.txt > /tmp/mod
+grep "${modifiedslug}-$(basename ${module})" modules-torun.txt > /tmp/mod
 mv /tmp/mod modules-torun.txt
 
 # Go to the lifetime directory and start running 
 cd precomputed-lifetime/
-
-# Hack to figure out relative path to module based on the passed in module name
-if [[ ${module} != "." ]]; then
-    srcdirs=$(find /home/awshi2/${slug} src)
-    for d in ${srcdirs}; do
-        if [[ $(echo ${d} | rev | cut -d'/' -f2 | rev | grep "${module}") != "" ]]; then
-            rel_module_path=$(dirname ${d} | sed "s;/home/awshi2/${slug}/;;")
-            break
-        fi
-    done
-else
-    rel_module_path="."
-fi
 
 # Download the directories corresponding to the old SHA and put them into place
 (
@@ -62,7 +49,7 @@ fi
     if [[ ${module} == '.' ]]; then
         name=${modifiedslug}
     else
-        name=${modifiedslug}-${module}
+        name=${modifiedslug}-$(basename ${module})
     fi
     wget http://mir.cs.illinois.edu/awshi2/dt-impact/${name}.zip
     unzip ${name}.zip
@@ -74,7 +61,7 @@ fi
 )
 
 # Actually run the script
-timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${rel_module_path} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-${module}_commits
+timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits
 
 # timeout ${timeout}s /home/awshi2/apache-maven/bin/mvn testrunner:testplugin -Ddiagnosis.run_detection=false -Denforcer.skip=true -Drat.skip=true -Dtestplugin.className=edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin -fn -B -e |& tee fixer.log
 
