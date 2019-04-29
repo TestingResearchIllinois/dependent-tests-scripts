@@ -58,6 +58,7 @@ cd precomputed-lifetime/
     mv ${name}/${projname}-old-* /home/awshi2/${owner}/
     mkdir -p /home/awshi2/data/
     mv ${name}/${name}-results/dt-lists/* /home/awshi2/data/
+    mv ${name}/${name}-results/ /home/awshi2/dependent-tests-scripts/
 )
 
 # Actually run the script
