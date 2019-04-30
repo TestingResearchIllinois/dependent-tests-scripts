@@ -1,3 +1,5 @@
+source ./constants.sh
+
 CLASSPATH=$NEW_DT_LIBS:$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_RANDOOP:$DT_TOOLS:
 
 # Set the pwd dependening on classpath/version

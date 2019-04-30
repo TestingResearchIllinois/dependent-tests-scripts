@@ -5,6 +5,8 @@
 # NOTE: This script cannot be easily replaced the the subj-sele script in the
 #       normal scripts directory because of DT_SUBJ.
 
+source ./constants.sh
+
 CLASSPATH=$NEW_DT_LIBS:$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_RANDOOP:$DT_TOOLS:
 
 # Set the pwd dependening on classpath/version
