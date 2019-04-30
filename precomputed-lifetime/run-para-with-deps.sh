@@ -20,20 +20,6 @@ for post in "${postProcessFlags[@]}"; do
     for j in "${testTypes[@]}"; do
         echo "[INFO] Running parallelizaiton for $j test type"
         echo "Para $j start time is $(date)"
-        java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-            -technique prioritization \
-            -coverage statement \
-            -order original \
-            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$j-order \
-            -testInputDir $DT_SUBJ/sootTestOutput-$j \
-            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-            -project "$SUBJ_NAME_FORMAL" \
-            -testType $j \
-            -outputDir $DT_ROOT/$paraDir \
-            -timesToRun $medianTimes \
-            -getCoverage \
-            -classpath "$CLASSPATH" \
-            $post
 
         for k in "${machines[@]}"; do
             for order in "${paraOrders[@]}"; do

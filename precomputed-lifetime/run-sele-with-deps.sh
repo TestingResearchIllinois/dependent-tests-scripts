@@ -27,20 +27,6 @@ for post in "${postProcessFlags[@]}"; do
     for k in "${testTypes[@]}"; do
         echo "[INFO] Running selection for $k test type"
         echo "Sele $k start time is $(date)"
-        java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
-            -technique prioritization \
-            -coverage statement \
-            -order original \
-            -origOrder $NEW_DT_SUBJ/$SUBJ_NAME-$k-order \
-            -testInputDir $DT_SUBJ/sootTestOutput-$k-selection \
-            -filesToDelete $NEW_DT_SUBJ/$SUBJ_NAME-env-files \
-            -project "$SUBJ_NAME_FORMAL" \
-            -testType $k \
-            -outputDir $DT_ROOT/$seleDir \
-            -timesToRun $medianTimes \
-            -classpath "$CLASSPATH" \
-            -getCoverage \
-            $post
 
         for i in "${coverages[@]}"; do
             for j in "${seleOrders[@]}"; do
