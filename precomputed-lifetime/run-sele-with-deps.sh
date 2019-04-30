@@ -15,6 +15,7 @@ CLASSPATH=$NEW_DT_LIBS:$NEW_DT_CLASS:$NEW_DT_TESTS:$NEW_DT_RANDOOP:$DT_TOOLS:
 mkdir -p "$DT_ROOT/$seleDir"
 
 testTypes=($1)
+echo "Test types set to $testTypes"
 
 for post in "${postProcessFlags[@]}"; do
     if [ "$post" = "" ]; then
