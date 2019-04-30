@@ -5,6 +5,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
     echo "arg2 - Number of rounds"
     echo "arg3 - Timeout in seconds"
     echo "arg4 - The script to run (Optional)"
+    echo "arg5 - Test type (Optional)"
     exit
 fi
 
@@ -15,6 +16,7 @@ projfile=$1
 rounds=$2
 timeout=$3
 script="$4"
+testtype=$5
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
@@ -63,7 +65,7 @@ for line in $(cat ${projfile}); do
     if [ $? == 1 ]; then
         echo "${image} NOT BUILT PROPERLY, LIKELY TESTS FAILED"
     else
-        docker run -t -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${module} ${newsha} ${oldsha} ${timeout} "${script}"
+        docker run -t -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${module} ${newsha} ${oldsha} ${timeout} "${script}" ${testtype}
      fi
 done
 
