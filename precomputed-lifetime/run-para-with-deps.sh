@@ -18,7 +18,7 @@ for post in "${postProcessFlags[@]}"; do
     fi
 
     for j in "${testTypes[@]}"; do
-        echo "[INFO] Running parallelizaiton for $j test type"
+        echo "[INFO] Running parallelization for $j test type"
         echo "Para $j start time is $(date)"
 
         for k in "${machines[@]}"; do
