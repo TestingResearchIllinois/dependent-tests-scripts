@@ -5,6 +5,7 @@
 # $2 - commit to run (new)
 # $3 - path in repo (probably for module)
 # $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
+# $5 - test types
 
 # Run to get things like DT_ROOT and DT_SCRIPTS
 . ../setup-vars.sh
@@ -13,7 +14,13 @@
 PROJ_SLUG=$1
 NEW_COMMIT=$2
 MODULE_PATH=$3
-TECHNIQUES=$4
+TECHNIQUES="$4"
+TESTTYPES="$5"
+
+# Overwrite the test types if set
+if [[ $5 != "" ]]; then
+    export testTypes=($TESTTYPES)
+fi
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
 

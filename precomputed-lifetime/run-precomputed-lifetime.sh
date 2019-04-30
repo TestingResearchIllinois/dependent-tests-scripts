@@ -3,6 +3,7 @@
 # $2 - path in repo (probably for module)
 # $3 - path to file with commits for the project/module
 # $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
+# $5 - test types
 
 if [[ "$1" == "--help" ]]; then
     echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques]"
@@ -18,6 +19,7 @@ PROJ_SLUG=$1
 MODULE_PATH=$2
 NEW_COMMIT_FILE="$3"
 TECHNIQUES="$4"
+TESTTYPES="$5"
 # OLD_COMMIT_FILE="old-commit-list.txt"
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
@@ -55,7 +57,7 @@ fi
 for (( i=1; i<${#new_commits[@]}; i++ ))
 do
     echo "[INFO] bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH \"$TECHNIQUES\""
-    bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH "$TECHNIQUES" | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
+    bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH "$TECHNIQUES" "$TESTTYPES" | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
 
     # Shift environment variables for next run
     #OLD_COMMIT=${new_commits[$i]}
