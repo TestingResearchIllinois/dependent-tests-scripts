@@ -64,7 +64,7 @@ cd precomputed-lifetime/
 )
 
 # Actually run the script
-timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits ${testtype}
+timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits "" ${testtype}
 
 # In case of timeout (or other errors...), put the other stuff into the results
 if [[ $? != 0 ]]; then
