@@ -56,4 +56,4 @@ su - awshi2 -c "$script_to_run ${slug} ${module} ${newsha} ${oldsha} ${timeout}"
 modifiedslug=$(echo ${slug} | sed 's;/;.;' | tr '[:upper:]' '[:lower:]')
 cp -r /home/awshi2/output/ /Scratch/${modifiedslug}=$(basename ${module})_output/
 chown -R $(id -u):$(id -g) /Scratch/${modifiedslug}=$(basename ${module})_output/
-chmod -R 777 /Scratch/${modifiedslug}=${module}_output/
+chmod -R 777 /Scratch/${modifiedslug}=$(basename ${module})_output/
