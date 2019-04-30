@@ -6,12 +6,13 @@ echo "Starting run_lifetime_tools.sh"
 # This script is run inside the Docker image, for single experiment (one project)
 # Should only be invoked by the run_project_lifetime.sh script
 
-if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5 == "" ]]; then
+if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5 == "" ]] || [[ $6 = "" ]]; then
     echo "arg1 - GitHub SLUG"
     echo "arg2 - Module"
     echo "arg3 - Old commit SHA/HEAD"
     echo "arg4 - New commit SHA/HEAD"
     echo "arg5 - Timeout in seconds"
+    echo "arg6 - Test type"
     exit
 fi
 
@@ -20,6 +21,7 @@ module=$2
 oldcommit=$3
 newcommit=$4
 timeout=$5
+testtype=$6
 
 # Run the plugin, get module test times
 echo "*******************ACCOMMODATER************************"
@@ -62,9 +64,7 @@ cd precomputed-lifetime/
 )
 
 # Actually run the script
-timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits
-
-# timeout ${timeout}s /home/awshi2/apache-maven/bin/mvn testrunner:testplugin -Ddiagnosis.run_detection=false -Denforcer.skip=true -Drat.skip=true -Dtestplugin.className=edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin -fn -B -e |& tee fixer.log
+timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits ${testtype}
 
 # In case of timeout (or other errors...), put the other stuff into the results
 if [[ $? != 0 ]]; then
