@@ -14,6 +14,7 @@ machines=(2 4 8 16)
 # Ordering for the three techniques
 priorOrders=(absolute relative)
 seleOrders=(original absolute relative)
+paraOrders=(original time)
 
 # Directory to output the results
 prioDir=prioritization-results
