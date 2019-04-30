@@ -18,7 +18,7 @@ TECHNIQUES="$4"
 TESTTYPES="$5"
 
 # Overwrite the test types if set
-if [[ $5 != "" ]]; then
+if [[ TESTTYPES != "" ]]; then
     export testTypes=($TESTTYPES)
 fi
 
