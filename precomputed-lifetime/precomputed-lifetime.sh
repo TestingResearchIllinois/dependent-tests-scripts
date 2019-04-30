@@ -17,11 +17,6 @@ MODULE_PATH=$3
 TECHNIQUES="$4"
 TESTTYPES="$5"
 
-# Overwrite the test types if set
-if [[ TESTTYPES != "" ]]; then
-    export testTypes=($TESTTYPES)
-fi
-
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
 
 #MAIN_ROOT="$DT_ROOT/${PROJ_NAME}"
@@ -114,7 +109,7 @@ bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele-orig.sh
 # bash $DT_SCRIPTS/setup-para.sh
 # This doesn't need to be done if we are using the original old version as the old version.
 
-bash run-with-deps.sh "$TECHNIQUES"
+bash run-with-deps.sh "$TECHNIQUES" "$TESTTYPES"
 
 # Save results for later
 mkdir -p $result_dir

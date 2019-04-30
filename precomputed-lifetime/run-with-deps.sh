@@ -14,13 +14,20 @@ if [[ -z "$TECHNIQUES" ]]; then
     TECHNIQUES="prio-para-sele"
 fi
 
+TESTTYPES="$2"
+
+if [[ -z "$TESTTYPES" ]]; then
+    TESTTYPES="orig auto"
+fi
+
+
 # ======================================================
 
 rm -rf "$DT_ROOT/$prioDir"
 if [[ "$TECHNIQUES" =~ "prio" ]]; then
     echo "[INFO] Running prioritization-runner script"
     echo "Prio start time is $(date)"
-    bash run-prio-with-deps.sh
+    bash run-prio-with-deps.sh "$TESTTYPES"
     echo "Prio end time is $(date)"
 fi
 
@@ -28,7 +35,7 @@ rm -rf "$DT_ROOT/$seleDir"
 if [[ "$TECHNIQUES" =~ "sele" ]]; then
     echo "[INFO] Running selection-runner script"
     echo "Sele start time is $(date)"
-    bash run-sele-with-deps.sh
+    bash run-sele-with-deps.sh "$TESTTYPES"
     echo "Sele end time is $(date)"
 fi
 
@@ -36,7 +43,7 @@ rm -rf "$DT_ROOT/$paraDir"
 if [[ "$TECHNIQUES" =~ "para" ]]; then
     echo "[INFO] Running parallelization-runner script"
     echo "Para start time is $(date)"
-    bash run-para-with-deps.sh
+    bash run-para-with-deps.sh "$TESTTYPES"
     echo "Para end time is $(date)"
 fi
 
