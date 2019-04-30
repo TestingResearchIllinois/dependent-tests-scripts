@@ -6,12 +6,12 @@
 # $5 - test types
 
 if [[ "$1" == "--help" ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques] [testtypes]"
     exit 1
 fi
 
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques] [testtypes]"
     exit 1
 fi
 
