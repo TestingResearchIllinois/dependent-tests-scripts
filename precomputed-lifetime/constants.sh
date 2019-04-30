@@ -2,7 +2,7 @@
 # file.
 
 # Number of times to run the test order before taking the median
-medianTimes=5
+medianTimes=1
 # Number of times to randomize the test order when calculating the
 # precomputed dependences
 randomTimes=100
