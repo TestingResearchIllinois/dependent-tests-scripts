@@ -17,6 +17,7 @@ for post in "${postProcessFlags[@]}"; do
     for k in "${testTypes[@]}"; do
         echo "[INFO] Running prioritization for $k test type"
         echo "$(pwd)"
+        echo "Prio $k start time is $(date)"
         java -cp $DT_TOOLS:: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
           -technique prioritization \
           -coverage statement \
@@ -96,5 +97,6 @@ for post in "${postProcessFlags[@]}"; do
                     $post
             done
         done
+        echo "Prio $k end time is $(date)"
     done
 done

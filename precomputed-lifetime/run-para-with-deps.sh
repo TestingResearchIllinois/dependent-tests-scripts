@@ -16,6 +16,7 @@ for post in "${postProcessFlags[@]}"; do
 
     for j in "${testTypes[@]}"; do
         echo "[INFO] Running parallelizaiton for $j test type"
+        echo "Para $j start time is $(date)"
         java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
             -technique prioritization \
             -coverage statement \
@@ -103,5 +104,6 @@ for post in "${postProcessFlags[@]}"; do
         done
 
         clearTemp
+        echo "Para $j end time is $(date)"
     done
 done
