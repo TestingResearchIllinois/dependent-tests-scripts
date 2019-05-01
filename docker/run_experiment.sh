@@ -11,6 +11,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5
     echo "arg5 - Timeout in seconds"
     echo "arg6 - Script to run (Optional)"
     echo "arg7 - Test type (Optional)"
+    echo "arg8 - Time to keep docker image running after script finishes (Optional)"
     exit
 fi
 
@@ -31,6 +32,7 @@ newsha=$3
 oldsha=$4
 timeout=$5
 testtype=$7
+keepimagetime=$8
 
 git rev-parse HEAD
 date
@@ -52,7 +54,7 @@ if [[ -e "/home/awshi2/mvn-test-time.log" ]] && [[ ! -e "/home/awshi2/$slug/mvn-
 fi
 
 # Start the script using the awshi2 user
-su - awshi2 -c "$script_to_run ${slug} ${module} ${newsha} ${oldsha} ${timeout} ${testtype}"
+su - awshi2 -c "$script_to_run ${slug} ${module} ${newsha} ${oldsha} ${timeout} ${testtype}" "{keepimagetime}"
 
 # Change permissions of results and copy outside the Docker image (assume outside mounted under /Scratch)
 modifiedslug=$(echo ${slug} | sed 's;/;.;' | tr '[:upper:]' '[:lower:]')
