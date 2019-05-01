@@ -14,12 +14,12 @@ startTime=`date`
 
 CLASSPATH=$DT_LIBS:$DT_CLASS:$DT_RANDOOP:$DT_TESTS:
 
-cd $DT_SUBJ
+cd $DT_SUBJ_SRC
 
 export BIN=/home/awshi2/pradet-replication/bin
 export DATADEP_DETECTOR_HOME=/home/awshi2/pradet-replication/datadep-detector
 
-/home/awshi2/pradet-replication/scripts/generate_test_order.sh test_execution_order
+/home/awshi2/pradet-replication/scripts/generate_test_order.sh target/test-execution-order
 
 # Gather data about enumerations used in the test subject
 /home/awshi2/pradet-replication/scripts/bootstrap_enums.sh
