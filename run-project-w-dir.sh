@@ -33,20 +33,11 @@ else
     OLD_VERSION="$NEW_VERSION~100"
 fi
 
+PRADET=$4
+
 AUTOREMOVE="N"
-if [[ ! -z "$4" ]]; then
-    AUTOREMOVE=$4
-fi
-
 MODULE_FILTER=".*"
-if [[ ! -z "$5" ]]; then
-    MODULE_FILTER="$5"
-fi
-
 SKIP_COMPILE="N"
-if [[ ! -z "$6" ]]; then
-    SKIP_COMPILE="$6"
-fi
 
 . ./setup-vars.sh # Set up the basic environment variables (e.g. $DT_ROOT)
 
@@ -225,9 +216,9 @@ do
                     echo "[INFO] Calling main script: $DT_SCRIPTS/run-module.sh"
 
                     if [[ "$PARALLEL" = "Y" ]]; then
-                        nohup bash run-module.sh $SETUP_SCRIPT &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
+                        nohup bash run-module.sh $SETUP_SCRIPT $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
                     else
-                        bash run-module.sh $SETUP_SCRIPT &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
+                        bash run-module.sh $SETUP_SCRIPT $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
                     fi
                 )
 
