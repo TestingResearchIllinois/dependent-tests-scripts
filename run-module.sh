@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # $1 - Optional. Location of the setup script to run.
+# $2 - Optional. Whether to use Pradet or Minizier for dependencies.
 
 set -e
 
@@ -19,6 +20,8 @@ if [[ ! -z "$1" ]]; then
 
     cd $CURRENT
 fi
+
+PRADET=$2
 
 . $DT_SCRIPTS/constants.sh
 
@@ -50,6 +53,10 @@ fi
     cd $DT_SUBJ
     echo "[DEBUG] Finding human written tests in old subject."
     bash "$DT_SCRIPTS/find-test-list.sh" old orig
+    if [ -n "${PRADET}" ]; then
+        TEST_ORDER="$(pwd)/${SUBJ_NAME}-${testType}-order"
+        yes | cp -rf $TEST_ORDER "$(pwd)/test-execution-order"
+    fi
 
     cd $NEW_DT_SUBJ
     echo "[DEBUG] Finding human written tests in new subject."
@@ -80,12 +87,22 @@ echo "[INFO] Copying results."
 mv figure* "$RESULTS_DIR" || true
 
 if [[ ! "$@" =~ "skip-precomputed" ]]; then
-    echo "[INFO] Running precomputed dependencies."
-    echo
-    bash run-precomputed-dependencies.sh
+
+    if [[ -z "${PRADET}" ]]; then
+        echo "[INFO] Running Minimizer."
+        echo
+        bash run-precomputed-dependencies.sh
+    else
+        echo "[INFO] Running PRADET."
+        echo
+        bash run-pradet-tools.sh
+
+        # Once we add tool to convert PRADET's refined-deps.csv to our format, we can have it run enhanced. The tool should be added directly to run-pradet-tools.sh
+    fi
+
 
     # This is in here because we can only run the enhanced results if we have the precomputed dependencies.
-    if [[ ! "$@" =~ "skip-enhanced" ]]; then
+    if [[ ! "$@" =~ "skip-enhanced" ]] && [[ -z "${PRADET}" ]]; then
         echo "[INFO] Running enhanced results."
         echo
         bash run-enhanced.sh
