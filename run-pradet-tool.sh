@@ -33,6 +33,9 @@ bash /home/awshi2/pradet-replication/scripts/create_package_filter.sh
 # Finally start the collection
 bash /home/awshi2/pradet-replication/scripts/collect.sh
 
+# Move reference over
+mv reference-output.csv-* reference-output.csv
+
 bash /home/awshi2/pradet-replication/scripts/refine.sh
 
 # Temp fix to save pradet results; Removve when ConvertPradetDeps is completed
