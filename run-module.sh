@@ -99,7 +99,7 @@ if [[ ! "$@" =~ "skip-precomputed" ]]; then
         echo "[INFO] Running PRADET."
         echo
         CURRENT=$(pwd)
-        bash run-pradet-tool.sh
+        bash -x run-pradet-tool.sh
         cd $CURRENT
 
         # Once we add tool to convert PRADET's refined-deps.csv to our format, we can have it run enhanced. The tool should be added directly to run-pradet-tools.sh
