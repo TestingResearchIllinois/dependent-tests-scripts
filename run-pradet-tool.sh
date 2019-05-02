@@ -19,18 +19,20 @@ cd $DT_SUBJ_SRC
 export BIN=/home/awshi2/pradet-replication/bin
 export DATADEP_DETECTOR_HOME=/home/awshi2/pradet-replication/datadep-detector
 
-/home/awshi2/pradet-replication/scripts/generate_test_order.sh target/test-execution-order
+echo "PATH: $PATH"
+
+bash /home/awshi2/pradet-replication/scripts/generate_test_order.sh target/test-execution-order
 
 # Gather data about enumerations used in the test subject
-/home/awshi2/pradet-replication/scripts/bootstrap_enums.sh
+bash /home/awshi2/pradet-replication/scripts/bootstrap_enums.sh
 
 # Create the white list package to instrument the test subject code
-/home/awshi2/pradet-replication/scripts/create_package_filter.sh
+bash /home/awshi2/pradet-replication/scripts/create_package_filter.sh
 
 # Finally start the collection
-/home/awshi2/pradet-replication/scripts/collect.sh
+bash /home/awshi2/pradet-replication/scripts/collect.sh
 
-/home/awshi2/pradet-replication/scripts/refine.sh
+bash /home/awshi2/pradet-replication/scripts/refine.sh
 
 # Temp fix to save pradet results; Removve when ConvertPradetDeps is completed
 mkdir -p "$DT_DATA/$prioList"
