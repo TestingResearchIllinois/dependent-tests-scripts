@@ -18,6 +18,6 @@ fi
 
 cd $DT_SCRIPTS
 echo "[DEBUG] Running one-subj.sh"
-bash $DT_SCRIPTS/one-subj.sh $DT_SUBJ $DT_ROOT $SUBJ_NAME "$SUBJ_NAME_FORMAL" \
+#bash $DT_SCRIPTS/one-subj.sh $DT_SUBJ $DT_ROOT $SUBJ_NAME "$SUBJ_NAME_FORMAL" \
   "$DT_TOOLS" "$DT_LIBS" $DT_CLASS $DT_RANDOOP $DT_TESTS false false $NEW_DT_SUBJ $ORIG_MIN_DTS $AUTO_MIN_DTS
 
