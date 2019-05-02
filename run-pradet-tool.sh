@@ -19,6 +19,7 @@ cd $DT_SUBJ_SRC
 export BIN=/home/awshi2/pradet-replication/bin
 export DATADEP_DETECTOR_HOME=/home/awshi2/pradet-replication/datadep-detector
 
+export PATH=/home/awshi2/apache-maven/bin:${PATH}
 echo "PATH: $PATH"
 
 bash /home/awshi2/pradet-replication/scripts/generate_test_order.sh target/test-execution-order

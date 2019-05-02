@@ -39,6 +39,7 @@ date
 
 mkdir -p /home/awshi2/data
 
+export PATH=/home/awshi2/apache-maven/bin:${PATH}
 cd /home/awshi2/
 git clone https://github.com/gmu-swe/pradet-replication.git
 cd pradet-replication/
