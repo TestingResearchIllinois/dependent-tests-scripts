@@ -32,9 +32,9 @@ module=$2
 newsha=$3
 oldsha=$4
 timeout=$5
-testtype=$7
-technique=$8
-keepimagetime=$9
+testtype="$7"
+technique="$8"
+keepimagetime="$9"
 
 git rev-parse HEAD
 date

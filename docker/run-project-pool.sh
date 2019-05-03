@@ -14,6 +14,6 @@ mkdir -p "logs"
 fname="logs/$(basename $1 .csv)-log.txt"
 
 echo "Logging to $fname"
-bash create_and_run_dockers.sh $@ &> $fname
+bash create_and_run_dockers.sh "$1" "$2" "$3" "$4" "$5" "$6" &> $fname
 echo "Finished running $fname"
 

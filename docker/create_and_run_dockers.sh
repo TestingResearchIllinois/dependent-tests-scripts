@@ -18,9 +18,9 @@ projfile=$1
 rounds=$2
 timeout=$3
 script="$4"
-testtype=$5
-technique=$6
-keepimagetime=$7
+testtype="$5"
+technique="$6"
+keepimagetime="$7"
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
@@ -69,7 +69,7 @@ for line in $(cat ${projfile}); do
     if [ $? == 1 ]; then
         echo "${image} NOT BUILT PROPERLY, LIKELY TESTS FAILED"
     else
-        docker run -t -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${module} ${newsha} ${oldsha} ${timeout} \"${script}\" \"${testtype}\" \"${technique}\" \"${keepimagetime}\"
+        docker run -t -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${module} ${newsha} ${oldsha} ${timeout} "${script}" "${testtype}" "${technique}" "${keepimagetime}"
      fi
 done
 
