@@ -56,7 +56,7 @@ if [[ -e "/home/awshi2/mvn-test-time.log" ]] && [[ ! -e "/home/awshi2/$slug/mvn-
 fi
 
 # Start the script using the awshi2 user
-su - awshi2 -c "$script_to_run ${slug} ${module} ${newsha} ${oldsha} ${timeout} ${testtype} ${technique} ${keepimagetime}"
+su - awshi2 -c "$script_to_run ${slug} ${module} ${newsha} ${oldsha} ${timeout} "${testtype}" "${technique}" "${keepimagetime}""
 
 # Change permissions of results and copy outside the Docker image (assume outside mounted under /Scratch)
 modifiedslug=$(echo ${slug} | sed 's;/;.;' | tr '[:upper:]' '[:lower:]')

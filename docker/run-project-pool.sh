@@ -6,6 +6,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
     echo "arg3 - Timeout in seconds"
     echo "arg4 - The script to run (Optional)"
     echo "arg5 - Test type (Optional)"
+    echo "arg6 - Technique (Optional)"
     exit
 fi
 

@@ -69,7 +69,7 @@ for line in $(cat ${projfile}); do
     if [ $? == 1 ]; then
         echo "${image} NOT BUILT PROPERLY, LIKELY TESTS FAILED"
     else
-        docker run -t -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${module} ${newsha} ${oldsha} ${timeout} "${script}" ${testtype} ${technique} ${keepimagetime}
+        docker run -t -v ${SCRIPT_DIR}:/Scratch ${image} /bin/bash -x /Scratch/run_experiment.sh ${slug} ${module} ${newsha} ${oldsha} ${timeout} "${script}" "${testtype}" "${technique}" "${keepimagetime}"
      fi
 done
 
