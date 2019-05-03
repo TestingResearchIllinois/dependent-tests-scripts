@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [[ "$1" == "--help" ]]; then
-    echo "Usage: ./run_project.sh project-dir [new commit] [old commit] [autoremove directory if exists (Y/N)]"
+    echo "Usage: ./run_project.sh project-dir [new commit] [old commit] [technique (prio|sele|para)] [pradet]"
     exit 1
 fi
 
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./run_project.sh project-dir [new commit] [old commit] [autoremove directory if exists (Y/N)]"
+    echo "Usage: ./run_project.sh project-dir [new commit] [old commit] [technique (prio|sele|para)] [pradet]"
     exit 1
 fi
 
@@ -33,7 +33,9 @@ else
     OLD_VERSION="$NEW_VERSION~100"
 fi
 
-PRADET=$4
+TECHNIQUE=$4
+
+PRADET=$5
 
 AUTOREMOVE="N"
 MODULE_FILTER=".*"
@@ -216,9 +218,9 @@ do
                     echo "[INFO] Calling main script: $DT_SCRIPTS/run-module.sh"
 
                     if [[ "$PARALLEL" = "Y" ]]; then
-                        nohup bash run-module.sh $SETUP_SCRIPT $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
+                        nohup bash run-module.sh $SETUP_SCRIPT $TECHNIQUE $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
                     else
-                        bash run-module.sh $SETUP_SCRIPT $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
+                        bash run-module.sh $SETUP_SCRIPT $TECHNIQUE $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
                     fi
                 )
 
