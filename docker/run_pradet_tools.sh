@@ -24,8 +24,8 @@ newcommit=$4
 timeout=$5
 testtype=$6
 
-keepimagetime=$6
-if [[ -z "$6" ]]; then
+keepimagetime=$7
+if [[ -z "$7" ]]; then
     # The default is 0 seconds
     keepimagetime=0
 fi
