@@ -14,6 +14,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5
     echo "arg3 - New commit"
     echo "arg4 - Old commit"
     echo "arg5 - Timeout in seconds"
+    echo "arg6 - Technique (Optional)"
     exit
 fi
 
@@ -22,6 +23,7 @@ module=$2
 newcommit=$3
 oldcommit=$4
 timeout=$5
+technique=$6
 
 # Setup prolog stuff
 /home/awshi2/dependent-tests-scripts/docker/setup
@@ -32,7 +34,7 @@ source ~/.bashrc
 echo "*******************ACCOMMODATER************************"
 echo "Running accommodater script"
 date
-/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} ${module} ${oldcommit} ${newcommit} ${timeout}
+/home/awshi2/dependent-tests-scripts/docker/run_accommodater_tools.sh ${slug} ${module} ${oldcommit} ${newcommit} ${timeout} ${technique}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_project.sh"

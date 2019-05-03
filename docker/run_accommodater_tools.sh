@@ -12,6 +12,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5
     echo "arg3 - Old commit SHA/HEAD"
     echo "arg4 - New commit SHA/HEAD"
     echo "arg5 - Timeout in seconds"
+    echo "arg6 - Technique (Optional)"
     exit
 fi
 
@@ -20,6 +21,7 @@ module=$2
 oldcommit=$3
 newcommit=$4
 timeout=$5
+technique=$6
 
 # Run the plugin, get module test times
 echo "*******************ACCOMMODATER************************"
@@ -39,7 +41,7 @@ grep "${slug//\//.}-$(basename ${module})" modules-torun.txt > /tmp/mod
 mv /tmp/mod modules-torun.txt
 
 # Actually run the script
-timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${slug} ${newcommit} ${oldcommit}
+timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${slug} ${newcommit} ${oldcommit} ${technique}
 
 # timeout ${timeout}s /home/awshi2/apache-maven/bin/mvn testrunner:testplugin -Ddiagnosis.run_detection=false -Denforcer.skip=true -Drat.skip=true -Dtestplugin.className=edu.illinois.cs.dt.tools.fixer.CleanerFixerPlugin -fn -B -e |& tee fixer.log
 
