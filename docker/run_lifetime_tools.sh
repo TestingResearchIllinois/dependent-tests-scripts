@@ -13,6 +13,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5
     echo "arg4 - New commit SHA/HEAD"
     echo "arg5 - Timeout in seconds"
     echo "arg6 - Test type"
+    echo "arg7 - Technique (Optional)"
     exit
 fi
 
@@ -22,6 +23,7 @@ oldcommit=$3
 newcommit=$4
 timeout=$5
 testtype=$6
+technique=$7
 
 # Run the plugin, get module test times
 echo "*******************ACCOMMODATER************************"
@@ -64,7 +66,7 @@ cd precomputed-lifetime/
 )
 
 # Actually run the script
-timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits "" ${testtype}
+timeout ${timeout}s bash /home/awshi2/dependent-tests-scripts/precomputed-lifetime/run-precomputed-lifetime.sh ${slug} ${module} /home/awshi2/dependent-tests-scripts/precomputed-lifetime/projectcommits/${modifiedslug}-$(basename ${module})_commits ${technique} ${testtype}
 
 # In case of timeout (or other errors...), put the other stuff into the results
 if [[ $? != 0 ]]; then
