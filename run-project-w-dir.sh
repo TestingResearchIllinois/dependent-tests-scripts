@@ -218,9 +218,9 @@ do
                     echo "[INFO] Calling main script: $DT_SCRIPTS/run-module.sh"
 
                     if [[ "$PARALLEL" = "Y" ]]; then
-                        nohup bash run-module.sh $SETUP_SCRIPT $TECHNIQUE $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
+                        nohup bash run-module.sh $SETUP_SCRIPT $TECHNIQUE $PRADET skip-enhanced &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt" &
                     else
-                        bash run-module.sh $SETUP_SCRIPT $TECHNIQUE $PRADET  &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
+                        bash run-module.sh $SETUP_SCRIPT $TECHNIQUE $PRADET skip-enhanced &> "$DT_SCRIPTS/${SUBJ_NAME}-results/module-output.txt"
                     fi
                 )
 
