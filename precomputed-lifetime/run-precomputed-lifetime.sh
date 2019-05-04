@@ -11,15 +11,15 @@ if [[ "$1" == "--help" ]]; then
 fi
 
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [techniques] [testtypes]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path commit-list [testtypes] [techniques]"
     exit 1
 fi
 
 PROJ_SLUG=$1
 MODULE_PATH=$2
 NEW_COMMIT_FILE="$3"
-TECHNIQUES="$4"
-TESTTYPES="$5"
+TESTTYPES="$4"
+TECHNIQUES="$5"
 # OLD_COMMIT_FILE="old-commit-list.txt"
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
