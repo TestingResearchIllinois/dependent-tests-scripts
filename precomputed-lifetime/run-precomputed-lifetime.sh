@@ -56,7 +56,7 @@ fi
 
 for (( i=1; i<${#new_commits[@]}; i++ ))
 do
-    echo "[INFO] bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH \"$TECHNIQUES\""
+    echo "[INFO] bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH \"$TECHNIQUES\" \"$TESTTYPES\""
     bash precomputed-lifetime.sh $PROJ_SLUG ${new_commits[$i]} $MODULE_PATH "$TECHNIQUES" "$TESTTYPES" | tee "${PROJ_NAME}-${new_commits[$i]}.txt"
 
     # Shift environment variables for next run

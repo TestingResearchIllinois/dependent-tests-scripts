@@ -109,6 +109,7 @@ bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele-orig.sh
 # bash $DT_SCRIPTS/setup-para.sh
 # This doesn't need to be done if we are using the original old version as the old version.
 
+echo "[INFO] bash run-with-deps.sh \"$TECHNIQUES\" \"$TESTTYPES\""
 bash run-with-deps.sh "$TECHNIQUES" "$TESTTYPES"
 
 # Save results for later
