@@ -10,10 +10,21 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
     exit
 fi
 
+
+if [[ -z "$5" ]] || [[ -z "$6" ]]; then
+    line=$(cat ${$1})
+    testtype=$(echo ${line} | cut -d',' -f5)
+    technique=$(echo ${line} | cut -d',' -f6)
+else
+    testtype=$5
+    technique=$6
+fi
+
 mkdir -p "logs"
 fname="logs/$(basename $1 .csv)-log.txt"
 
 echo "Logging to $fname"
-bash create_and_run_dockers.sh "$1" "$2" "$3" "$4" "$5" "$6" &> $fname
+echo "Running: bash create_and_run_dockers.sh $1 $2 $3 $4 $testtype $technique"
+bash create_and_run_dockers.sh "$1" "$2" "$3" "$4" "$testtype" "$technique" &> $fname
 echo "Finished running $fname"
 
