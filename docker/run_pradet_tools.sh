@@ -12,8 +12,6 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5
     echo "arg3 - Old commit SHA/HEAD"
     echo "arg4 - New commit SHA/HEAD"
     echo "arg5 - Timeout in seconds"
-    echo "arg6 - (Optional) test type"
-    echo "arg7 - (Optional) time to leave docker image open. Largely for debugging."
     exit
 fi
 
@@ -22,13 +20,6 @@ module=$2
 oldcommit=$3
 newcommit=$4
 timeout=$5
-testtype=$6
-
-keepimagetime=$7
-if [[ -z "$7" ]]; then
-    # The default is 0 seconds
-    keepimagetime=0
-fi
 
 # Run the plugin, get module test times
 echo "*******************PRADET************************"
@@ -55,7 +46,7 @@ modifiedslug=${slug//\//.}
 grep "${modifiedslug}-$(basename ${module})" modules-torun.txt > /tmp/mod
 mv /tmp/mod modules-torun.txt
 
-timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${slug} ${newcommit} ${oldcommit} "pradet"
+timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${slug} ${newcommit} ${oldcommit} "" "pradet"
 
 # Gather the results, put them up top
 cd /home/awshi2/dependent-tests-scripts/

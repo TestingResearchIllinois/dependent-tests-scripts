@@ -1,3 +1,4 @@
+alibaba.fastjson-.
 apache.incubator-dubbo-dubbo-cluster
 apache.incubator-dubbo-dubbo-registry-default
 apache.incubator-dubbo-dubbo-rpc-dubbo

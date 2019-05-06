@@ -39,24 +39,25 @@ mv reference-output.csv-* reference-output.csv
 bash /home/awshi2/pradet-replication/scripts/refine.sh
 
 # Temp fix to save pradet results; Removve when ConvertPradetDeps is completed
-mkdir -p "$DT_DATA/$prioList"
-cp refined-deps.csv "$DT_DATA/$prioList/"
-mkdir -p "$DT_DATA/$seleList"
-cp refined-deps.csv "$DT_DATA/$seleList/"
-mkdir -p "$DT_DATA/$paraList"
-cp refined-deps.csv "$DT_DATA/$paraList/"
+# mkdir -p "$DT_DATA/$prioList"
+# cp refined-deps.csv "$DT_DATA/$prioList/"
+# mkdir -p "$DT_DATA/$seleList"
+# cp refined-deps.csv "$DT_DATA/$seleList/"
+# mkdir -p "$DT_DATA/$paraList"
+# cp refined-deps.csv "$DT_DATA/$paraList/"
 
 # Generate dt lists
-#java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.ConvertPradetDeps -pradetDeps refined-deps.csv -prioOutputDirectory "$DT_DATA/$prioList" -seleOutputDirectory "$DT_DATA/$seleList" -paraOutputDirectory "$DT_DATA/$paraList"
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.PradetToMinimizerFormat -pradetFile refined-deps.csv -prioOutputDirectory "$DT_DATA/$prioList" -seleOutputDirectory "$DT_DATA/$seleList" -paraOutputDirectory "$DT_DATA/$paraList" -projectName ${SUBJ_NAME_FORMAL} -origOrAuto orig
 
 echo "[INFO] Copying dt-lists."
 RESULTS_DIR="$DT_SCRIPTS/${SUBJ_NAME}-results/dt-lists/"
 mkdir -p "$RESULTS_DIR/$prioList"
-cp "$DT_DATA/$prioList/refined-deps.csv" "$RESULTS_DIR/$prioList"
+cp "$DT_ROOT/data/$prioList/"*"${SUBJ_NAME_FORMAL}"* "$RESULTS_DIR/$prioList"
 mkdir -p "$RESULTS_DIR/$seleList"
-cp "$DT_DATA/$seleList/refined-deps.csv" "$RESULTS_DIR/$seleList"
+cp "$DT_ROOT/data/$seleList/"*"${SUBJ_NAME_FORMAL}"* "$RESULTS_DIR/$seleList"
 mkdir -p "$RESULTS_DIR/$paraList"
-cp "$DT_DATA/$paraList/refined-deps.csv" "$RESULTS_DIR/$paraList"
+cp "$DT_ROOT/data/$paraList/"*"${SUBJ_NAME_FORMAL}"* "$RESULTS_DIR/$paraList"
+
 
 # Defined in constants.sh
 copy_results "precomputed"

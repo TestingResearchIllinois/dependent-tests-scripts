@@ -15,6 +15,7 @@ if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]] || [[ $4 == "" ]] || [[ $5
     echo "arg4 - Old commit"
     echo "arg5 - Timeout in seconds"
     echo "arg6 - Test type"
+    echo "arg7 - Technique (Optional)"
     exit
 fi
 
@@ -24,6 +25,7 @@ newcommit=$3
 oldcommit=$4
 timeout=$5
 testtype=$6
+technique=$7
 
 # Setup prolog stuff
 /home/awshi2/dependent-tests-scripts/docker/setup
@@ -34,7 +36,7 @@ source ~/.bashrc
 echo "*******************ACCOMMODATER************************"
 echo "Running accommodater script"
 date
-/home/awshi2/dependent-tests-scripts/docker/run_lifetime_tools.sh ${slug} ${module} ${oldcommit} ${newcommit} ${timeout} ${testtype}
+/home/awshi2/dependent-tests-scripts/docker/run_lifetime_tools.sh ${slug} ${module} ${oldcommit} ${newcommit} ${timeout} ${testtype} ${technique}
 
 echo "*******************ACCOMMODATER************************"
 echo "Finished run_project_lifetime.sh"

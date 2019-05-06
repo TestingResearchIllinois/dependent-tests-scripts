@@ -17,7 +17,7 @@ ROOT_PATH="$3"
 (
     # Compile all modules for the current version.
     cd "$ROOT_PATH"
-    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl $MODULE_PATH -am
+    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl $(echo $MODULE_PATH | sed "s;$ROOT_PATH;;") -am
 
     # 2. Gather the dependencies of the old subject for that module.
     cd "$MODULE_PATH"

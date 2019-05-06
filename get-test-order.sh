@@ -38,7 +38,7 @@ fi
 # Run the tests, but force to re-compile from top level just in case of needing local dependencies upgraded
 (
     cd $ROOT_DIR
-    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests
+    /home/awshi2/apache-maven/bin/mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl $(echo $SUBJ_SRC | sed "s;$ROOT_DIR;;") -am
 )
 /home/awshi2/apache-maven/bin/mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip |& tee "test-log.txt"
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # $1 - Optional. Location of the setup script to run.
-# $2 - Optional. Whether to use Pradet or Minizier for dependencies.
+# $2 - Optional. What technique to run
+# $3 - Optional. Whether to use Pradet or Minimizer for dependencies.
 
 set -e
 
@@ -21,7 +22,13 @@ if [[ ! -z "$1" ]]; then
     cd $CURRENT
 fi
 
-PRADET=$2
+if [[ ! -z "$2" ]]; then
+    TECHNIQUE=$2
+else
+    TECHNIQUE=""
+fi
+
+PRADET=$3
 
 . $DT_SCRIPTS/constants.sh
 
@@ -94,7 +101,7 @@ if [[ ! "$@" =~ "skip-precomputed" ]]; then
     if [[ -z "${PRADET}" ]]; then
         echo "[INFO] Running Minimizer."
         echo
-        bash run-precomputed-dependencies.sh
+        bash run-precomputed-dependencies.sh ${TECHNIQUE}
     else
         echo "[INFO] Running PRADET."
         echo
@@ -110,7 +117,7 @@ if [[ ! "$@" =~ "skip-precomputed" ]]; then
     if [[ ! "$@" =~ "skip-enhanced" ]] && [[ -z "${PRADET}" ]]; then
         echo "[INFO] Running enhanced results."
         echo
-        bash run-enhanced.sh
+        bash run-enhanced.sh ${TECHNIQUE}
     else
         echo "[INFO] Skipping enhanced results."
     fi
