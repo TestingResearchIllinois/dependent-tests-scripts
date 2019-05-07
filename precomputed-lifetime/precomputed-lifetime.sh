@@ -121,10 +121,5 @@ mv $DT_ROOT/parallelization-results $result_dir
 # Copy the properties file
 cp "$DT_SCRIPTS/$SUBJ_NAME-results/subject.properties" "$result_dir/.."
 
-# Copy the dt-lists as well, in case they were updated
-cp -r $PRIO_DT_LISTS/ $result_dir/
-cp -r $SELE_DT_LISTS/ $result_dir/
-cp -r $PARA_DT_LISTS/ $result_dir/
-
 cd $PRECOMPUTED_LIFETIME_ROOT
 
