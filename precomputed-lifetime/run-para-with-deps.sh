@@ -73,6 +73,7 @@ for post in "${postProcessFlags[@]}"; do
                     -outputDir $DT_ROOT/$paraDir \
                     -classpath $CLASSPATH \
                     -dependentTestFile $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-$order-$p.txt\" \
+                    -resolveDependences $PARA_DT_LISTS/\"parallelization-$SUBJ_NAME_FORMAL-$j-$k-$order-$p.txt\" \
                     $post"
                 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                     -technique parallelization \
@@ -88,6 +89,7 @@ for post in "${postProcessFlags[@]}"; do
                     -outputDir $DT_ROOT/$paraDir \
                     -classpath "$CLASSPATH" \
                     -dependentTestFile $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-$order-$p.txt" \
+                    -resolveDependences $PARA_DT_LISTS/"parallelization-$SUBJ_NAME_FORMAL-$j-$k-$order-$p.txt" \
                     $post
             done
         done
