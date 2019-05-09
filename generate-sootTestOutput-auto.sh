@@ -2,6 +2,8 @@ source ~/.bashrc
 
 set -e
 
+bash generate-auto-tests.sh
+
 # 5.  Instrument the source and test files.
 echo "[DEBUG] Instrumenting auto tests."
 # java -cp $DT_TOOLS:$DT_LIBS:$DT_CLASS:$DT_RANDOOP:$JAVA_HOME/jre/lib/*: edu.washington.cs.dt.impact.Main.InstrumentationMain --soot-cp -inputDir $DT_RANDOOP
