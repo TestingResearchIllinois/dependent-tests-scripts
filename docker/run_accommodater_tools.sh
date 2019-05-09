@@ -36,6 +36,8 @@ cd /home/awshi2/dependent-tests-scripts/
 
 set -x
 
+modifiedslug=${slug//\//.}
+
 # Modify the modules-torun.txt to only include the relevant one for the specified module
 grep "${slug//\//.}-$(basename ${module})" modules-torun.txt > /tmp/mod
 mv /tmp/mod modules-torun.txt
