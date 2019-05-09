@@ -40,6 +40,21 @@ set -x
 grep "${slug//\//.}-$(basename ${module})" modules-torun.txt > /tmp/mod
 mv /tmp/mod modules-torun.txt
 
+# Download the directories corresponding to the old SHA and put them into place
+(
+    cd /home/awshi2/
+    if [[ ${module} == '.' ]]; then
+        name=${modifiedslug}
+    else
+        name=${modifiedslug}-$(basename ${module})
+    fi
+    wget http://mir.cs.illinois.edu/awshi2/dt-impact/${name}.zip
+    unzip ${name}.zip
+    owner=$(echo ${slug} | cut -d'/' -f1)
+    projname=$(echo ${slug} | cut -d'/' -f2)
+    mv ${name}/${projname}-old-* /home/awshi2/${owner}/
+)
+
 # Actually run the script
 timeout ${timeout}s /home/awshi2/dependent-tests-scripts/run-project-w-dir.sh ${slug} ${newcommit} ${oldcommit} ${technique}
 
