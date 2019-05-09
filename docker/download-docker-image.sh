@@ -8,7 +8,7 @@ if ! [ -x "$(command -v azcopy)" ]; then
     sudo apt-get install -y azcopy
 fi
 
-line=$(cat ${$1})
+line=$(cat $1)
 imageName=$(echo ${line} | cut -d',' -f5)
 
 azcopy \
