@@ -8,9 +8,14 @@ if ! [ -x "$(command -v azcopy)" ]; then
     sudo apt-get install -y azcopy
 fi
 
+line=$(cat ${$1})
+imageName=$(echo ${line} | cut -d',' -f5)
+
 azcopy \
-    --source https://dtdataset.file.core.windows.net/dtdata/$1 \
-    --destination ./$1 \
+    --source https://dtdataset.file.core.windows.net/dtdata/$imageName \
+    --destination ./$imageName \
     --source-key $2 \
     --preserve-last-modified-time \
     --quiet
+
+docker load -i $imageName
