@@ -86,13 +86,13 @@ echo
 # orig
 DTDETECTOR_OUTPUT="$RESULTS_DIR/randomize-output-orig.txt"
 bash run-dtdetector.sh "$SETUP_SCRIPT" "old" "orig" &> "$DTDETECTOR_OUTPUT"
-DT_COUNT=$(cat "$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-orig-randomize/list.txt" | wc -l)
-echo "[INFO] Found $DT_COUNT orig dependent tests using the dtdetector."
+#DT_COUNT=$(cat "$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-orig-randomize/list.txt" | wc -l)
+#echo "[INFO] Found $DT_COUNT orig dependent tests using the dtdetector."
 # auto
 DTDETECTOR_OUTPUT="$RESULTS_DIR/randomize-output-auto.txt"
 bash run-dtdetector.sh "$SETUP_SCRIPT" "old" "auto" &> "$DTDETECTOR_OUTPUT"
-DT_COUNT=$(cat "$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-auto-randomize/list.txt" | wc -l)
-echo "[INFO] Found $DT_COUNT auto dependent tests using the dtdetector."
+#DT_COUNT=$(cat "$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-auto-randomize/list.txt" | wc -l)
+#echo "[INFO] Found $DT_COUNT auto dependent tests using the dtdetector."
 exit
 
 SKIP_COMPILE="Y" # Always skip compile, because we did it already.
