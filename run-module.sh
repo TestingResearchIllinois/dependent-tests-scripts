@@ -76,6 +76,10 @@ fi
     bash "$DT_SCRIPTS/get-test-order.sh" new
 )
 
+# Generate randoop tests
+echo "[INFO] Generate Randoop tests for ${SUBJ_NAME}"
+bash generate-auto-tests.sh
+
 NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output.txt"
 echo "[INFO] Running nondeterministic runner for ${SUBJ_NAME}"
 echo
