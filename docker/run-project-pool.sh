@@ -13,8 +13,8 @@ fi
 
 if [[ -z "$5" ]] || [[ -z "$6" ]]; then
     line=$(cat $1)
-    testtype=$(echo ${line} | cut -d',' -f5)
-    technique=$(echo ${line} | cut -d',' -f6)
+    testtype=$(echo ${line} | cut -d',' -f6)
+    technique=$(echo ${line} | cut -d',' -f7)
 else
     testtype=$5
     technique=$6
