@@ -80,10 +80,13 @@ fi
 #echo "[INFO] Generate Randoop tests for ${SUBJ_NAME}"
 #bash generate-auto-tests.sh
 
-NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output.txt"
 echo "[INFO] Running nondeterministic runner for ${SUBJ_NAME}"
-echo
-#bash nondeterministic-runner.sh $SETUP_SCRIPT &> "$NONDETERMINISTIC_OUTPUT"
+# orig
+NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output-orig.txt"
+bash nondeterministic-runner.sh "$SETUP_SCRIPT" "old" "orig" &> "$NONDETERMINISTIC_OUTPUT"
+# auto
+NONDETERMINISTIC_OUTPUT="$RESULTS_DIR/nondeterministic-output-auto.txt"
+bash nondeterministic-runner.sh "$SETUP_SCRIPT" "old" "auto" &> "$NONDETERMINISTIC_OUTPUT"
 
 echo "[INFO] Running dtdetector for ${SUBJ_NAME}"
 echo
