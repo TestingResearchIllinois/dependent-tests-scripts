@@ -65,7 +65,6 @@ for post in "${postProcessFlags[@]}"; do
                     -timesToRun $medianTimes \
                     -classpath "$CLASSPATH" \
                     -dependentTestFile $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
-                    -resolveDependences $SELE_DT_LISTS/"selection-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
                     $post
             done
         done
