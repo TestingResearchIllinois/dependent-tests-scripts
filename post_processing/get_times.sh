@@ -1,11 +1,6 @@
 #!/bin/bash
 
-testtype=$1
-if [[ ${testtype} == "" ]]; then
-    echo "Provide test type (orig or auto)"
-    exit
-fi
-
+for testtype in orig auto; do
 (
     cd ${testtype}results/
 
@@ -55,3 +50,4 @@ fi
         done
     done
 )
+done
