@@ -22,52 +22,50 @@ for testtype in orig auto; do
         # Get the number of revisions used
         numrevs=$(find ${l} -name "*-lifetime" | xargs ls | wc -l)
         echo "\Def{${projmod}_${testtype}_numrevs}{${numrevs}}"
+
+        # Record the number of test failures that occurred
+        for tech in PRIORITIZATION SELECTION PARALLELIZATION; do
+            techdtsfile=$(mktemp /tmp/dts.XXXXXX)
+            for f in $(find ${l} -name ${tech}-* | grep OMITTED | grep false); do
+                # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
+                if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
+                    if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
+                        continue
+                    fi
+                fi
+                dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
+                if [[ ${dtsline} == "" ]]; then
+                    continue
+                fi
+                for dts in $(echo ${dtsline} | sed 's;DTs not fixed are: ;;g' | sed 's; -- ; ;g'); do
+                    for dt in $(echo ${dts} | xargs | sed 's;,;\n;g' | xargs); do
+                        echo ${dt} >> ${techdtsfile}
+                    done
+                done
+            done
+            echo "\Def{${projmod}_${testtype}_dtfailures_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(cat ${techdtsfile} | wc -l)}"
+            rm ${techdtsfile}
     
-        ## Keep track of total DTs across all techniques for this subject
-        #totaldtsfile=$(mktemp /tmp/dts.XXXXXX)
-    
-        #for tech in PRIORITIZATION SELECTION PARALLELIZATION; do
-        #    techdtsfile=$(mktemp /tmp/dts.XXXXXX)
-        #    for f in $(find ${l} -name ${tech}-* | grep OMITTED | grep false); do
-        #        # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
-        #        if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
-        #            if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
-        #                continue
-        #            fi
-        #        fi
-        #        dtsline=$(grep -A1 "DTs not fixed are:" ${f})
-        #        if [[ ${dtsline} == "" ]]; then
-        #            continue
-        #        fi
-        #        for dts in $(echo ${dtsline} | sed 's;DTs not fixed are: ;;g' | sed 's; -- ; ;g'); do
-        #            echo ${dts} | xargs | sed 's;\[;;' | sed 's;\];;' | sed 's;, ;\n;g' >> ${techdtsfile}
-        #            echo ${dts} | xargs | sed 's;\[;;' | sed 's;\];;' | sed 's;, ;\n;g' >> ${totaldtsfile}
-        #        done
-        #    done
-        #    echo "\Def{${projmod}_${testtype}_dts_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(sort -u ${techdtsfile} | wc -l)}"
-        #    rm ${techdtsfile}
-    
-        #    # Count how many revisions had DTs found
-        #    revswithdts=""
-        #    for f in $(find ${l} -name ${tech}-* | grep OMITTED | grep false); do
-        #        # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
-        #        if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
-        #            if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
-        #                continue
-        #            fi
-        #        fi
-        #        dtsline=$(grep -A1 "DTs not fixed are:" ${f})
-        #        if [[ ${dtsline} == "" ]]; then
-        #            continue
-        #        fi
-        #        revswithdts="${revswithdts} $(echo ${f} | rev | cut -d'/' -f3 | rev)"
-        #    done
-        #    if [[ ! -z ${revswithdts} ]]; then
-        #        echo "\Def{${projmod}_${testtype}_revswithdts_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(echo ${revswithdts} | sed 's; ;\n;g' | sort -u | wc -l)}"
-        #    else
-        #        echo "\Def{${projmod}_${testtype}_revswithdts_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{0}"
-        #    fi
-        #done
+            # Count how many configurations had DTs found
+            confswithdts=0
+            totalconfs=0
+            for f in $(find ${l} -name ${tech}-* | grep OMITTED | grep false); do
+                # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
+                if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
+                    if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
+                        continue
+                    fi
+                fi
+                totalconfs=$((totalconfs + 1))
+                dtsline=$(grep -A1 "DTs not fixed are:" ${f})
+                if [[ ${dtsline} == "" ]]; then
+                    continue
+                fi
+                confswithdts=$((confswithdts + 1))
+            done
+            echo "\Def{${projmod}_${testtype}_confswithdts_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${confswithdts}}"
+            echo "\Def{${projmod}_${testtype}_totalconfs_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${totalconfs}}"
+        done
         #dts=$(sort -u ${totaldtsfile} | wc -l)
         #echo "\Def{${projmod}_${testtype}_dts_found}{${dts}}"
         #rm ${totaldtsfile}

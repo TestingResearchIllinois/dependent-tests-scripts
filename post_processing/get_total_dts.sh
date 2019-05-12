@@ -3,31 +3,59 @@
 for l in $(ls dtdresults/ | grep "_output$"); do
     projmod=$(echo ${l} | sed 's;_output;;')
 
+    # ORIG
+
     # Get the first revision
     firstrev=$(find origresults/${l} -name "*-lifetime" | xargs ls | sort | head -1)
     firstsha=$(echo ${firstrev} | rev | cut -d'-' -f1 | rev | cut -c 1-8)
 
-    # Get the orig
-    origfile=$(find dtdresults/${l} -name list.txt | grep "orig")
-    orig=$(grep -c "" ${origfile})
-    echo "\\Def{${projmod}_orig_dts}{${orig}}"
-    # Get the number of tests in the first revision (open some prioritization file and read total tests)
+    # Get the number of orig tests in the first revision (open some prioritization file and read total tests)
     priofile=$(find $(find origresults/${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo orig | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
     if [[ ${priofile} != "" ]]; then
         numtests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
     fi
+
+    # Get the orig nods
+    orignodfile=$(find dtdresults/${l} -name list.txt | grep "orig" | grep "nondeterministic")
+    if [[ ${orignodfile} == "" ]]; then
+        orignod=0
+    else
+        orignod=$(grep -c "" ${orignodfile})
+    fi
+    echo "\Def{${projmod}_orig_nods}{${orignod}}"
+    percnods=$(echo "${orignod} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
+    echo "\Def{${projmod}_orig_nodsperc}{${percnods}\%}"
+
+    # Get the orig dts
+    origfile=$(find dtdresults/${l} -name list.txt | grep "orig" | grep "random")
+    orig=$(grep -c "" ${origfile})
+    echo "\Def{${projmod}_orig_dts}{${orig}}"
     percdts=$(echo "${orig} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
     echo "\Def{${projmod}_orig_dtsperc}{${percdts}\%}"
 
-    # Get the auto
-    autofile=$(find dtdresults/${l} -name list.txt | grep "auto")
-    auto=$(grep -c "" ${autofile})
-    echo "\\Def{${projmod}_auto_dts}{${auto}}"
-    # Get the number of tests in the first revision (open some prioritization file and read total tests)
-    priofile=$(find $(find autoresults/${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo auto | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
+    # AUTO
+
+    # Get the number of auto tests in the first revision (open some prioritization file and read total tests)
+    priofile=$(find $(find autoresults/${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo orig | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
     if [[ ${priofile} != "" ]]; then
         numtests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
     fi
+
+    # Get the auto nods
+    autonodfile=$(find dtdresults/${l} -name list.txt | grep "auto" | grep "nondeterministic")
+    if [[ ${autonodfile} == "" ]]; then
+        autonod=0
+    else
+        autonod=$(grep -c "" ${autonodfile})
+    fi
+    echo "\Def{${projmod}_auto_nods}{${autonod}}"
+    percnods=$(echo "${autonod} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
+    echo "\Def{${projmod}_auto_nodsperc}{${percnods}\%}"
+
+    # Get the auto dts
+    autofile=$(find dtdresults/${l} -name list.txt | grep "auto" | grep "random")
+    auto=$(grep -c "" ${autofile})
+    echo "\\Def{${projmod}_auto_dts}{${auto}}"
     percdts=$(echo "${auto} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
     echo "\Def{${projmod}_auto_dtsperc}{${percdts}\%}"
 

@@ -34,15 +34,26 @@ for testtype in orig auto; do
                     continue
                 fi
                 for dts in $(echo ${dtsline} | sed 's;DTs not fixed are: ;;g' | sed 's; -- ; ;g'); do
-                    echo ${dts} | xargs | sed 's;,;\n;g' | xargs >> ${techdtsfile}
-                    echo ${dts} | xargs | sed 's;,;\n;g' | xargs >> ${totaldtsfile}
+                    for dt in $(echo ${dts} | xargs | sed 's;,;\n;g' | xargs); do
+                        echo ${dt} >> ${techdtsfile}
+                        echo ${dt} >> ${totaldtsfile}
+                    done
                 done
             done
-            echo "\Def{${projmod}_${testtype}_dtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(sort -u ${techdtsfile} | wc -l)}"
+            echo "\Def{${projmod}_${testtype}_dtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(cat ${techdtsfile} | wc -l)}"
+
+            # Remove any of these failures that are also nondeterministic
+            nodfile=$(find ../dtdresults/ -name list.txt | grep "${l}" | grep "${testtype}" | grep "nondeterministic")
+            if [[ ${nodfile} != "" ]]; then
+                comm -23 <(sort -u ${techdtsfile}) <(sort -u ${nodfile}) > /tmp/tmp
+                mv /tmp/tmp ${techdtsfile}
+            fi
+            echo "\Def{${projmod}_${testtype}_dtfailuresgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(sort -u ${techdtsfile} | wc -l)}"
             rm ${techdtsfile}
     
-            # Count how many revisions had DTs found
-            revswithdts=""
+            # Count how many configurations had DTs found
+            confswithdts=0
+            totalconfs=0
             for f in $(find ${l} -name ${tech}-* | grep GIVEN | grep false); do
                 # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
                 if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
@@ -50,18 +61,17 @@ for testtype in orig auto; do
                         continue
                     fi
                 fi
-                dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
+                totalconfs=$((totalconfs + 1))
+                dtsline=$(grep -A1 "DTs not fixed are:" ${f})
                 if [[ ${dtsline} == "" ]]; then
                     continue
                 fi
-                revswithdts="${revswithdts} $(echo ${f} | rev | cut -d'/' -f3 | rev)"
+                confswithdts=$((confswithdts + 1))
             done
-            if [[ ! -z ${revswithdts} ]]; then
-                echo "\Def{${projmod}_${testtype}_revswithdtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(echo ${revswithdts} | sed 's; ;\n;g' | sort -u | wc -l)}"
-            else
-                echo "\Def{${projmod}_${testtype}_revswithdtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{0}"
-            fi
+            echo "\Def{${projmod}_${testtype}_confswithdtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${confswithdts}}"
+            echo "\Def{${projmod}_${testtype}_totalconfsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${totalconfs}}"
         done
+
         dts=$(sort -u ${totaldtsfile} | wc -l)
         echo "\Def{${projmod}_${testtype}_dtsgiven}{${dts}}"
         rm ${totaldtsfile}
