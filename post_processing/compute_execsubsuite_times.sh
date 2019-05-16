@@ -1,10 +1,16 @@
 #!/bin/bash
 
+RESULTS=$1
+if [[ ${RESULTS} == "" ]]; then
+    echo "arg1 - Path to results directory that contains origresults/, autoresults/, dtdresults/, origorders/"
+    exit
+fi
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 for testtype in orig auto; do
 (
-    cd ${testtype}results/
+    cd ${RESULTS}/${testtype}results/
 
     for TYPE in OMITTED GIVEN; do
 

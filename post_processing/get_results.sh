@@ -1,8 +1,14 @@
 #!/bin/bash
 
+RESULTS=$1
+if [[ ${RESULTS} == "" ]]; then
+    echo "arg1 - Path to results directory that contains origresults/, autoresults/, dtdresults/, origorders/"
+    exit
+fi
+
 for testtype in orig auto; do
 (
-    cd ${testtype}results/
+    cd ${RESULTS}/${testtype}results/
 
     for l in $(ls | grep "_output$"); do
         projmod=$(echo ${l} | sed 's;_output;;')
@@ -66,17 +72,6 @@ for testtype in orig auto; do
             echo "\Def{${projmod}_${testtype}_confswithdts_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${confswithdts}}"
             echo "\Def{${projmod}_${testtype}_totalconfs_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${totalconfs}}"
         done
-        #dts=$(sort -u ${totaldtsfile} | wc -l)
-        #echo "\Def{${projmod}_${testtype}_dts_found}{${dts}}"
-        #rm ${totaldtsfile}
-    
-        ## Compute some percentages
-        #percdts=$(echo "${dts} / ${numtests} * 100" | bc -l | xargs printf "%.1f")
-        #echo "\Def{${projmod}_${testtype}_dtsperc_found}{${percdts}}"
     done
 )
 done
-
-#dts=$(find ${l} -name ${tech}-* | grep ${status} | grep -v "STATEMENT-ORIGINAL" | grep false | xargs grep "Number of DTs" | grep -v ": 0" | wc -l)
-#total=$(find ${l} -name ${tech}-* | grep ${status} | grep -v "STATEMENT-ORIGINAL" | grep false | wc -l)
-#echo ${l} ${dts} ${total}

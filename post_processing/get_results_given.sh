@@ -1,8 +1,14 @@
 #!/bin/bash
 
+RESULTS=$1
+if [[ ${RESULTS} == "" ]]; then
+    echo "arg1 - Path to results directory that contains origresults/, autoresults/, dtdresults/, origorders/"
+    exit
+fi
+
 for testtype in orig auto; do
 (
-    cd ${testtype}results/
+    cd ${RESULTS}/${testtype}results/
 
     for l in $(ls | grep "_output$"); do
         projmod=$(echo ${l} | sed 's;_output;;')

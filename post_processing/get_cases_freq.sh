@@ -1,8 +1,14 @@
 #!/bin/bash
 
+RESULTS=$1
+if [[ ${RESULTS} == "" ]]; then
+    echo "arg1 - Path to results directory that contains origresults/, autoresults/, dtdresults/, origorders/"
+    exit
+fi
+
 for testtype in orig auto; do
 (
-    cd ${testtype}results/
+    cd ${RESULTS}/${testtype}results/
 
     # For each technique, find the number of revisions for each case
     caseA=0 # Neither fails
