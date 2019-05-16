@@ -83,7 +83,6 @@ for post in "${postProcessFlags[@]}"; do
                     -timesToRun $medianTimes \
                     -classpath \"$CLASSPATH\" \
                     -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt\" \
-                    -resolveDependences $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt\" \
                     -$post"
                 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                     -technique prioritization \
@@ -98,8 +97,7 @@ for post in "${postProcessFlags[@]}"; do
                     -outputDir $DT_ROOT/$prioDir \
                     -timesToRun $medianTimes \
                     -classpath "$CLASSPATH" \
-                    -dependentTestFile $PRIO_DT_LISTS/"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
-                    -resolveDependences $PRIO_DT_LISTS/"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt" \
+                    -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt\" \
                     $post
             done
         done
