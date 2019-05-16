@@ -12,7 +12,7 @@ for l in $(ls dtdresults/ | grep "_output$"); do
     # Get the number of orig tests in the first revision (open some prioritization file and read total tests)
     priofile=$(find $(find origresults/${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo orig | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
     if [[ ${priofile} != "" ]]; then
-        numtests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
+        numorigtests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
     fi
 
     # Get the orig nods
@@ -23,22 +23,22 @@ for l in $(ls dtdresults/ | grep "_output$"); do
         orignod=$(grep -c "" ${orignodfile})
     fi
     echo "\Def{${projmod}_orig_nods}{${orignod}}"
-    percnods=$(echo "${orignod} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
+    percnods=$(echo "${orignod} / ${numorigtests} * 100" | bc -l | xargs printf "%.0f")
     echo "\Def{${projmod}_orig_nodsperc}{${percnods}\%}"
 
     # Get the orig dts
     origfile=$(find dtdresults/${l} -name list.txt | grep "orig" | grep "random")
     orig=$(grep -c "" ${origfile})
     echo "\Def{${projmod}_orig_dts}{${orig}}"
-    percdts=$(echo "${orig} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
+    percdts=$(echo "${orig} / ${numorigtests} * 100" | bc -l | xargs printf "%.0f")
     echo "\Def{${projmod}_orig_dtsperc}{${percdts}\%}"
 
     # AUTO
 
     # Get the number of auto tests in the first revision (open some prioritization file and read total tests)
-    priofile=$(find $(find autoresults/${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo orig | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
+    priofile=$(find $(find autoresults/${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo auto | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
     if [[ ${priofile} != "" ]]; then
-        numtests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
+        numautotests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
     fi
 
     # Get the auto nods
@@ -49,14 +49,14 @@ for l in $(ls dtdresults/ | grep "_output$"); do
         autonod=$(grep -c "" ${autonodfile})
     fi
     echo "\Def{${projmod}_auto_nods}{${autonod}}"
-    percnods=$(echo "${autonod} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
+    percnods=$(echo "${autonod} / ${numautotests} * 100" | bc -l | xargs printf "%.0f")
     echo "\Def{${projmod}_auto_nodsperc}{${percnods}\%}"
 
     # Get the auto dts
     autofile=$(find dtdresults/${l} -name list.txt | grep "auto" | grep "random")
     auto=$(grep -c "" ${autofile})
     echo "\\Def{${projmod}_auto_dts}{${auto}}"
-    percdts=$(echo "${auto} / ${numtests} * 100" | bc -l | xargs printf "%.0f")
+    percdts=$(echo "${auto} / ${numautotests} * 100" | bc -l | xargs printf "%.0f")
     echo "\Def{${projmod}_auto_dtsperc}{${percdts}\%}"
 
     # Now compute how many of the dts are detected by the techniques

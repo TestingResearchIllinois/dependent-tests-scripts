@@ -40,15 +40,21 @@ for testtype in orig auto; do
                     done
                 done
             done
-            echo "\Def{${projmod}_${testtype}_dtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(cat ${techdtsfile} | wc -l)}"
-
             # Remove any of these failures that are also nondeterministic
             nodfile=$(find ../dtdresults/ -name list.txt | grep "${l}" | grep "${testtype}" | grep "nondeterministic")
+            failcount=0
+            for t in $(cat ${techdtsfile}); do
+                if [[ $(grep ${t} ${nodfile}) == "" ]]; then
+                    failcount=$((failcount + 1))
+                fi
+            done
+            echo "\Def{${projmod}_${testtype}_dtfailuresgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{${failcount}}"
+
             if [[ ${nodfile} != "" ]]; then
                 comm -23 <(sort -u ${techdtsfile}) <(sort -u ${nodfile}) > /tmp/tmp
                 mv /tmp/tmp ${techdtsfile}
             fi
-            echo "\Def{${projmod}_${testtype}_dtfailuresgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(sort -u ${techdtsfile} | wc -l)}"
+            echo "\Def{${projmod}_${testtype}_dtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(sort -u ${techdtsfile} | wc -l)}"
             rm ${techdtsfile}
     
             # Count how many configurations had DTs found
