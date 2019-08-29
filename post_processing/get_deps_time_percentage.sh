@@ -13,9 +13,16 @@ for proj in $(cat projects.txt); do
     fi
     #echo ${proj}
     (
-        cd ${RESULTS}/${proj}/${proj}-results/precomputed/
+        projdir=$(echo ${proj} | sed 's;=;-;')
+        cd ${RESULTS}/${projdir}/${projdir}-results/precomputed/
 
         for testtype in ORIG AUTO; do
+            # Some rolling sum to compute for selection (which is combination of prioritization and parallelization)
+            rollingseledepstime=0
+            rollingseledepscount=0
+
+            rollingdepstime=0
+            rollingdepscount=0
             for cov in FUNCTION STATEMENT; do
                 for type in ABSOLUTE RELATIVE; do
                     totaldepstime=0
@@ -34,8 +41,22 @@ for proj in $(cat projects.txt); do
                         #echo "${totaldepstime} / $(echo ${testtime} / 1000 | bc -l)" | bc -l
                     done
                     echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_$(echo ${cov} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${totaldepstime}}"
+                    if [[ ${totaldepstime} != 0 ]]; then
+                        rollingdepstime=$((rollingdepstime + totaldepstime))
+                        rollingdepscount=$((rollingdepscount + 1))
+                    fi
                 done
             done
+            if [[ ${rollingdepscount} != 0 ]]; then
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | xargs printf '%0.1f')}"
+                rollingseledepstime=$((rollingseledepstime + rollingdepstime))
+                rollingseledepscount=$((rollingseledepscount + rollingdepscount))
+            else
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{-}"
+            fi
+
+            rollingdepstime=0
+            rollingdepscount=0
             for type in ORIGINAL TIME; do
                 for machine in TWO FOUR EIGHT SIXTEEN; do
                     # Next look through parallelization
@@ -54,8 +75,26 @@ for proj in $(cat projects.txt); do
                         #echo "${totaldepstime} / $(echo ${testtime} / 1000 | bc -l)" | bc -l
                     done
                     echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${machine} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${totaldepstime}}"
+                    if [[ ${totaldepstime} != 0 ]]; then
+                        rollingdepstime=$((rollingdepstime + totaldepstime))
+                        rollingdepscount=$((rollingdepscount + 1))
+                    fi
                 done
             done
+            if [[ ${rollingdepscount} != 0 ]]; then
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | xargs printf '%0.1f')}"
+                rollingseledepstime=$((rollingseledepstime + rollingdepstime))
+                rollingseledepscount=$((rollingseledepscount + rollingdepscount))
+            else
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{-}"
+            fi
+
+            # Write out the average for selection purposes
+            if [[ ${rollingseledepscount} != 0 ]]; then
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_sele_avg}{$(echo ${rollingseledepstime})}"
+            else
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_sele_avg}{-}"
+            fi
         done
     )
 done
