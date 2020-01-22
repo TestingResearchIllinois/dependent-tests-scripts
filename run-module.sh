@@ -100,7 +100,6 @@ DTDETECTOR_OUTPUT="$RESULTS_DIR/randomize-output-auto.txt"
 bash run-dtdetector.sh "$SETUP_SCRIPT" "old" "auto" &> "$DTDETECTOR_OUTPUT"
 #DT_COUNT=$(cat "$DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-old-auto-randomize/list.txt" | wc -l)
 #echo "[INFO] Found $DT_COUNT auto dependent tests using the dtdetector."
-exit
 
 SKIP_COMPILE="Y" # Always skip compile, because we did it already.
 echo "[INFO] Running initial setup and runner (without dependencies.)"
