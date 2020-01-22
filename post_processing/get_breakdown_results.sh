@@ -48,14 +48,16 @@ for testtype in orig auto; do
     for cov in FUNCTION STATEMENT; do
         for type in ORIGINAL ABSOLUTE RELATIVE; do
             techdtsfile=$(mktemp /tmp/dts.XXXXXX)
-            for f in $(find -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep false); do
-                dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
-                if [[ ${dtsline} == "" ]]; then
-                    continue
-                fi
-                for dts in $(echo ${dtsline} | sed 's;DTs not fixed are: ;;g' | sed 's; -- ; ;g'); do
-                    for dt in $(echo ${dts} | xargs | sed 's;,;\n;g' | xargs); do
-                        echo ${l},${dt} >> ${techdtsfile}
+            for l in $(ls | grep "_output$"); do
+                for f in $(find ${l} -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep false); do
+                    dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
+                    if [[ ${dtsline} == "" ]]; then
+                        continue
+                    fi
+                    for dts in $(echo ${dtsline} | sed 's;DTs not fixed are: ;;g' | sed 's; -- ; ;g'); do
+                        for dt in $(echo ${dts} | xargs | sed 's;,;\n;g' | xargs); do
+                            echo ${l},${dt} >> ${techdtsfile}
+                        done
                     done
                 done
             done
