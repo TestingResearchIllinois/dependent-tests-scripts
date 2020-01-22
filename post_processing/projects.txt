@@ -1,0 +1,11 @@
+apache.incubator-dubbo=dubbo-cluster
+apache.incubator-dubbo=dubbo-registry-default
+apache.incubator-dubbo=dubbo-rpc-dubbo
+apache.incubator-dubbo=dubbo-serialization-fst
+apache.struts=portlet
+dropwizard.dropwizard=dropwizard-logging
+elasticjob.elastic-job-lite=elastic-job-lite-core
+jfree.jfreechart
+kevinsawicki.http-request=lib
+undertow-io.undertow=websockets-jsr
+wildfly.wildfly=naming
