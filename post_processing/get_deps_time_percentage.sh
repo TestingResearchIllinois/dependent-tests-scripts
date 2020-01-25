@@ -48,7 +48,7 @@ for proj in $(cat projects.txt); do
                 done
             done
             if [[ ${rollingdepscount} != 0 ]]; then
-                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | xargs printf '%0.1f')}"
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | cut -d'.' -f1)}"
                 rollingseledepstime=$((rollingseledepstime + rollingdepstime))
                 rollingseledepscount=$((rollingseledepscount + rollingdepscount))
             else
@@ -82,7 +82,7 @@ for proj in $(cat projects.txt); do
                 done
             done
             if [[ ${rollingdepscount} != 0 ]]; then
-                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | xargs printf '%0.1f')}"
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | cut -d'.' -f1)}"
                 rollingseledepstime=$((rollingseledepstime + rollingdepstime))
                 rollingseledepscount=$((rollingseledepscount + rollingdepscount))
             else
