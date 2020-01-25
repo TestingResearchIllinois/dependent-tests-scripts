@@ -20,12 +20,15 @@ for proj in $(cat projects.txt); do
             # Some rolling sum to compute for selection (which is combination of prioritization and parallelization)
             rollingseledepstime=0
             rollingseledepscount=0
+            rollingselenumdepscount=0
 
             rollingdepstime=0
             rollingdepscount=0
+            rollingnumdepscount=0
             for cov in FUNCTION STATEMENT; do
                 for type in ABSOLUTE RELATIVE; do
                     totaldepstime=0
+                    totalnumdeps=0
                     # Find all the files that result in finding DTs
                     # First look through prioritization
                     for f in $(find -name "PRIORITIZATION-${testtype}-*${cov}-${type}*false.txt" | xargs grep -l "Number of DTs fixed: [^0]"); do
@@ -33,6 +36,7 @@ for proj in $(cat projects.txt); do
                         onedeptime=$(grep "Average time to find one dependency: " ${f} | cut -d':' -f2 | cut -d' ' -f2)
                         numdeps=$(grep "Number of DTs fixed: " ${f} | cut -d':' -f2 | cut -d' ' -f2)
                         totaldepstime=$(echo "${onedeptime} * ${numdeps}" | bc -l | cut -d'.' -f1)
+                        totalnumdeps=$(echo "${totalnumdeps} + ${numdeps}" | bc -l)
 
                         # Get the total time to run tests by parsing and adding up each individual time
                         testtime=$(grep -A2 "Time each test takes to run in the new order:" ${f} | grep "\[" | sed 's;\[;;' | sed 's;\];;' | sed 's;, ;+;g' | bc -l)
@@ -40,23 +44,29 @@ for proj in $(cat projects.txt); do
                         # Compute the amount of time dependency collection is greater than just test time
                         #echo "${totaldepstime} / $(echo ${testtime} / 1000 | bc -l)" | bc -l
                     done
-                    echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_$(echo ${cov} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${totaldepstime}}"
+                    #echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_$(echo ${cov} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${totaldepstime}}"
+                    theavg=$(echo "${totaldepstime} / ${totalnumdeps}" | bc -l | cut -d'.' -f1)
+                    echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_$(echo ${cov} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${theavg}}"
                     if [[ ${totaldepstime} != 0 ]]; then
                         rollingdepstime=$((rollingdepstime + totaldepstime))
                         rollingdepscount=$((rollingdepscount + 1))
+                        rollingnumdepscount=$((rollingnumdepscount + totalnumdeps))
                     fi
                 done
             done
             if [[ ${rollingdepscount} != 0 ]]; then
-                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | cut -d'.' -f1)}"
+                #echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | cut -d'.' -f1)}"
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{$(echo ${rollingdepstime} / ${rollingnumdepscount} | bc -l | cut -d'.' -f1)}"
                 rollingseledepstime=$((rollingseledepstime + rollingdepstime))
                 rollingseledepscount=$((rollingseledepscount + rollingdepscount))
+                rollingselenumdepscount=$((rollingselenumdepscount + rollingnumdepscount))
             else
                 echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_prio_avg}{-}"
             fi
 
             rollingdepstime=0
             rollingdepscount=0
+            rollingnumdepscount=0
             for type in ORIGINAL TIME; do
                 for machine in TWO FOUR EIGHT SIXTEEN; do
                     # Next look through parallelization
@@ -67,6 +77,7 @@ for proj in $(cat projects.txt); do
 
                         numdeps=$(grep "Number of DTs fixed: " ${f} | cut -d':' -f2 | cut -d' ' -f2 | paste -sd+ | bc -l)
                         totaldepstime=$(echo "${onedeptime} * ${numdeps}" | bc -l | cut -d'.' -f1)
+                        totalnumdeps=$(echo "${totalnumdeps} + ${numdeps}" | bc -l)
 
                         # Get the total time to run tests by parsing and adding up each individual time
                         testtime=$(grep -A2 "Time each test takes to run in the new order:" ${f} | grep "\[" | sed 's;\[;;' | sed 's;\];;' | sed 's;, ;+;g' | paste -sd+ | bc -l)
@@ -74,24 +85,30 @@ for proj in $(cat projects.txt); do
                         # Compute the amount of time dependency collection is greater than just test time
                         #echo "${totaldepstime} / $(echo ${testtime} / 1000 | bc -l)" | bc -l
                     done
-                    echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${machine} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${totaldepstime}}"
+                    #echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${machine} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${totaldepstime}}"
+                    theavg=$(echo "${totaldepstime} / ${totalnumdeps}" | bc -l | cut -d'.' -f1)
+                    echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_$(echo ${type} | cut -c1-4 | tr '[:upper:]' '[:lower:]')_$(echo ${machine} | cut -c1-4 | tr '[:upper:]' '[:lower:]')}{${theavg}}"
                     if [[ ${totaldepstime} != 0 ]]; then
                         rollingdepstime=$((rollingdepstime + totaldepstime))
                         rollingdepscount=$((rollingdepscount + 1))
+                        rollingnumdepscount=$((rollingnumdepscount + totalnumdeps))
                     fi
                 done
             done
             if [[ ${rollingdepscount} != 0 ]]; then
-                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | cut -d'.' -f1)}"
+                #echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{$(echo ${rollingdepstime} / ${rollingdepscount} | bc -l | cut -d'.' -f1)}"
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{$(echo ${rollingdepstime} / ${rollingnumdepscount} | bc -l | cut -d'.' -f1)}"
                 rollingseledepstime=$((rollingseledepstime + rollingdepstime))
                 rollingseledepscount=$((rollingseledepscount + rollingdepscount))
+                rollingselenumdepscount=$((rollingselenumdepscount + rollingnumdepscount))
             else
                 echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_para_avg}{-}"
             fi
 
             # Write out the average for selection purposes
             if [[ ${rollingseledepscount} != 0 ]]; then
-                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_sele_avg}{$(echo ${rollingseledepstime})}"
+                #echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_sele_avg}{$(echo ${rollingseledepstime})}"
+                echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_sele_avg}{$(echo "${rollingseledepstime} / ${rollingnumdepscount}" | bc -l | cut -d'.' -f1)}"
             else
                 echo "\\Def{${proj}_$(echo ${testtype} | tr '[:upper:]' '[:lower:]')_deptime_sele_avg}{-}"
             fi
