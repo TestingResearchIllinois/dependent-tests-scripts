@@ -68,7 +68,7 @@ for post in "${postProcessFlags[@]}"; do
                     -classpath "$CLASSPATH" \
                     $post
 
-                # Running prioritizaiton with dependentTestFile
+                # Running prioritization with dependentTestFile
                 echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                     -technique prioritization \
                     -coverage $i \
@@ -82,7 +82,7 @@ for post in "${postProcessFlags[@]}"; do
                     -outputDir $DT_ROOT/$prioDir \
                     -timesToRun $medianTimes \
                     -classpath \"$CLASSPATH\" \
-                    -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt\" \
+                    -dependentTestFile $PRIO_DT_LISTS/prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt \
                     -$post"
                 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
                     -technique prioritization \
@@ -97,7 +97,7 @@ for post in "${postProcessFlags[@]}"; do
                     -outputDir $DT_ROOT/$prioDir \
                     -timesToRun $medianTimes \
                     -classpath "$CLASSPATH" \
-                    -dependentTestFile $PRIO_DT_LISTS/\"prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt\" \
+                    -dependentTestFile $PRIO_DT_LISTS/prioritization-$SUBJ_NAME_FORMAL-$k-$i-$j-$p.txt \
                     $post
             done
         done
