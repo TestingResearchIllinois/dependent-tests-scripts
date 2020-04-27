@@ -39,6 +39,7 @@ keepimagetime="$9"
 git rev-parse HEAD
 date
 
+sudo apt-get update
 sudo apt-get install -y zip unzip libxml2-utils
 
 # Update all tooling
