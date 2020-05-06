@@ -1,13 +1,12 @@
 #!/bin/bash
 
-if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
+if [[ $1 == "" ]] || [[ $2 == "" ]]; then
     echo "arg1 - Path to CSV file with project,sha"
-    echo "arg2 - Number of rounds"
-    echo "arg3 - Timeout in seconds"
-    echo "arg4 - The script to run (Optional)"
-    echo "arg5 - Test type (Optional)"
-    echo "arg6 - Technique (Optional)"
-    echo "arg7 - Time to keep docker image running after script finishes (Optional)"
+    echo "arg2 - Timeout in seconds"
+    echo "arg3 - The script to run (Optional)"
+    echo "arg4 - Test type (Optional)"
+    echo "arg5 - Technique (Optional)"
+    echo "arg6 - Time to keep docker image running after script finishes (Optional)"
     exit
 fi
 
@@ -15,12 +14,11 @@ git rev-parse HEAD
 date
 
 projfile=$1
-rounds=$2
-timeout=$3
-script="$4"
-testtype="$5"
-technique="$6"
-keepimagetime="$7"
+timeout=$2
+script="$3"
+testtype="$4"
+technique="$5"
+keepimagetime="$6"
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
