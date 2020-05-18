@@ -33,6 +33,8 @@ date
 
 export PATH=/home/awshi2/apache-maven/bin:${PATH}
 cd /home/awshi2/
+
+echo "================ Setting up pradet"
 git clone https://github.com/gmu-swe/pradet-replication.git
 cd pradet-replication/
 ./setup-datadep-detector.sh
@@ -43,19 +45,28 @@ export DATADEP_DETECTOR_HOME=/home/awshi2/pradet-replication/datadep-detector
 mkdir -p /home/awshi2/old
 cd /home/awshi2/old
 
+echo "================ Setting up old commit"
 git clone https://github.com/$slug $slug
 cd $slug
 git checkout $oldcommit
 timeout 1h /home/awshi2/apache-maven/bin/mvn clean install dependency:copy-dependencies -DskipTests -fn -B |& tee /home/awshi2/old/$slug/mvn-install.log
+
 cd $module
+echo "================ extract_test_names_from_maven_output.sh"
 /home/awshi2/pradet-replication/scripts/extract_test_names_from_maven_output.sh
 mv maven_test_execution_order test-execution-order
+echo "================ generate_test_order.sh"
 /home/awshi2/pradet-replication/scripts/generate_test_order.sh test-execution-order
+echo "================ bootstrap_enums.sh"
 /home/awshi2/pradet-replication/scripts/bootstrap_enums.sh
+echo "================ create_package_filter.sh"
 /home/awshi2/pradet-replication/scripts/create_package_filter.sh
+echo "================ collect.sh"
 /home/awshi2/pradet-replication/scripts/collect.sh
+echo "================ refine.sh"
 /home/awshi2/pradet-replication/scripts/refine.sh
 
+echo "================ Saving outputs"
 RESULTSDIR=/home/awshi2/output/
 mkdir -p ${RESULTSDIR}
 
