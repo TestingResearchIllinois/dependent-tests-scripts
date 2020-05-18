@@ -42,14 +42,26 @@ cd pradet-replication/
 export BIN=/home/awshi2/pradet-replication/bin
 export DATADEP_DETECTOR_HOME=/home/awshi2/pradet-replication/datadep-detector
 
-mkdir -p /home/awshi2/old
-cd /home/awshi2/old
-
 echo "================ Setting up old commit"
-git clone https://github.com/$slug $slug
-cd $slug
-git checkout $oldcommit
-timeout 1h /home/awshi2/apache-maven/bin/mvn clean install dependency:copy-dependencies -DskipTests -fn -B |& tee /home/awshi2/old/$slug/mvn-install.log
+# mkdir -p /home/awshi2/old
+# cd /home/awshi2/old
+# git clone https://github.com/$slug $slug
+# cd $slug
+# git checkout $oldcommit
+# timeout 1h /home/awshi2/apache-maven/bin/mvn clean install dependency:copy-dependencies -DskipTests -fn -B |& tee /home/awshi2/old/$slug/mvn-install.log
+modifiedslug=${slug//\//.}
+cd /home/awshi2/
+if [[ ${module} == '.' ]]; then
+    name=${modifiedslug}
+else
+    name=${modifiedslug}-$(basename ${module})
+fi
+wget http://mir.cs.illinois.edu/awshi2/dt-impact/${name}.zip
+unzip ${name}.zip
+owner=$(echo ${slug} | cut -d'/' -f1)
+projname=$(echo ${slug} | cut -d'/' -f2)
+mv ${name}/${projname}-old-* /home/awshi2/${owner}/
+cd /home/awshi2/${owner}/${projname}-old-$oldcommit
 
 cd $module
 echo "================ extract_test_names_from_maven_output.sh"
