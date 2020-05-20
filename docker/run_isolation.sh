@@ -72,7 +72,7 @@ for t in $(cat ${name}-tests-isolation.txt); do
     testarg="-Dtest=$formatTest"
 
     /home/awshi2/apache-maven/bin/mvn test ${testarg} ${MVNOPTIONS} |& tee mvn-test-$i.log
-    for f in $(find -name "TEST*.xml"); do python /home/awshi2/dt-fixing-tools/scripts/python-scripts/parse_surefire_report.py $f $i; done >> test-results.csv
+    for f in $(find -name "TEST*.xml"); do python parse_surefire_report.py $f $i; done >> test-results.csv
 
     mkdir -p /home/awshi2/isolation/$i
     mv mvn-test-$i.log /home/awshi2/isolation/$i
