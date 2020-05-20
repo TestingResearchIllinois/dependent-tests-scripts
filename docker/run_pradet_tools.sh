@@ -43,12 +43,6 @@ export BIN=/home/awshi2/pradet-replication/bin
 export DATADEP_DETECTOR_HOME=/home/awshi2/pradet-replication/datadep-detector
 
 echo "================ Setting up old commit"
-# mkdir -p /home/awshi2/old
-# cd /home/awshi2/old
-# git clone https://github.com/$slug $slug
-# cd $slug
-# git checkout $oldcommit
-# timeout 1h /home/awshi2/apache-maven/bin/mvn clean install dependency:copy-dependencies -DskipTests -fn -B |& tee /home/awshi2/old/$slug/mvn-install.log
 modifiedslug=${slug//\//.}
 cd /home/awshi2/
 if [[ ${module} == '.' ]]; then
@@ -82,7 +76,6 @@ echo "================ Saving outputs"
 RESULTSDIR=/home/awshi2/output/
 mkdir -p ${RESULTSDIR}
 
-mv mvn-install.log ${RESULTSDIR}
 mv cp.txt ${RESULTSDIR} 
 mv deps.csv ${RESULTSDIR}
 mv enumerations ${RESULTSDIR}
@@ -92,7 +85,6 @@ mv reference-output.csv* ${RESULTSDIR}
 mv refined-deps.csv ${RESULTSDIR}
 mv run-order-* ${RESULTSDIR}
 mv test-execution-order ${RESULTSDIR}
-mv maven_test_execution_order ${RESULTSDIR}
 
 echo "*******************PRADET************************"
 echo "Finished run_pradet_tools.sh"
