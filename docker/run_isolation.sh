@@ -85,6 +85,7 @@ RESULTSDIR=/home/awshi2/output/
 mkdir -p ${RESULTSDIR}
 
 mv /home/awshi2/isolation ${RESULTSDIR}
+mv test-results.csv ${RESULTSDIR}
 
 echo "*******************PRADET************************"
 echo "Finished run_isolation.sh"
