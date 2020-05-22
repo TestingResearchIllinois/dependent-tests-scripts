@@ -72,7 +72,7 @@ fi
         for testtype in orig auto; do
             for tech in PRIORITIZATION SELECTION PARALLELIZATION; do
                 techdtsfile=$(mktemp /tmp/dts.XXXXXX)
-                for f in $(find ${testtype}results/${l} -name ${tech}-* | grep OMITTED | grep false); do
+                for f in $(find ${testtype}results/${l} -name ${tech}-* | grep OMITTED | grep "true"); do
                     # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
                     if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
                         if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
@@ -102,7 +102,7 @@ fi
                 if [[ ${total} != 0 ]]; then
                     perc="$(echo "${incommon} / ${total} * 100" | bc -l | xargs printf "%.0f")\%"
                 else
-                    perc="-"
+                    perc="n/a"
                 fi
                 echo "\Def{${projmod}_${testtype}_dtsperc_${macrokey}}{${perc}}"
 
