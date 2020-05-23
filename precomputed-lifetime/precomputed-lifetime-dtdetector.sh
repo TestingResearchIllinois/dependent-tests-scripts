@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+
+# Inputs:
+# $1 - project slug
+# $2 - commit to run (new)
+# $3 - path in repo (probably for module)
+# $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
+# $5 - test types
+
+# Run to get things like DT_ROOT and DT_SCRIPTS
+. ../setup-vars.sh
+. ../constants.sh
+
+PROJ_SLUG=$1
+NEW_COMMIT=$2
+MODULE_PATH=$3
+TECHNIQUES="$4"
+TESTTYPES="$5"
+
+PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
+
+#MAIN_ROOT="$DT_ROOT/${PROJ_NAME}"
+MAIN_ROOT="$HOME/${PROJ_SLUG}"
+PRECOMPUTED_LIFETIME_ROOT="$DT_SCRIPTS/precomputed-lifetime"
+
+# export DT_SUBJ_ROOT="${MAIN_ROOT}-old-$OLD_COMMIT"
+export NEW_DT_SUBJ_ROOT="${MAIN_ROOT}-new-$NEW_COMMIT"
+
+echo "[INFO] Starting $PROJ_NAME with commit $NEW_COMMIT" #and $OLD_COMMIT"
+# Copy the cloned repository to the relevant location
+# git clone $GIT_URL $DT_SUBJ_ROOT
+# git clone $GIT_URL $NEW_DT_SUBJ_ROOT
+git clone $HOME/$PROJ_SLUG $NEW_DT_SUBJ_ROOT
+
+# Set project version.
+echo "[INFO] Setting project version."
+
+# Use these checks ot make sure we don't accidentally reset the git repo we are currently in.
+if [[ -d "$NEW_DT_SUBJ_ROOT" ]]; then
+    cd $NEW_DT_SUBJ_ROOT
+    echo "[INFO] Resetting $NEW_DT_SUBJ_ROOT to $NEW_COMMIT"
+    git reset --hard "$NEW_COMMIT"
+else
+    echo "Directory not found: $NEW_DT_SUBJ_ROOT"
+    exit 1
+fi
+
+cd $NEW_DT_SUBJ_ROOT
+new_date=$(git log -1 --format="%cd" --date=format:"%Y-%m-%d-%H-%M-%S")
+echo "[INFO] Date of new commit is: $new_date"
+
+result_dir="$PRECOMPUTED_LIFETIME_ROOT/${PROJ_NAME}-lifetime/${PROJ_NAME}-${new_date}-${NEW_COMMIT}"
+
+if [[ -d "$result_dir" ]]; then
+    echo "[INFO] $result_dir already exists, not recomputing."
+    exit 0
+fi
+
+# if [[ -d "$DT_SUBJ_ROOT" ]]; then
+#     cd $DT_SUBJ_ROOT
+#     echo "[INFO] Resetting $DT_SUBJ_ROOT to $OLD_COMMIT"
+#     git reset --hard "$OLD_COMMIT"
+# else
+#     echo "Directory not found: $DT_SUBJ_ROOT"
+#     exit 1
+# fi
+
+# Setup environment variables
+
+echo "[INFO] Setting environment variables"
+# export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
+# export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
+
+export NEW_DT_SUBJ=$NEW_DT_SUBJ_ROOT/$MODULE_PATH/target
+export NEW_DT_SUBJ_SRC=$NEW_DT_SUBJ_ROOT/$MODULE_PATH
+
+cd $PRECOMPUTED_LIFETIME_ROOT
+source "$DT_SCRIPTS/setup-vars.sh"
+
+bash "$DT_SCRIPTS/write-setup-script.sh" "setup-${PROJ_NAME}-${new_date}-${NEW_COMMIT}.sh"
+
+# Modified version of run-subj.sh (but using the precomputed dependencies we already have).
+echo "[INFO] Compiling subject."
+bash $DT_SCRIPTS/compile-subj.sh > /dev/null
+if [[ $? -ne 0 ]]; then
+    echo "[INFO] Compilation failed, exiting."
+    exit 1
+fi
+
+# Make sure the env-files exist
+# if [[ ! -e $DT_SUBJ/$SUBJ_NAME-env-files ]]; then
+#     touch $DT_SUBJ/$SUBJ_NAME-env-files
+# fi
+
+if [[ ! -e $NEW_DT_SUBJ/$SUBJ_NAME-env-files ]]; then
+    touch $NEW_DT_SUBJ/$SUBJ_NAME-env-files
+fi
+
+# Runs commands for "Instructions to setup a subject for test prioritization" section.
+bash $PRECOMPUTED_LIFETIME_ROOT/setup-prio-orig.sh
+
+# Copy the auto tests over from the old version.
+bash $PRECOMPUTED_LIFETIME_ROOT/copy-auto-tests.sh "$DT_SUBJ/randoop"
+
+# Runs commands for "Instructions to setup a subject for test selection" section.
+bash $PRECOMPUTED_LIFETIME_ROOT/setup-sele-orig.sh
+
+# Runs commands for "Instructions to setup a subject for test parallelization" section.
+# bash $DT_SCRIPTS/setup-para.sh
+# This doesn't need to be done if we are using the original old version as the old version.
+
+for t in orig auto; do
+    bash ../run-dtdetector.sh "$(pwd)/setup-${PROJ_NAME}-${new_date}-${NEW_COMMIT}.sh" "new" ${t}
+    cp -r $DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-new-${t}-randomize/ $DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-new-${NEW_COMMIT}-${t}-randomize/
+done
