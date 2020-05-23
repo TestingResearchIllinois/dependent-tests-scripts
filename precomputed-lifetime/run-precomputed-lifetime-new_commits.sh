@@ -1,35 +1,41 @@
 # Inputs:
 # $1 - project slug
 # $2 - path in repo (probably for module)
-# $3 - new commit to run for project/module
-# $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
+# $3 - old commit to run for project/module
+# $4 - new commit to run for project/module
 # $5 - test types
+# $6 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
 
 if [[ "$1" == "--help" ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path new_commit [techniques] [testtypes]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path old_commit new_commit [testtypes] [techniques]"
     exit 1
 fi
 
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path new_commit [testtypes] [techniques]"
+    echo "Usage: ./run-precomputed-lifetime.sh project-slug relative-module-path old_commit new_commit [testtypes] [techniques]"
     exit 1
 fi
 
 PROJ_SLUG=$1
 MODULE_PATH=$2
-NEW_COMMIT="$3"
-TESTTYPES="$4"
-TECHNIQUES="$5"
+OLD_COMMIT="$3"
+NEW_COMMIT="$4"
+TESTTYPES="$5"
+TECHNIQUES="$6"
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
 
+if [[ -z "$OLD_COMMIT" ]]; then
+    echo "[ERROR] Did not pass in old commit to run!"
+    exit 1
+fi
+
 if [[ -z "$NEW_COMMIT" ]]; then
-    echo "[ERROR] Did not pass in commit to run!"
+    echo "[ERROR] Did not pass in new commit to run!"
     exit 1
 fi
 
 # Set up the environment variables for prior commits and such
-OLD_COMMIT=${new_commits[0]}
 export DT_SUBJ_ROOT=$HOME/${PROJ_SLUG}-old-${OLD_COMMIT}
 export DT_SUBJ=$DT_SUBJ_ROOT/$MODULE_PATH/target
 export DT_SUBJ_SRC=$DT_SUBJ_ROOT/$MODULE_PATH
