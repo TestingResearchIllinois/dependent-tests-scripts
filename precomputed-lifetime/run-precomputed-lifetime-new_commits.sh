@@ -1,7 +1,7 @@
 # Inputs:
 # $1 - project slug
 # $2 - path in repo (probably for module)
-# $3 - path to file with commits for the project/module
+# $3 - new commit to run for project/module
 # $4 - techniques to use (e.g., prio-sele-para or prio-para or sele-prio). Optional. If not provided, then will use all by default
 # $5 - test types
 
@@ -23,8 +23,8 @@ TECHNIQUES="$5"
 
 PROJ_NAME=$(echo $PROJ_SLUG | grep -Eo "([^/]+)\$") # Detect the project name
 
-if [[ ! -e "$NEW_COMMIT_FILE" ]]; then
-    echo "[ERROR] Commit list does not exist at $NEW_COMMIT_FILE!"
+if [[ -z "$NEW_COMMIT" ]]; then
+    echo "[ERROR] Did not pass in commit to run!"
     exit 1
 fi
 
