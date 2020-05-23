@@ -12,23 +12,23 @@ for testtype in orig auto; do
 
     for l in $(ls | grep "_output$"); do
         projmod=$(echo ${l} | sed 's;_output;;')
-    
+
         # Get the first revision
         firstrev=$(find ${l} -name "*-lifetime" | xargs ls | sort | head -1)
         firstsha=$(echo ${firstrev} | rev | cut -d'-' -f1 | rev | cut -c 1-8)
-    
+
         # Get the number of tests in the first revision (open some prioritization file and read total tests)
         priofile=$(find $(find ${l} -name "*-lifetime" | sort | head -1) -name "PRIORITIZATION-$(echo ${testtype} | tr '[:lower:]' '[:upper:]')-*" | grep ${firstsha} | head -1)
         if [[ ${priofile} != "" ]]; then
             numtests=$(grep "Number of tests selected" ${priofile} | rev | cut -d' ' -f1 | rev)
         fi
-    
+
         # Keep track of total DTs are across all techniques for this subject
         totaldtsfile=$(mktemp /tmp/dts.XXXXXX)
-    
+
         for tech in PRIORITIZATION SELECTION PARALLELIZATION; do
             techdtsfile=$(mktemp /tmp/dts.XXXXXX)
-            for f in $(find ${l} -name ${tech}-* | grep GIVEN | grep false); do
+            for f in $(find ${l} -name ${tech}-* | grep GIVEN | grep "true"); do
                 # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
                 if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
                     if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
@@ -62,11 +62,11 @@ for testtype in orig auto; do
             fi
             echo "\Def{${projmod}_${testtype}_dtsgiven_$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)}{$(sort -u ${techdtsfile} | wc -l)}"
             rm ${techdtsfile}
-    
+
             # Count how many configurations had DTs found
             confswithdts=0
             totalconfs=0
-            for f in $(find ${l} -name ${tech}-* | grep GIVEN | grep false); do
+            for f in $(find ${l} -name ${tech}-* | grep GIVEN | grep "true"); do
                 # If PRIORITIZATION or PARALLELIZATION, only keep track of those in immediate next revision
                 if [[ ${tech} == PRIORITIZATION || ${tech} == PARALLELIZATION ]]; then
                     if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
@@ -87,7 +87,7 @@ for testtype in orig auto; do
         dts=$(sort -u ${totaldtsfile} | wc -l)
         echo "\Def{${projmod}_${testtype}_dtsgiven}{${dts}}"
         rm ${totaldtsfile}
-    
+
         # Compute some percentages
         percdts=$(echo "${dts} / ${numtests} * 100" | bc -l | xargs printf "%.1f")
         echo "\Def{${projmod}_${testtype}_dtsgivenperc}{${percdts}}"

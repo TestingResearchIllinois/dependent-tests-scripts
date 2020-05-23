@@ -141,7 +141,7 @@ for testtype in orig auto; do
         for proj in $(cat projects.txt); do
             # For para, need to observe if the technique detects any DTs, and if not then should just skip
             if [[ ${tech} == "para" && $(grep "${proj}_${testtype}_dts_${tech}}" ${TEXDATADIR}/dts.tex | cut -d'{' -f3 | cut -d'}' -f1) == 0 ]]; then
-                echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{n/e}"
+                echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{=}"
                 continue
             fi
             # For sele, need to observe if either para or prio of it had any DTs, and skip if both are 0
@@ -149,7 +149,7 @@ for testtype in orig auto; do
                 para=$(grep "${proj}_${testtype}_dts_para}" ${TEXDATADIR}/dts.tex | cut -d'{' -f3 | cut -d'}' -f1)
                 prio=$(grep "${proj}_${testtype}_dts_prio}" ${TEXDATADIR}/dts.tex | cut -d'{' -f3 | cut -d'}' -f1)
                 if [[ ${para} == 0 && ${prio} == 0 ]]; then
-                    echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{n/e}"
+                    echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{=}"
                     continue
                 fi
             fi
