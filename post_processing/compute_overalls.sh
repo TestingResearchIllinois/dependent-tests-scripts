@@ -139,33 +139,13 @@ for testtype in orig auto; do
         totaltimes=0
         totaltimesgiven=0
         for proj in $(cat projects.txt); do
-            # For para, need to observe if the technique detects any DTs, and if not then should just skip
-            if [[ ${tech} == "para" && $(grep "${proj}_${testtype}_dts_${tech}}" ${TEXDATADIR}/dts.tex | cut -d'{' -f3 | cut -d'}' -f1) == 0 ]]; then
-                echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{=}"
-                continue
-            fi
-            # For sele, need to observe if either para or prio of it had any DTs, and skip if both are 0
-            if [[ ${tech} == "sele" ]]; then
-                para=$(grep "${proj}_${testtype}_dts_para}" ${TEXDATADIR}/dts.tex | cut -d'{' -f3 | cut -d'}' -f1)
-                prio=$(grep "${proj}_${testtype}_dts_prio}" ${TEXDATADIR}/dts.tex | cut -d'{' -f3 | cut -d'}' -f1)
-                if [[ ${para} == 0 && ${prio} == 0 ]]; then
-                    echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{=}"
-                    continue
-                fi
-            fi
             techres=$(grep "${proj}_${testtype}_testtime_${tech}}" ${TEXDATADIR}/times.tex | cut -d'{' -f3 | cut -d'}' -f1)
             giventechres=$(grep "${proj}_${testtype}_testtimegiven_${tech}}" ${TEXDATADIR}/times.tex | cut -d'{' -f3 | cut -d'}' -f1)
-            if [[ ${techres} == 0 ]]; then
-                echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{-}"
-            else
-                echo "\Def{${proj}_${testtype}_testtimediff_${tech}}{$(echo "((${giventechres} - ${techres}) * 100) / ${techres}" | bc -l | xargs printf "%.0f")\%}"
-            fi
-            totaltimes=$((totaltimes + techres))
-            totaltimesgiven=$((totaltimesgiven + giventechres))
+            totaltimes=$(echo "${totaltimes} + ${techres}" | bc -l)
+            totaltimesgiven=$(echo "${totaltimesgiven} + ${giventechres}" | bc -l)
         done
-        echo "\Def{overall_${testtype}_testtimediff_${tech}}{$(echo "((${totaltimesgiven} - ${totaltimes}) * 100) / ${totaltimes}" | bc -l | xargs printf "%.0f")\%}"
-        supertotaltimes=$((supertotaltimes + totaltimes))
-        supertotaltimesgiven=$((supertotaltimesgiven + totaltimesgiven))
+        supertotaltimes=$(echo "${supertotaltimes} + ${totaltimes}" | bc -l)
+        supertotaltimesgiven=$(echo "${supertotaltimesgiven} + ${totaltimesgiven}" | bc -l)
     done
 done
 echo "\Def{overall_testtimediff}{$(echo "((${supertotaltimesgiven} - ${supertotaltimes}) * 100) / ${supertotaltimes}" | bc -l | xargs printf "%.0f")\%}"
