@@ -36,7 +36,7 @@ fi
         echo "\Def{${projmod}_orig_nodsperc}{${percnods}\%}"
 
         # Get the orig dts
-        origfile=$(find dtdresults/${l} -name list.txt | grep "orig" | grep "random")
+        origfile=$(find dtdresults/${l} -name list.txt | grep "orig" | grep "random" | grep "all-")
         orig=$(grep -c "" ${origfile})
         echo "\Def{${projmod}_orig_dts}{${orig}}"
         percdts=$(echo "${orig} / ${numorigtests} * 100" | bc -l | xargs printf "%.0f")
@@ -62,7 +62,7 @@ fi
         echo "\Def{${projmod}_auto_nodsperc}{${percnods}\%}"
 
         # Get the auto dts
-        autofile=$(find dtdresults/${l} -name list.txt | grep "auto" | grep "random")
+        autofile=$(find dtdresults/${l} -name list.txt | grep "auto" | grep "random" | grep "all-")
         auto=$(grep -c "" ${autofile})
         echo "\\Def{${projmod}_auto_dts}{${auto}}"
         percdts=$(echo "${auto} / ${numautotests} * 100" | bc -l | xargs printf "%.0f")
