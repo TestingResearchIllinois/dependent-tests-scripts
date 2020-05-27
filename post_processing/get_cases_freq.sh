@@ -25,7 +25,7 @@ for testtype in orig auto; do
 
         for cov in FUNCTION STATEMENT; do
             for type in ABSOLUTE RELATIVE; do
-                for f in $(find -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep false | grep "${firstsha}"); do
+                for f in $(find -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep "true" | grep "${firstsha}"); do
                     # Get the same corresponding OMITTED and GIVEN files
                     omittedfile=${f}
                     givenfile=$(echo ${f} | sed 's;OMITTED;GIVEN;')
@@ -68,7 +68,7 @@ for testtype in orig auto; do
     tech=SELECTION
     for cov in FUNCTION STATEMENT; do
         for type in ORIGINAL ABSOLUTE RELATIVE; do
-            for f in $(find -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep false); do
+            for f in $(find -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep "true"); do
                 # Get the same corresponding OMITTED and GIVEN files
                 omittedfile=${f}
                 givenfile=$(echo ${f} | sed 's;OMITTED;GIVEN;')
@@ -114,7 +114,7 @@ for testtype in orig auto; do
         firstsha=$(echo ${firstrev} | rev | cut -d'-' -f1 | rev | cut -c 1-8)
 
         for type in ORIGINAL TIME; do
-            for f in $(find -name "${tech}-*-${type}-*" | grep OMITTED | grep false | grep "${firstsha}"); do
+            for f in $(find -name "${tech}-*-${type}-*" | grep OMITTED | grep "true" | grep "${firstsha}"); do
                 # Get the same corresponding OMITTED and GIVEN files
                 omittedfile=${f}
                 givenfile=$(echo ${f} | sed 's;OMITTED;GIVEN;')
