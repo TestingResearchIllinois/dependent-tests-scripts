@@ -23,7 +23,7 @@ for testtype in orig auto; do
 
             # Prioritization
             totaltime=0
-            for f in $(find ${l} -name PRIORITIZATION-* | grep ${TYPE} | grep false); do
+            for f in $(find ${l} -name PRIORITIZATION-* | grep ${TYPE} | grep "true"); do
                 # Only keep track of immediate next revision for prioritization
                 if [[ $(echo ${f} | grep "${firstsha}") == "" ]]; then
                     continue
@@ -39,7 +39,7 @@ for testtype in orig auto; do
 
             # Selection
             totaltime=0
-            for f in $(find ${l} -name SELECTION-* | grep ${TYPE} | grep false); do
+            for f in $(find ${l} -name SELECTION-* | grep ${TYPE} | grep "true"); do
                 testtime=$(python ${DIR}/parse_for_execsubsuite.py ${f} ../origorders/${projmod}-${testtype}-order)
                 totaltime=$((totaltime + testtime))
             done
@@ -51,7 +51,7 @@ for testtype in orig auto; do
 
             # Parallelization
             totaltime=0
-            for f in $(find ${l} -name PARALLELIZATION-* | grep ${TYPE} | grep false); do
+            for f in $(find ${l} -name PARALLELIZATION-* | grep ${TYPE} | grep "true"); do
                 timesline=$(grep -A1 "Time each test takes to run in the new order:" ${f})
                 if [[ ${timesline} == "" ]]; then
                     continue
