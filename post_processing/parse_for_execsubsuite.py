@@ -32,9 +32,9 @@ def get_totaltime(lines, isorig, origorderfile):
         return
 
     # Get the results from running in isolation
+    isolationresults = {}
     for idx, line in enumerate(lines):
         if 'Isolation results:' in line:
-            isolationresults = {}
             for elem in lines[idx + 1].replace('{', '').replace('}', '').split(', '):
                 test = elem.split('=')[0]
                 status = elem.split('=')[1]
@@ -42,9 +42,9 @@ def get_totaltime(lines, isorig, origorderfile):
             break
 
     # Get the times from running in isolation
+    isolationtimes = {}
     for idx, line in enumerate(lines):
         if 'Isolation times:' in line:
-            isolationtimes = {}
             for elem in lines[idx + 1].replace('{', '').replace('}', '').split(', '):
                 test = elem.split('=')[0]
                 time = int(elem.split('=')[1])
@@ -52,9 +52,9 @@ def get_totaltime(lines, isorig, origorderfile):
             break
 
     # Get the times from the original order
+    origordertimes = {}
     for idx, line in enumerate(lines):
         if 'Original order times:' in line:
-            origordertimes = {}
             for elem in lines[idx + 1].replace('{', '').replace('}', '').split(', '):
                 test = elem.split('=')[0]
                 time = int(elem.split('=')[1])
@@ -74,6 +74,9 @@ def get_totaltime(lines, isorig, origorderfile):
     # For each failed test, obtain its status from isolation
     stillfailedtests = set()
     for ft in failedtests:
+        # If not in isolation results, we determined test to be NOD, so assume was not failing
+        if not ft in isolationtimes:
+            continue
         totaltime += isolationtimes[ft]
         if not isolationresults[ft] == 'PASS':
             stillfailedtests.add(ft)
