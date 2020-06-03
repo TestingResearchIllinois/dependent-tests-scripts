@@ -88,7 +88,6 @@ fi
                     done
                 done
                 macrokey=$(echo ${tech} | tr '[:upper:]' '[:lower:]' | cut -c 1-4)
-                echo "\Def{${projmod}_${testtype}_dts_${macrokey}}{$(sort -u ${techdtsfile} | grep -c "")}"
 
                 # Compute what percentage of the dts total are found by the technique
                 if [[ ${testtype} == orig ]]; then
@@ -99,6 +98,8 @@ fi
                     total=${auto}
                 fi
                 incommon=$(comm -12 <(sort -u ${techdtsfile}) <(sort -u ${dtdfile}) | grep -c "")
+                #echo "\Def{${projmod}_${testtype}_dts_${macrokey}}{$(sort -u ${techdtsfile} | grep -c "")}" # Only in common ones
+                echo "\Def{${projmod}_${testtype}_dts_${macrokey}}{${incommon}}" # Only in common ones
                 if [[ ${total} != 0 ]]; then
                     perc="$(echo "${incommon} / ${total} * 100" | bc -l | xargs printf "%.0f")\%"
                 else
