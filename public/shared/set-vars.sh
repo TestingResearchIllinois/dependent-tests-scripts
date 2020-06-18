@@ -148,7 +148,6 @@ elif [[ "$ALGO" == "p2" ]]; then
     export j="time"
     export TECH="para"
 else
-    # TODO missing options
     echo "[ERROR] Unknown prioritization label provided. Valid options are T1 (prioritization, statement, absolute), T2 (prioritization, statement, relative), T3 (prioritization, function, absolute), T4 (prioritization, function, relative), S1 (selection, statement, original), S2 (selection, statement, absolute), S3 (selection, statement, relative), S4 (selection, function, original), S5 (selection, function, absolute), S6 (selection, function, relative), P1 (parallelization, original), and P2 (parallelization, time)."
     exit 1
 fi

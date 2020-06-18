@@ -39,11 +39,13 @@ fi
 # Run the tests, but force to re-compile from top level just in case of needing local dependencies upgraded
 (
     cd $ROOT_DIR
-    mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl . -am > /dev/null
+    mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl . -am > "install-log.txt"
 )
 mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip > "test-log.txt"
 
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetOriginalOrder $output_file_name "target/" "test-log.txt"
+mv "test-log.txt" $DT_SCRIPTS/${SUBJ_NAME}-results/
+mv "install-log.txt" $DT_SCRIPTS/${SUBJ_NAME}-results/
 
 if [[ ! -z "$SUBJ_NAME" ]]; then
     TEST_ORDER="$output_file_name"
