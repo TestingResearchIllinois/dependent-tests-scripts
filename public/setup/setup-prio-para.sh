@@ -11,7 +11,7 @@ bash "$DT_SCRIPTS/shared/get-test-order.sh" old
 
 # 2. Instrument the source and test files.
 echo "[DEBUG] Instrumenting source and test files for old subject."
-rm -rf soortOutput/
+rm -rf sootOutput/
 
 #echo "java -cp $DT_TOOLS:$JAVA_HOME/jre/lib/*: edu.washington.cs.dt.impact.Main.InstrumentationMain -inputDir $DT_TESTS --soot-cp $DT_LIBS:$DT_CLASS:$DT_TESTS:$JAVA_HOME/jre/lib/*"
 java -cp $DT_TOOLS:$JAVA_HOME/jre/lib/*: edu.washington.cs.dt.impact.Main.InstrumentationMain -inputDir $DT_TESTS --soot-cp $DT_LIBS:$DT_CLASS:$DT_TESTS:$JAVA_HOME/jre/lib/*
@@ -35,12 +35,15 @@ rsync -av test-classes/ sootOutput/ --exclude-from=exclude-list.txt
 echo "[DEBUG] Running instrumented tests."
 cd $DT_SUBJ_SRC
 #echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order"
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order
-mv sootTestOutput/ $DT_SUBJ/sootTestOutput-orig
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order > /dev/null
+
+rm -rf $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig
+mv sootTestOutput/ $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig
+
 cd $DT_SUBJ
 rm -rf sootOutput/
 
 # 4. Get the time each test took to run.
 cd $DT_SUBJ_SRC
 echo "[DEBUG] Getting time for orig tests. $DT_SUBJ/$SUBJ_NAME-orig-time.txt"
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_CLASS:$DT_TESTS: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order -getTime > $DT_SUBJ/$SUBJ_NAME-orig-time.txt
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_CLASS:$DT_TESTS: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order -getTime > $DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-time.txt

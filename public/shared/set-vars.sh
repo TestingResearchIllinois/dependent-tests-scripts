@@ -8,7 +8,6 @@ fi
 # ================ firstVers variables
 
 export DT_SUBJ_ROOT=$(realpath $1)
-TECH=$2
 
 if [[ ! -d "$DT_SUBJ_ROOT" ]]; then
     echo "Path to DT_SUBJ_ROOT given as argument 1 does not exist. DT_SUBJ_ROOT: $DT_SUBJ_ROOT"
@@ -85,7 +84,7 @@ fi
 
 # ================ DT_SCRIPTS variables
 
-export DT_SCRIPTS=$(cd "$(dirname $BASH_SOURCE)"; pwd)
+export DT_SCRIPTS="$(cd "$(dirname $BASH_SOURCE)"; pwd)/../"
 if [[ ! -d "$DT_SCRIPTS" ]]; then
     echo "Path to DT_SCRIPTS does not exist. DT_SCRIPTS: $DT_SCRIPTS"
     exit 1
@@ -100,3 +99,61 @@ TOOLS=$(find "$DT_SCRIPTS/shared/impact-tools/" -name "*.jar" -not -name "randoo
 export DT_TOOLS=$(echo $TOOLS | sed -E "s/ /:/g")
 
 export SUBJ_NAME="$(echo $DT_SUBJ_ROOT | rev | cut -d'/' -f1 | rev)"
+
+export ALGO=$(echo "$2" | tr '[:upper:]' '[:lower:]')
+if [[ "$ALGO" == "t1" ]]; then
+    export i="statement"
+    export j="absolute"
+    export TECH="prio"
+elif [[ "$ALGO" == "t2" ]]; then
+    export i="statement"
+    export j="relative"
+    export TECH="prio"
+elif [[ "$ALGO" == "t3" ]]; then
+    export i="function"
+    export j="absolute"
+    export TECH="prio"
+elif [[ "$ALGO" == "t4" ]]; then
+    export i="function"
+    export j="relative"
+    export TECH="prio"
+elif [[ "$ALGO" == "s1" ]]; then
+    export i="statement"
+    export j="original"
+    export TECH="sele"
+elif [[ "$ALGO" == "s2" ]]; then
+    export i="statement"
+    export j="absolute"
+    export TECH="sele"
+elif [[ "$ALGO" == "s3" ]]; then
+    export i="statement"
+    export j="relative"
+    export TECH="sele"
+elif [[ "$ALGO" == "s4" ]]; then
+    export i="function"
+    export j="original"
+    export TECH="sele"
+elif [[ "$ALGO" == "s5" ]]; then
+    export i="function"
+    export j="absolute"
+    export TECH="sele"
+elif [[ "$ALGO" == "s6" ]]; then
+    export i="function"
+    export j="relative"
+    export TECH="sele"
+elif [[ "$ALGO" == "p1" ]]; then
+    export j="original"
+    export TECH="para"
+elif [[ "$ALGO" == "p2" ]]; then
+    export j="time"
+    export TECH="para"
+else
+    # TODO missing options
+    echo "[ERROR] Unknown prioritization label provided. Valid options are T1 (prioritization, statement, absolute), T2 (prioritization, statement, relative), T3 (prioritization, function, absolute), T4 (prioritization, function, relative), S1 (selection, statement, original), S2 (selection, statement, absolute), S3 (selection, statement, relative), S4 (selection, function, original), S5 (selection, function, absolute), S6 (selection, function, relative), P1 (parallelization, original), and P2 (parallelization, time)."
+    exit 1
+fi
+
+export MACHINES="$4"
+if [[ "$MACHINES" != "2" ]] || [[ "$MACHINES" != "4" ]] || [[ "$MACHINES" != "8" ]] || [[ "$MACHINES" != "16" ]]; then
+    export MACHINES="$2"
+fi

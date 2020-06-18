@@ -29,17 +29,19 @@ if [[ ! -z "$SUBJ_SRC" ]]; then
     cd "$SUBJ_SRC"
 fi
 
+mkdir -p $DT_SCRIPTS/${SUBJ_NAME}-results
+
 output_file_name="test-order"
 if [[ ! -z "$SUBJ_NAME" ]]; then
-    output_file_name="$SUBJ/$SUBJ_NAME-orig-order"
+    output_file_name="$DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-order"
 fi
 
 # Run the tests, but force to re-compile from top level just in case of needing local dependencies upgraded
 (
     cd $ROOT_DIR
-    mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl . -am
+    mvn install -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip -DskipTests -pl . -am > /dev/null
 )
-mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip |& tee "test-log.txt"
+mvn test -Dmavanagaiata.skip=true -Drat.skip=true -Ddependency-check.skip=true -Dcheckstyle.skip=true -Dmaven.javadoc.skip=true -Dmaven-source.skip=true -Dcobertura.skip > "test-log.txt"
 
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.tools.GetOriginalOrder $output_file_name "target/" "test-log.txt"
 
