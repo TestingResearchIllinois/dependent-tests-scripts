@@ -1,7 +1,14 @@
 #!/bin/bash
 
-# Runs the enhanced T2 algorithm (prioritization, statement, relative) on kevinsawicki/http-request (M9).
-# Usage: bash example.sh
+# Runs the enhanced algorithms on kevinsawicki/http-request (M9).
+# Example usage for T2 algorithm: bash example.sh t2
+# Example usage for P2 algorithm with 8 machines: bash example.sh p2 8
+
+if [[ $1 == "" ]]; then
+    echo "arg1 - The algorithm to run. Valid options are T1 (prioritization, statement, absolute), T2 (prioritization, statement, relative), T3 (prioritization, function, absolute), T4 (prioritization, function, relative), S1 (selection, statement, original), S2 (selection, statement, absolute), S3 (selection, statement, relative), S4 (selection, function, original), S5 (selection, function, absolute), S6 (selection, function, relative), P1 (parallelization, original), and P2 (parallelization, time)."
+    echo "arg2 (optional) - Number of machines to simulate for parallelization. Valid otpions are 2, 4, 8, and 16."
+    exit 1
+fi
 
 scripts_folder=$(cd "$(dirname $BASH_SOURCE)"; pwd)
 algo=$1

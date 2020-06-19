@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# Usage: bash run.sh firstVers/lib t2 secondVers/lib
-# requires junit 4.12, realpath
+# Example usage: bash run.sh firstVers/lib t2 secondVers/lib
 
 if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
     echo "arg1 - Path to module that has its dependencies copied, and source and test compiled. This directory should contain the pom.xml and is the version that metadata was collected for the regression testing algorithms."
     echo "arg2 - The algorithm to run. Valid options are T1 (prioritization, statement, absolute), T2 (prioritization, statement, relative), T3 (prioritization, function, absolute), T4 (prioritization, function, relative), S1 (selection, statement, original), S2 (selection, statement, absolute), S3 (selection, statement, relative), S4 (selection, function, original), S5 (selection, function, absolute), S6 (selection, function, relative), P1 (parallelization, original), and P2 (parallelization, time)."
     echo "arg3 - Path to module that has its dependencies copied, and source and test compiled. This directory should contain the pom.xml and is the version to run the regression testing algorithms."
     echo "arg4 (optional) - Number of machines to simulate for parallelization. Valid otpions are 2, 4, 8, and 16."
-    exit
+    exit 1
 fi
 
 source shared/set-vars.sh "$1" "$2" "$3" "$4"
