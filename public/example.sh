@@ -13,8 +13,8 @@ if [ ! -d "firstVers" ]; then
     git clone https://github.com/kevinsawicki/http-request.git firstVers  > logs/firstVers-clone-log.txt
     echo "Compiling firstVers"
     cd firstVers/lib/
-    git checkout d0ba95cf3c621c74a023887814e8c1f73b5da1b2 > logs/checkout-firstVers.txt
-    mvn install dependency:copy-dependencies -DskipTests > logs/install-log-firstVers.txt
+    git checkout d0ba95cf3c621c74a023887814e8c1f73b5da1b2
+    mvn install dependency:copy-dependencies -DskipTests -l logs/install-log-firstVers.txt
     cd ../../
 fi
 
@@ -24,8 +24,8 @@ if [ ! -d "secondVers" ]; then
     git clone https://github.com/kevinsawicki/http-request.git secondVers > logs/secondVers-clone-log.txt
     echo "Compiling secondVers"
     cd secondVers/lib/
-    git checkout ef89ec663e6d192c08b77dd1d9b8649975c1419c > logs/checkout-secondVers.txt
-    mvn install dependency:copy-dependencies -DskipTests > logs/install-log-secondVers.txt
+    git checkout ef89ec663e6d192c08b77dd1d9b8649975c1419c
+    mvn install dependency:copy-dependencies -DskipTests -l logs/install-log-secondVers.txt
     cd ../../
 fi
 
