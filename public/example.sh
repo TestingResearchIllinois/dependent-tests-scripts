@@ -5,6 +5,7 @@
 
 scripts_folder=$(cd "$(dirname $BASH_SOURCE)"; pwd)
 algo=$1
+machines=$2
 
 # Clear any existing logs
 rm -rf ${scripts_folder}/logs/
@@ -38,6 +39,6 @@ rm -rf lib-results/
 echo "Setting up the two versions for regression testing"
 bash setup.sh firstVers/lib $algo secondVers/lib &> logs/setup.txt
 echo "Computing dependencies on the firstVers"
-bash compute-deps.sh firstVers/lib $algo secondVers/lib &> logs/compute-deps.txt
+bash compute-deps.sh firstVers/lib $algo secondVers/lib "$machines" &> logs/compute-deps.txt
 echo "Running the regression testing algorithm on the secondVers"
-bash run.sh firstVers/lib $algo secondVers/lib &> logs/run.txt
+bash run.sh firstVers/lib $algo secondVers/lib "$machines" &> logs/run.txt
