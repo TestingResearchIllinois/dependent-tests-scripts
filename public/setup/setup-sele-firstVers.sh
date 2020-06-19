@@ -40,7 +40,7 @@ echo "[DEBUG] Running the instrumented human-written tests."
 java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-order
 
 rm -rf $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig-selection
-mv sootTestOutput/ $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig-selection
+mv sootTestOutput/ $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig
 
 cd $DT_SUBJ
 rm -rf sootOutput/

@@ -24,7 +24,7 @@ echo "Starting running algorithm $ALGO"
 if [[ $TECH == "prio" ]]; then
     bash $DT_SCRIPTS/run/run-prio.sh
 elif [[ $TECH == "sele" ]]; then
-    bash $DT_SCRIPTS/run/run-sele.sha
+    bash $DT_SCRIPTS/run/run-sele.sh
 elif [[ $TECH == "para" ]]; then
     bash $DT_SCRIPTS/run/run-para.sh
 else

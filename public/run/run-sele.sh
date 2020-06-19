@@ -29,7 +29,7 @@ java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
   -coverage $i \
   -order $j \
   -origOrder $DT_SCRIPTS/${SUBJ_NAME}-results/${SUBJ_NAME}-orig-order \
-  -testInputDir $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig-selection \
+  -testInputDir $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig \
   -filesToDelete .tmp_file \
   -project "$SUBJ_NAME" \
   -testType orig \
