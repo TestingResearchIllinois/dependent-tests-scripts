@@ -11,15 +11,16 @@ The algorithms of the techniques require three main steps:
 2. (Optional) Computing the test dependencies for the regression testing algorithms on the firstVers
 3. Running the regression testing algorithms on the subseqVers
 
-## Contents of this directory
+## Relevant contents of this directory
 - ```setup.sh``` main script to setup the metadata needed for the regression testing algorithms (Step 1)
-- ```setup``` scripts to setup the metadata needed for the regression testing algorithms
+<!-- - ```setup``` scripts to setup the metadata needed for the regression testing algorithms -->
 - ```compute-deps.sh``` main script to compute dependencies for the regression testing algorithms (Step 2)
-- ```compute-deps``` scripts to compute dependencies for the regression testing algorithms
+<!-- - ```compute-deps``` scripts to compute dependencies for the regression testing algorithms -->
 - ```run.sh``` main script to run the regression testing algorithms (Step 3)
-- ```run``` scripts to run the regression testing algorithms
+<!-- - ```run``` scripts to run the regression testing algorithms -->
 - ```example.sh``` example script for how to run the three main scripts
-- ```shared``` contains scripts shared between the three steps
+<!-- - ```shared``` contains scripts shared between the three steps -->
+- ```dt-impact-tracer``` source code of the enhanced and unenhanced regression testing algorithms
 
 ## Prerequisites
 - The firstVers and subseqVers must be installed and its dependencies are copied into the ```target/dependency``` directory
@@ -27,7 +28,9 @@ The algorithms of the techniques require three main steps:
 - It is possible that rerunning the setup script will give different coverage of tests (e.g., one test that can cover different paths when run multiple times) and consequently result in different regression testing orders. The coverage of tests that achieved the results in our paper is available at [here]().
 
 ## Example
-The ```example.sh``` in the repository runs the enhanced T2 algorithm (prioritization, statement, relative) on ```kevinsawicki/http-request``` (M9). The script generally takes about 20 minutes to run and generates the following:
+The ```example.sh``` in the repository runs the enhanced T2 algorithm (prioritization, statement, relative) on ```kevinsawicki/http-request``` (M9). The script generally takes about 30 minutes to run and generates the following in the current directory:
+- ```firstVers``` directory containing the firstVers of M9 (```d0ba95c```)
+- ```secondVers``` directory containing the subseqVers of M9 (```ef89ec6```)
 - ```logs``` directory containing the logs for running the various steps including building the two different versions of M9
 - ```lib-results``` directory containing the results of the three steps. Specifically, the directory contains
   - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-GIVEN_TD-false.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the enhanced T2 algorithm
