@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: bash run.sh /home/awshi2/old-http/lib t2 /home/awshi2/kevinsawicki/http-request/lib
+# Usage: bash compute-deps.sh /home/awshi2/old-http/lib t2 /home/awshi2/kevinsawicki/http-request/lib
 # requires junit 4.12, realpath
 
 if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
@@ -22,13 +22,13 @@ fi
 # ================ Call the respective scripts to compute dependencies for the algorithms
 mkdir -p $DT_SCRIPTS/${SUBJ_NAME}-results
 
-echo "Starting running algorithm $ALGO"
+echo "Starting compute dependencies for $ALGO"
 if [[ $TECH == "prio" ]]; then
-    bash $DT_SCRIPTS/run/run-prio.sh
+    bash $DT_SCRIPTS/compute-deps/compute-deps-prio.sh
 elif [[ $TECH == "sele" ]]; then
-    bash $DT_SCRIPTS/run/run-sele.sha
+    bash $DT_SCRIPTS/compute-deps/compute-deps-sele.sh
 elif [[ $TECH == "para" ]]; then
-    bash $DT_SCRIPTS/run/run-para.sh
+    bash $DT_SCRIPTS/compute-deps/compute-deps-para.sh
 else
     echo "Unknown $TECH. Is $ALGO set correctly in shared/set-vars.sh?"
     exit 1

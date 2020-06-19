@@ -154,5 +154,7 @@ fi
 
 export MACHINES="$4"
 if [[ "$MACHINES" != "2" ]] || [[ "$MACHINES" != "4" ]] || [[ "$MACHINES" != "8" ]] || [[ "$MACHINES" != "16" ]]; then
-    export MACHINES="$2"
+    export MACHINES="16"
 fi
+
+export medianTimes=1

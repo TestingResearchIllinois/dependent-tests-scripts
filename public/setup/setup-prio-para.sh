@@ -35,7 +35,7 @@ rsync -av test-classes/ sootOutput/ --exclude-from=exclude-list.txt
 echo "[DEBUG] Running instrumented tests."
 cd $DT_SUBJ_SRC
 #echo "[DEBUG] java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order"
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order > /dev/null
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_SUBJ/sootOutput/: -inputTests $DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-order > /dev/null
 
 rm -rf $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig
 mv sootTestOutput/ $DT_SCRIPTS/${SUBJ_NAME}-results/sootTestOutput-orig
@@ -46,4 +46,4 @@ rm -rf sootOutput/
 # 4. Get the time each test took to run.
 cd $DT_SUBJ_SRC
 echo "[DEBUG] Getting time for orig tests. $DT_SUBJ/$SUBJ_NAME-orig-time.txt"
-java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_CLASS:$DT_TESTS: -inputTests $DT_SUBJ/$SUBJ_NAME-orig-order -getTime > $DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-time.txt
+java -cp $DT_TOOLS: edu.washington.cs.dt.impact.Main.RunnerMain -classpath $DT_LIBS:$DT_TOOLS:$DT_CLASS:$DT_TESTS: -inputTests $DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-order -getTime > $DT_SCRIPTS/${SUBJ_NAME}-results/$SUBJ_NAME-orig-time.txt

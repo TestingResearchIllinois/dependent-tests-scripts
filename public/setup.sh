@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: bash setup.sh /home/awshi2/old-http/lib prio /home/awshi2/kevinsawicki/http-request/lib
+# Usage: bash setup.sh /home/awshi2/old-http/lib t2 /home/awshi2/kevinsawicki/http-request/lib
 # requires junit 4.12, realpath
 
 if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
