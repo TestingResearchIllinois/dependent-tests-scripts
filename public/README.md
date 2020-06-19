@@ -25,22 +25,22 @@ The algorithms of the techniques require three main steps:
 
 ## Prerequisites
 - The firstVers and subseqVers must be installed and its dependencies are copied into the ```target/dependency``` directory
-- All tests in the original test order must pass. Step (1) will generate an original order to run and any test that doesn't pass is removed
-- It is possible that rerunning the setup script will give different coverage of tests (e.g., one test that can cover different paths when run multiple times) and consequently result in different regression testing orders. The coverage of tests that achieved the results in our paper is available at [here]().
+- All tests in the original test order must pass. Step (1) will generate an original order to run and any test that doesn't pass in the original order is skipped in the regression testing orders
+- It is possible that rerunning the setup script will give different coverage of tests (e.g., one test can cover different paths in different test runs) and consequently result in different regression testing orders. The coverage of tests that achieved the results in our paper is available at [here]().
 
 ## Example
-The ```example.sh``` in the repository runs the enhanced T2 algorithm (prioritization, statement, relative) on ```kevinsawicki/http-request``` (M9). The script generally takes about 30 minutes to run and generates the following in the current directory:
+The ```example.sh``` in the repository runs the enhanced T2 algorithm (prioritization, statement, relative) on ```kevinsawicki/http-request``` (M9). The script generally takes about 33 minutes to run and generates the following in the current directory:
 - ```firstVers``` directory containing the firstVers of M9 (```d0ba95c```)
 - ```secondVers``` directory containing the subseqVers of M9 (```ef89ec6```)
 - ```logs``` directory containing the logs for running the various steps including building the two different versions of M9
 - ```lib-results``` directory containing the results of the three steps. Specifically, the directory contains
   - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-GIVEN_TD-false.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the enhanced T2 algorithm
+  - ```prio-DT_LIST-lib-statement-relative.txt``` contains the computed dependencies used to enhance the T2 algorithm
   - ```lib-orig-order``` contains the original order used. When running this order, all tests are observed to have passed
-  - ```lib-orig-time.txt``` contains the time each test took to run in the original order
-  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information for computing dependencies
-  - ```prio-DT_LIST-lib-statement-relative.txt``` contains the computed dependencies
-  - ```sootTestOutput-orig``` contains the coverage of each test
   - ```lib-ignore-order``` contains the tests that failed in the original order and are ignored for the algorithms
+  - ```lib-orig-time.txt``` contains the time each test took to run in the original order
+  - ```sootTestOutput-orig``` contains the coverage of each test
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information for computing dependencies
 
 # Cite
 If you use any of this work, please cite our corresponding [ISSTA paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf):
