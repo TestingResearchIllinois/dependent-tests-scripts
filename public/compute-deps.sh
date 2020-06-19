@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: bash compute-deps.sh /home/awshi2/old-http/lib t2 /home/awshi2/kevinsawicki/http-request/lib
+# Usage: bash compute-deps.sh firstVers/lib t2 secondVers/lib
 # requires junit 4.12, realpath
 
 if [[ $1 == "" ]] || [[ $2 == "" ]] || [[ $3 == "" ]]; then
@@ -19,9 +19,7 @@ if [ $ret_code != 0 ]; then
     exit $ret_code
 fi
 
-# ================ Call the respective scripts to compute dependencies for the algorithms
 mkdir -p $DT_SCRIPTS/${SUBJ_NAME}-results
-
 echo "Starting compute dependencies for $ALGO"
 if [[ $TECH == "prio" ]]; then
     bash $DT_SCRIPTS/compute-deps/compute-deps-prio.sh
