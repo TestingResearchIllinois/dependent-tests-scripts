@@ -18,7 +18,7 @@ else
 fi
 
 # Reset variables if computed dependencies do not exist
-if [[ -f ${precomputed_deps} ]]; then
+if [[ ! -f ${precomputed_deps} ]]; then
     dep_file=""
     precomputed_deps=""
 fi
