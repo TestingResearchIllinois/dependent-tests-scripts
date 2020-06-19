@@ -1,9 +1,53 @@
-== Contents of this directory ==
+# Dependent-Test-Aware Regression Testing Techniques
+This repository contains tools for dependent-test-aware regression testing techniques.
+
+More details about the algorithms that are supported can be found in its [paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf) and [website](https://sites.google.com/view/test-dependence-impact).
+
+# Usage
+The dependent-test-aware regression testing techniques are meant to be used on two versions of a subject. We will refer to the older version as the *firstVers* and the later version as the *subseqVers*.
+
+The algorithms of the techniques require three main steps:
+1. Setting up the metadata needed for the regression testing algorithms on the firstVers
+2. (Optional) Computing the test dependencies for the regression testing algorithms on the firstVers
+3. Running the regression testing algorithms on the subseqVers
+
+## Contents of this directory
+- ```setup.sh``` main script to setup the metadata needed for the regression testing algorithms (Step 1)
 - ```setup``` scripts to setup the metadata needed for the regression testing algorithms
-- ```setup.sh``` main script to setup the metadata needed for the regression testing algorithms
-- ```run``` scripts to run the regression testing algorithms
-- ```run.sh``` main script to run the regression testing algorithms
+- ```compute-deps.sh``` main script to compute dependencies for the regression testing algorithms (Step 2)
 - ```compute-deps``` scripts to compute dependencies for the regression testing algorithms
-- ```compute-deps.sh``` main script to compute dependencies for the regression testing algorithms
+- ```run.sh``` main script to run the regression testing algorithms (Step 3)
+- ```run``` scripts to run the regression testing algorithms
 - ```example.sh``` example script for how to run the three main scripts
 - ```shared``` contains scripts shared between the three steps
+
+## Prerequisites
+- The firstVers and subseqVers must be installed and its dependencies are copied into the ```target/dependency``` directory
+- All tests in the original test order must pass. Step (1) will generate an original order to run and any test that doesn't pass is removed
+- It is possible that rerunning the setup script will give different coverage of tests (e.g., one test that can cover different paths when run multiple times) and consequently result in different regression testing orders. The coverage of tests that achieved the results in our paper is available at [here]().
+
+## Example
+The ```example.sh``` in the repository runs the enhanced T2 algorithm (prioritization, statement, relative) on ```kevinsawicki/http-request``` (M9). The script generally takes about 20 minutes to run and generates the following:
+- ```logs``` directory containing the logs for running the various steps including building the two different versions of M9
+- ```lib-results``` directory containing the results of the three steps. Specifically, the directory contains
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-GIVEN_TD-false.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the enhanced T2 algorithm
+  - ```lib-orig-order``` contains the original order used. When running this order, all tests are observed to have passed
+  - ```lib-orig-time.txt``` contains the time each test took to run in the original order
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information for computing dependencies
+  - ```prio-DT_LIST-lib-statement-relative.txt``` contains the computed dependencies
+  - ```sootTestOutput-orig``` contains the coverage of each test
+  - ```lib-ignore-order``` contains the tests that failed in the original order and are ignored for the algorithms
+
+# Cite
+If you use any of this work, please cite our corresponding [ISSTA paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf):
+```
+@inproceedings{LamETAL2020ISSTA,
+    author      = "Wing Lam and August Shi and Reed Oei and Sai Zhang and Michael D. Ernst and Tao Xie",
+    title       = "Dependent-Test-Aware Regression Testing Techniques",
+    booktitle   = "ISSTA 2020, Proceedings of the 2020 International Symposium on Software Testing and Analysis",
+    month       = "July",
+    year 	= 2020,
+    address 	= "Virutal Event",
+    pages       = "pages-to-appear"
+}
+```
