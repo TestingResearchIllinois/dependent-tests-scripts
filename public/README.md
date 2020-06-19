@@ -40,7 +40,7 @@ The ```example.sh``` in the repository runs the enhanced T2 algorithm (prioritiz
   - ```lib-ignore-order``` contains the tests that failed in the original order and are ignored for the algorithms
   - ```lib-orig-time.txt``` contains the time each test took to run in the original order
   - ```sootTestOutput-orig``` contains the coverage of each test
-  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information for computing dependencies
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information from computing dependencies
 
 # Cite
 If you use any of this work, please cite our corresponding [ISSTA paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf):
