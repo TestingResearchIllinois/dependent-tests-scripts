@@ -39,5 +39,6 @@ java -cp $DT_TOOLS: edu.washington.cs.dt.impact.runner.OneConfigurationRunner \
   -outputDir $DT_SCRIPTS/${SUBJ_NAME}-results/ \
   -timesToRun $medianTimes \
   -classpath "$CLASSPATH" \
+  -postProcessDTs \
   ${dep_file} "${precomputed_deps}"
 rm .tmp_file
