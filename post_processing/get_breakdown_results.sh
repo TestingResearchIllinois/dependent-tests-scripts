@@ -25,7 +25,7 @@ for testtype in orig auto; do
                 firstrev=$(find ${l} -name "*-lifetime" | xargs ls | sort | head -1)
                 firstsha=$(echo ${firstrev} | rev | cut -d'-' -f1 | rev | cut -c 1-8)
 
-                for f in $(find ${l} -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep false | grep "${firstsha}"); do
+                for f in $(find ${l} -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep "true" | grep "${firstsha}"); do
                     dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
                     if [[ ${dtsline} == "" ]]; then
                         continue
@@ -49,7 +49,7 @@ for testtype in orig auto; do
         for type in ORIGINAL ABSOLUTE RELATIVE; do
             techdtsfile=$(mktemp /tmp/dts.XXXXXX)
             for l in $(ls | grep "_output$"); do
-                for f in $(find ${l} -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep false); do
+                for f in $(find ${l} -name "${tech}-*-${cov}-${type}-*" | grep OMITTED | grep "true"); do
                     dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
                     if [[ ${dtsline} == "" ]]; then
                         continue
@@ -78,7 +78,7 @@ for testtype in orig auto; do
             firstrev=$(find ${l} -name "*-lifetime" | xargs ls | sort | head -1)
             firstsha=$(echo ${firstrev} | rev | cut -d'-' -f1 | rev | cut -c 1-8)
 
-            for f in $(find ${l} -name "${tech}-*-${type}-*" | grep OMITTED | grep false | grep "${firstsha}"); do
+            for f in $(find ${l} -name "${tech}-*-${type}-*" | grep OMITTED | grep "true" | grep "${firstsha}"); do
                 dtsline=$(grep -A1 "DTs not fixed are:" ${f} | sed 's;\[;;' | sed 's;\];;')
                 if [[ ${dtsline} == "" ]]; then
                     continue
