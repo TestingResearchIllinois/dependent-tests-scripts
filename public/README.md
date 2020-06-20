@@ -31,7 +31,7 @@ The algorithms of the techniques require three main steps:
 
 ## General use case
 To use the dependent-test-aware regression testing algorithms on any Maven-based, Java project one would need to do the following.
-1. Compile the firstVers and subseqVers of any project (e.g., running ```mvn install dependency:copy-dependencies```)
+1. Compile and save the dependencies of the firstVers and subseqVers of any project (e.g., running ```mvn install dependency:copy-dependencies```)
 2. Setup the metadata by running ```bash setup.sh <path_to_firstVers_module> <algorithm_label> <path_to_subseqVers_module>```
 3. (Optional) Compute dependencies by running ```bash compute-deps.sh <path_to_firstVers_module> <algorithm_label> <path_to_subseqVers_module>```
 4. Running the regression testing algorithm by running ```bash run.sh <path_to_firstVers_module> <algorithm_label> <path_to_subseqVers_module>```
@@ -51,6 +51,8 @@ The ```example.sh``` in the repository runs the enhanced algorithms on ```kevins
   - ```lib-orig-time.txt``` contains the time each test took to run in the original order
   - ```sootTestOutput-orig``` contains the coverage of each test
   - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information from computing dependencies
+
+Note that the provided ```compute-deps.sh``` script can compute dependencies for test selection algorithms using the orders of test prioritization and parallelization as described in the our [paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf), but they do not merge all of the dependencies from all test prioritization and parallelization algorithms as we did in the paper. Instead, S1 and S4 relies on P1 with 16 machines to compute dependencies, while S2, S3, S5, and S6 relies on T1, T2, T3, and T4 (respectively) to compute dependencies. This change is to reduce the amount of time test selection algorithms may take to compute dependencies on new projects. To merge dependencies as we did in the paper, one can simply run ```compute-deps.sh``` on all prioritization and parallelization algorithms, and then merge their output (e.g., prio-DT_LIST-lib-statement-absolute.txt from T1 and prio-DT_LIST-lib-statement-relative.txt from T2) into one file.
 
 # Cite
 If you use any of this work, please cite our corresponding [ISSTA paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf):
