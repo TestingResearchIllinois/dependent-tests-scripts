@@ -44,13 +44,13 @@ The ```example.sh``` in the repository runs the enhanced algorithms on ```kevins
 - ```secondVers``` directory containing the subseqVers of M9 (```ef89ec6```)
 - ```logs``` directory containing the logs for running the various steps including building the two different versions of M9
 - ```lib-results``` directory containing the results of the three steps. Specifically, the directory contains
-  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-GIVEN_TD-false.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the enhanced T2 algorithm
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-GIVEN_TD-true.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the enhanced T2 algorithm
   - ```prio-DT_LIST-lib-statement-relative.txt``` contains the computed dependencies used to enhance the T2 algorithm
   - ```lib-orig-order``` contains the original order used. When running this order, all tests are observed to have passed
   - ```lib-ignore-order``` contains the tests that failed in the original order and are ignored for the algorithms
   - ```lib-orig-time.txt``` contains the time each test took to run in the original order
   - ```sootTestOutput-orig``` contains the coverage of each test
-  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-false.txt``` contains debugging information from computing dependencies
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-FIXED_DT-OMITTED_TD-true.txt``` contains debugging information from computing dependencies
 
 Note that the provided ```compute-deps.sh``` script can compute dependencies for test selection algorithms using the orders of test prioritization and parallelization as described in the our [paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf), but they do not merge all of the dependencies from all test prioritization and parallelization algorithms as we did in the paper. Instead, S1 and S4 relies on P1 with 16 machines to compute dependencies, while S2, S3, S5, and S6 relies on T1, T2, T3, and T4 (respectively) to compute dependencies. This change is to reduce the amount of time test selection algorithms may take to compute dependencies on new projects. To merge dependencies as we did in the paper, one can simply run ```compute-deps.sh``` on all prioritization and parallelization algorithms, and then merge their output (e.g., prio-DT_LIST-lib-statement-absolute.txt from T1 and prio-DT_LIST-lib-statement-relative.txt from T2) into one file.
 
