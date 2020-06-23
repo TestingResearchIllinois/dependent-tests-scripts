@@ -45,7 +45,9 @@ rm -rf lib-results/
 
 echo "Setting up the two versions for regression testing"
 bash setup.sh firstVers/lib $algo secondVers/lib &> logs/setup.txt
+echo "Running the unenhanced regression testing algorithm on the secondVers"
+bash run.sh firstVers/lib $algo secondVers/lib "$machines" &> logs/run-unenhanced.txt
 echo "Computing dependencies on the firstVers"
 bash compute-deps.sh firstVers/lib $algo secondVers/lib "$machines" &> logs/compute-deps.txt
-echo "Running the regression testing algorithm on the secondVers"
-bash run.sh firstVers/lib $algo secondVers/lib "$machines" &> logs/run.txt
+echo "Running the enhanced regression testing algorithm on the secondVers"
+bash run.sh firstVers/lib $algo secondVers/lib "$machines" &> logs/run-enhanced.txt

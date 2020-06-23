@@ -36,7 +36,7 @@ To use the dependent-test-aware regression testing algorithms on any Maven-based
 3. (Optional) Compute dependencies by running ```bash compute-deps.sh <path_to_firstVers_module> <algorithm_label> <path_to_subseqVers_module>```
 4. Running the regression testing algorithm by running ```bash run.sh <path_to_firstVers_module> <algorithm_label> <path_to_subseqVers_module>```
 
-The supported ```algorithm_label``` can be found in Tables 1-3 of our [paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf).
+The options for ```algorithm_label``` can be found in Tables 1-3 of our [paper](http://mir.cs.illinois.edu/winglam/publications/2020/LamETAL20ISSTA.pdf).
 
 ## Example use case
 The ```example.sh``` in the repository runs the enhanced algorithms on ```kevinsawicki/http-request``` (M9). E.g., running ```bash example.sh t2``` runs (test prioritization, statement, relative) on M9 and it generally takes about 33 minutes to run. The script will then generate the following in the current directory:
@@ -46,6 +46,7 @@ The ```example.sh``` in the repository runs the enhanced algorithms on ```kevins
 - ```lib-results``` directory containing the results of the three steps. Specifically, the directory contains
   - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-GIVEN_TD-true.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the enhanced T2 algorithm
   - ```prio-DT_LIST-lib-statement-relative.txt``` contains the computed dependencies used to enhance the T2 algorithm
+  - ```PRIORITIZATION-ORIG-LIB-STATEMENT-RELATIVE-CONTAINS_DT-OMITTED_TD-true.txt``` contains the results of each test, the order the tests ran, and number of dependent tests observed in the unenhanced T2 algorithm
   - ```lib-orig-order``` contains the original order used. When running this order, all tests are observed to have passed
   - ```lib-ignore-order``` contains the tests that failed in the original order and are ignored for the algorithms
   - ```lib-orig-time.txt``` contains the time each test took to run in the original order
